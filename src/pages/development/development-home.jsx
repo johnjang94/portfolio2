@@ -19,7 +19,7 @@ export default function DevelopmentHome() {
         {/* ====================== RUMINATE ========================= */}
         <div className="md:flex md:grid-cols-2 mx-auto md:w-4/6">
           <img
-            src="../src/assets/ruminate.png"
+            src="assets/ruminate.png"
             alt="Ruminate"
             width={650}
             className="md:w-3/6 mx-auto p-3 rounded-xl hidden md:block"
@@ -48,7 +48,7 @@ export default function DevelopmentHome() {
             </div>
           </div>
           <img
-            src="../src/assets/ruminate.png"
+            src="assets/ruminate.png"
             alt="Ruminate"
             width={650}
             className="md:w-3/6 mx-auto p-3 rounded-xl block md:hidden"
@@ -82,7 +82,7 @@ export default function DevelopmentHome() {
             </div>
           </div>
           <img
-            src="../src/assets/kblock.png"
+            src="assets/kblock.png"
             alt="K-Block"
             width={650}
             className="md:w-3/6 mx-auto p-3 rounded-xl"

@@ -12,7 +12,7 @@ export default function DesignHome() {
       <section className="bg-cover my-10 py-10">
         <h2 className="md:text-9xl text-7xl my-2 text-center">TELEVU</h2>
         <img
-          src="../src/assets/televu.png"
+          src="assets/televu.png"
           alt="TeleVU"
           width={650}
           className="mx-auto p-3 rounded-xl"
