@@ -1,0 +1,12 @@
+.nav-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: black;
+}
+
+.nav-button.active {
+  color: gray; /* Change color to indicate active state */
+}
