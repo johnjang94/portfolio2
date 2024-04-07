@@ -1,9 +1,9 @@
 import { useEffect } from "react";
-import { useNavigate } from "react-router-dom"; // Import useNavigate
+import { useNavigate } from "react-router-dom";
 import "./initialLanding.css";
 
 export default function InitialLanding() {
-  const navigate = useNavigate(); // Initialize navigate
+  const navigate = useNavigate();
 
   useEffect(() => {
     const h1_element = document.getElementById("big-text");
@@ -31,9 +31,9 @@ export default function InitialLanding() {
     }, 8500);
 
     setTimeout(() => {
-      navigate("/home"); // Use navigate instead of window.location.href
+      navigate("/home");
     }, 11000);
-  }, [navigate]); // Add navigate to the dependency array
+  }, [navigate]);
 
   return (
     <div id="landing" className="text-center py-72 bg-white">

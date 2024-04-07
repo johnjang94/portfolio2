@@ -22,7 +22,7 @@ export default function Root() {
       <div>
         {!shouldHideNav() && <Nav />}
         <QueryClientProvider client={queryClient}>
-          <Outlet /> {/* Pass toggleContact to Outlet */}
+          <Outlet />
         </QueryClientProvider>
         {!shouldHideBanner() && <Banner />}
       </div>
