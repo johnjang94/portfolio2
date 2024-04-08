@@ -6,7 +6,7 @@ export default function DesignHome() {
       <h1 className="text-2xl md:text-4xl text-center">DESIGN AT THE LATEST</h1>
       <h2 className="text-7xl md:text-9xl my-2 text-center">TELEVU</h2>
       <img
-        src="assets/televu.png"
+        src="src/assets/televu.png"
         alt="TeleVU"
         width={650}
         className="mx-auto"

@@ -23,7 +23,7 @@ export default function Hobby() {
           <div className="px-10 md:grid-cols-3 md:flex gap-5">
             <a href="https://www.instagram.com/p/CHS2d3BjO4mvHTW_ckC6NPfOZKOZ_uYZAVkc7s0/">
               <img
-                src="assets/black_swan.png"
+                src="src/assets/black_swan.png"
                 alt="Black Swan Cover"
                 width={500}
                 className="rounded-xl h-80"
@@ -31,7 +31,7 @@ export default function Hobby() {
             </a>
             <a href="https://www.instagram.com/p/CsjRqvxrhc3/">
               <img
-                src="assets/BTBT.png"
+                src="src/assets/BTBT.png"
                 alt="BTBT"
                 width={500}
                 className="rounded-xl h-80 my-5 md:my-0"
@@ -39,7 +39,7 @@ export default function Hobby() {
             </a>
             <a href="https://www.instagram.com/p/C1kGlqNrQva/">
               <img
-                src="assets/batter_up.png"
+                src="src/assets/batter_up.png"
                 alt="Batter_Up"
                 width={500}
                 className="rounded-xl h-80"
@@ -56,7 +56,7 @@ export default function Hobby() {
         <div className="px-10 md:grid-cols-3 md:flex gap-5">
           <a href="https://www.instagram.com/p/Cf_60OEAbhf/">
             <img
-              src="assets/banff.png"
+              src="src/assets/banff.png"
               alt="Banff"
               width={500}
               className="rounded-xl h-80"
@@ -64,7 +64,7 @@ export default function Hobby() {
           </a>
           <a href="https://www.instagram.com/p/CgLbAABgv1F/">
             <img
-              src="assets/islands.png"
+              src="src/assets/islands.png"
               alt="Islands"
               width={500}
               className="rounded-xl h-80 my-5 md:my-0"
@@ -72,7 +72,7 @@ export default function Hobby() {
           </a>
           <a href="https://www.instagram.com/p/Cf_7azVOy0E/?img_index=1">
             <img
-              src="assets/park.png"
+              src="src/assets/park.png"
               alt="Park"
               width={500}
               className="rounded-xl h-80"

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function Banner() {
   return (
     <div className="flex justify-between items-center px-10 py-10">
-      <img src="../src/assets/logo512.png" alt="Logo" />
+      <img src="src/assets/logo512.png" alt="Logo" />
       <div className="flex space-x-1">
         <span className="text-blue-500">&copy;</span>
         <div className="md:flex mt-1 md:mt-0 md:space-x-1">

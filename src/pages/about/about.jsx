@@ -8,7 +8,11 @@ export default function About() {
   return (
     <div className="mb-14">
       <AboutNav />
-      <img src="assets/profile.png" alt="Profile" className="mx-auto my-14" />
+      <img
+        src="src/assets/profile.png"
+        alt="Profile"
+        className="mx-auto my-14"
+      />
       <div className="w-full md:w-3/6 md:mx-auto px-10 space-y-5">
         <p>
           My name is John and I enjoy crafting and building digital experience

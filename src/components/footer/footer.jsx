@@ -10,7 +10,7 @@ export default function Footer() {
           <Link to="/design">
             <button className="hover:bg-gray-200 rounded-xl hover:brightness-125 p-3">
               <img
-                src="../src/assets/design-home.jpeg"
+                src="src/assets/design-home.jpeg"
                 alt="Design Home"
                 width={400}
                 className="rounded-xl h-80"
@@ -21,7 +21,7 @@ export default function Footer() {
           <Link to="/about">
             <button className="hover:bg-gray-200 rounded-xl hover:brightness-125 my-5 md:my-0 p-3">
               <img
-                src="../src/assets/profile.png"
+                src="src/assets/profile.png"
                 alt="My profile"
                 width={375}
                 className="rounded-xl"
@@ -32,7 +32,7 @@ export default function Footer() {
           <Link to="/development">
             <button className="hover:bg-gray-200 rounded-xl hover:brightness-125 p-3">
               <img
-                src="../src/assets/development.png"
+                src="src/assets/development.png"
                 alt="Development"
                 width={375}
                 className="rounded-xl"

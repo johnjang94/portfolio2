@@ -41,7 +41,7 @@ export default function Nav() {
               >
                 <Link to="/home">
                   <img
-                    src="../src/assets/home.png"
+                    src="src/assets/home.png"
                     alt="Home"
                     width={300}
                     className="md:hidden rounded-xl mx-auto"
@@ -57,7 +57,7 @@ export default function Nav() {
               >
                 <Link to="/about">
                   <img
-                    src="../src/assets/profile.png"
+                    src="src/assets/profile.png"
                     alt="Profile picture"
                     width={300}
                     className="md:hidden mx-auto"
@@ -73,7 +73,7 @@ export default function Nav() {
               >
                 <Link to="/design">
                   <img
-                    src="../src/assets/design.png"
+                    src="src/assets/design.png"
                     alt="design picture"
                     width={300}
                     className="md:hidden mx-auto"
@@ -89,7 +89,7 @@ export default function Nav() {
               >
                 <Link to="/development">
                   <img
-                    src="../src/assets/development.png"
+                    src="src/assets/development.png"
                     alt="development picture"
                     width={300}
                     className="md:hidden mx-auto"
@@ -106,7 +106,7 @@ export default function Nav() {
       )}
       {/* Menu */}
       <Link to="/home">
-        <img src="../src/assets/logo512.png" alt="Logo" />
+        <img src="src/assets/logo512.png" alt="Logo" />
       </Link>
       <Link to="/contact">
         <button>Contact</button>

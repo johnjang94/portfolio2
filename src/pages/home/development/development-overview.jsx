@@ -8,7 +8,7 @@ export default function DevelopmentHome() {
       </h1>
       <h2 className="text-7xl md:text-9xl my-2 text-center">RUMINATE</h2>
       <img
-        src="assets/ruminate.png"
+        src="src/assets/ruminate.png"
         alt="Ruminate"
         width={650}
         className="mx-auto"
