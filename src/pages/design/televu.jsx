@@ -28,6 +28,7 @@ import HighFi2 from "../../assets/High-Fi2.png";
 import HighFi3 from "../../assets/High-Fi3.png";
 
 import DesignSystem from "../../assets/design-system.png";
+import Demo from "../../assets/televu_demo.mp4";
 
 import OldDesign from "../../assets/old-design1.png";
 import NewDesign from "../../assets/new-design1.png";
@@ -363,7 +364,7 @@ export default function Televu() {
               &#x276E; Final Demo &#x276F;
             </p>
             <video width="700" height="500" controls className="mx-auto">
-              <source src="assets/televu_demo.mp4" type="video/mp4" />
+              <source src={Demo} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
             <p className="text-2xl text-center my-3">
