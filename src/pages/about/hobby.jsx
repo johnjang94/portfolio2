@@ -2,6 +2,14 @@ import { RiInstagramFill } from "react-icons/ri";
 import HobbyNav from "../../components/second-nav/about/hobby-nav";
 import { useEffect } from "react";
 
+// photo
+import BlackSwan from "../../assets/black_swan.png";
+import BTBT from "../../assets/BTBT.png";
+import BatterUp from "../../assets/batter_up.png";
+import Banff from "../../assets/banff.png";
+import Islands from "../../assets/islands.png";
+import Park from "../../assets/park.png";
+
 export default function Hobby() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -23,7 +31,7 @@ export default function Hobby() {
           <div className="px-10 md:grid-cols-3 md:flex gap-5">
             <a href="https://www.instagram.com/p/CHS2d3BjO4mvHTW_ckC6NPfOZKOZ_uYZAVkc7s0/">
               <img
-                src="src/assets/black_swan.png"
+                src={BlackSwan}
                 alt="Black Swan Cover"
                 width={500}
                 className="rounded-xl h-80"
@@ -31,7 +39,7 @@ export default function Hobby() {
             </a>
             <a href="https://www.instagram.com/p/CsjRqvxrhc3/">
               <img
-                src="src/assets/BTBT.png"
+                src={BTBT}
                 alt="BTBT"
                 width={500}
                 className="rounded-xl h-80 my-5 md:my-0"
@@ -39,7 +47,7 @@ export default function Hobby() {
             </a>
             <a href="https://www.instagram.com/p/C1kGlqNrQva/">
               <img
-                src="src/assets/batter_up.png"
+                src={BatterUp}
                 alt="Batter_Up"
                 width={500}
                 className="rounded-xl h-80"
@@ -56,7 +64,7 @@ export default function Hobby() {
         <div className="px-10 md:grid-cols-3 md:flex gap-5">
           <a href="https://www.instagram.com/p/Cf_60OEAbhf/">
             <img
-              src="src/assets/banff.png"
+              src={Banff}
               alt="Banff"
               width={500}
               className="rounded-xl h-80"
@@ -64,7 +72,7 @@ export default function Hobby() {
           </a>
           <a href="https://www.instagram.com/p/CgLbAABgv1F/">
             <img
-              src="src/assets/islands.png"
+              src={Islands}
               alt="Islands"
               width={500}
               className="rounded-xl h-80 my-5 md:my-0"
@@ -72,7 +80,7 @@ export default function Hobby() {
           </a>
           <a href="https://www.instagram.com/p/Cf_7azVOy0E/?img_index=1">
             <img
-              src="src/assets/park.png"
+              src={Park}
               alt="Park"
               width={500}
               className="rounded-xl h-80"

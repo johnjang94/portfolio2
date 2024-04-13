@@ -4,6 +4,11 @@ import TeleVUNav from "../../components/second-nav/design/televu-nav";
 import TelevuMenu from "../../components/tertiary-nav/televu-menu";
 import { CgProfile } from "react-icons/cg";
 
+// Photos
+import Video from "../../assets/televu/video.png";
+import ReportVU from "../../assets/televu/reportvu.png";
+import List from "../../assets/televu/list.png";
+
 export default function Televu() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -38,19 +43,19 @@ export default function Televu() {
       </section>
       <section className="bg-slate-500 p-5 rounded-xl w-5/6 mx-auto">
         <img
-          src="src/assets/televu/video.png"
+          src={Video}
           alt="Video Conference screenshot"
           width={500}
           className=" md:left-1/4 mx-auto"
         />
         <img
-          src="src/assets/televu/reportvu.png"
+          src={ReportVU}
           alt="ReportVU screen capture"
           width={500}
           className="my-5 mx-auto md:mx-0"
         />
         <img
-          src="src/assets/televu/list.png"
+          src={List}
           alt="List of Contact"
           width={500}
           className="my-5 md:relative md:left-1/4 mx-auto"
