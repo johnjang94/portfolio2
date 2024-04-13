@@ -5,6 +5,10 @@ import { FaGithub } from "react-icons/fa";
 import { FaFolder } from "react-icons/fa";
 import Footer from "../../components/footer/footer";
 
+// Photos
+import Ruminate from "../../assets/ruminate.png";
+import KBlock from "../../assets/kblock.png";
+
 export default function DevelopmentHome() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -19,7 +23,7 @@ export default function DevelopmentHome() {
         {/* ====================== RUMINATE ========================= */}
         <div className="md:flex md:grid-cols-2 mx-auto md:w-4/6">
           <img
-            src="src/assets/ruminate.png"
+            src={Ruminate}
             alt="Ruminate"
             width={650}
             className="md:w-3/6 mx-auto p-3 rounded-xl hidden md:block"
@@ -48,7 +52,7 @@ export default function DevelopmentHome() {
             </div>
           </div>
           <img
-            src="src/assets/ruminate.png"
+            src={Ruminate}
             alt="Ruminate"
             width={650}
             className="md:w-3/6 mx-auto p-3 rounded-xl block md:hidden"
@@ -82,7 +86,7 @@ export default function DevelopmentHome() {
             </div>
           </div>
           <img
-            src="src/assets/kblock.png"
+            src={KBlock}
             alt="K-Block"
             width={650}
             className="md:w-3/6 mx-auto p-3 rounded-xl"

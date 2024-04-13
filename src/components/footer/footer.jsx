@@ -1,5 +1,10 @@
 import { Link } from "react-router-dom";
 
+// Photos
+import DesignHome from "../../assets/design-home.jpeg";
+import Profile from "../assets/profile.png";
+import Development from "../assets/development.png";
+
 export default function Footer() {
   return (
     <div>
@@ -10,7 +15,7 @@ export default function Footer() {
           <Link to="/design">
             <button className="hover:bg-gray-200 rounded-xl hover:brightness-125 p-3">
               <img
-                src="src/assets/design-home.jpeg"
+                src={DesignHome}
                 alt="Design Home"
                 width={400}
                 className="rounded-xl h-80"
@@ -21,7 +26,7 @@ export default function Footer() {
           <Link to="/about">
             <button className="hover:bg-gray-200 rounded-xl hover:brightness-125 my-5 md:my-0 p-3">
               <img
-                src="src/assets/profile.png"
+                src={Profile}
                 alt="My profile"
                 width={375}
                 className="rounded-xl"
@@ -32,7 +37,7 @@ export default function Footer() {
           <Link to="/development">
             <button className="hover:bg-gray-200 rounded-xl hover:brightness-125 p-3">
               <img
-                src="src/assets/development.png"
+                src={Development}
                 alt="Development"
                 width={375}
                 className="rounded-xl"

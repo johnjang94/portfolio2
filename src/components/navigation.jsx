@@ -3,6 +3,14 @@ import { Link } from "react-router-dom";
 import "./navigation.css";
 import { useState } from "react";
 
+// Photos
+import Home from "../assets/home.png";
+import Profile from "../assets/profile.png";
+import Design from "../assets/design.png";
+import Development from "../assets/development.png";
+
+import Logo from "../assets/logo512.png";
+
 export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -41,7 +49,7 @@ export default function Nav() {
               >
                 <Link to="/home">
                   <img
-                    src="src/assets/home.png"
+                    src={Home}
                     alt="Home"
                     width={300}
                     className="md:hidden rounded-xl mx-auto"
@@ -57,7 +65,7 @@ export default function Nav() {
               >
                 <Link to="/about">
                   <img
-                    src="src/assets/profile.png"
+                    src={Profile}
                     alt="Profile picture"
                     width={300}
                     className="md:hidden mx-auto"
@@ -73,7 +81,7 @@ export default function Nav() {
               >
                 <Link to="/design">
                   <img
-                    src="src/assets/design.png"
+                    src={Design}
                     alt="design picture"
                     width={300}
                     className="md:hidden mx-auto"
@@ -89,7 +97,7 @@ export default function Nav() {
               >
                 <Link to="/development">
                   <img
-                    src="src/assets/development.png"
+                    src={Development}
                     alt="development picture"
                     width={300}
                     className="md:hidden mx-auto"
@@ -106,7 +114,7 @@ export default function Nav() {
       )}
       {/* Menu */}
       <Link to="/home">
-        <img src="src/assets/logo512.png" alt="Logo" />
+        <img src={Logo} alt="Logo" />
       </Link>
       <Link to="/contact">
         <button>Contact</button>

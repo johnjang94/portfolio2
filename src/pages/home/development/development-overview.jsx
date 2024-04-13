@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom";
 
+// Photos
+import Ruminate from "../../../assets/ruminate.png";
+
 export default function DevelopmentHome() {
   return (
     <div className="mt-48">
@@ -7,12 +10,7 @@ export default function DevelopmentHome() {
         DEVELOPMENT AT THE LATEST
       </h1>
       <h2 className="text-7xl md:text-9xl my-2 text-center">RUMINATE</h2>
-      <img
-        src="src/assets/ruminate.png"
-        alt="Ruminate"
-        width={650}
-        className="mx-auto"
-      />
+      <img src={Ruminate} alt="Ruminate" width={650} className="mx-auto" />
       {/* I need to center the following button */}
       <div className="text-center">
         <Link to="/development">

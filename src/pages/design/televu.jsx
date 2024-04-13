@@ -4,10 +4,36 @@ import TeleVUNav from "../../components/second-nav/design/televu-nav";
 import TelevuMenu from "../../components/tertiary-nav/televu-menu";
 import { CgProfile } from "react-icons/cg";
 
-// Photos
+// Photos - intro
 import Video from "../../assets/televu/video.png";
 import ReportVU from "../../assets/televu/reportvu.png";
 import List from "../../assets/televu/list.png";
+
+// Photos - content
+import Prompt1 from "../../assets/prompt1.png";
+import Prompt2 from "../../assets/prompt2.png";
+import Prompt3 from "../../assets/prompt3.png";
+import Prompt4 from "../../assets/prompt4.png";
+import Prompt5 from "../../assets/prompt5.png";
+import Prompt6 from "../../assets/prompt6.png";
+
+import GoogleMeet from "../../assets/Google-Meet-logo.png";
+
+import LowFi1 from "../../assets/Low-Fi1.png";
+import LowFi2 from "../../assets/Low-Fi2.png";
+import LowFi3 from "../../assets/Low-Fi3.png";
+
+import HighFi1 from "../../assets/High-Fi1.png";
+import HighFi2 from "../../assets/High-Fi2.png";
+import HighFi3 from "../../assets/High-Fi3.png";
+
+import DesignSystem from "../../assets/design-system.png";
+
+import OldDesign from "../../assets/old-design1.png";
+import NewDesign from "../../assets/new-design1.png";
+
+import OldDesign2 from "../../assets/old-design2.png";
+import NewDesign2 from "../../assets/new-design2.png";
 
 export default function Televu() {
   useEffect(() => {
@@ -191,13 +217,13 @@ export default function Televu() {
             </p>
             <div className="md:flex md:justify-between my-5 space-y-5 md:space-y-0">
               <img
-                src="src/assets/prompt1.png"
+                src={Prompt1}
                 alt="Prompt 1"
                 width={350}
                 className="mx-auto md:mx-0"
               />
               <img
-                src="src/assets/prompt2.png"
+                src={Prompt2}
                 alt="Prompt 2"
                 width={350}
                 className="mx-auto md:mx-0"
@@ -209,13 +235,13 @@ export default function Televu() {
             </p>
             <div className="md:flex md:justify-between my-5 space-y-5 md:space-y-0">
               <img
-                src="src/assets/prompt3.png"
+                src={Prompt3}
                 alt="Prompt 3"
                 width={350}
                 className="mx-auto md:mx-0"
               />
               <img
-                src="src/assets/prompt4.png"
+                src={Prompt4}
                 alt="Prompt 4"
                 width={350}
                 className="mx-auto md:mx-0"
@@ -227,13 +253,13 @@ export default function Televu() {
             </p>
             <div className="md:flex md:justify-between my-5 space-y-5 md:space-y-0">
               <img
-                src="src/assets/prompt5.png"
+                src={Prompt5}
                 alt="Prompt 5"
                 width={350}
                 className="mx-auto md:mx-0"
               />
               <img
-                src="src/assets/prompt6.png"
+                src={Prompt6}
                 alt="Prompt 6"
                 width={350}
                 className="mx-auto md:mx-0"
@@ -258,7 +284,7 @@ export default function Televu() {
                 className="bg-white rounded-xl mx-auto md:mx-0"
               />
               <img
-                src="src/assets/Google-Meet-logo.png"
+                src={GoogleMeet}
                 alt="Google Meet logo"
                 width={350}
                 className="mx-auto md:mx-0"
@@ -290,19 +316,19 @@ export default function Televu() {
             <p className="text-2xl">&#x276E; Low-Fi &#x276F;</p>
             <div className="md:flex md:justify-between my-5 space-y-5 md:space-y-0 md:gap-5">
               <img
-                src="src/assets/Low-Fi1.png"
+                src={LowFi1}
                 alt="Low-Fi 1"
                 width={300}
                 className="mx-auto md:mx-0"
               />
               <img
-                src="src/assets/Low-Fi2.png"
+                src={LowFi2}
                 alt="Low-Fi 2"
                 width={300}
                 className="mx-auto md:mx-0"
               />
               <img
-                src="src/assets/Low-Fi3.png"
+                src={LowFi3}
                 alt="Low-Fi 3"
                 width={300}
                 className="mx-auto md:mx-0"
@@ -315,19 +341,19 @@ export default function Televu() {
             </span>
             <div className="md:flex md:justify-between my-5 space-y-5 md:space-y-0 md:gap-5">
               <img
-                src="src/assets/High-Fi1.png"
+                src={HighFi1}
                 alt="High-Fi 1"
                 width={300}
                 className="mx-auto md:mx-0"
               />
               <img
-                src="src/assets/High-Fi2.png"
+                src={HighFi2}
                 alt="High-Fi 2"
                 width={300}
                 className="mx-auto md:mx-0"
               />
               <img
-                src="src/assets/High-Fi3.png"
+                src={HighFi3}
                 alt="High-Fi 3"
                 width={300}
                 className="mx-auto md:mx-0"
@@ -344,7 +370,7 @@ export default function Televu() {
               &#x276E; Design Systems &#x276F;
             </p>
             <img
-              src="src/assets/design-system.png"
+              src={DesignSystem}
               alt="Design System"
               width={800}
               className="mx-auto"
@@ -392,12 +418,12 @@ export default function Televu() {
               </div>
               <div className="md:flex md:items-center md:justify-between space-y-5 md:space-y-0 md:mb-5">
                 <img
-                  src="src/assets/old-design1.png"
+                  src={OldDesign}
                   alt="Old call log"
                   className="mx-auto md:mx-0"
                 />
                 <img
-                  src="src/assets/new-design1.png"
+                  src={NewDesign}
                   alt="New call log"
                   className="mx-auto md:mx-0"
                 />
@@ -407,12 +433,12 @@ export default function Televu() {
               <h4 className="text-2xl my-3 text-center md:hidden">New</h4>
               <div className="md:flex md:items-center md:justify-between space-y-5 md:space-y-0">
                 <img
-                  src="src/assets/old-design2.png"
+                  src={OldDesign2}
                   alt="Old Video-call session"
                   className="mx-auto md:mx-0"
                 />
                 <img
-                  src="src/assets/new-design2.png"
+                  src={NewDesign2}
                   alt="New Video-call session"
                   className="mx-auto md:mx-0"
                 />
