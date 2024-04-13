@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 // Photos
 import DesignHome from "../../assets/design-home.jpeg";
-import Profile from "../assets/profile.png";
-import Development from "../assets/development.png";
+import Profile from "../../assets/profile.png";
+import Development from "../../assets/development.png";
 
 export default function Footer() {
   return (
