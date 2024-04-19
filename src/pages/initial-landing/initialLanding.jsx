@@ -36,9 +36,9 @@ export default function InitialLanding() {
   }, [navigate]);
 
   return (
-    <div id="landing" className="text-center py-72 bg-white">
+    <div id="landing" className="text-center py-80 bg-white">
       <h1 id="big-text">Welcome</h1>
-      <h3 id="sub-text" className="text-5xl">
+      <h3 id="sub-text" className="text-center">
         to John Jang&#39;s Portfolio
       </h3>
     </div>

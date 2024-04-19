@@ -10,7 +10,7 @@ export default function Work() {
     setSelectedComponent(component);
   };
   return (
-    <div className="my-48">
+    <div className="my-64">
       <header className="md:flex justify-between items-center">
         <h1 className="md:text-4xl text-2xl text-center md:text-start mb-3">
           PLACES I WORKED AT

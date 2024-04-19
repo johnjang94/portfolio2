@@ -5,7 +5,7 @@ import TeleVU from "../../../assets/televu.png";
 
 export default function DesignHome() {
   return (
-    <div>
+    <div className="my-64">
       <h1 className="text-2xl md:text-4xl text-center">DESIGN AT THE LATEST</h1>
       <h2 className="text-7xl md:text-9xl my-2 text-center">TELEVU</h2>
       <img src={TeleVU} alt="TeleVU" width={650} className="mx-auto" />

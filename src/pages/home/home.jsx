@@ -12,10 +12,11 @@ export default function Home() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   return (
     <div className="lg:my-24 my-40 mx-auto lg:w-7/12 w-10/12">
       <header>
-        <h1 className="lg:text-9xl text-8xl">John Jang</h1>
+        <h1 className="lg:text-9xl text-7xl">John Jang</h1>
         <h2 className="lg:mt-5 mt-5 lg:text-3xl text-3xl">
           UX Designer & Frontend Developer
         </h2>
@@ -33,7 +34,11 @@ export default function Home() {
             <FaArrowRight />
           </Link>
         </div>
-        <FaArrowAltCircleDown className="lg:mt-14 my-28 mx-auto text-3xl animate-bounce hover:cursor-pointer" />
+        <div className="text-center">
+          <button>
+            <FaArrowAltCircleDown className="lg:mt-14 my-28 mx-auto text-3xl animate-bounce hover:cursor-pointer" />
+          </button>
+        </div>
       </header>
       <section>
         <Work />
