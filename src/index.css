@@ -5,4 +5,5 @@
 
 body {
   @apply max-w-[1440px];
+  font-family: "Manrope", sans-serif;
 }

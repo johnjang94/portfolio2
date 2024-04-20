@@ -1,16 +1,39 @@
 import { FaArrowAltCircleDown } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { useRef, useEffect } from "react";
 
 import "./home.css";
 import Work from "./work/work";
 import DesignHome from "./design/design-overview";
 import DevelopmentHome from "./development/development-overview";
-import { useEffect } from "react";
 
 export default function Home() {
+  const workRef = useRef(null);
+
+  const scrollToWork = () => {
+    const workElement = workRef.current;
+    const topOffset = workElement.getBoundingClientRect().top + window.scrollY;
+    const scrollPosition = topOffset - window.innerHeight / 2 + 200;
+    window.scrollTo({ top: scrollPosition, behavior: "smooth" });
+  };
+
   useEffect(() => {
-    window.scrollTo(0, 0);
+    const handleScroll = () => {
+      const workElement = workRef.current;
+      const topOffset =
+        workElement.getBoundingClientRect().top + window.scrollY;
+      const isNearWorkSection = topOffset < window.innerHeight / 2;
+      if (isNearWorkSection) {
+        workElement.scrollIntoView({ behavior: "smooth" });
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   return (
@@ -35,12 +58,12 @@ export default function Home() {
           </Link>
         </div>
         <div className="text-center">
-          <button>
+          <button onClick={scrollToWork}>
             <FaArrowAltCircleDown className="lg:mt-14 my-28 mx-auto text-3xl animate-bounce hover:cursor-pointer" />
           </button>
         </div>
       </header>
-      <section>
+      <section ref={workRef}>
         <Work />
       </section>
       <section>
