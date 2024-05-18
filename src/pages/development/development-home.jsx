@@ -21,7 +21,7 @@ export default function DevelopmentHome() {
           Some things I have built
         </h2>
         {/* ====================== RUMINATE ========================= */}
-        <div className="md:flex md:grid-cols-2 mx-auto md:w-4/6">
+        <div className="md:flex md:grid-cols-2 mx-auto md:w-4/6 my-20">
           <img
             src={Ruminate}
             alt="Ruminate"
