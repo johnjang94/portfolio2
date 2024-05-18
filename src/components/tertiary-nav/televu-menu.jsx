@@ -22,11 +22,6 @@ export default function TelevuMenu() {
     }
   };
 
-  const handleSelectChange = (event) => {
-    const selectedOption = event.target.value;
-    handleScroll(selectedOption);
-  };
-
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
@@ -67,21 +62,6 @@ export default function TelevuMenu() {
             </button>
           </div>
         ))}
-      </div>
-      <div className="block md:hidden mx-5 mt-28 mb-5 w-full">
-        <select
-          name="menu"
-          id="menu"
-          className="p-2 rounded-xl"
-          onChange={handleSelectChange}
-          value={selectedSection}
-        >
-          {sections.map((section) => (
-            <option key={section.id} value={section.id}>
-              {section.label}
-            </option>
-          ))}
-        </select>
       </div>
     </div>
   );

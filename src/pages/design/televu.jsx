@@ -428,7 +428,7 @@ export default function Televu() {
           {/* =========================== USABILITY TESTING =================== */}
           <div className="my-10" id="usability-testing">
             <h3 className="text-2xl">USABILITY TESTING</h3>
-            <h1 className="text-4xl font-medium">
+            <h1 className="text-3xl md:text-4xl font-medium">
               A moderated Usability Testing with 8 participants
             </h1>
             <p className="my-2 text-2xl font-semibold">
