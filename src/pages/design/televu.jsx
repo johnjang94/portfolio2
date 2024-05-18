@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Footer from "../../components/footer/footer";
 import TeleVUNav from "../../components/second-nav/design/televu-nav";
 import TelevuMenu from "../../components/tertiary-nav/televu-menu";
@@ -17,6 +17,7 @@ import Prompt4 from "../../assets/prompt4.png";
 import Prompt5 from "../../assets/prompt5.png";
 import Prompt6 from "../../assets/prompt6.png";
 
+import Microsoft from "../../assets/Microsoft-Teams-logo.png";
 import GoogleMeet from "../../assets/Google-Meet-logo.png";
 
 import LowFi1 from "../../assets/Low-Fi1.png";
@@ -37,8 +38,51 @@ import OldDesign2 from "../../assets/old-design2.png";
 import NewDesign2 from "../../assets/new-design2.png";
 
 export default function Televu() {
+  const [currentSection, setCurrentSection] = useState("background");
+
   useEffect(() => {
     window.scrollTo(0, 0);
+
+    const sectionIds = [
+      "background",
+      "research",
+      "iteration",
+      "competitive-analysis",
+      "design-process",
+      "usability-testing",
+      "design-changes",
+      "lessons-learned",
+    ];
+
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.6, // Adjust this value to your needs
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setCurrentSection(entry.target.id);
+        }
+      });
+    }, options);
+
+    sectionIds.forEach((id) => {
+      const element = document.getElementById(id);
+      if (element) {
+        observer.observe(element);
+      }
+    });
+
+    return () => {
+      sectionIds.forEach((id) => {
+        const element = document.getElementById(id);
+        if (element) {
+          observer.unobserve(element);
+        }
+      });
+    };
   }, []);
   return (
     <div>
@@ -90,12 +134,14 @@ export default function Televu() {
       </section>
       <section className="md:flex md:flex-1">
         <div>
-          <TelevuMenu />
+          <TelevuMenu currentSection={currentSection} />
         </div>
         <div className="md:my-28 mb-28 px-7 md:w-4/6">
           {/* ================ BACKGROUND =================== */}
           <div id="background">
-            <h3 className="text-2xl">BACKGROUND</h3>
+            <h3 id="background" className="text-2xl">
+              BACKGROUND
+            </h3>
             <h1 className="text-4xl font-medium">
               Chaos in medical sector due to COVID-19 and how the boom in IT
               seeks to help --- but challenges
@@ -120,7 +166,9 @@ export default function Televu() {
           </div>
           {/* =========================== RESEARCH =================== */}
           <div id="research">
-            <h3 className="text-2xl">RESEARCH</h3>
+            <h3 id="research" className="text-2xl">
+              RESEARCH
+            </h3>
             <h1 className="text-4xl font-medium">
               To understand why they would choose other platforms than what is
               already offered
@@ -279,7 +327,7 @@ export default function Televu() {
             </p>
             <div className="md:flex md:justify-between my-5 space-y-5 md:space-y-0">
               <img
-                src="src/assets/Microsoft-Teams-logo.png"
+                src={Microsoft}
                 alt="Microsoft Office Teams"
                 width={350}
                 className="bg-white rounded-xl mx-auto md:mx-0"
