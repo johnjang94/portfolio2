@@ -10,6 +10,8 @@ import DevelopmentHome from "./development/development-overview";
 
 export default function Home() {
   const workRef = useRef(null);
+  const designRef = useRef(null);
+  const developmentRef = useRef(null);
 
   const scrollToWork = () => {
     const workElement = workRef.current;
@@ -18,7 +20,24 @@ export default function Home() {
     window.scrollTo({ top: scrollPosition, behavior: "smooth" });
   };
 
+  const scrollToDesign = () => {
+    const designElement = designRef.current;
+    const topOffset =
+      designElement.getBoundingClientRect().top + window.scrollY;
+    const scrollPosition = topOffset - window.innerHeight / 2 + 330;
+    window.scrollTo({ top: scrollPosition, behavior: "smooth" });
+  };
+
+  const scrollToDevelopment = () => {
+    const developmentElement = developmentRef.current;
+    const topOffset =
+      developmentElement.getBoundingClientRect().top + window.scrollY;
+    const scrollPosition = topOffset - window.innerHeight / 2 + 330;
+    window.scrollTo({ top: scrollPosition, behavior: "smooth" });
+  };
+
   useEffect(() => {
+    window.scrollTo(0, 0);
     const handleScroll = () => {
       const workElement = workRef.current;
       const topOffset =
@@ -26,6 +45,23 @@ export default function Home() {
       const isNearWorkSection = topOffset < window.innerHeight / 2;
       if (isNearWorkSection) {
         workElement.scrollIntoView({ behavior: "smooth" });
+      } else {
+        const designElement = designRef.current;
+        const designTopOffset =
+          designElement.getBoundingClientRect().top + window.scrollY;
+        const isNearDesignSection = designTopOffset < window.innerHeight / 2;
+        if (isNearDesignSection) {
+          scrollToDesign();
+        } else {
+          const developmentElement = developmentRef.current;
+          const developmentTopOffset =
+            developmentElement.getBoundingClientRect().top + window.scrollY;
+          const isNearDevelopmentSection =
+            developmentTopOffset < window.innerHeight / 2;
+          if (isNearDevelopmentSection) {
+            scrollToDevelopment();
+          }
+        }
       }
     };
 
@@ -65,11 +101,21 @@ export default function Home() {
       </header>
       <section ref={workRef}>
         <Work />
+        <div className="text-center -mt-44">
+          <button onClick={scrollToDesign}>
+            <FaArrowAltCircleDown className="mx-auto text-3xl animate-bounce hover:cursor-pointer" />
+          </button>
+        </div>
       </section>
-      <section>
+      <section ref={designRef}>
         <DesignHome />
+        <div className="text-center -mt-52">
+          <button onClick={scrollToDevelopment}>
+            <FaArrowAltCircleDown className="mx-auto text-3xl animate-bounce hover:cursor-pointer" />
+          </button>
+        </div>
       </section>
-      <section>
+      <section ref={developmentRef}>
         <DevelopmentHome />
       </section>
     </div>
