@@ -18,7 +18,7 @@ export default function Root() {
   };
 
   const getBackgroundClass = () => {
-    return pathname === "/lock" ? "bg-animated bg-cover" : "";
+    return pathname === "/lock" ? "bg-animated bg-cover" : "bg-glow bg-cover";
   };
 
   return (
