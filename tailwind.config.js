@@ -9,6 +9,7 @@ export default {
       backgroundImage: {
         glow: "url('/src/assets/background.png')",
         design: "url('/src/assets/televu.png')",
+        animated: "url('/src/assets/background2.gif')",
       },
     },
     keyframes: {

@@ -17,10 +17,14 @@ export default function Root() {
     return pathname === "/";
   };
 
+  const getBackgroundClass = () => {
+    return pathname === "/lock" ? "bg-animated bg-cover" : "";
+  };
+
   return (
-    <div className="bg-glow bg-cover">
+    <div className={getBackgroundClass()}>
       <div>
-        {!shouldHideNav() && <Nav />}
+        {!shouldHideNav() && <Nav pathname={pathname} />}
         <QueryClientProvider client={queryClient}>
           <Outlet />
         </QueryClientProvider>

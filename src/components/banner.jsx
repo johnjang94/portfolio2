@@ -1,34 +1,41 @@
+import { Link, useLocation } from "react-router-dom";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import { Link, useLocation } from "react-router-dom";
 
-// Import logos
-import LogoTransparent from "../../public/logo500.png";
-import LogoBlack from "../../public/logo512.png";
+import LogoBlack from "/logo512.png";
+import LogoTransparent from "/logo500.png";
 
 export default function Banner() {
   const location = useLocation();
 
-  const getBackgroundColor = () => {
+  const getStyle = () => {
     switch (location.pathname) {
       case "/televu":
       case "/development":
-        return "bg-black text-white";
+        return {
+          backgroundColor: "bg-black text-white",
+          logo: LogoTransparent,
+        };
+      case "/lock":
+        return { backgroundColor: "text-white", logo: LogoTransparent };
       default:
-        return "bg-transparent text-black";
+        return {
+          backgroundColor: "bg-transparent text-black",
+          logo: LogoBlack,
+        };
     }
   };
 
-  // Conditionally select the logo based on background color
-  const logo = getBackgroundColor().includes("bg-black")
-    ? LogoTransparent
-    : LogoBlack;
+  // Use the returned object to set the background color and logo
+  const { backgroundColor, logo } = getStyle();
 
   return (
     <div
-      className={`flex justify-between items-center px-10 py-10 ${getBackgroundColor()} text-white`}
+      className={`flex justify-between items-center px-10 py-10 ${backgroundColor}`}
     >
-      <img src={logo} width={30} alt="Logo" />
+      <Link to="/home">
+        <img src={logo} alt="Logo" width={30} />
+      </Link>
       <div className="flex space-x-1">
         <span className="text-blue-500">&copy;</span>
         <div className="md:flex mt-1 md:mt-0 md:space-x-1">

@@ -9,9 +9,10 @@ import Profile from "../assets/profile.png";
 import Design from "../assets/design.png";
 import Development from "../assets/development.png";
 
-import Logo from "../assets/logo512.png";
+import Logo from "/logo512.png";
+import Logo2 from "/logo500.png";
 
-export default function Nav() {
+export default function Nav({ pathname }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -22,10 +23,15 @@ export default function Nav() {
     setIsMenuOpen(false);
   };
 
+  const logoSrc = pathname === "/lock" ? Logo2 : Logo;
+  const textColor = pathname === "/lock" ? "text-white" : "text-black";
+
   return (
-    <div className="px-10 justify-between flex py-5 border-b border-gray-300 items-center">
+    <div
+      className={`px-10 justify-between flex py-5 border-b border-gray-300 items-center ${textColor}`}
+    >
       <button onClick={toggleMenu}>
-        <RxHamburgerMenu className="text-2xl" />
+        <RxHamburgerMenu className={`text-2xl ${textColor}`} />
       </button>
       {/* Menu */}
       {isMenuOpen && (
@@ -114,7 +120,7 @@ export default function Nav() {
       )}
       {/* Menu */}
       <Link to="/home">
-        <img src={Logo} alt="Logo" />
+        <img src={logoSrc} alt="Logo" width={30} />
       </Link>
       <Link to="/contact">
         <button>Contact</button>

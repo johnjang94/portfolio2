@@ -57,7 +57,7 @@ export default function Televu() {
     const options = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.6, // Adjust this value to your needs
+      threshold: 0.6,
     };
 
     const observer = new IntersectionObserver((entries) => {
@@ -502,7 +502,7 @@ export default function Televu() {
             </h1>
             <p className="text-2xl">
               I only thought that designs that cannot be accommodated by
-              technology are the bad designs. However, I’ve had a chance to
+              technology are the bad designs. However, I&#39;ve had a chance to
               learn that it is another type of no-good design if the design
               cannot reflect the business structure.
             </p>

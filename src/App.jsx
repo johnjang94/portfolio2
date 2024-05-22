@@ -11,6 +11,7 @@ import DevelopmentHome from "./pages/development/development-home";
 import Televu from "./pages/design/televu";
 import Tugo from "./pages/design/tugo";
 import Contact from "./pages/contact";
+import Login from "./components/lock/login";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,7 @@ const router = createBrowserRouter([
       { path: "/tugo", element: <Tugo /> },
       { path: "/development", element: <DevelopmentHome /> },
       { path: "/contact", element: <Contact /> },
+      { path: "/lock", element: <Login /> },
     ],
   },
 ]);
