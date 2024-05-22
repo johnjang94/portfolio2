@@ -42,7 +42,7 @@ export default function DesignHome() {
       <h1 className="my-20 text-center md:text-5xl text-3xl">
         Welcome to my design home
       </h1>
-      <section className="my-10 py-10 md:mx-36 mx-12 grid-cols-2 md:flex gap-20 space-y-20">
+      <section className="my-10 py-10 md:mx-36 mx-12 grid-cols-2 md:flex gap-20 space-y-20 md:space-y-0">
         {data.map((item) => (
           <div
             key={item.id}
