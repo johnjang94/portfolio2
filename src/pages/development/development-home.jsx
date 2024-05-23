@@ -8,6 +8,7 @@ import Footer from "../../components/footer/footer";
 // Photos
 import Ruminate from "../../assets/ruminate.png";
 import KBlock from "../../assets/kblock.png";
+import Portfolio4 from "../../assets/portfolio-v4.png";
 
 export default function DevelopmentHome() {
   useEffect(() => {
@@ -26,7 +27,7 @@ export default function DevelopmentHome() {
             src={Ruminate}
             alt="Ruminate"
             width={650}
-            className="md:w-3/6 mx-auto p-3 rounded-xl hidden md:block"
+            className="md:w-3/6 mx-auto rounded-xl hidden md:block shadow-[rgba(99,99,99,0.2)_0px_2px_8px_0px]"
           />
           <div className="p-5 md:w-4/6 z-10">
             <h5 className="md:text-end text-center">Featured Project</h5>
@@ -37,10 +38,11 @@ export default function DevelopmentHome() {
               owners and potential customers who are seeking for good quality of
               consumable products.
             </p>
-            <div className="flex space-x-10 text-gray-400 my-5">
+            <div className="flex justify-between text-gray-400 my-5">
               <span>React</span>
               <span>TypeScript</span>
               <span>Firebase</span>
+              <span>Development-in-Progress</span>
             </div>
             <div className="flex space-x-5 my-3 text-2xl">
               <a href="https://github.com/johnjang94/project_ruminate">
@@ -55,7 +57,7 @@ export default function DevelopmentHome() {
             src={Ruminate}
             alt="Ruminate"
             width={650}
-            className="md:w-3/6 mx-auto p-3 rounded-xl block md:hidden"
+            className="md:w-3/6 mx-auto rounded-xl block md:hidden shadow-[rgba(99,99,99,0.2)_0px_2px_8px_0px]"
           />
         </div>
         {/* ======================= K-BLOCK =========================== */}
@@ -71,10 +73,11 @@ export default function DevelopmentHome() {
               (live), transaction history, NFT wallet, etc. (currently, still
               under-construction)
             </p>
-            <div className="flex space-x-10 text-gray-400 my-5">
+            <div className="flex justify-between text-gray-400 my-5">
               <span>React</span>
               <span>JavaScript</span>
               <span>Tailwind CSS</span>
+              <span>Development-in-Progress</span>
             </div>
             <div className="flex space-x-5 my-3 text-2xl">
               <a href="https://github.com/techfleetworks/k-block-app">
@@ -89,10 +92,47 @@ export default function DevelopmentHome() {
             src={KBlock}
             alt="K-Block"
             width={650}
-            className="md:w-3/6 mx-auto p-3 rounded-xl"
+            className="md:w-3/6 mx-auto rounded-xl shadow-[rgba(99,99,99,0.2)_0px_2px_8px_0px]"
+          />
+        </div>
+        {/* ====================== Portfolio V.3 ========================= */}
+        <div className="md:flex md:grid-cols-2 mx-auto md:w-4/6 my-20">
+          <img
+            src={Portfolio4}
+            alt="Portfolio-v4"
+            width={650}
+            className="md:w-3/6 mx-auto rounded-xl hidden md:block shadow-[rgba(99,99,99,0.2)_0px_2px_8px_0px]"
+          />
+          <div className="p-5 md:w-4/6 z-10">
+            <h1 className="md:text-end text-center text-3xl mb-5">
+              Portfolio V.4
+            </h1>
+            <p className="w-full mx-auto md:text-left md:mx-0">
+              I have rebuilt my portfolio with the most recent design and
+              technology.
+            </p>
+            <div className="flex space-x-10 text-gray-400 my-10">
+              <span>React</span>
+              <span>JavaScript</span>
+            </div>
+            <div className="flex space-x-5 my-3 text-2xl">
+              <a href="https://github.com/johnjang94/portfolio2">
+                <FaGithub />
+              </a>
+              <a href="https://www.johnjang.ca/">
+                <FaExternalLinkAlt />
+              </a>
+            </div>
+          </div>
+          <img
+            src={Portfolio4}
+            alt="Portfolio-v4"
+            width={650}
+            className="md:w-3/6 mx-auto rounded-xl block md:hidden shadow-[rgba(99,99,99,0.2)_0px_2px_8px_0px]"
           />
         </div>
       </section>
+      {/* ============================ THE ARCHIVES ================================== */}
       <section>
         <h1 className="text-3xl my-10 text-center">My Archives</h1>
         <div className="md:grid-cols-3 p-5 md:flex md:gap-5 md:mx-48 md:justify-between">

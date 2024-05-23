@@ -54,7 +54,7 @@ export default function DesignHome() {
                 alt={item.imgAlt}
                 width={item.imgWidth}
                 height={item.imgHeight}
-                className="rounded-xl"
+                className="rounded-xl hover:shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,rgba(0,0,0,0.3)_0px_3px_7px_-3px]"
               />
             </Link>
             <p className="my-3">
