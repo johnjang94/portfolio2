@@ -16,7 +16,8 @@ export default function Home() {
   const scrollToWork = () => {
     const workElement = workRef.current;
     const topOffset = workElement.getBoundingClientRect().top + window.scrollY;
-    const scrollPosition = topOffset - window.innerHeight / 2 + 200;
+    const offset = window.innerWidth <= 768 ? 270 : 230;
+    const scrollPosition = topOffset - window.innerHeight / 2 + offset;
     window.scrollTo({ top: scrollPosition, behavior: "smooth" });
   };
 
@@ -24,7 +25,8 @@ export default function Home() {
     const designElement = designRef.current;
     const topOffset =
       designElement.getBoundingClientRect().top + window.scrollY;
-    const scrollPosition = topOffset - window.innerHeight / 2 + 330;
+    const offset = window.innerWidth <= 768 ? 260 : 330;
+    const scrollPosition = topOffset - window.innerHeight / 2 + offset;
     window.scrollTo({ top: scrollPosition, behavior: "smooth" });
   };
 
@@ -32,7 +34,8 @@ export default function Home() {
     const developmentElement = developmentRef.current;
     const topOffset =
       developmentElement.getBoundingClientRect().top + window.scrollY;
-    const scrollPosition = topOffset - window.innerHeight / 2 + 330;
+    const offset = window.innerWidth <= 768 ? 260 : 330;
+    const scrollPosition = topOffset - window.innerHeight / 2 + offset;
     window.scrollTo({ top: scrollPosition, behavior: "smooth" });
   };
 
@@ -95,7 +98,7 @@ export default function Home() {
         </div>
         <div className="text-center">
           <button onClick={scrollToWork}>
-            <FaArrowAltCircleDown className="lg:mt-14 my-28 mx-auto text-3xl animate-bounce hover:cursor-pointer" />
+            <FaArrowAltCircleDown className="lg:mt-14 md:my-28 my-10 mx-auto text-3xl animate-bounce hover:cursor-pointer" />
           </button>
         </div>
       </header>
@@ -115,7 +118,7 @@ export default function Home() {
           </button>
         </div>
       </section>
-      <section ref={developmentRef}>
+      <section ref={developmentRef} className="-mb-28 md:mb-0">
         <DevelopmentHome />
       </section>
     </div>
