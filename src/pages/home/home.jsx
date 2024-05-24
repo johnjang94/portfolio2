@@ -79,9 +79,11 @@ export default function Home() {
     <div className="lg:my-24 my-40 mx-auto lg:w-7/12 w-10/12">
       <header>
         <h1 className="lg:text-9xl text-7xl">John Jang</h1>
-        <h2 className="lg:mt-5 mt-5 lg:text-3xl text-3xl">
-          UX Designer & Frontend Developer
-        </h2>
+        <div className="rotating-text-container lg:mt-5 mt-5 lg:text-3xl text-3xl">
+          <h2 className="rotating-text">UX Designer</h2>
+          <h2 className="rotating-text">Product Designer</h2>
+          <h2 className="rotating-text">Software Developer</h2>
+        </div>
         <h4 className="mt-6 lg:text-3xl text-xl">
           I specialize in designing and building digital products for the web.
           Currently, I am focused on building an e-commerce platform at Tech
