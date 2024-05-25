@@ -1,14 +1,14 @@
 import { useEffect } from "react";
-import DevelopmentHomeNav from "../../components/second-nav/development/development-home-nav";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaFolder } from "react-icons/fa";
-import Footer from "../../components/footer/footer";
+import Footer from "../../components/footer";
 
 // Photos
 import Ruminate from "../../assets/ruminate.png";
 import KBlock from "../../assets/kblock.png";
 import Portfolio4 from "../../assets/portfolio-v4.png";
+import { Link } from "react-router-dom";
 
 export default function DevelopmentHome() {
   useEffect(() => {
@@ -16,7 +16,11 @@ export default function DevelopmentHome() {
   }, []);
   return (
     <div>
-      <DevelopmentHomeNav />
+      <div className="flex justify-between px-10 my-3">
+        <Link to="/development">
+          <button>DEVELOPMENT</button>
+        </Link>
+      </div>
       <section className="bg-cover my-5 py-10">
         <h2 className="md:text-4xl text-2xl my-5 md:w-4/6 md:mx-auto text-center">
           Some things I have built

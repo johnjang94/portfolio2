@@ -1,7 +1,8 @@
 import { RxHamburgerMenu } from "react-icons/rx";
 import { Link } from "react-router-dom";
-import "./navigation.css";
+import "./mainNav.css";
 import { useState } from "react";
+import PropTypes from "prop-types";
 
 // Photos
 import Home from "../assets/home.png";
@@ -11,6 +12,10 @@ import Development from "../assets/development.png";
 
 import Logo from "/logo512.png";
 import Logo2 from "/logo500.png";
+
+Nav.propTypes = {
+  pathname: PropTypes.string.isRequired,
+};
 
 export default function Nav({ pathname }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

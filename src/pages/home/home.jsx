@@ -5,8 +5,8 @@ import { useRef, useEffect } from "react";
 
 import "./home.css";
 import Work from "./work/work";
-import DesignHome from "./design/design-overview";
-import DevelopmentHome from "./development/development-overview";
+import DesignHome from "./designProject";
+import DevelopmentHome from "./developmentProject";
 
 export default function Home() {
   const workRef = useRef(null);
@@ -16,7 +16,7 @@ export default function Home() {
   const scrollToWork = () => {
     const workElement = workRef.current;
     const topOffset = workElement.getBoundingClientRect().top + window.scrollY;
-    const offset = window.innerWidth <= 768 ? 270 : 230;
+    const offset = window.innerWidth <= 768 ? 330 : 335;
     const scrollPosition = topOffset - window.innerHeight / 2 + offset;
     window.scrollTo({ top: scrollPosition, behavior: "smooth" });
   };
@@ -106,7 +106,7 @@ export default function Home() {
       </header>
       <section ref={workRef}>
         <Work />
-        <div className="text-center -mt-44">
+        <div className="text-center">
           <button onClick={scrollToDesign}>
             <FaArrowAltCircleDown className="mx-auto text-3xl animate-bounce hover:cursor-pointer" />
           </button>

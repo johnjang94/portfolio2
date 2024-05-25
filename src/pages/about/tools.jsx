@@ -1,12 +1,12 @@
 import { useEffect } from "react";
-import ToolsNav from "../../components/second-nav/about/tools-nav";
+import { ToolsNav } from "../../components/secondNav";
 
 export default function Tools() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="h-fit">
+    <div>
       <ToolsNav />
       <div className="md:my-16 my-11 md:w-2/6 mx-auto">
         <h1 className="text-center mb-2 font-bold text-3xl">

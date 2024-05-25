@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import Footer from "../../components/footer/footer";
-import TeleVUNav from "../../components/second-nav/design/televu-nav";
-import TelevuMenu from "../../components/tertiary-nav/televu-menu";
+import Footer from "../../components/footer";
+import { TelevuNav } from "../../components/designSubNav";
+import DesignNav from "../../components/designNav";
 import { CgProfile } from "react-icons/cg";
 
 // Photos - intro
@@ -86,7 +86,7 @@ export default function Televu() {
   }, []);
   return (
     <div>
-      <TeleVUNav />
+      <TelevuNav />
       <header>
         <h3 className="mt-14 mb-4 w-3/6 mx-auto text-2xl">Product Design</h3>
         <h1 className="mt-9 w-3/6 mx-auto text-5xl">TELEVU</h1>
@@ -134,7 +134,7 @@ export default function Televu() {
       </section>
       <section className="md:flex md:flex-1">
         <div>
-          <TelevuMenu currentSection={currentSection} />
+          <DesignNav currentSection={currentSection} />
         </div>
         <div className="md:my-28 mb-28 px-7 md:w-4/6">
           {/* ================ BACKGROUND =================== */}

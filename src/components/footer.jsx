@@ -2,15 +2,17 @@ import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
 // Photos
-import DesignHome from "../../assets/design-home.jpeg";
-import Profile from "../../assets/profile.png";
-import Development from "../../assets/development.png";
+import DesignHome from "../assets/design-home.jpeg";
+import Profile from "../assets/profile.png";
+import Development from "../assets/development.png";
 
 export default function Footer() {
   const [opacity, setOpacity] = useState(0);
   const footerRef = useRef(null);
 
   useEffect(() => {
+    const footerNode = footerRef.current;
+
     const handleIntersection = (entries) => {
       entries.forEach((entry) => {
         setOpacity(entry.intersectionRatio);
@@ -21,13 +23,13 @@ export default function Footer() {
       threshold: Array.from({ length: 101 }, (_, i) => i / 100),
     });
 
-    if (footerRef.current) {
-      observer.observe(footerRef.current);
+    if (footerNode) {
+      observer.observe(footerNode);
     }
 
     return () => {
-      if (footerRef.current) {
-        observer.unobserve(footerRef.current);
+      if (footerNode) {
+        observer.unobserve(footerNode);
       }
     };
   }, []);

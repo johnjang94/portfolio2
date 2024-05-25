@@ -1,0 +1,49 @@
+[
+  {
+    "id": 1,
+    "position": "Lead Software Developer",
+    "company": "Ruminate",
+    "dates": "October 2023 ~ December 2023",
+    "missionObjective": "Build a redesigned community-donation web pages and member-portals for a non-profit organization called Ruminate.",
+    "responsibilities": [
+      "Developed, maintained, and shipped production code for client's platform primarily using Typescript, React, Tailwind CSS, and hosted the site using Firebase.",
+      "Liaised with the UX Design team to speculate on how to let the food producers and the food inspectors to be connected locally within the reasonable measures of distance and time (and that could benefit the locals in the US) upon the request from the stakeholders of Ruminate.",
+      "Received appreciation and praise remarks from the stakeholders for successfully setting the initial stage of the member-portals (which is building about 18 web screens that respect mobile-responsiveness)."
+    ]
+  },
+  {
+    "id": 2,
+    "position": "Associate Software Developer",
+    "company": "Tech Fleet Professional Association",
+    "dates": "August 2023 ~ October 2023",
+    "missionObjective": "Mission Objective: build an intuitive and competitive Web3 application, named Kadena Web Blockchain, for novice and prospective NFT users",
+    "responsibilities": [
+      "use JavaScript, React, Tailwind CSS to build the friendly user interface for the NFT users (26 desktop web pages that are responsive, AODA-respectful, and 8 mobile pages specialized for technical UI difference)",
+      "liaised with the UX Design team to find out in what ways the blockchain web application can be educational and friendly to use to the prospective NFT users while taking opinions from the UX Design team and the UX Research team",
+      "actively participated in UX team and cross-team meetings to ensure that the new blockchain project can be well-launched (i.e. observed in Crazy-8 workshops, sharing opinions on low-fidelity and mid-fidelity wire-frame sketches, initiated to build the interface designs on VS Code Program based on the high-fidelity concept designs)"
+    ]
+  },
+  {
+    "id": 3,
+    "position": "Associate UX Designer",
+    "company": "Food Distro",
+    "dates": "April 2023 ~ July 2023",
+    "missionObjective": "Mission Objective: create a mobile app that connects the food donators and the food takers to reduce the food waste",
+    "responsibilities": [
+      "the design team liaised with the research team to find out issues in regards to the food waste (i.e. answering questions such as “what is the most challenging part when it comes to a) the disposal of the food waste or b) taking an action on unused leftover grocery?” or “in what circumstances do you find yourself stuck on looking for other sources of food?”)",
+      "after doing some investigation on existing platforms and analyzing their competitiveness, the team created about 42 mobile app screens, 7 mini user flows for an app called Food Distro that allows both the food donators (a.k.a givers) and the food takers to sign up, communicate each other, and be reserved to either donate or take away the food upon agreement",
+      "received a few optimistic feedback from demo participants regarding how new Food Distro app easily connects individuals better than Olio, BuyNothing or NextDoor"
+    ]
+  },
+  {
+    "id": 4,
+    "position": "UX Design Apprentice",
+    "company": "TeleVU Innovation Inc.",
+    "dates": "June 2022 ~ August 2022",
+    "missionObjective": "Mission Objective: redesign the employee portal for the medical professionals to improve the user experience of remote clinic sessions.",
+    "responsibilities": [
+      "received research outcomes from the client which identifies some of the pain points; brainstormed and iterated through the low-fidelity sketch to high-fidelity concepts; created prototypes to showcase how new design would work when the clinicians (as users) tried to interact with the product",
+      "designed 20+ web pages and 3+ mobile pages; created 4 user flows; usability testing came back with 90% of increased engagement among the clinicians who spared their time to participate in demo"
+    ]
+  }
+]

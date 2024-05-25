@@ -1,5 +1,5 @@
 import { RiInstagramFill } from "react-icons/ri";
-import HobbyNav from "../../components/second-nav/about/hobby-nav";
+import { HobbyNav } from "../../components/secondNav";
 import { useEffect } from "react";
 
 // photo

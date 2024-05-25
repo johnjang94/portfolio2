@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import TugoNav from "../../components/second-nav/design/tugo-nav";
+import { TuGoNav } from "../../components/designSubNav";
 
 export default function Tugo() {
   useEffect(() => {
@@ -7,7 +7,7 @@ export default function Tugo() {
   }, []);
   return (
     <div>
-      <TugoNav />
+      <TuGoNav />
     </div>
   );
 }

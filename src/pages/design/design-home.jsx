@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import DesignHomeNav from "../../components/second-nav/design/design-home-nav";
 import { useEffect } from "react";
 
 // Photo
@@ -38,7 +37,10 @@ export default function DesignHome() {
 
   return (
     <div>
-      <DesignHomeNav />
+      <div className="flex justify-between px-10 my-3">
+        <h1>UX DESIGN</h1>
+        <h1>OVERVIEW</h1>
+      </div>
       <h1 className="my-20 text-center md:text-5xl text-3xl">
         Welcome to my design home
       </h1>

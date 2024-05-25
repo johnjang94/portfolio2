@@ -11,7 +11,7 @@ const sections = [
   { id: "lessons-learned", label: "Lessons Learned from the Project" },
 ];
 
-export default function TelevuMenu() {
+export default function DesignNav() {
   const [selectedSection, setSelectedSection] = useState("background");
 
   const handleScroll = (id) => {
