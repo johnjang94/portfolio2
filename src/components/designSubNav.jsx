@@ -77,7 +77,7 @@ export function TelevuNav() {
           text: "Design Home",
           dropdown: [
             { to: "/design", text: "Design Home" },
-            { to: "/tugo", text: "TuGo Travel" },
+            { to: "/lock", text: "TuGo Travel" },
           ],
         },
       ]}
