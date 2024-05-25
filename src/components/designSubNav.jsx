@@ -77,6 +77,27 @@ export function TelevuNav() {
           text: "Design Home",
           dropdown: [
             { to: "/design", text: "Design Home" },
+            { to: "/lock", text: "Food Distro" },
+            { to: "/lock", text: "TuGo Travel" },
+          ],
+        },
+      ]}
+    />
+  );
+}
+
+export function FoodDistroNav() {
+  return (
+    <NavLinks
+      primaryTo="/food"
+      primaryText="FOOD DISTRO"
+      secondaryLinks={[
+        {
+          to: "/design",
+          text: "Design Home",
+          dropdown: [
+            { to: "/design", text: "Design Home" },
+            { to: "/televu", text: "TeleVU" },
             { to: "/lock", text: "TuGo Travel" },
           ],
         },
@@ -97,6 +118,7 @@ export function TuGoNav() {
           dropdown: [
             { to: "/design", text: "Design Home" },
             { to: "/televu", text: "TeleVU" },
+            { to: "/lock", text: "Food Distro" },
           ],
         },
       ]}

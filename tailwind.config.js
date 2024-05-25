@@ -10,6 +10,7 @@ export default {
         glow: "url('/src/assets/background.png')",
         design: "url('/src/assets/televu.png')",
         animated: "url('/src/assets/background2.gif')",
+        nightSky: "url('/src/assets/nightSky.jpeg')",
       },
     },
     keyframes: {

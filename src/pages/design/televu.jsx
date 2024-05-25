@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import Footer from "../../components/footer";
 import { TelevuNav } from "../../components/designSubNav";
 import DesignNav from "../../components/designNav";
 import { CgProfile } from "react-icons/cg";
+import Footer from "../../components/footer";
 
 // Photos - intro
 import Video from "../../assets/televu/video.png";

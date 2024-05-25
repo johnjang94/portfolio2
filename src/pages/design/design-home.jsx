@@ -3,6 +3,7 @@ import { useEffect } from "react";
 
 // Photo
 import TeleVU from "../../assets/televu.png";
+import FoodDistro from "../../assets/foodDistro.png";
 import TuGo from "../../assets/tugo.png";
 
 const data = [
@@ -11,7 +12,6 @@ const data = [
     imgSrc: TeleVU,
     imgAlt: "TeleVU",
     imgWidth: 600,
-    imgHeight: 400,
     title:
       "TeleVU Innovation Incorporation | Connecting clinicians and patients remotely",
     category: ["UX Research", "UX Design", "Web App"],
@@ -19,10 +19,20 @@ const data = [
   },
   {
     id: 2,
+    imgSrc: FoodDistro,
+    imgAlt: "Food Distro",
+    imgWidth: 250,
+    icon: "🔒",
+    title:
+      "Food Distro | Reducing Your Stress on Sharing Your Food with Others",
+    category: ["Product Design", "Mobile App"],
+    link: "/lock",
+  },
+  {
+    id: 3,
     imgSrc: TuGo,
     imgAlt: "TuGo",
     imgWidth: 570,
-    imgHeight: 400,
     icon: "🔒",
     title: "TuGo Travel Insurance | Assurance in your hands wherever you go",
     category: ["UX Design", "Web Redesign", "Currently in Development"],
@@ -44,7 +54,7 @@ export default function DesignHome() {
       <h1 className="my-20 text-center md:text-5xl text-3xl">
         Welcome to my design home
       </h1>
-      <section className="my-10 py-10 md:mx-36 mx-12 grid-cols-2 md:flex gap-20 space-y-20 md:space-y-0">
+      <section className="my-10 py-10 md:mx-36 mx-12 grid grid-cols-1 md:grid-cols-2 gap-20 space-y-20 md:space-y-0">
         {data.map((item) => (
           <div
             key={item.id}
@@ -55,8 +65,7 @@ export default function DesignHome() {
                 src={item.imgSrc}
                 alt={item.imgAlt}
                 width={item.imgWidth}
-                height={item.imgHeight}
-                className="rounded-xl hover:shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,rgba(0,0,0,0.3)_0px_3px_7px_-3px]"
+                className="rounded-xl hover:shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,rgba(0,0,0,0.3)_0px_3px_7px_-3px] mx-auto"
               />
             </Link>
             <p className="my-3">
