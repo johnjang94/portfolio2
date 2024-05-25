@@ -1,8 +1,10 @@
-import { queryClient, QueryClientProvider } from "@tanstack/react-query";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Outlet, useLocation } from "react-router-dom";
 import Nav from "../components/mainNav";
 import Banner from "../components/banner";
 import { useEffect, useState } from "react";
+
+const queryClient = new QueryClient();
 
 export default function Root() {
   const { pathname } = useLocation();
