@@ -2,43 +2,8 @@ import { useEffect, useState } from "react";
 import { TelevuNav } from "../../components/designSubNav";
 import DesignNav from "../../components/designNav";
 import { CgProfile } from "react-icons/cg";
+import { televuImages } from "../../utils/designImages";
 import Footer from "../../components/footer";
-
-// GENERAL OVERVIEW
-import Video from "../../assets/televu/overview/video.png";
-import ReportVU from "../../assets/televu/overview/reportvu.png";
-import List from "../../assets/televu/overview/list.png";
-
-// COMPETITIVE ANALYSIS
-import Microsoft from "../../assets/televu/competitive-analysis/Microsoft-Teams-logo.png";
-import GoogleMeet from "../../assets/televu/competitive-analysis/Google-Meet-logo.png";
-
-// ITERATION
-import Prompt1 from "../../assets/televu/iteration/prompt1.png";
-import Prompt2 from "../../assets/televu/iteration/prompt2.png";
-import Prompt3 from "../../assets/televu/iteration/prompt3.png";
-import Prompt4 from "../../assets/televu/iteration/prompt4.png";
-import Prompt5 from "../../assets/televu/iteration/prompt5.png";
-import Prompt6 from "../../assets/televu/iteration/prompt6.png";
-
-// DESIGN PROCESS
-import LowFi1 from "../../assets/televu/design-process/Low-Fi1.png";
-import LowFi2 from "../../assets/televu/design-process/Low-Fi2.png";
-import LowFi3 from "../../assets/televu/design-process/Low-Fi3.png";
-
-import HighFi1 from "../../assets/televu/design-process/High-Fi1.png";
-import HighFi2 from "../../assets/televu/design-process/High-Fi2.png";
-import HighFi3 from "../../assets/televu/design-process/High-Fi3.png";
-
-import DesignSystem from "../../assets/televu/design-process/design-system.png";
-import Demo from "../../assets/televu/design-process/televu_demo.mp4";
-
-// DESIGN CHANGES
-import OldDesign from "../../assets/televu/design-changes/old-design1.png";
-import NewDesign from "../../assets/televu/design-changes/new-design1.png";
-
-import OldDesign2 from "../../assets/televu/design-changes/old-design2.png";
-import NewDesign2 from "../../assets/televu/design-changes/new-design2.png";
 
 export default function Televu() {
   const [currentSection, setCurrentSection] = useState("background");
@@ -91,8 +56,12 @@ export default function Televu() {
     <div>
       <TelevuNav />
       <header>
-        <h3 className="mt-14 mb-4 w-3/6 mx-auto text-2xl">Product Design</h3>
-        <h1 className="mt-9 w-3/6 mx-auto text-5xl">TELEVU</h1>
+        <h3 className="mt-14 mb-4 md:w-7/12 md:text-center mx-10 md:mx-5 text-2xl">
+          Product Design
+        </h3>
+        <h1 className="mt-9 md:w-7/12 md:text-center mx-10 md:mx-5 text-5xl">
+          TELEVU
+        </h1>
         <p className="mt-4 md:w-3/6 md:mx-auto mx-10 text-2xl">
           A video-call service that attains a top-notch security system and that
           is used for the medical professionals to assist remote diagnosis and
@@ -117,19 +86,19 @@ export default function Televu() {
       </section>
       <section className="bg-slate-500 p-5 rounded-xl w-5/6 mx-auto">
         <img
-          src={Video}
+          src={televuImages.Video}
           alt="Video Conference screenshot"
           width={500}
           className=" md:left-1/4 mx-auto"
         />
         <img
-          src={ReportVU}
+          src={televuImages.ReportVU}
           alt="ReportVU screen capture"
           width={500}
           className="my-5 mx-auto md:mx-0"
         />
         <img
-          src={List}
+          src={televuImages.List}
           alt="List of Contact"
           width={500}
           className="my-5 md:relative md:left-1/4 mx-auto"
@@ -142,7 +111,7 @@ export default function Televu() {
         <div className="md:my-28 mb-28 px-7 md:w-4/6">
           {/* ================ BACKGROUND =================== */}
           <div id="background">
-            <h3 id="background" className="text-2xl">
+            <h3 id="background" className="text-2xl mt-20 md:mt-0">
               BACKGROUND
             </h3>
             <h1 className="text-4xl font-medium">
@@ -269,13 +238,13 @@ export default function Televu() {
             </p>
             <div className="md:flex md:justify-between my-5 space-y-5 md:space-y-0">
               <img
-                src={Prompt1}
+                src={televuImages.Prompt1}
                 alt="Prompt 1"
                 width={350}
                 className="mx-auto md:mx-0"
               />
               <img
-                src={Prompt2}
+                src={televuImages.Prompt2}
                 alt="Prompt 2"
                 width={350}
                 className="mx-auto md:mx-0"
@@ -287,13 +256,13 @@ export default function Televu() {
             </p>
             <div className="md:flex md:justify-between my-5 space-y-5 md:space-y-0">
               <img
-                src={Prompt3}
+                src={televuImages.Prompt3}
                 alt="Prompt 3"
                 width={350}
                 className="mx-auto md:mx-0"
               />
               <img
-                src={Prompt4}
+                src={televuImages.Prompt4}
                 alt="Prompt 4"
                 width={350}
                 className="mx-auto md:mx-0"
@@ -305,13 +274,13 @@ export default function Televu() {
             </p>
             <div className="md:flex md:justify-between my-5 space-y-5 md:space-y-0">
               <img
-                src={Prompt5}
+                src={televuImages.Prompt5}
                 alt="Prompt 5"
                 width={350}
                 className="mx-auto md:mx-0"
               />
               <img
-                src={Prompt6}
+                src={televuImages.Prompt6}
                 alt="Prompt 6"
                 width={350}
                 className="mx-auto md:mx-0"
@@ -330,13 +299,13 @@ export default function Televu() {
             </p>
             <div className="md:flex md:justify-between my-5 space-y-5 md:space-y-0">
               <img
-                src={Microsoft}
+                src={televuImages.Microsoft}
                 alt="Microsoft Office Teams"
                 width={350}
                 className="bg-white rounded-xl mx-auto md:mx-0"
               />
               <img
-                src={GoogleMeet}
+                src={televuImages.GoogleMeet}
                 alt="Google Meet logo"
                 width={350}
                 className="mx-auto md:mx-0"
@@ -368,19 +337,19 @@ export default function Televu() {
             <p className="text-2xl">&#x276E; Low-Fi &#x276F;</p>
             <div className="md:flex md:justify-between my-5 space-y-5 md:space-y-0 md:gap-5">
               <img
-                src={LowFi1}
+                src={televuImages.LowFi1}
                 alt="Low-Fi 1"
                 width={300}
                 className="mx-auto md:mx-0"
               />
               <img
-                src={LowFi2}
+                src={televuImages.LowFi2}
                 alt="Low-Fi 2"
                 width={300}
                 className="mx-auto md:mx-0"
               />
               <img
-                src={LowFi3}
+                src={televuImages.LowFi3}
                 alt="Low-Fi 3"
                 width={300}
                 className="mx-auto md:mx-0"
@@ -393,19 +362,19 @@ export default function Televu() {
             </span>
             <div className="md:flex md:justify-between my-5 space-y-5 md:space-y-0 md:gap-5">
               <img
-                src={HighFi1}
+                src={televuImages.HighFi1}
                 alt="High-Fi 1"
                 width={300}
                 className="mx-auto md:mx-0"
               />
               <img
-                src={HighFi2}
+                src={televuImages.HighFi2}
                 alt="High-Fi 2"
                 width={300}
                 className="mx-auto md:mx-0"
               />
               <img
-                src={HighFi3}
+                src={televuImages.HighFi3}
                 alt="High-Fi 3"
                 width={300}
                 className="mx-auto md:mx-0"
@@ -415,14 +384,14 @@ export default function Televu() {
               &#x276E; Final Demo &#x276F;
             </p>
             <video width="700" height="500" controls className="mx-auto">
-              <source src={Demo} type="video/mp4" />
+              <source src={televuImages.TeleVUDemo} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
             <p className="text-2xl text-center my-3">
               &#x276E; Design Systems &#x276F;
             </p>
             <img
-              src={DesignSystem}
+              src={televuImages.DesignSystem}
               alt="Design System"
               width={800}
               className="mx-auto"
@@ -470,12 +439,12 @@ export default function Televu() {
               </div>
               <div className="md:flex md:items-center md:justify-between space-y-5 md:space-y-0 md:mb-5">
                 <img
-                  src={OldDesign}
+                  src={televuImages.OldDesign}
                   alt="Old call log"
                   className="mx-auto md:mx-0"
                 />
                 <img
-                  src={NewDesign}
+                  src={televuImages.NewDesign}
                   alt="New call log"
                   className="mx-auto md:mx-0"
                 />
@@ -485,12 +454,12 @@ export default function Televu() {
               <h4 className="text-2xl my-3 text-center md:hidden">New</h4>
               <div className="md:flex md:items-center md:justify-between space-y-5 md:space-y-0">
                 <img
-                  src={OldDesign2}
+                  src={televuImages.OldDesign2}
                   alt="Old Video-call session"
                   className="mx-auto md:mx-0"
                 />
                 <img
-                  src={NewDesign2}
+                  src={televuImages.NewDesign2}
                   alt="New Video-call session"
                   className="mx-auto md:mx-0"
                 />
