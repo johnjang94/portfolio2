@@ -8,6 +8,8 @@ import Work from "./work/work";
 import DesignHome from "./designProject";
 import DevelopmentHome from "./developmentProject";
 
+const titles = ["UX Designer", "Product Designer", "Software Developer"];
+
 export default function Home() {
   const workRef = useRef(null);
   const designRef = useRef(null);
@@ -80,9 +82,15 @@ export default function Home() {
       <header>
         <h1 className="lg:text-9xl text-7xl">John Jang</h1>
         <div className="rotating-text-container lg:mt-5 mt-5 lg:text-3xl text-3xl">
-          <h2 className="rotating-text">UX Designer</h2>
-          <h2 className="rotating-text">Product Designer</h2>
-          <h2 className="rotating-text">Software Developer</h2>
+          {titles.map((title, index) => (
+            <h2
+              key={index}
+              className="rotating-text"
+              style={{ animationDelay: `${index * 2}s` }}
+            >
+              {title}
+            </h2>
+          ))}
         </div>
         <h4 className="mt-6 lg:text-3xl text-xl">
           I specialize in designing and building digital products for the web.

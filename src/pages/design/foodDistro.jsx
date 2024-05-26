@@ -98,7 +98,7 @@ export default function FoodDistro() {
         </div>
         <div className="md:my-28 mb-28 px-7 md:w-4/6">
           {/* ================ BACKGROUND =================== */}
-          <div id="background">
+          <div>
             <h3 id="background" className="text-2xl">
               BACKGROUND
             </h3>
@@ -126,7 +126,7 @@ export default function FoodDistro() {
             </p>
           </div>
           {/* =========================== RESEARCH =================== */}
-          <div id="research">
+          <div>
             <h3 id="research" className="text-2xl">
               RESEARCH
             </h3>

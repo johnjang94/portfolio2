@@ -110,7 +110,7 @@ export default function Televu() {
         </div>
         <div className="md:my-28 mb-28 px-7 md:w-4/6">
           {/* ================ BACKGROUND =================== */}
-          <div id="background">
+          <div>
             <h3 id="background" className="text-2xl mt-20 md:mt-0">
               BACKGROUND
             </h3>
@@ -137,7 +137,7 @@ export default function Televu() {
             </p>
           </div>
           {/* =========================== RESEARCH =================== */}
-          <div id="research">
+          <div>
             <h3 id="research" className="text-2xl">
               RESEARCH
             </h3>
@@ -222,8 +222,10 @@ export default function Televu() {
             </ul>
           </div>
           {/* ======================== ITERATION =================== */}
-          <div id="iteration">
-            <h3 className="text-2xl mt-10">ITERATION</h3>
+          <div>
+            <h3 id="iteration" className="text-2xl mt-10">
+              ITERATION
+            </h3>
             <h1 className="text-4xl font-medium mb-5">
               How might we help the clinicians to use the platform faster?
             </h1>
@@ -288,8 +290,10 @@ export default function Televu() {
             </div>
           </div>
           {/* ======================== COMPETITIVE ANALYSIS =================== */}
-          <div id="competitive-analysis">
-            <h3 className="text-2xl mt-10">COMPETITIVE ANALYSIS</h3>
+          <div>
+            <h3 id="competitive-analysis" className="text-2xl mt-10">
+              COMPETITIVE ANALYSIS
+            </h3>
             <h1 className="text-4xl font-medium mb-5">
               Well-established brands were well-interacting with users
             </h1>
@@ -329,8 +333,10 @@ export default function Televu() {
             </ul>
           </div>
           {/* ======================== DESIGN PROCESS =================== */}
-          <div id="design-process">
-            <h3 className="text-2xl mt-10">DESIGN PROCESS</h3>
+          <div>
+            <h3 id="design-process" className="text-2xl mt-10">
+              DESIGN PROCESS
+            </h3>
             <h1 className="text-4xl font-medium mb-5">
               Redesigning the Login, the Dashboard, and the Video-call Window
             </h1>
@@ -398,8 +404,10 @@ export default function Televu() {
             />
           </div>
           {/* =========================== USABILITY TESTING =================== */}
-          <div className="my-10" id="usability-testing">
-            <h3 className="text-2xl">USABILITY TESTING</h3>
+          <div className="my-10">
+            <h3 id="usability-testing" className="text-2xl">
+              USABILITY TESTING
+            </h3>
             <h1 className="text-3xl md:text-4xl font-medium">
               A moderated Usability Testing with 8 participants
             </h1>
@@ -427,8 +435,10 @@ export default function Televu() {
             </ul>
           </div>
           {/* =========================== DESIGN CHANGES =================== */}
-          <div className="my-10" id="design-changes">
-            <h3 className="text-2xl">DESIGN CHANGES</h3>
+          <div className="my-10">
+            <h3 id="design-changes" className="text-2xl">
+              DESIGN CHANGES
+            </h3>
             <div className="md:justify-between md:items-center">
               <h4 className="text-2xl my-3 text-center md:hidden">Old</h4>
               <div className="hidden text-2xl my-3 md:block">
@@ -467,8 +477,10 @@ export default function Televu() {
             </div>
           </div>
           {/* =========================== LESSONS LEARNED =================== */}
-          <div className="my-10" id="lessons-learned">
-            <h3 className="text-2xl">LESSONS LEARNED</h3>
+          <div className="my-10">
+            <h3 id="lessons-learned" className="text-2xl">
+              LESSONS LEARNED
+            </h3>
             <h1 className="text-4xl font-medium my-3">
               It is important to learn about the business structure.
             </h1>

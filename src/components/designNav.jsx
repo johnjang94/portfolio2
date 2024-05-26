@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import PropTypes from "prop-types";
 
 const sections = [
   { id: "background", label: "Background" },
@@ -11,8 +12,8 @@ const sections = [
   { id: "lessons-learned", label: "Lessons Learned from the Project" },
 ];
 
-export default function DesignNav() {
-  const [selectedSection, setSelectedSection] = useState("background");
+export default function DesignNav({ currentSection }) {
+  const [selectedSection, setSelectedSection] = useState(currentSection);
 
   const handleScroll = (id) => {
     const element = document.getElementById(id);
@@ -47,6 +48,10 @@ export default function DesignNav() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    setSelectedSection(currentSection);
+  }, [currentSection]);
+
   return (
     <div className="sticky top-10 z-10">
       <div className="mx-10 mt-28 space-y-5 p-2 border-l-4 border-l-zinc-200 hidden md:block">
@@ -66,3 +71,7 @@ export default function DesignNav() {
     </div>
   );
 }
+
+DesignNav.propTypes = {
+  currentSection: PropTypes.string.isRequired,
+};
