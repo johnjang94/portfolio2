@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { AboutNav } from "../../components/secondNav";
-import Profile from "../../assets/profile.png";
+import Profile from "../../assets/accessory/profile.png";
 
 export default function About() {
   useEffect(() => {

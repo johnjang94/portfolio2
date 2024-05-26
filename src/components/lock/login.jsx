@@ -2,14 +2,16 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function Login() {
+  const navigate = useNavigate();
+  const TUGO = import.meta.env.VITE_TUGO;
+  const DISTRO = import.meta.env.VITE_DISTRO;
+  const [errorMessage, setErrorMessage] = useState("");
+  const [attemptCount, setAttemptCount] = useState(0);
+
   const [inputBg, setInputBg] = useState("bg-gray-200");
   const [showMessage, setShowMessage] = useState(false);
   const [showButton, setShowButton] = useState(true);
   const [password, setPassword] = useState("");
-  const navigate = useNavigate();
-  const CORRECT_PASSWORD = import.meta.env.VITE_PASSWORD;
-  const [errorMessage, setErrorMessage] = useState("");
-  const [attemptCount, setAttemptCount] = useState(0);
 
   const handleFocus = () => {
     setInputBg("bg-white");
@@ -31,8 +33,10 @@ export default function Login() {
       navigate("/home");
       return;
     }
-    if (password === CORRECT_PASSWORD) {
+    if (password === TUGO) {
       navigate("/tugo");
+    } else if (password === DISTRO) {
+      navigate("/food");
     } else {
       setAttemptCount(attemptCount + 1);
       const remainingAttempts = 5 - attemptCount - 1;
@@ -47,11 +51,11 @@ export default function Login() {
   };
 
   return (
-    <div onSubmit={handleSubmit}>
+    <div>
       <div className="p-28 rounded-2xl bg-white gap-10 my-10 mx-auto w-fit opacity-border">
         <h1 className="text-center mb-20 text-4xl">Password?</h1>
         {errorMessage && <p className="text-red-500">{errorMessage}</p>}
-        <form className="flex items-center mb-3">
+        <form className="flex items-center mb-3" onSubmit={handleSubmit}>
           <input
             type="password"
             className={`p-2 w-full rounded-l-lg ${inputBg} hover:bg-slate-100`}

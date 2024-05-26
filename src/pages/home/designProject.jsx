@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 // Photos
-import TeleVU from "../../assets/televu.png";
+import TeleVU from "../../assets/design/televu.png";
 
 export default function DesignHome() {
   return (

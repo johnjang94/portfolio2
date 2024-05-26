@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 
 // Photo
-import TeleVU from "../../assets/televu.png";
-import FoodDistro from "../../assets/foodDistro.png";
-import TuGo from "../../assets/tugo.png";
+import TeleVU from "../../assets/design/televu.png";
+import FoodDistro from "../../assets/design/foodDistro.png";
+import TuGo from "../../assets/design/tugo.png";
 
 const data = [
   {

@@ -2,9 +2,9 @@ import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
 // Photos
-import DesignHome from "../assets/design-home.jpeg";
-import Profile from "../assets/profile.png";
-import Development from "../assets/development.png";
+import DesignHome from "../assets/footer-pictures/design-home.jpeg";
+import Profile from "../assets/accessory/profile.png";
+import Development from "../assets/footer-pictures/development.png";
 
 export default function Footer() {
   const [opacity, setOpacity] = useState(0);

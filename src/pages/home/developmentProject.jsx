@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 // Photos
-import Ruminate from "../../assets/ruminate.png";
+import Ruminate from "../../assets/development/ruminate.png";
 
 export default function DevelopmentHome() {
   return (

@@ -1,6 +1,6 @@
-import Ruminate from "../assets/ruminate.png";
-import KBlock from "../assets/kblock.png";
-import Portfolio4 from "../assets/portfolio-v4.png";
+import Ruminate from "../assets/development/ruminate.png";
+import KBlock from "../assets/development/kblock.png";
+import Portfolio4 from "../assets/development/portfolio-v4.png";
 
 const images = {
   Ruminate,

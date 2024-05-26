@@ -3,12 +3,12 @@ import { HobbyNav } from "../../components/secondNav";
 import { useEffect } from "react";
 
 // photo
-import BlackSwan from "../../assets/black_swan.png";
-import BTBT from "../../assets/BTBT.png";
-import BatterUp from "../../assets/batter_up.png";
-import Banff from "../../assets/banff.png";
-import Islands from "../../assets/islands.png";
-import Park from "../../assets/park.png";
+import BlackSwan from "../../assets/dance/black_swan.png";
+import BTBT from "../../assets/dance/BTBT.png";
+import BatterUp from "../../assets/dance/batter_up.png";
+import Banff from "../../assets/travel/banff.png";
+import Islands from "../../assets/travel/islands.png";
+import Park from "../../assets/travel/park.png";
 
 export default function Hobby() {
   useEffect(() => {

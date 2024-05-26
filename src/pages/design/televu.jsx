@@ -4,38 +4,41 @@ import DesignNav from "../../components/designNav";
 import { CgProfile } from "react-icons/cg";
 import Footer from "../../components/footer";
 
-// Photos - intro
-import Video from "../../assets/televu/video.png";
-import ReportVU from "../../assets/televu/reportvu.png";
-import List from "../../assets/televu/list.png";
+// GENERAL OVERVIEW
+import Video from "../../assets/televu/overview/video.png";
+import ReportVU from "../../assets/televu/overview/reportvu.png";
+import List from "../../assets/televu/overview/list.png";
 
-// Photos - content
-import Prompt1 from "../../assets/prompt1.png";
-import Prompt2 from "../../assets/prompt2.png";
-import Prompt3 from "../../assets/prompt3.png";
-import Prompt4 from "../../assets/prompt4.png";
-import Prompt5 from "../../assets/prompt5.png";
-import Prompt6 from "../../assets/prompt6.png";
+// COMPETITIVE ANALYSIS
+import Microsoft from "../../assets/televu/competitive-analysis/Microsoft-Teams-logo.png";
+import GoogleMeet from "../../assets/televu/competitive-analysis/Google-Meet-logo.png";
 
-import Microsoft from "../../assets/Microsoft-Teams-logo.png";
-import GoogleMeet from "../../assets/Google-Meet-logo.png";
+// ITERATION
+import Prompt1 from "../../assets/televu/iteration/prompt1.png";
+import Prompt2 from "../../assets/televu/iteration/prompt2.png";
+import Prompt3 from "../../assets/televu/iteration/prompt3.png";
+import Prompt4 from "../../assets/televu/iteration/prompt4.png";
+import Prompt5 from "../../assets/televu/iteration/prompt5.png";
+import Prompt6 from "../../assets/televu/iteration/prompt6.png";
 
-import LowFi1 from "../../assets/Low-Fi1.png";
-import LowFi2 from "../../assets/Low-Fi2.png";
-import LowFi3 from "../../assets/Low-Fi3.png";
+// DESIGN PROCESS
+import LowFi1 from "../../assets/televu/design-process/Low-Fi1.png";
+import LowFi2 from "../../assets/televu/design-process/Low-Fi2.png";
+import LowFi3 from "../../assets/televu/design-process/Low-Fi3.png";
 
-import HighFi1 from "../../assets/High-Fi1.png";
-import HighFi2 from "../../assets/High-Fi2.png";
-import HighFi3 from "../../assets/High-Fi3.png";
+import HighFi1 from "../../assets/televu/design-process/High-Fi1.png";
+import HighFi2 from "../../assets/televu/design-process/High-Fi2.png";
+import HighFi3 from "../../assets/televu/design-process/High-Fi3.png";
 
-import DesignSystem from "../../assets/design-system.png";
-import Demo from "../../assets/televu_demo.mp4";
+import DesignSystem from "../../assets/televu/design-process/design-system.png";
+import Demo from "../../assets/televu/design-process/televu_demo.mp4";
 
-import OldDesign from "../../assets/old-design1.png";
-import NewDesign from "../../assets/new-design1.png";
+// DESIGN CHANGES
+import OldDesign from "../../assets/televu/design-changes/old-design1.png";
+import NewDesign from "../../assets/televu/design-changes/new-design1.png";
 
-import OldDesign2 from "../../assets/old-design2.png";
-import NewDesign2 from "../../assets/new-design2.png";
+import OldDesign2 from "../../assets/televu/design-changes/old-design2.png";
+import NewDesign2 from "../../assets/televu/design-changes/new-design2.png";
 
 export default function Televu() {
   const [currentSection, setCurrentSection] = useState("background");
