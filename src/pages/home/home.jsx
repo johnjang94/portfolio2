@@ -94,8 +94,8 @@ export default function Home() {
         </div>
         <h4 className="mt-6 lg:text-3xl text-xl">
           I specialize in designing and building digital products for the web.
-          Currently, I am focused on building an e-commerce platform at Tech
-          Fleet.
+          Currently, I am focused on redesigning a web application at TuGo
+          Travel Insurance.
         </h4>
         <div>
           <Link
