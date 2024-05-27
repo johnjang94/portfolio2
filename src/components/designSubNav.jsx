@@ -26,7 +26,7 @@ function NavLinks({ primaryTo, primaryText, secondaryLinks }) {
             </button>
             {/* Check if dropdown should be displayed */}
             {activeDropdown === index && link.dropdown && (
-              <div className="absolute left-0 mt-2 w-32 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+              <div className="absolute left-0 mt-2 w-28 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
                 <div
                   className="py-1"
                   role="menu"
@@ -36,7 +36,7 @@ function NavLinks({ primaryTo, primaryText, secondaryLinks }) {
                   {link.dropdown.map((dropdownLink, dropdownIndex) => (
                     <Link key={dropdownIndex} to={dropdownLink.to}>
                       <button
-                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                        className="block p-1 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:w-full"
                         role="menuitem"
                         // Close dropdown on item click
                         onClick={() => setActiveDropdown(null)}

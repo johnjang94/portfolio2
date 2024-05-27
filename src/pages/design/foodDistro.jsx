@@ -55,10 +55,10 @@ export default function FoodDistro() {
     <div>
       <FoodDistroNav />
       <header>
-        <h3 className="mt-14 mb-4 md:w-7/12 md:text-center mx-10 md:mx-6 text-2xl">
+        <h3 className="mt-14 mb-4 md:w-7/12 md:text-center mx-10 text-2xl">
           Product Design
         </h3>
-        <h1 className="mt-9 md:w-8/12 md:text-center mx-10 md:mx-7 text-5xl">
+        <h1 className="mt-9 md:w-8/12 md:text-center mx-10 md:mx-14 text-5xl">
           FOOD DISTRO
         </h1>
         <p className="mt-4 md:w-3/6 md:mx-auto mx-10 text-2xl">

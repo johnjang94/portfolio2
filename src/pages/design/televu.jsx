@@ -56,12 +56,10 @@ export default function Televu() {
     <div>
       <TelevuNav />
       <header>
-        <h3 className="mt-14 mb-4 md:w-7/12 md:text-center mx-10 md:mx-5 text-2xl">
+        <h3 className="mt-14 mb-4 md:w-7/12 md:text-center mx-10 text-2xl">
           Product Design
         </h3>
-        <h1 className="mt-9 md:w-7/12 md:text-center mx-10 md:mx-5 text-5xl">
-          TELEVU
-        </h1>
+        <h1 className="mt-9 md:w-7/12 md:text-center mx-10 text-5xl">TELEVU</h1>
         <p className="mt-4 md:w-3/6 md:mx-auto mx-10 text-2xl">
           A video-call service that attains a top-notch security system and that
           is used for the medical professionals to assist remote diagnosis and
