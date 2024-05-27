@@ -11,9 +11,9 @@ export default function Work() {
 
   const getTextSize = (job) => {
     if (job.id === 2) {
-      return "text-lg md:text-base";
+      return "md:text-lg";
     } else {
-      return "text-xl";
+      return "md:text-xl";
     }
   };
 
@@ -52,7 +52,7 @@ export default function Work() {
   };
 
   return (
-    <div className="my-8">
+    <div className="my-8 md:-mx-20">
       <header className="md:flex justify-between items-center">
         <h1 className="md:text-4xl text-2xl text-center md:text-start mb-3">
           PLACES I WORKED AT
@@ -60,13 +60,13 @@ export default function Work() {
         <div className="bg-slate-400 md:w-3/6 w-full h-1"></div>
       </header>
       <section className="flex flex-col md:flex-row">
-        <div className="border-r border-gray-500 md:w-4/12 space-y-8 my-6 md:block hidden">
+        <div className="border-r border-gray-500 md:w-5/12 md:-mx-1 space-y-8 my-6 md:block hidden">
           {renderJobButtons()}
         </div>
         <div className="md:hidden grid-cols-3 space-x-3 mx-auto border-b-2 border-gray-300">
           {renderJobButtons()}
         </div>
-        <div className="md:w-4/6 pl-4">{renderSelectedJobInfo()}</div>
+        <div className="md:w-5/6 pl-4">{renderSelectedJobInfo()}</div>
       </section>
     </div>
   );
