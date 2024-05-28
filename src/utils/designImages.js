@@ -67,12 +67,22 @@ import Listing from "../assets/food-distro/overview/listing.png";
 import Search from "../assets/food-distro/overview/search.png";
 import Messenger from "../assets/food-distro/overview/messenger.png";
 
+// RESEARCH
+import Demographics from "../assets/food-distro/research/demographic.png";
+import AppExposure from "../assets/food-distro/research/pie-chart.png";
+import Experience from "../assets/food-distro/research/age&exp.png";
+import Experience2 from "../assets/food-distro/research/age&exp2.png";
+
 import DistroDemo from "../assets/food-distro/overview/demo1.mp4";
 
 export const distroImages = {
   Listing,
   Search,
   Messenger,
+  Demographics,
+  AppExposure,
+  Experience,
+  Experience2,
 };
 
 export const distroVideo = {
