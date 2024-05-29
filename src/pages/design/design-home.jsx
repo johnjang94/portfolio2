@@ -9,27 +9,6 @@ import TuGo from "../../assets/design/tugo.png";
 const data = [
   {
     id: 1,
-    imgSrc: TeleVU,
-    imgAlt: "TeleVU",
-    imgWidth: 600,
-    title:
-      "TeleVU Innovation Incorporation | Connecting clinicians and patients remotely",
-    category: ["UX Research", "UX Design", "Web App"],
-    link: "/televu",
-  },
-  {
-    id: 2,
-    imgSrc: FoodDistro,
-    imgAlt: "Food Distro",
-    imgWidth: 250,
-    icon: "🔒",
-    title:
-      "Food Distro | Reducing Your Stress on Sharing Your Food with Others",
-    category: ["Product Design", "Mobile App"],
-    link: "/food",
-  },
-  {
-    id: 3,
     imgSrc: TuGo,
     imgAlt: "TuGo",
     imgWidth: 570,
@@ -37,6 +16,27 @@ const data = [
     title: "TuGo Travel Insurance | Assurance in your hands wherever you go",
     category: ["UX Design", "Web Redesign", "Currently in Development"],
     link: "/lock",
+  },
+  {
+    id: 2,
+    imgSrc: FoodDistro,
+    imgAlt: "Food Distro",
+    imgWidth: 265,
+    icon: "",
+    title:
+      "Food Distro | Reducing Your Stress on Sharing Your Food with Others",
+    category: ["Product Design", "Mobile App"],
+    link: "/food",
+  },
+  {
+    id: 3,
+    imgSrc: TeleVU,
+    imgAlt: "TeleVU",
+    imgWidth: 600,
+    title:
+      "TeleVU Innovation Incorporation | Connecting clinicians and patients remotely",
+    category: ["UX Research", "UX Design", "Web App"],
+    link: "/televu",
   },
 ];
 
