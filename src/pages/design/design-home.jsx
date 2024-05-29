@@ -26,7 +26,7 @@ const data = [
     title:
       "Food Distro | Reducing Your Stress on Sharing Your Food with Others",
     category: ["Product Design", "Mobile App"],
-    link: "/lock",
+    link: "/food",
   },
   {
     id: 3,
