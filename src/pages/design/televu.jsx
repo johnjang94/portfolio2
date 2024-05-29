@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { TelevuNav } from "../../components/designSubNav";
-import DesignNav from "../../components/designNav";
+import ReDesignNav from "../../components/redesignNav";
 import { CgProfile } from "react-icons/cg";
 import { televuImages } from "../../utils/designImages";
 import Footer from "../../components/footer";
@@ -104,7 +104,7 @@ export default function Televu() {
       </section>
       <section className="md:flex md:flex-1">
         <div>
-          <DesignNav currentSection={currentSection} />
+          <ReDesignNav currentSection={currentSection} />
         </div>
         <div className="md:my-28 mb-28 px-7 md:w-4/6">
           {/* ================ BACKGROUND =================== */}
@@ -219,10 +219,53 @@ export default function Televu() {
               <li className="mx-5">the recorded videos cannot be modified</li>
             </ul>
           </div>
-          {/* ======================== ITERATION =================== */}
+          {/* ======================== COMPETITIVE ANALYSIS =================== */}
           <div>
-            <h3 id="iteration" className="text-2xl mt-10">
-              ITERATION
+            <h3 id="competitive-analysis" className="text-2xl mt-10">
+              COMPETITIVE ANALYSIS
+            </h3>
+            <h1 className="text-4xl font-medium mb-5">
+              Well-established brands were well-interacting with users
+            </h1>
+            <p className="text-2xl">
+              We compared other platforms that are renowned and well-established
+              that many people use:
+            </p>
+            <div className="md:flex md:justify-between my-5 space-y-5 md:space-y-0">
+              <img
+                src={televuImages.Microsoft}
+                alt="Microsoft Office Teams"
+                width={350}
+                className="bg-white rounded-xl mx-auto md:mx-0"
+              />
+              <img
+                src={televuImages.GoogleMeet}
+                alt="Google Meet logo"
+                width={350}
+                className="mx-auto md:mx-0"
+              />
+            </div>
+            <ul className="text-2xl list-disc">
+              These brands were...
+              <li className="text-2xl mx-5">
+                quietly notifying the users if the users have decided to record
+                the meeting
+              </li>
+              <li className="text-2xl mx-5">
+                the icons were cleaned for the video-call session (only
+                containing what&#39;s most needed)
+              </li>
+              <li className="text-2xl mx-5">
+                the users did not receive any notification on what happened
+                after the recording was stopped, but the users were able to
+                easily find the records on their dashboard
+              </li>
+            </ul>
+          </div>
+          {/* ======================== DESIGN PROCESS =================== */}
+          <div>
+            <h3 id="design-process" className="text-2xl mt-10">
+              DESIGN PROCESS - Brainstorm
             </h3>
             <h1 className="text-4xl font-medium mb-5">
               How might we help the clinicians to use the platform faster?
@@ -287,54 +330,11 @@ export default function Televu() {
               />
             </div>
           </div>
-          {/* ======================== COMPETITIVE ANALYSIS =================== */}
           <div>
-            <h3 id="competitive-analysis" className="text-2xl mt-10">
-              COMPETITIVE ANALYSIS
+            <h3 className="text-2xl mt-10">
+              DESIGN PROCESS - Sketch iteration
             </h3>
-            <h1 className="text-4xl font-medium mb-5">
-              Well-established brands were well-interacting with users
-            </h1>
-            <p className="text-2xl">
-              We compared other platforms that are renowned and well-established
-              that many people use:
-            </p>
-            <div className="md:flex md:justify-between my-5 space-y-5 md:space-y-0">
-              <img
-                src={televuImages.Microsoft}
-                alt="Microsoft Office Teams"
-                width={350}
-                className="bg-white rounded-xl mx-auto md:mx-0"
-              />
-              <img
-                src={televuImages.GoogleMeet}
-                alt="Google Meet logo"
-                width={350}
-                className="mx-auto md:mx-0"
-              />
-            </div>
-            <ul className="text-2xl list-disc">
-              These brands were...
-              <li className="text-2xl mx-5">
-                quietly notifying the users if the users have decided to record
-                the meeting
-              </li>
-              <li className="text-2xl mx-5">
-                the icons were cleaned for the video-call session (only
-                containing what&#39;s most needed)
-              </li>
-              <li className="text-2xl mx-5">
-                the users did not receive any notification on what happened
-                after the recording was stopped, but the users were able to
-                easily find the records on their dashboard
-              </li>
-            </ul>
-          </div>
-          {/* ======================== DESIGN PROCESS =================== */}
-          <div>
-            <h3 id="design-process" className="text-2xl mt-10">
-              DESIGN PROCESS
-            </h3>
+            {/* ================================================================== */}
             <h1 className="text-4xl font-medium mb-5">
               Redesigning the Login, the Dashboard, and the Video-call Window
             </h1>

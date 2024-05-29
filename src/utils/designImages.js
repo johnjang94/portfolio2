@@ -73,6 +73,62 @@ import AppExposure from "../assets/food-distro/research/pie-chart.png";
 import Experience from "../assets/food-distro/research/age&exp.png";
 import Experience2 from "../assets/food-distro/research/age&exp2.png";
 
+// COMPETITIVE_ANALYSIS
+import OLIO from "../assets/food-distro/competitive-analysis/olio-logo.jpeg";
+import NextDoor from "../assets/food-distro/competitive-analysis/nextdoor.png";
+import BuyNothing from "../assets/food-distro/competitive-analysis/buynothing.jpeg";
+import TooGood from "../assets/food-distro/competitive-analysis/too-good-to-go.jpeg";
+
+// COMPETITIVE_ANALYSIS (MORE DETAIL)
+import Credibility from "../assets/food-distro/competitive-analysis/more-detail/credibility.jpeg";
+import Focus from "../assets/food-distro/competitive-analysis/more-detail/focus.jpeg";
+import Security from "../assets/food-distro/competitive-analysis/more-detail/security.png";
+import Audience from "../assets/food-distro/competitive-analysis/more-detail/target-audience.jpeg";
+
+// DESIGN-PROCESS (CX Flow)
+import Login from "../assets/food-distro/design-process/cx-flow/userflow1.png";
+import ItemList from "../assets/food-distro/design-process/cx-flow/userflow2.png";
+import ItemSearch from "../assets/food-distro/design-process/cx-flow/userflow3.png";
+
+// DESIGN-PROCESS (Site map)
+import Sitemap from "../assets/food-distro/design-process/cx-flow/sitemap.png";
+
+// DESIGN-PROCESS (low-fi sketches)
+import SearchLowFi from "../assets/food-distro/design-process/sketches/search (low-fi).jpeg";
+import ProfileLowfi from "../assets/food-distro/design-process/sketches/profile (low-fidelity).jpeg";
+// DESIGN-PROCESS (low-fi sketches) - more examples
+import DisplayList from "../assets/food-distro/design-process/sketches/list (low-fi).png";
+import Request from "../assets/food-distro/design-process/sketches/request (low-fi).png";
+// DESIGN-PROCESS (mid-fi sketches)
+import SearchMidFi from "../assets/food-distro/design-process/sketches/search (mid-fi).png";
+import SearchTeamPick from "../assets/food-distro/design-process/sketches/search (mid-fi, team-pick).png";
+// DESIGN-PROCESS (mid-fi sketches) - more examples
+import OrderDetail from "../assets/food-distro/design-process/sketches/order-detail (mid-fi).png";
+import Messaging from "../assets/food-distro/design-process/sketches/messaging (mid-fi).png";
+import MapSearch from "../assets/food-distro/design-process/sketches/search-map-view (mid-fi, team-pick).png";
+// DESIGN-PROCESS (design system)
+import CSSInfo from "../assets/food-distro/design-process/design-system/css-info.png";
+import Margins from "../assets/food-distro/design-process/design-system/margins.png";
+import Practice from "../assets/food-distro/design-process/design-system/practice.png";
+import CornerRadius from "../assets/food-distro/design-process/design-system/corner-radius.png";
+// DESIGN-PROCESS (High-fidelity)
+import MapSearchHighFi from "../assets/food-distro/design-process/sketches/search-map (high-fi).png";
+import ProductDetailHighFi from "../assets/food-distro/design-process/sketches/product-detail (high-fi).png";
+import OrderConfirmationHighFi from "../assets/food-distro/design-process/sketches/order-confirmation (high-fi).png";
+
+// USABILITY-TESTING (moderated)
+import ModeratedTest1 from "../assets/food-distro/usability-testing/moderated-test-1.png";
+import ModeratedTest2 from "../assets/food-distro/usability-testing/moderated-test-2.png";
+import ModeratedTest3 from "../assets/food-distro/usability-testing/moderated-test-3.png";
+// USABILITY-TESTING (Maze) - Donator
+import MazeTest1 from "../assets/food-distro/design-process/prototype_usability-testing/maze-doner1.png";
+import MazeTest2 from "../assets/food-distro/design-process/prototype_usability-testing/maze-doner2.png";
+import MazeTest3 from "../assets/food-distro/design-process/prototype_usability-testing/maze-doner3.png";
+// USABILITY-TESTING (Maze) - Taker
+import MazeTest4 from "../assets/food-distro/design-process/prototype_usability-testing/maze-taker1.png";
+import MazeTest5 from "../assets/food-distro/design-process/prototype_usability-testing/maze-taker2.png";
+import MazeTest6 from "../assets/food-distro/design-process/prototype_usability-testing/maze-taker3.png";
+
 import DistroDemo from "../assets/food-distro/overview/demo1.mp4";
 
 export const distroImages = {
@@ -83,6 +139,43 @@ export const distroImages = {
   AppExposure,
   Experience,
   Experience2,
+  OLIO,
+  NextDoor,
+  BuyNothing,
+  TooGood,
+  Credibility,
+  Focus,
+  Security,
+  Audience,
+  Login,
+  ItemList,
+  ItemSearch,
+  Sitemap,
+  SearchLowFi,
+  ProfileLowfi,
+  DisplayList,
+  Request,
+  SearchMidFi,
+  SearchTeamPick,
+  OrderDetail,
+  MapSearch,
+  Messaging,
+  CSSInfo,
+  Margins,
+  Practice,
+  CornerRadius,
+  MapSearchHighFi,
+  ProductDetailHighFi,
+  OrderConfirmationHighFi,
+  ModeratedTest1,
+  ModeratedTest2,
+  ModeratedTest3,
+  MazeTest1,
+  MazeTest2,
+  MazeTest3,
+  MazeTest4,
+  MazeTest5,
+  MazeTest6,
 };
 
 export const distroVideo = {

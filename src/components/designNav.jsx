@@ -4,15 +4,15 @@ import PropTypes from "prop-types";
 const sections = [
   { id: "background", label: "Background" },
   { id: "research", label: "Research" },
-  { id: "iteration", label: "Iteration" },
   { id: "competitive-analysis", label: "Competitive Analysis" },
   { id: "design-process", label: "Design Process" },
   { id: "usability-testing", label: "Usability Testing" },
-  { id: "design-changes", label: "Design Changes" },
   { id: "lessons-learned", label: "Lessons Learned from the Project" },
 ];
 
-export default function DesignNav({ currentSection }) {
+const demoSection = { id: "demo", label: "Demo" };
+
+export default function DesignNav({ currentSection, isDemoApplicable }) {
   const [selectedSection, setSelectedSection] = useState(currentSection);
 
   const handleScroll = (id) => {
@@ -52,10 +52,18 @@ export default function DesignNav({ currentSection }) {
     setSelectedSection(currentSection);
   }, [currentSection]);
 
+  const applicableSections = isDemoApplicable
+    ? [
+        ...sections.slice(0, sections.length - 1),
+        demoSection,
+        sections[sections.length - 1],
+      ]
+    : sections;
+
   return (
     <div className="sticky top-10 z-10">
       <div className="mx-10 mt-28 space-y-5 p-2 border-l-4 border-l-zinc-200 hidden md:block">
-        {sections.map((section) => (
+        {applicableSections.map((section) => (
           <div
             key={section.id}
             className={`rounded-xl p-2 ${
@@ -74,4 +82,5 @@ export default function DesignNav({ currentSection }) {
 
 DesignNav.propTypes = {
   currentSection: PropTypes.string.isRequired,
+  isDemoApplicable: PropTypes.bool.isRequired,
 };

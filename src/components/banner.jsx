@@ -12,6 +12,7 @@ export default function Banner() {
     switch (location.pathname) {
       case "/televu":
       case "/development":
+      case "/food":
         return {
           backgroundColor: "bg-black text-white",
           logo: LogoTransparent,

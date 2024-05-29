@@ -1,12 +1,13 @@
 import { useEffect, useRef, useState } from "react";
 import DesignNav from "../../components/designNav";
-// import { distroImages } from "../../utils/designImages";
 import { distroImages, distroVideo } from "../../utils/designImages";
 import { FoodDistroNav } from "../../components/designSubNav";
 import "./foodDistro.css";
+import Footer from "../../components/footer";
 
 export default function FoodDistro() {
   const [currentSection, setCurrentSection] = useState("background");
+  const [visibleSections, setVisibleSections] = useState({});
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -14,9 +15,9 @@ export default function FoodDistro() {
     const sectionIds = [
       "background",
       "research",
-      "iteration",
-      "competitive-analysis",
       "design-process",
+      "mid-fidelity",
+      "competitive-analysis",
       "usability-testing",
       "design-changes",
       "lessons-learned",
@@ -53,19 +54,24 @@ export default function FoodDistro() {
     };
   }, []);
 
-  const [isVisible, setIsVisible] = useState(false);
-  const contentRef = useRef(null);
-  const handleToggle = () => {
-    setIsVisible(!isVisible);
+  const handleToggle = (section) => {
+    setVisibleSections((prevState) => ({
+      ...prevState,
+      [section]: !prevState[section],
+    }));
   };
 
+  const contentRef = useRef({});
+
   useEffect(() => {
-    if (contentRef.current) {
-      contentRef.current.style.maxHeight = isVisible
-        ? `${contentRef.current.scrollHeight}px`
-        : "0";
-    }
-  }, [isVisible]);
+    Object.keys(visibleSections).forEach((section) => {
+      if (contentRef.current[section]) {
+        contentRef.current[section].style.maxHeight = visibleSections[section]
+          ? `${contentRef.current[section].scrollHeight}px`
+          : "0";
+      }
+    });
+  }, [visibleSections]);
 
   return (
     <div>
@@ -110,7 +116,7 @@ export default function FoodDistro() {
       </section>
       <section className="md:flex md:flex-1">
         <div>
-          <DesignNav currentSection={currentSection} />
+          <DesignNav currentSection={currentSection} isDemoApplicable={false} />
         </div>
         <div className="md:my-28 mb-28 px-7 md:w-4/6">
           {/* ================ BACKGROUND =================== */}
@@ -134,7 +140,7 @@ export default function FoodDistro() {
           </div>
           {/* =========================== RESEARCH =================== */}
           <div>
-            <h3 id="research" className="text-2xl mb-3">
+            <h3 id="research" className="text-2xl my-3">
               RESEARCH
             </h3>
             <h1 className="text-4xl font-medium">
@@ -158,16 +164,19 @@ export default function FoodDistro() {
                 </li>
               </div>
             </ul>
-            <button className="text-blue-500" onClick={handleToggle}>
+            <button
+              className="text-blue-500"
+              onClick={() => handleToggle("research")}
+            >
               More detail
             </button>
-            {isVisible && (
+            {visibleSections["research"] && (
               <div
-                ref={contentRef}
+                ref={(el) => (contentRef.current["research"] = el)}
                 className={`content transition-max-height duration-500 ease-in-out overflow-hidden`}
                 style={{
-                  maxHeight: isVisible
-                    ? `${contentRef.current?.scrollHeight}px`
+                  maxHeight: visibleSections["research"]
+                    ? `${contentRef.current["research"]?.scrollHeight}px`
                     : "0",
                 }}
               >
@@ -217,32 +226,541 @@ export default function FoodDistro() {
             <h3 id="competitive-analysis" className="text-2xl mt-10">
               COMPETITIVE ANALYSIS
             </h3>
-            <h1 className="text-4xl font-medium mb-5">
-              Well-established brands were well-interacting with users
+            <h1 className="text-4xl font-medium my-5">
+              To benchmark and let Food Distro app be competitive
             </h1>
             <p className="text-2xl">
-              We compared other platforms that are renowned and well-established
-              that many people use:
+              Team Food Distro compared and analyzed the following four brands
+              to examine what services they offer, who they target, and what
+              blindspots they might have
             </p>
-            <div className="md:flex md:justify-between my-5 space-y-5 md:space-y-0"></div>
-            <ul className="text-2xl list-disc">
-              These brands were...
-              <li className="text-2xl mx-5">
-                quietly notifying the users if the users have decided to record
-                the meeting
+            <div>
+              <div className="flex">
+                <img
+                  src={distroImages.OLIO}
+                  alt="Olio logo"
+                  className="w-3/6 p-5 rounded-xl"
+                />
+                <img
+                  src={distroImages.NextDoor}
+                  alt="Next Door logo"
+                  className="w-3/6 p-5 rounded-xl"
+                />
+              </div>
+              <div className="text-center space-x-40 md:space-x-96 ml-3">
+                <span>OLIO</span>
+                <span>NextDoor</span>
+              </div>
+              <div className="flex">
+                <img
+                  src={distroImages.BuyNothing}
+                  alt="Buy Nothing logo"
+                  className="w-3/6 p-5 rounded-xl"
+                />
+                <img
+                  src={distroImages.TooGood}
+                  alt="Too Good To Go logo"
+                  className="w-3/6 p-5 rounded-xl"
+                />
+              </div>
+              <div className="text-center space-x-28 md:space-x-80 ml-3">
+                <span>BuyNothing</span>
+                <span>Too Good To Go</span>
+              </div>
+            </div>
+            <button
+              className="text-blue-500 my-5 md:my-3"
+              onClick={() => handleToggle("competitive-analysis")}
+            >
+              More detail
+            </button>
+            {visibleSections["competitive-analysis"] && (
+              <div
+                ref={(el) => (contentRef.current["competitive-analysis"] = el)}
+                className={`content transition-max-height duration-500 ease-in-out overflow-hidden`}
+                style={{
+                  maxHeight: visibleSections["competitive-analysis"]
+                    ? `${contentRef.current["competitive-analysis"]?.scrollHeight}px`
+                    : "0",
+                }}
+              >
+                <div className="grid-cols-2 space-y-3">
+                  <div className="md:flex">
+                    <div className="md:flex gap-5 space-y-3 md:space-y-0 my-3 md:my-0">
+                      <img
+                        src={distroImages.Audience}
+                        alt="customers"
+                        className="rounded-xl md:w-3/6"
+                      />
+                      <ul className="md:w-3/6 list-disc">
+                        <span className="font-semibold">Target audience</span>
+                        <li className="text-blue-500">Local</li>
+                        <li className="text-blue-500">Over 18 years old</li>
+                        <li className="text-blue-500">
+                          Socially & environmentally conscious
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="md:flex gap-5 space-y-3 md:space-y-0 my-3 md:my-0">
+                      <img
+                        src={distroImages.Credibility}
+                        alt="credibility"
+                        className="rounded-xl md:w-3/6"
+                      />
+                      <ul className="md:w-3/6 list-disc">
+                        <span className="font-semibold">
+                          Credibility Management
+                        </span>
+                        <li className="text-blue-500">
+                          BuyNothing, Olio, and NextDoor utilize user identity
+                          (user profiles are mandatory)
+                        </li>
+                        <li className="text-blue-500">
+                          Too Good To Go users are anonymous, and the business
+                          assumes risk
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="md:flex">
+                    <div className="md:flex gap-5 space-y-3 md:space-y-0 my-3 md:my-0">
+                      <img
+                        src={distroImages.Focus}
+                        alt="focus"
+                        className="rounded-xl md:w-3/6"
+                      />
+                      <ul className="md:w-3/6 list-disc">
+                        <span className="font-semibold">Platform focus</span>
+                        <li className="text-blue-500">
+                          Mainly food (fresh produce, meals, canned goods)
+                        </li>
+                        <li className="text-blue-500">
+                          Sometimes supplies (household items and goods)
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="md:flex space-y-3 md:space-y-0 my-3 md:my-0">
+                      <img
+                        src={distroImages.Security}
+                        alt="security"
+                        className="rounded-xl md:w-4/6"
+                      />
+                      <ul className="md:w-3/6 list-disc">
+                        <span className="font-semibold">
+                          Security Check and Delivery
+                        </span>
+                        <li className="text-blue-500">
+                          Terms and Conditions / Terms of Service
+                        </li>
+                        <li className="text-blue-500">Verification</li>
+                        <li className="text-blue-500">Consent</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
+            <p className="text-2xl my-5">
+              We came to understand that, despite the fact that the existing
+              platforms aim the locals whose ages are over 18 and focuses
+              primarily on sharing groceries,{" "}
+              <span className="text-red-500">
+                a&#x29; people who can donate their leftovers do not know where
+                and how to donate
+              </span>
+              , and{" "}
+              <span className="text-red-500">
+                b&#x29; people who wish to take the donations could not exactly
+                find the items that they need
+              </span>
+              .
+            </p>
+          </div>
+          {/* ======================== DESIGN-PROCESS =================== */}
+          <div>
+            <h3 id="design-process" className="text-2xl mt-10 mb-5">
+              DESIGN PROCESS - brainstorm
+            </h3>
+            <h1 className="text-4xl font-medium mb-5">
+              How might we meet the needs of the individuals differently?
+            </h1>
+            <ul className="text-2xl space-y-5">
+              Whether it is the people who donate their leftover or the people
+              who take the donations, we have taken the following questions as
+              part of our consideration:
+              <li className="text-xl pt-5">
+                Q. Will the app handle no-shows, save my time and energy in
+                general, and be able to manage messages for communication?
               </li>
-              <li className="text-2xl mx-5">
-                the icons were cleaned for the video-call session (only
-                containing what&#39;s most needed)
+              <li className="text-xl">
+                Q. will the app provide accurate information about the location
+                and the quality of the products?
               </li>
-              <li className="text-2xl mx-5">
-                the users did not receive any notification on what happened
-                after the recording was stopped, but the users were able to
-                easily find the records on their dashboard
+              <li className="text-xl">
+                Q. Will it be safe to meet the strangers?
+              </li>
+            </ul>
+            <p className="text-2xl my-3">
+              As for the solution, we thought of using the features of Google
+              Maps
+            </p>
+            <p className="text-2xl">
+              In addition, we were thinking about using various SNS network in
+              order to raise the awareness of the app, and at last but not
+              least...
+            </p>
+            <p className="text-2xl my-5">
+              How might we measure success once it launches?
+            </p>
+            <ul className="list-disc text-xl mx-5">
+              <li>
+                We could track the number of downloads from Google Play or Apple
+                Store
+              </li>
+              <li>
+                We could track the screen time among individuals and the most
+                popular page on the app
+              </li>
+              <li>Lastly, we can check the reviews</li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-2xl mt-10 mb-5">
+              DESIGN PROCESS - iterating ideas
+            </h3>
+            <h4 className="text-xl">1. The CX Flow - 3 userflows</h4>
+            <p className="text-lg">
+              We imagined how each user should be able to navigate themselves
+              through different pages:
+            </p>
+            <div className="space-y-5">
+              <img
+                src={distroImages.Login}
+                alt="Login & Sign up"
+                className="rounded-xl mt-3"
+              />
+              <img
+                src={distroImages.ItemList}
+                alt="Item Listing"
+                className="rounded-xl"
+              />
+              <img
+                src={distroImages.ItemSearch}
+                alt="Item Search"
+                className="rounded-xl"
+              />
+            </div>
+          </div>
+          <div>
+            <p className="text-2xl my-5">
+              We also drew the site map to indicate how the sharing journey
+              begins. Whether they are the donor or taker, they both need to
+              sign up in order to use the app and need to use messenger feature
+              to communicate each other. In terms of the donors specifically,
+              they would be able to register their products and indicate
+              availability in letting the takers to notice and take the
+              products. In the meantime, the takers should be able to find the
+              items that they are interested in taking the leftover using the
+              filter.
+            </p>
+            <h4 className="text-xl my-3 text-center">The Site Map</h4>
+            <img
+              src={distroImages.Sitemap}
+              alt="Sitemap"
+              className="rounded-xl"
+            />
+          </div>
+          <div>
+            <h4 className="text-xl mt-10">2. Sketches</h4>
+            <p className="text-center text-lg">
+              Low-Fidelity - Search & Profile
+            </p>
+            <div className="md:flex md:space-x-10 md:w-3/6 space-y-5 md:space-y-0">
+              <img
+                src={distroImages.SearchLowFi}
+                alt="Search Low-Fi"
+                className="rounded-xl"
+              />
+              <img
+                src={distroImages.ProfileLowfi}
+                alt="Profile Low-Fi"
+                className="rounded-xl"
+              />
+            </div>
+          </div>
+          <button
+            className="text-blue-500 my-5 md:my-3 text-lg"
+            onClick={() => handleToggle("design-process")}
+          >
+            More examples
+          </button>
+          {visibleSections["design-process"] && (
+            <div
+              ref={(el) => (contentRef.current["design-process"] = el)}
+              className={`content transition-max-height duration-500 ease-in-out overflow-hidden`}
+              style={{
+                maxHeight: visibleSections["design-process"]
+                  ? `${contentRef.current["design-process"]?.scrollHeight}px`
+                  : "0",
+              }}
+            >
+              <p className="text-center text-lg">Product Detail & Calendar</p>
+              <img
+                src={distroImages.DisplayList}
+                alt="Display List"
+                className="rounded-xl my-3"
+              />
+              <p className="text-center text-lg">Request</p>
+              <img
+                src={distroImages.Request}
+                alt="Request"
+                className="rounded-xl my-3"
+              />
+            </div>
+          )}
+          <div>
+            <p className="text-center text-lg my-3">
+              Mid-Fidelity (my version vs. team&#39;s pick)
+            </p>
+            <div className="md:flex md:space-x-10 md:w-3/6 space-y-5 md:space-y-0">
+              <img
+                src={distroImages.SearchMidFi}
+                alt="Search Mid-Fi"
+                className="rounded-xl"
+              />
+              <img
+                src={distroImages.SearchTeamPick}
+                alt="Team's pick"
+                className="rounded-xl"
+              />
+            </div>
+          </div>
+          <button
+            className="text-blue-500 my-5 md:my-3 text-lg"
+            onClick={() => handleToggle("mid-fidelity")}
+          >
+            More examples
+          </button>
+          {visibleSections["mid-fidelity"] && (
+            <div
+              ref={(el) => (contentRef.current["mid-fidelity"] = el)}
+              className={`content transition-max-height duration-500 ease-in-out overflow-hidden`}
+              style={{
+                maxHeight: visibleSections["mid-fidelity"]
+                  ? `${contentRef.current["mid-fidelity"]?.scrollHeight}px`
+                  : "0",
+              }}
+            >
+              <div className="flex grid-cols-3 gap-10">
+                <div>
+                  <p className="text-center text-lg">Order detail</p>
+                  <img
+                    src={distroImages.OrderDetail}
+                    alt="Order detail"
+                    className="rounded-xl my-3"
+                  />
+                </div>
+                <div>
+                  <p className="text-center text-lg">Map search</p>
+                  <img
+                    src={distroImages.MapSearch}
+                    alt="Map search"
+                    className="rounded-xl my-3"
+                  />
+                </div>
+                <div>
+                  <p className="text-center text-lg">Messaging</p>
+                  <img
+                    src={distroImages.MapSearch}
+                    alt="Messaging"
+                    className="rounded-xl my-3"
+                  />
+                </div>
+              </div>
+            </div>
+          )}
+          <div>
+            <h4 className="text-xl">3. Design System</h4>
+            <p className="text-lg my-3">
+              The following design system is what we have implemented during our
+              mid-fi:
+            </p>
+            <div className="space-y-5">
+              <img
+                src={distroImages.CSSInfo}
+                alt="CSS"
+                className="w-full rounded-xl"
+              />
+              <div className="md:flex md:space-x-3 md:w-3/6 space-y-5 md:space-y-0">
+                <img
+                  src={distroImages.CornerRadius}
+                  alt="Corner Roundedness"
+                  className="rounded-xl"
+                />
+                <img
+                  src={distroImages.Margins}
+                  alt="Margins"
+                  className="rounded-xl mr-5"
+                />
+              </div>
+              <img
+                src={distroImages.Practice}
+                alt="Practice"
+                className="w-full rounded-xl"
+              />
+            </div>
+          </div>
+          <div>
+            <p className="text-center text-lg my-3">High-Fidelity</p>
+            <div className="md:flex md:grid-cols-3 md:space-x-5 md:w-3/6 space-y-5 md:space-y-0">
+              <img
+                src={distroImages.MapSearchHighFi}
+                alt="Search Map Search"
+                className="rounded-xl md:w-4/6"
+              />
+              <img
+                src={distroImages.OrderConfirmationHighFi}
+                alt="Order confirmation"
+                className="rounded-xl md:w-4/6"
+              />
+              <img
+                src={distroImages.ProductDetailHighFi}
+                alt="Product detail"
+                className="rounded-xl md:w-4/6 w-full"
+              />
+            </div>
+          </div>
+          {/* =========================== USABILITY TESTING =================== */}
+          <div className="my-10">
+            <h3 id="usability-testing" className="text-2xl my-5">
+              USABILITY TESTING
+            </h3>
+            <h1 className="text-3xl md:text-4xl font-medium mb-3">
+              Two types of usability testing with 39 participants
+            </h1>
+            <p className="text-2xl">
+              We had 6 participants for live-interviews (moderated) tests and 33
+              participants for asynchronous tests which we conducted via Maze.
+            </p>
+            <div>
+              <p className="text-center my-3 text-lg">
+                Moderated Testing Examples (Zoom)
+              </p>
+              <div className="space-y-5 md:w-2/6 md:grid-cols-3 md:flex md:gap-5">
+                <img
+                  src={distroImages.ModeratedTest1}
+                  alt="Participant 1"
+                  className="rounded-xl"
+                />
+                <img
+                  src={distroImages.ModeratedTest2}
+                  alt="Participant 2"
+                  className="rounded-xl"
+                />
+                <img
+                  src={distroImages.ModeratedTest3}
+                  alt="Participant 3"
+                  className="rounded-xl"
+                />
+              </div>
+            </div>
+            <div>
+              <p className="text-center my-3 text-lg">
+                Unmoderated Testing Examples (Maze) - Food Donators
+              </p>
+              <div className="space-y-5 md:w-2/6 md:grid-cols-3 md:flex md:gap-5">
+                <img
+                  src={distroImages.MazeTest1}
+                  alt="Food Donator Participant 1"
+                  className="rounded-xl"
+                />
+                <img
+                  src={distroImages.MazeTest2}
+                  alt="Food Donator Participant 2"
+                  className="rounded-xl"
+                />
+                <img
+                  src={distroImages.MazeTest3}
+                  alt="Food Donator Participant 3"
+                  className="rounded-xl"
+                />
+              </div>
+              <p className="text-center my-3 text-lg">
+                Unmoderated Testing Examples (Maze) - Food Takers
+              </p>
+              <div className="space-y-5 md:w-2/6 md:grid-cols-3 md:flex md:gap-5 mt-3">
+                <img
+                  src={distroImages.MazeTest4}
+                  alt="Food Taker Participant 1"
+                  className="rounded-xl"
+                />
+                <img
+                  src={distroImages.MazeTest5}
+                  alt="Food Taker Participant 2"
+                  className="rounded-xl"
+                />
+                <img
+                  src={distroImages.MazeTest6}
+                  alt="Food Taker Participant 3"
+                  className="rounded-xl"
+                />
+              </div>
+            </div>
+          </div>
+          {/* =========================== LESSONS LEARNED =================== */}
+          <div className="my-10">
+            <h3 id="lessons-learned" className="text-2xl">
+              LESSONS LEARNED
+            </h3>
+            <h1 className="text-3xl md:text-4xl font-medium my-5">
+              Touching again on things that we have anticipated and things we
+              did not see coming.
+            </h1>
+            <p className="my-3 text-2xl font-semibold">
+              What have we succeeded in?
+            </p>
+            <ul className="list-disc px-10 space-y-5 text-green-500 text-xl">
+              <li>
+                Sign-up: it&#39;s straight-forward; the length of Terms and
+                Conditions do not seem burdensome to users
+              </li>
+              <li>
+                Search: when users wish to look up an item or location, they
+                know that browsing is easily accessible
+              </li>
+              <li>
+                Chat feature: this also seems to be straight-forward to the
+                users; they know what to do
+              </li>
+              <li>
+                Rating & Report: this seems to help in validating and finding
+                reliable sources
+              </li>
+            </ul>
+            <p className="my-3 text-2xl font-semibold">
+              What were the struggles?
+            </p>
+            <ul className="list-disc px-10 space-y-5 text-red-500 text-xl">
+              <li>
+                UX terminology: &#34;reservation&#34; and &#34;listing&#34; were
+                not clearly communicating with the users. (i.e. reservation for
+                who? the people who donate or the people who wish to take the
+                food?)
+              </li>
+              <li>
+                Reviews: we learned that users rely heavy on the reviews because
+                they want to find reliable sources
+              </li>
+              <li>
+                Response Delay: the application is interactive with users, but
+                the interaction is slow. The app needs to have live update.
               </li>
             </ul>
           </div>
         </div>
+      </section>
+      <section>
+        <Footer />
       </section>
     </div>
   );
