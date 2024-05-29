@@ -1,18 +1,30 @@
 [
   {
     "id": 1,
+    "position": "Associate UX Designer",
+    "company": "TuGo Travel Insurance",
+    "dates": "January 2024 ~ Present",
+    "missionObjective": "Redesign the insurance website to be friendly and intuitive to the users",
+    "responsibilities": [
+      "use Figma, Figjam, Spreadsheet or Word doc to deliver the design and notes",
+      "discovered the pain points from research, redesigned 20+ screens, and created 5 prototypes",
+      "increased the traffic up to 85%"
+    ]
+  },
+  {
+    "id": 2,
     "position": "Lead Software Developer",
     "company": "Ruminate",
     "dates": "October 2023 ~ December 2023",
     "missionObjective": "Build a redesigned community-donation web pages and member-portals for a non-profit organization called Ruminate.",
     "responsibilities": [
-      "Developed, maintained, and shipped production code for client's platform primarily using Typescript, React, Tailwind CSS, and hosted the site using Firebase.",
-      "Liaised with the UX Design team to speculate on how to let the food producers and the food inspectors to be connected locally within the reasonable measures of distance and time (and that could benefit the locals in the US) upon the request from the stakeholders of Ruminate.",
-      "Received appreciation and praise remarks from the stakeholders for successfully setting the initial stage of the member-portals (which is building about 18 web screens that respect mobile-responsiveness)."
+      "used JavaScript, TypeScript, React, Tailwind CSS, Firebase, REST API, etc. for production and deployment",
+      "actively participated in UX cross-team meetings (i.e. crazy 8s, wireframing, prototyping, etc.) to understand the design share insights with them as a developer",
+      "increased the user engagement up to 30% and maintained 95% of satisfaction ratio from stakeholders"
     ]
   },
   {
-    "id": 2,
+    "id": 3,
     "position": "Associate Software Developer",
     "company": "Tech Fleet Professional Association",
     "dates": "August 2023 ~ October 2023",
@@ -24,26 +36,27 @@
     ]
   },
   {
-    "id": 3,
+    "id": 4,
     "position": "Associate UX Designer",
     "company": "Food Distro",
     "dates": "April 2023 ~ July 2023",
     "missionObjective": "Mission Objective: create a mobile app that connects the food donators and the food takers to reduce the food waste",
     "responsibilities": [
-      "the design team liaised with the research team to find out issues in regards to the food waste (i.e. answering questions such as “what is the most challenging part when it comes to a) the disposal of the food waste or b) taking an action on unused leftover grocery?” or “in what circumstances do you find yourself stuck on looking for other sources of food?”)",
-      "after doing some investigation on existing platforms and analyzing their competitiveness, the team created about 42 mobile app screens, 7 mini user flows for an app called Food Distro that allows both the food donators (a.k.a givers) and the food takers to sign up, communicate each other, and be reserved to either donate or take away the food upon agreement",
-      "received a few optimistic feedback from demo participants regarding how new Food Distro app easily connects individuals better than Olio, BuyNothing or NextDoor"
+      "I was a shadower in this project",
+      "used Figma and Figjam for ideas and project iteration, used Slack for communication",
+      "collaborated with colleague designers and UX researchers to find out issues in regards to the food waste",
+      "the team created 42+ mobile app screens, 7 user flows for the mobile application"
     ]
   },
   {
-    "id": 4,
+    "id": 5,
     "position": "UX Design Apprentice",
     "company": "TeleVU Innovation Inc.",
     "dates": "June 2022 ~ August 2022",
     "missionObjective": "Mission Objective: redesign the employee portal for the medical professionals to improve the user experience of remote clinic sessions.",
     "responsibilities": [
-      "received research outcomes from the client which identifies some of the pain points; brainstormed and iterated through the low-fidelity sketch to high-fidelity concepts; created prototypes to showcase how new design would work when the clinicians (as users) tried to interact with the product",
-      "designed 20+ web pages and 3+ mobile pages; created 4 user flows; usability testing came back with 90% of increased engagement among the clinicians who spared their time to participate in demo"
+      "redesigned web portal interface using Figma and Figjam, which led to a 95% boost in user engagement",
+      "developed an easy-to-use UI for a new web application that led to a 50% rise in the re-use among the users"
     ]
   }
 ]
