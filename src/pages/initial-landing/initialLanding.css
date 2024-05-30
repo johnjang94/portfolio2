@@ -18,7 +18,7 @@ body {
   .h1-animate,
   .h1-animate2,
   .h1-animate3 {
-    font-size: 6rem;
+    font-size: 8rem;
   }
 }
 
@@ -67,21 +67,7 @@ body {
 
 /* ====================================================================================== */
 
-@media (max-width: 768px) {
-  .h3-animation,
-  .h3-animation2 {
-    font-size: 1rem;
-  }
-}
-
-@media (min-width: 769px) {
-  .h3-animation,
-  .h3-animation2 {
-    font-size: 2rem;
-  }
-}
-
-@keyframes h3-animation {
+@keyframes h3-animate {
   0% {
     margin-top: -50px;
     display: hidden;
@@ -99,10 +85,10 @@ body {
 }
 
 .h3-animate {
-  animation: h3-animation 3s ease-in-out forwards;
+  animation: h3-animate 3s ease-in-out forwards;
 }
 
-@keyframes h3-animation2 {
+@keyframes h3-animate2 {
   0% {
     margin-top: -20px;
     opacity: 1;
@@ -115,5 +101,19 @@ body {
 }
 
 .h3-animate2 {
-  animation: h3-animation2 3s ease-in-out forwards;
+  animation: h3-animate2 3s ease-in-out forwards;
+}
+
+@media (max-width: 768px) {
+  .h3-animate,
+  .h3-animate2 {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 769px) {
+  .h3-animate,
+  .h3-animate2 {
+    font-size: 3rem;
+  }
 }
