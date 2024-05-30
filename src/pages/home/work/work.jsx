@@ -63,7 +63,7 @@ export default function Work() {
         <div className="bg-slate-400 md:w-3/6 w-full h-1"></div>
       </header>
       <section className="flex flex-col md:flex-row">
-        <div className="border-r border-gray-500 md:w-5/12 space-y-8 my-6 md:block">
+        <div className="border-r border-gray-500 md:w-5/12 space-y-8 my-6 md:block hidden">
           {renderJobButtons()}
         </div>
         <div className="md:hidden flex flex-col space-y-3 mx-auto border-b-2 border-gray-300">

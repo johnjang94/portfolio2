@@ -6,6 +6,22 @@ body {
   font-style: normal;
 }
 
+@media (max-width: 768px) {
+  .h1-animate,
+  .h1-animate2,
+  .h1-animate3 {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .h1-animate,
+  .h1-animate2,
+  .h1-animate3 {
+    font-size: 6rem;
+  }
+}
+
 @keyframes h1-animation {
   0% {
     font-size: 2000px;
@@ -13,7 +29,6 @@ body {
     margin-left: -100%;
   }
   100% {
-    font-size: 6rem;
     margin-top: -170px;
   }
 }
@@ -25,11 +40,9 @@ body {
 @keyframes h1-animation2 {
   0% {
     margin-top: -170px;
-    font-size: 6rem;
   }
   100% {
     margin-top: -250px;
-    font-size: 6rem;
   }
 }
 
@@ -40,11 +53,9 @@ body {
 @keyframes h1-animation3 {
   0% {
     margin-top: -250px;
-    font-size: 6rem;
     opacity: 1;
   }
   100% {
-    font-size: 6rem;
     opacity: 0;
     transform: translateY(-500px);
   }
@@ -54,22 +65,36 @@ body {
   animation: h1-animation3 3s ease-in-out forwards;
 }
 
+/* ====================================================================================== */
+
+@media (max-width: 768px) {
+  .h3-animation,
+  .h3-animation2 {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .h3-animation,
+  .h3-animation2 {
+    font-size: 2rem;
+  }
+}
+
 @keyframes h3-animation {
   0% {
-    margin-top: -70px;
+    margin-top: -50px;
     display: hidden;
   }
   50% {
-    margin-top: -50px;
+    margin-top: -20px;
     display: block;
     opacity: 0.5;
-    font-size: 2rem;
   }
   100% {
-    margin-top: -40px;
+    margin-top: -20px;
     display: block;
     opacity: 1;
-    font-size: 2rem;
   }
 }
 
@@ -79,13 +104,11 @@ body {
 
 @keyframes h3-animation2 {
   0% {
-    margin-top: -40px;
-    font-size: 2rem;
+    margin-top: -20px;
     opacity: 1;
   }
   100% {
-    margin-top: -40px;
-    font-size: 2rem;
+    margin-top: -20px;
     opacity: 0;
     transform: translateY(-500px);
   }

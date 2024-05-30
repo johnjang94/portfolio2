@@ -18,7 +18,7 @@ export default function Home() {
   const scrollToWork = () => {
     const workElement = workRef.current;
     const topOffset = workElement.getBoundingClientRect().top + window.scrollY;
-    const offset = window.innerWidth <= 768 ? 330 : 335;
+    const offset = window.innerWidth <= 768 ? 360 : 335;
     const scrollPosition = topOffset - window.innerHeight / 2 + offset;
     window.scrollTo({ top: scrollPosition, behavior: "smooth" });
   };
@@ -27,7 +27,7 @@ export default function Home() {
     const designElement = designRef.current;
     const topOffset =
       designElement.getBoundingClientRect().top + window.scrollY;
-    const offset = window.innerWidth <= 768 ? 260 : 330;
+    const offset = window.innerWidth <= 768 ? 280 : 330;
     const scrollPosition = topOffset - window.innerHeight / 2 + offset;
     window.scrollTo({ top: scrollPosition, behavior: "smooth" });
   };
@@ -36,7 +36,7 @@ export default function Home() {
     const developmentElement = developmentRef.current;
     const topOffset =
       developmentElement.getBoundingClientRect().top + window.scrollY;
-    const offset = window.innerWidth <= 768 ? 260 : 330;
+    const offset = window.innerWidth <= 768 ? 310 : 330;
     const scrollPosition = topOffset - window.innerHeight / 2 + offset;
     window.scrollTo({ top: scrollPosition, behavior: "smooth" });
   };
@@ -80,7 +80,7 @@ export default function Home() {
   return (
     <div className="lg:my-24 my-40 mx-auto lg:w-7/12 w-10/12">
       <header>
-        <h1 className="lg:text-9xl text-7xl">John Jang</h1>
+        <h1 className="lg:text-9xl text-5xl">John Jang</h1>
         <div className="rotating-text-container lg:mt-5 mt-5 lg:text-3xl text-3xl">
           {titles.map((title, index) => (
             <h2

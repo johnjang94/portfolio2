@@ -40,8 +40,10 @@ export default function Banner() {
       <div className="flex space-x-1">
         <span className="text-blue-500">&copy;</span>
         <div className="md:flex mt-1 md:mt-0 md:space-x-1">
-          <p className="text-xs md:text-base">Designed & Built by John Jang.</p>
-          <p className="text-xs md:text-base">All Rights Reserved. 2024</p>
+          <p className="text-[9px] md:text-base">
+            Designed & Built by John Jang.
+          </p>
+          <p className="text-[9px] md:text-base">All Rights Reserved. 2024</p>
         </div>
       </div>
       <div className="flex space-x-3 text-3xl hover:cursor-pointer">
