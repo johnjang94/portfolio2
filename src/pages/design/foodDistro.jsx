@@ -80,10 +80,10 @@ export default function FoodDistro() {
         <h3 className="mt-14 mb-4 md:w-7/12 md:text-center mx-10 text-2xl">
           Product Design
         </h3>
-        <h1 className="mt-9 md:w-8/12 md:text-center mx-10 md:mx-14 text-5xl">
+        <h1 className="mt-9 md:w-8/12 md:text-center mx-10 md:mx-14 md:text-5xl text-4xl">
           FOOD DISTRO
         </h1>
-        <p className="mt-4 md:w-3/6 md:mx-auto mx-10 text-2xl">
+        <p className="mt-4 md:w-3/6 md:mx-auto mx-10 md:text-2xl text-xl">
           A food donation mobile app that connects individual donators and
           takers locally to reduce the food waste and the poverty around in the
           communities.
@@ -118,16 +118,16 @@ export default function FoodDistro() {
         <div>
           <DesignNav currentSection={currentSection} isDemoApplicable={false} />
         </div>
-        <div className="md:my-28 mb-28 px-7 md:w-4/6">
+        <div className="md:my-28 px-7 md:w-4/6">
           {/* ================ BACKGROUND =================== */}
           <div>
-            <h3 id="background" className="text-2xl my-3">
+            <h3 id="background" className="text-2xl mt-5">
               BACKGROUND
             </h3>
-            <h1 className="text-4xl font-medium">
+            <h1 className="md:text-4xl text-3xl font-medium my-3">
               Hands needed to reduce the growing waste of food
             </h1>
-            <p className="my-5 text-2xl">
+            <p className="my-5 md:text-2xl text-xl">
               As the consumption rate on food has increased, so did the food
               waste. This is a growing issue among some of the communities
               because some of the locals who have enough budget in their pockets
@@ -143,11 +143,11 @@ export default function FoodDistro() {
             <h3 id="research" className="text-2xl my-3">
               RESEARCH
             </h3>
-            <h1 className="text-4xl font-medium">
+            <h1 className="md:text-4xl text-3xl font-medium my-3">
               To understand why they say that the existing services do not
               exactly meet their needs
             </h1>
-            <ul className="text-2xl my-5 list-disc">
+            <ul className="my-5 md:text-2xl text-xl list-disc">
               After surveys, analyzing other brands, and drawing personas, my
               colleagues and I have drawn the following hypotheses for the cause
               of the dissatisfaction:
@@ -226,10 +226,10 @@ export default function FoodDistro() {
             <h3 id="competitive-analysis" className="text-2xl mt-10">
               COMPETITIVE ANALYSIS
             </h3>
-            <h1 className="text-4xl font-medium my-5">
+            <h1 className="md:text-4xl text-3xl font-medium my-3">
               To benchmark and let Food Distro app be competitive
             </h1>
-            <p className="text-2xl">
+            <p className="my-5 md:text-2xl text-xl list-disc">
               Team Food Distro compared and analyzed the following four brands
               to examine what services they offer, who they target, and what
               blindspots they might have
@@ -247,7 +247,7 @@ export default function FoodDistro() {
                   className="w-3/6 p-5 rounded-xl"
                 />
               </div>
-              <div className="text-center space-x-40 md:space-x-96 ml-3">
+              <div className="text-center space-x-28 md:space-x-96 ml-3">
                 <span>OLIO</span>
                 <span>NextDoor</span>
               </div>
@@ -263,7 +263,7 @@ export default function FoodDistro() {
                   className="w-3/6 p-5 rounded-xl"
                 />
               </div>
-              <div className="text-center space-x-28 md:space-x-80 ml-3">
+              <div className="text-center space-x-14 md:space-x-80 ml-3">
                 <span>BuyNothing</span>
                 <span>Too Good To Go</span>
               </div>
@@ -360,7 +360,7 @@ export default function FoodDistro() {
                 </div>
               </div>
             )}
-            <p className="text-2xl my-5">
+            <p className="my-5 md:text-2xl text-xl">
               We came to understand that, despite the fact that the existing
               platforms aim the locals whose ages are over 18 and focuses
               primarily on sharing groceries,{" "}
@@ -378,13 +378,13 @@ export default function FoodDistro() {
           </div>
           {/* ======================== DESIGN-PROCESS =================== */}
           <div>
-            <h3 id="design-process" className="text-2xl mt-10 mb-5">
+            <h3 id="design-process" className="md:text-2xl text-xl mt-10 mb-5">
               DESIGN PROCESS - brainstorm
             </h3>
-            <h1 className="text-4xl font-medium mb-5">
+            <h1 className="md:text-4xl text-3xl font-medium my-3">
               How might we meet the needs of the individuals differently?
             </h1>
-            <ul className="text-2xl space-y-5">
+            <ul className="md:text-2xl text-xl space-y-5">
               Whether it is the people who donate their leftover or the people
               who take the donations, we have taken the following questions as
               part of our consideration:
@@ -400,16 +400,16 @@ export default function FoodDistro() {
                 Q. Will it be safe to meet the strangers?
               </li>
             </ul>
-            <p className="text-2xl my-3">
+            <p className="md:text-2xl text-xl my-3">
               As for the solution, we thought of using the features of Google
               Maps
             </p>
-            <p className="text-2xl">
+            <p className="md:text-2xl text-xl">
               In addition, we were thinking about using various SNS network in
               order to raise the awareness of the app, and at last but not
               least...
             </p>
-            <p className="text-2xl my-5">
+            <p className="md:text-2xl text-xl my-5">
               How might we measure success once it launches?
             </p>
             <ul className="list-disc text-xl mx-5">
@@ -425,15 +425,15 @@ export default function FoodDistro() {
             </ul>
           </div>
           <div>
-            <h3 className="text-2xl mt-10 mb-5">
+            <h3 className="md:text-2xl text-2xl mt-10 mb-5">
               DESIGN PROCESS - iterating ideas
             </h3>
             <h4 className="text-xl">1. The CX Flow - 3 userflows</h4>
-            <p className="text-lg">
+            <p className="md:text-2xl text-xl space-y-5 font-medium my-3">
               We imagined how each user should be able to navigate themselves
               through different pages:
             </p>
-            <div className="space-y-5">
+            <div>
               <img
                 src={distroImages.Login}
                 alt="Login & Sign up"
@@ -452,7 +452,7 @@ export default function FoodDistro() {
             </div>
           </div>
           <div>
-            <p className="text-2xl my-5">
+            <p className="md:text-2xl text-xl my-5">
               We also drew the site map to indicate how the sharing journey
               begins. Whether they are the donor or taker, they both need to
               sign up in order to use the app and need to use messenger feature
@@ -471,8 +471,8 @@ export default function FoodDistro() {
             />
           </div>
           <div>
-            <h4 className="text-xl mt-10">2. Sketches</h4>
-            <p className="text-center text-lg">
+            <h4 className="md:text-2xl text-xl mt-10">2. Sketches</h4>
+            <p className="text-center text-lg my-3">
               Low-Fidelity - Search & Profile
             </p>
             <div className="md:flex md:space-x-10 md:w-3/6 space-y-5 md:space-y-0">
@@ -519,9 +519,12 @@ export default function FoodDistro() {
             </div>
           )}
           <div>
-            <p className="text-center text-lg my-3">
-              Mid-Fidelity (my version vs. team&#39;s pick)
-            </p>
+            <div className="md:flex items-center my-3 md:space-x-2 md:justify-center">
+              <p className="text-center text-lg mt-3 md:mt-0">Mid-Fidelity</p>
+              <p className="text-center text-lg mb-3 md:mb-0">
+                (my version vs. team&#39;s pick)
+              </p>
+            </div>
             <div className="md:flex md:space-x-10 md:w-3/6 space-y-5 md:space-y-0">
               <img
                 src={distroImages.SearchMidFi}
@@ -635,10 +638,10 @@ export default function FoodDistro() {
             <h3 id="usability-testing" className="text-2xl my-5">
               USABILITY TESTING
             </h3>
-            <h1 className="text-3xl md:text-4xl font-medium mb-3">
+            <h1 className="text-3xl font-medium my-3">
               Two types of usability testing with 39 participants
             </h1>
-            <p className="text-2xl">
+            <p className="my-5 md:text-2xl text-xl">
               We had 6 participants for live-interviews (moderated) tests and 33
               participants for asynchronous tests which we conducted via Maze.
             </p>
@@ -712,11 +715,11 @@ export default function FoodDistro() {
             <h3 id="lessons-learned" className="text-2xl">
               LESSONS LEARNED
             </h3>
-            <h1 className="text-3xl md:text-4xl font-medium my-5">
+            <h1 className="md:text-4xl text-3xl font-medium my-3">
               Touching again on things that we have anticipated and things we
               did not see coming.
             </h1>
-            <p className="my-3 text-2xl font-semibold">
+            <p className="my-5 md:text-2xl text-xl">
               What have we succeeded in?
             </p>
             <ul className="list-disc px-10 space-y-5 text-green-500 text-xl">
@@ -737,9 +740,7 @@ export default function FoodDistro() {
                 reliable sources
               </li>
             </ul>
-            <p className="my-3 text-2xl font-semibold">
-              What were the struggles?
-            </p>
+            <p className="my-5 md:text-2xl text-xl">What were the struggles?</p>
             <ul className="list-disc px-10 space-y-5 text-red-500 text-xl">
               <li>
                 UX terminology: &#34;reservation&#34; and &#34;listing&#34; were
