@@ -15,7 +15,10 @@ export default function Footer() {
 
     const handleIntersection = (entries) => {
       entries.forEach((entry) => {
-        setOpacity(entry.intersectionRatio);
+        if (entry.isIntersecting) {
+          const ratio = entry.intersectionRatio;
+          setOpacity(ratio >= 0.3 ? 1 : ratio * 2);
+        }
       });
     };
 
