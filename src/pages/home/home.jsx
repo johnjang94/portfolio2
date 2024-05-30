@@ -78,7 +78,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="lg:my-24 my-40 mx-auto lg:w-7/12 w-10/12">
+    <div className="lg:my-24 my-20 mx-auto lg:w-7/12 w-10/12">
       <header>
         <h1 className="lg:text-9xl text-5xl">John Jang</h1>
         <div className="rotating-text-container lg:mt-5 mt-5 lg:text-3xl text-3xl">
@@ -108,7 +108,7 @@ export default function Home() {
         </div>
         <div className="text-center">
           <button onClick={scrollToWork}>
-            <FaArrowAltCircleDown className="lg:mt-14 md:my-28 my-10 mx-auto text-3xl animate-bounce hover:cursor-pointer" />
+            <FaArrowAltCircleDown className="lg:mt-14 md:my-28 my-20 mx-auto text-3xl animate-bounce hover:cursor-pointer" />
           </button>
         </div>
       </header>
