@@ -51,10 +51,10 @@ export default function DesignHome() {
         <h1>UX DESIGN</h1>
         <h1>OVERVIEW</h1>
       </div>
-      <h1 className="my-20 text-center md:text-5xl text-3xl">
+      <h1 className="my-20 text-center md:text-5xl text-xl">
         Welcome to my design home
       </h1>
-      <section className="my-10 py-10 md:mx-36 mx-12 grid grid-cols-1 md:grid-cols-2 gap-20 space-y-20 md:space-y-0">
+      <section className="my-10 md:mx-36 mx-12 grid grid-cols-1 md:grid-cols-2 md:gap-20 space-y-10 md:space-y-0">
         {data.map((item) => (
           <div
             key={item.id}
@@ -75,7 +75,7 @@ export default function DesignHome() {
               {item.category.map((category, index) => (
                 <span
                   key={index}
-                  className="bg-slate-400 rounded-lg md:p-2 p-1 text-white"
+                  className="bg-slate-400 rounded-lg md:p-2 p-1 text-white text-xs md:text-base"
                 >
                   {category}
                 </span>
