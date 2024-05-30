@@ -15,9 +15,9 @@ export default function DesignHome() {
         className="mx-auto"
       />
       <div className="text-center">
-        <Link to="/food">
+        <Link to="/design">
           <button className="bg-teal-300 hover:bg-white p-3 rounded-full my-3">
-            DISCOVER MORE
+            TO DESIGN HOME
           </button>
         </Link>
       </div>

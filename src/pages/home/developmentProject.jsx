@@ -15,7 +15,7 @@ export default function DevelopmentHome() {
       <div className="text-center">
         <Link to="/development">
           <button className="bg-teal-300 hover:bg-white p-3 rounded-full my-3">
-            DISCOVER MORE
+            TO DEVELOPMENT HOME
           </button>
         </Link>
       </div>
