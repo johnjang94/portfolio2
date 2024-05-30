@@ -220,6 +220,20 @@ export default function FoodDistro() {
                 </p>
               </div>
             )}
+            <div className="space-y-5">
+              <p className="text-center">Silvia as Food Donor and her story</p>
+              <img src={distroImages.FoodDonor} alt="Food Donor" />
+              <img
+                src={distroImages.FoodDonorJourney}
+                alt="Food Donor Journey"
+              />
+              <p className="text-center">Jack as Food Taker and his story</p>
+              <img src={distroImages.FoodTaker} alt="Food Taker" />
+              <img
+                src={distroImages.FoodTakerJourney}
+                alt="Food Taker Journey"
+              />
+            </div>
           </div>
           {/* ======================== COMPETITIVE ANALYSIS =================== */}
           <div>
@@ -429,11 +443,11 @@ export default function FoodDistro() {
               DESIGN PROCESS - iterating ideas
             </h3>
             <h4 className="text-xl">1. The CX Flow - 3 userflows</h4>
-            <p className="md:text-2xl text-xl space-y-5 font-medium my-3">
+            <p className="md:text-2xl text-xl font-medium my-3">
               We imagined how each user should be able to navigate themselves
               through different pages:
             </p>
-            <div>
+            <div className="space-y-5">
               <img
                 src={distroImages.Login}
                 alt="Login & Sign up"
@@ -467,15 +481,15 @@ export default function FoodDistro() {
             <img
               src={distroImages.Sitemap}
               alt="Sitemap"
-              className="rounded-xl"
+              className="rounded-xl w-full"
             />
           </div>
           <div>
             <h4 className="md:text-2xl text-xl mt-10">2. Sketches</h4>
             <p className="text-center text-lg my-3">
-              Low-Fidelity - Search & Profile
+              Low-Fidelity - Search (left) & Profile (right)
             </p>
-            <div className="md:flex md:space-x-10 md:w-3/6 space-y-5 md:space-y-0">
+            <div className="md:flex md:space-x-10 md:w-3/6 space-y-5 md:space-y-0 md:pr-5">
               <img
                 src={distroImages.SearchLowFi}
                 alt="Search Low-Fi"
@@ -525,7 +539,7 @@ export default function FoodDistro() {
                 (my version vs. team&#39;s pick)
               </p>
             </div>
-            <div className="md:flex md:space-x-10 md:w-3/6 space-y-5 md:space-y-0">
+            <div className="md:flex md:space-x-10 md:w-3/6 space-y-5 md:space-y-0 md:pr-5">
               <img
                 src={distroImages.SearchMidFi}
                 alt="Search Mid-Fi"
@@ -594,7 +608,7 @@ export default function FoodDistro() {
                 alt="CSS"
                 className="w-full rounded-xl"
               />
-              <div className="md:flex md:space-x-3 md:w-3/6 space-y-5 md:space-y-0">
+              <div className="md:flex md:space-x-3 md:w-3/6 space-y-5 md:space-y-0 md:pr-2">
                 <img
                   src={distroImages.CornerRadius}
                   alt="Corner Roundedness"
@@ -615,7 +629,7 @@ export default function FoodDistro() {
           </div>
           <div>
             <p className="text-center text-lg my-3">High-Fidelity</p>
-            <div className="md:flex md:grid-cols-3 md:space-x-5 md:w-3/6 space-y-5 md:space-y-0">
+            <div className="md:flex md:grid-cols-3 md:space-x-5 md:w-3/6 space-y-5 md:space-y-0 md:pr-5">
               <img
                 src={distroImages.MapSearchHighFi}
                 alt="Search Map Search"
@@ -649,7 +663,7 @@ export default function FoodDistro() {
               <p className="text-center my-3 text-lg">
                 Moderated Testing Examples (Zoom)
               </p>
-              <div className="space-y-5 md:w-2/6 md:grid-cols-3 md:flex md:gap-5">
+              <div className="space-y-5 md:w-2/6 md:grid-cols-3 md:flex md:gap-5 md:pr-5">
                 <img
                   src={distroImages.ModeratedTest1}
                   alt="Participant 1"
@@ -671,7 +685,7 @@ export default function FoodDistro() {
               <p className="text-center my-3 text-lg">
                 Unmoderated Testing Examples (Maze) - Food Donators
               </p>
-              <div className="space-y-5 md:w-2/6 md:grid-cols-3 md:flex md:gap-5">
+              <div className="space-y-5 md:w-2/6 md:grid-cols-3 md:flex md:gap-5 md:pr-5">
                 <img
                   src={distroImages.MazeTest1}
                   alt="Food Donator Participant 1"
@@ -691,7 +705,7 @@ export default function FoodDistro() {
               <p className="text-center my-3 text-lg">
                 Unmoderated Testing Examples (Maze) - Food Takers
               </p>
-              <div className="space-y-5 md:w-2/6 md:grid-cols-3 md:flex md:gap-5 mt-3">
+              <div className="space-y-5 md:w-2/6 md:grid-cols-3 md:flex md:gap-5 mt-3 md:pr-5">
                 <img
                   src={distroImages.MazeTest4}
                   alt="Food Taker Participant 1"
