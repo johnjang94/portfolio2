@@ -45,6 +45,8 @@ const router = createBrowserRouter([
       // Other
       { path: "/contact", element: <Contact /> },
       { path: "/lock", element: <Login /> },
+      // For any wrong URL, redirect to:
+      { path: "*", element: <NotFound /> },
     ],
   },
 ]);

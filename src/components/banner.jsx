@@ -8,7 +8,31 @@ import LogoTransparent from "/logo500.png";
 export default function Banner() {
   const location = useLocation();
 
+  const isNotRegistered = () => {
+    const registeredPaths = [
+      "/home",
+      "/about",
+      "/tools",
+      "/my-hobby",
+      "/design",
+      "/televu",
+      "/food",
+      "/tugo",
+      "/development",
+      "/contact",
+      "/lock",
+    ];
+    return !registeredPaths.includes(location.pathname);
+  };
+
   const getStyle = () => {
+    if (isNotRegistered()) {
+      return {
+        backgroundColor: "text-white",
+        logo: LogoTransparent,
+      };
+    }
+
     switch (location.pathname) {
       case "/televu":
       case "/development":
@@ -27,7 +51,6 @@ export default function Banner() {
     }
   };
 
-  // Use the returned object to set the background color and logo
   const { backgroundColor, logo } = getStyle();
 
   return (

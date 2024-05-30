@@ -11,6 +11,8 @@ export default {
         design: "url('/src/assets/design/televu.png')",
         animated: "url('/src/assets/accessory/background2.gif')",
         nightSky: "url('/src/assets/accessory/nightSky.jpeg')",
+        notFound: "url('/src/assets/not-found/notfoundbackground.png')",
+        notFound2: "url('/src/assets/not-found/notfoundbackground2.png')",
       },
     },
     keyframes: {

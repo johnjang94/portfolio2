@@ -17,6 +17,25 @@ export default function Root() {
   };
 
   const getBackgroundClass = () => {
+    const registeredPaths = [
+      "/home",
+      "/about",
+      "/tools",
+      "/my-hobby",
+      "/design",
+      "/televu",
+      "/food",
+      "/tugo",
+      "/development",
+      "/contact",
+      "/lock",
+    ];
+
+    const isRegistered = registeredPaths.some((path) => pathname === path);
+    if (!isRegistered) {
+      return "bg-notFound2 bg-cover";
+    }
+
     if (pathname === "/lock") {
       return "bg-animated bg-cover";
     } else if (pathname === "/tools" || pathname === "/tugo") {

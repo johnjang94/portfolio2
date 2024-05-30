@@ -28,8 +28,27 @@ export default function Nav({ pathname }) {
     setIsMenuOpen(false);
   };
 
-  const logoSrc = pathname === "/lock" ? Logo2 : Logo;
-  const textColor = pathname === "/lock" ? "text-white" : "text-black";
+  const isNotRegistered = () => {
+    const registeredPaths = [
+      "/home",
+      "/about",
+      "/tools",
+      "/my-hobby",
+      "/design",
+      "/televu",
+      "/food",
+      "/tugo",
+      "/development",
+      "/contact",
+      "/lock",
+    ];
+    return !registeredPaths.includes(pathname);
+  };
+
+  const logoSrc = pathname === "/lock" || isNotRegistered() ? Logo2 : Logo;
+
+  const textColor =
+    pathname === "/lock" || isNotRegistered() ? "text-white" : "text-black";
 
   return (
     <div
