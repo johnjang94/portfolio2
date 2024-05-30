@@ -10,7 +10,7 @@ const cardContainerClass = "md:flex md:grid-cols-2 mx-auto md:w-4/6 my-20";
 const cardImageClass =
   "md:block hidden md:w-3/6 mx-auto rounded-xl shadow-[rgba(99,99,99,0.2)_0px_2px_8px_0px]";
 const cardImageClassMobile =
-  "block md:hidden mx-auto m-5 rounded-xl shadow-[rgba(99,99,99,0.2)_0px_2px_8px_0px]";
+  "block md:hidden mx-auto m-5 mt-0 rounded-xl shadow-[rgba(99,99,99,0.2)_0px_2px_8px_0px]";
 const cardTextClass = "p-5 md:w-4/6 z-10";
 const iconContainerClass =
   "flex md:justify-start space-x-3 -mt-2 md:my-3 text-xl md:text-2xl";
@@ -39,7 +39,7 @@ const DevelopmentHome = () => {
           {project.featured && (
             <h5 className="md:text-start text-center">{project.featured}</h5>
           )}
-          <h1 className="md:text-start text-center text-3xl mb-5">
+          <h1 className="md:text-start text-center md:text-3xl text-2xl md:my-5 my-1">
             {project.projectTitle}
           </h1>
           <img
@@ -51,9 +51,9 @@ const DevelopmentHome = () => {
             {project.projectSummary}
           </p>
           <div className="flex md:flex-col items-center md:items-start justify-between md:justify-normal">
-            <div className="flex-wrap md:space-x-2 text-gray-400 my-5">
+            <div className="flex-wrap space-x-2 text-gray-400 md:my-5">
               {project.toolsUsed.map((tool, index) => (
-                <span key={index} className="mr-2 mb-2">
+                <span key={index} className="md:mr-2 mb-2 text-xs md:text-xl">
                   {tool}
                 </span>
               ))}
