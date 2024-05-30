@@ -109,10 +109,10 @@ export default function Televu() {
         <div className="md:my-28 mb-28 px-7 md:w-4/6">
           {/* ================ BACKGROUND =================== */}
           <div>
-            <h3 id="background" className="text-2xl mt-20 md:mt-0">
+            <h3 id="background" className="text-2xl mt-20 md:mt-0 mb-5">
               BACKGROUND
             </h3>
-            <h1 className="text-4xl font-medium">
+            <h1 className="md:text-4xl text-3xl font-medium">
               Chaos in medical sector due to COVID-19 and how the boom in IT
               seeks to help --- but challenges
             </h1>
@@ -136,10 +136,10 @@ export default function Televu() {
           </div>
           {/* =========================== RESEARCH =================== */}
           <div>
-            <h3 id="research" className="text-2xl">
+            <h3 id="research" className="text-2xl mb-5">
               RESEARCH
             </h3>
-            <h1 className="text-4xl font-medium">
+            <h1 className="md:text-4xl text-3xl font-medium">
               To understand why they would choose other platforms than what is
               already offered
             </h1>
@@ -192,14 +192,14 @@ export default function Televu() {
           </div>
           {/* ======================== RESEARCH INSIGHT =================== */}
           <div>
-            <h3 className="text-2xl mt-10">RESEARCH INSIGHT</h3>
-            <h1 className="text-4xl font-medium mb-5">
+            <h3 className="text-2xl mt-10 mb-5">RESEARCH INSIGHT</h3>
+            <h1 className="md:text-4xl text-3xl font-medium mb-5">
               Too much time wasted just to be familiar with the use
             </h1>
             <ul className="list-disc space-y-5 text-2xl">
               After in-depth conversation with the participants, we have
               discovered the following pain points:
-              <li className="mx-5">
+              <li className="mx-5 mt-5">
                 the login is slow and it&#39;s two-step. two-step does not mean
                 “two-step verification”
               </li>
@@ -221,10 +221,10 @@ export default function Televu() {
           </div>
           {/* ======================== COMPETITIVE ANALYSIS =================== */}
           <div>
-            <h3 id="competitive-analysis" className="text-2xl mt-10">
+            <h3 id="competitive-analysis" className="text-2xl mt-10 mb-5">
               COMPETITIVE ANALYSIS
             </h3>
-            <h1 className="text-4xl font-medium mb-5">
+            <h1 className="md:text-4xl text-3xl font-medium mb-5">
               Well-established brands were well-interacting with users
             </h1>
             <p className="text-2xl">
@@ -264,10 +264,10 @@ export default function Televu() {
           </div>
           {/* ======================== DESIGN PROCESS =================== */}
           <div>
-            <h3 id="design-process" className="text-2xl mt-10">
+            <h3 id="design-process" className="text-2xl mt-10 mb-5">
               DESIGN PROCESS - Brainstorm
             </h3>
-            <h1 className="text-4xl font-medium mb-5">
+            <h1 className="md:text-4xl text-3xl font-medium mb-5">
               How might we help the clinicians to use the platform faster?
             </h1>
             <p className="text-2xl">
@@ -331,11 +331,11 @@ export default function Televu() {
             </div>
           </div>
           <div>
-            <h3 className="text-2xl mt-10">
+            <h3 className="text-2xl mt-10 mb-5">
               DESIGN PROCESS - Sketch iteration
             </h3>
             {/* ================================================================== */}
-            <h1 className="text-4xl font-medium mb-5">
+            <h1 className="md:text-4xl text-2xl font-medium mb-5">
               Redesigning the Login, the Dashboard, and the Video-call Window
             </h1>
             <p className="text-2xl">&#x276E; Low-Fi &#x276F;</p>
@@ -403,16 +403,16 @@ export default function Televu() {
           </div>
           {/* =========================== USABILITY TESTING =================== */}
           <div className="my-10">
-            <h3 id="usability-testing" className="text-2xl">
+            <h3 id="usability-testing" className="text-2xl mb-5">
               USABILITY TESTING
             </h3>
-            <h1 className="text-3xl md:text-4xl font-medium">
+            <h1 className="md:text-4xl text-3xl font-medium">
               A moderated Usability Testing with 8 participants
             </h1>
-            <p className="my-2 text-2xl font-semibold">
+            <p className="my-2 md:text-2xl text-xl">
               What have we succeeded in?
             </p>
-            <ul className="list-disc px-10 space-y-5">
+            <ul className="list-disc px-10 space-y-5 text-green-500">
               <li>
                 video-call: all users clearly understood how to use the controls
                 and they understood where each type of control belongs to
@@ -422,10 +422,10 @@ export default function Televu() {
                 each page is intuitive
               </li>
             </ul>
-            <p className="my-2 text-2xl font-semibold">
+            <p className="my-2 md:text-2xl text-lg">
               What lessons have we learned?
             </p>
-            <ul className="list-disc px-10 space-y-5">
+            <ul className="list-disc px-10 space-y-5 text-red-500">
               <li>
                 UX terminology: some of the terminologies that we have used in
                 the new design might still be confusing to the users.
@@ -434,7 +434,7 @@ export default function Televu() {
           </div>
           {/* =========================== DESIGN CHANGES =================== */}
           <div className="my-10">
-            <h3 id="design-changes" className="text-2xl">
+            <h3 id="design-changes" className="text-2xl mb-5">
               DESIGN CHANGES
             </h3>
             <div className="md:justify-between md:items-center">
@@ -476,10 +476,10 @@ export default function Televu() {
           </div>
           {/* =========================== LESSONS LEARNED =================== */}
           <div className="my-10">
-            <h3 id="lessons-learned" className="text-2xl">
+            <h3 id="lessons-learned" className="text-2xl mb-5">
               LESSONS LEARNED
             </h3>
-            <h1 className="text-4xl font-medium my-3">
+            <h1 className="md:text-4xl text-3xl font-medium my-3">
               It is important to learn about the business structure.
             </h1>
             <p className="text-2xl">
