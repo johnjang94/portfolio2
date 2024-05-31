@@ -27,7 +27,7 @@ export default function Home() {
     const designElement = designRef.current;
     const topOffset =
       designElement.getBoundingClientRect().top + window.scrollY;
-    const offset = window.innerWidth <= 768 ? 280 : 330;
+    const offset = window.innerWidth <= 768 ? 310 : 330;
     const scrollPosition = topOffset - window.innerHeight / 2 + offset;
     window.scrollTo({ top: scrollPosition, behavior: "smooth" });
   };
@@ -128,7 +128,7 @@ export default function Home() {
           </button>
         </div>
       </section>
-      <section ref={developmentRef} className="-mb-28 md:mb-0">
+      <section ref={developmentRef}>
         <DevelopmentHome />
       </section>
     </div>

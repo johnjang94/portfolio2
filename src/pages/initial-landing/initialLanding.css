@@ -69,16 +69,17 @@ body {
 
 @keyframes h3-animate {
   0% {
-    margin-top: -50px;
-    display: hidden;
+    margin-top: -60px;
+    display: block;
+    opacity: 0;
   }
   50% {
-    margin-top: -20px;
+    transform: translateY(10px);
     display: block;
     opacity: 0.5;
   }
   100% {
-    margin-top: -20px;
+    margin-top: -40px;
     display: block;
     opacity: 1;
   }
@@ -90,11 +91,11 @@ body {
 
 @keyframes h3-animate2 {
   0% {
-    margin-top: -20px;
+    margin-top: -40px;
     opacity: 1;
   }
   100% {
-    margin-top: -20px;
+    margin-top: -40px;
     opacity: 0;
     transform: translateY(-500px);
   }

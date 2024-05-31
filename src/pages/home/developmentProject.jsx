@@ -5,7 +5,7 @@ import Ruminate from "../../assets/development/ruminate.png";
 
 export default function DevelopmentHome() {
   return (
-    <div className="mt-64">
+    <div className="my-44">
       <h1 className="text-lg md:text-4xl text-center">
         DEVELOPMENT AT THE LATEST
       </h1>
