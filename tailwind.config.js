@@ -13,6 +13,7 @@ export default {
         nightSky: "url('/src/assets/accessory/nightSky.jpeg')",
         notFound: "url('/src/assets/not-found/notfoundbackground.png')",
         notFound2: "url('/src/assets/not-found/notfoundbackground2.png')",
+        background: "url('/src/assets/accessory/background.gif')",
       },
     },
     keyframes: {

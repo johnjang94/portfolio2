@@ -80,7 +80,7 @@ export default function FoodDistro() {
         <h3 className="mt-14 mb-4 md:w-7/12 md:text-center mx-10 text-2xl">
           Product Design
         </h3>
-        <h1 className="mt-9 md:w-8/12 md:text-center mx-10 md:mx-14 md:text-5xl text-4xl">
+        <h1 className="mt-9 md:w-8/12 md:text-center mx-10 md:mx-14 md:text-5xl text-3xl">
           FOOD DISTRO
         </h1>
         <p className="mt-4 md:w-3/6 md:mx-auto mx-10 md:text-2xl text-xl">
@@ -124,7 +124,7 @@ export default function FoodDistro() {
             <h3 id="background" className="text-2xl mt-5">
               BACKGROUND
             </h3>
-            <h1 className="md:text-4xl text-3xl font-medium my-3">
+            <h1 className="md:text-4xl text-2xl font-medium my-3">
               Hands needed to reduce the growing waste of food
             </h1>
             <p className="my-5 md:text-2xl text-xl">
@@ -143,7 +143,7 @@ export default function FoodDistro() {
             <h3 id="research" className="text-2xl my-3">
               RESEARCH
             </h3>
-            <h1 className="md:text-4xl text-3xl font-medium my-3">
+            <h1 className="md:text-4xl text-2xl font-medium my-3">
               To understand why they say that the existing services do not
               exactly meet their needs
             </h1>
@@ -237,10 +237,10 @@ export default function FoodDistro() {
           </div>
           {/* ======================== COMPETITIVE ANALYSIS =================== */}
           <div>
-            <h3 id="competitive-analysis" className="text-2xl mt-10">
+            <h3 id="competitive-analysis" className="md:text-2xl text-lg mt-10">
               COMPETITIVE ANALYSIS
             </h3>
-            <h1 className="md:text-4xl text-3xl font-medium my-3">
+            <h1 className="md:text-4xl text-2xl font-medium my-3">
               To benchmark and let Food Distro app be competitive
             </h1>
             <p className="my-5 md:text-2xl text-xl list-disc">
@@ -277,7 +277,7 @@ export default function FoodDistro() {
                   className="w-3/6 p-5 rounded-xl"
                 />
               </div>
-              <div className="text-center space-x-14 md:space-x-80 ml-3">
+              <div className="text-center space-x-8 md:space-x-80 ml-3">
                 <span>BuyNothing</span>
                 <span>Too Good To Go</span>
               </div>
@@ -395,7 +395,7 @@ export default function FoodDistro() {
             <h3 id="design-process" className="md:text-2xl text-xl mt-10 mb-5">
               DESIGN PROCESS - brainstorm
             </h3>
-            <h1 className="md:text-4xl text-3xl font-medium my-3">
+            <h1 className="md:text-4xl text-2xl font-medium my-3">
               How might we meet the needs of the individuals differently?
             </h1>
             <ul className="md:text-2xl text-xl space-y-5">
@@ -486,15 +486,22 @@ export default function FoodDistro() {
           </div>
           <div>
             <h4 className="md:text-2xl text-xl mt-10">2. Sketches</h4>
-            <p className="text-center text-lg my-3">
+            <p className="text-center text-lg my-3 hidden md:block">
               Low-Fidelity - Search (left) & Profile (right)
             </p>
+            <p className="text-center text-lg mt-3 block md:hidden">
+              Low-Fidelity
+            </p>
+            <p className="text-center text-lg mb-3 block md:hidden">Search</p>
             <div className="md:flex md:space-x-10 md:w-3/6 space-y-5 md:space-y-0 md:pr-5">
               <img
                 src={distroImages.SearchLowFi}
                 alt="Search Low-Fi"
                 className="rounded-xl"
               />
+              <p className="text-center text-lg my-3 block md:hidden">
+                Profile
+              </p>
               <img
                 src={distroImages.ProfileLowfi}
                 alt="Profile Low-Fi"
@@ -535,16 +542,22 @@ export default function FoodDistro() {
           <div>
             <div className="md:flex items-center my-3 md:space-x-2 md:justify-center">
               <p className="text-center text-lg mt-3 md:mt-0">Mid-Fidelity</p>
-              <p className="text-center text-lg mb-3 md:mb-0">
+              <p className="text-center text-lg mb-3 md:mb-0 hidden md:block">
                 (my version vs. team&#39;s pick)
               </p>
             </div>
             <div className="md:flex md:space-x-10 md:w-3/6 space-y-5 md:space-y-0 md:pr-5">
+              <p className="text-center text-lg mb-3 md:mb-0 block md:hidden">
+                my version
+              </p>
               <img
                 src={distroImages.SearchMidFi}
                 alt="Search Mid-Fi"
                 className="rounded-xl"
               />
+              <p className="text-center text-lg mb-3 md:mb-0 block md:hidden">
+                Team&#39;s pick
+              </p>
               <img
                 src={distroImages.SearchTeamPick}
                 alt="Team's pick"
@@ -649,10 +662,10 @@ export default function FoodDistro() {
           </div>
           {/* =========================== USABILITY TESTING =================== */}
           <div className="my-10">
-            <h3 id="usability-testing" className="text-2xl my-5">
+            <h3 id="usability-testing" className="md:text-2xl text-lg my-5">
               USABILITY TESTING
             </h3>
-            <h1 className="text-3xl font-medium my-3">
+            <h1 className="md:text-4xl text-xl font-bold md:font-medium my-3">
               Two types of usability testing with 39 participants
             </h1>
             <p className="my-5 md:text-2xl text-xl">
@@ -729,7 +742,7 @@ export default function FoodDistro() {
             <h3 id="lessons-learned" className="text-2xl">
               LESSONS LEARNED
             </h3>
-            <h1 className="md:text-4xl text-3xl font-medium my-3">
+            <h1 className="md:text-4xl text-2xl font-medium my-3">
               Touching again on things that we have anticipated and things we
               did not see coming.
             </h1>

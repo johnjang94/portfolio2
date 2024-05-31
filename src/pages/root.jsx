@@ -33,11 +33,11 @@ export default function Root() {
 
     const isRegistered = registeredPaths.some((path) => pathname === path);
     if (!isRegistered) {
-      return "bg-notFound2 bg-cover";
+      return "bg-background bg-cover";
     }
 
     if (pathname === "/lock") {
-      return "bg-animated bg-cover";
+      return "bg-background bg-cover";
     } else if (pathname === "/tools" || pathname === "/tugo") {
       return "bg-glow bg-cover";
     } else {

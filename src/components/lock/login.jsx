@@ -41,9 +41,7 @@ export default function Login() {
       setAttemptCount(attemptCount + 1);
       const remainingAttempts = 5 - attemptCount - 1;
       if (remainingAttempts > 0) {
-        setErrorMessage(
-          `Incorrect Password. ${remainingAttempts} more attempts available`
-        );
+        setErrorMessage(`Please check my resume.`);
       } else {
         navigate("/home");
       }
@@ -52,9 +50,9 @@ export default function Login() {
 
   return (
     <div>
-      <div className="p-28 rounded-2xl bg-white gap-10 my-10 mx-auto w-fit opacity-border">
+      <div className="text-white my-28 md:w-2/6 w-full p-10 mx-auto">
         <h1 className="text-center mb-20 text-4xl">Password?</h1>
-        {errorMessage && <p className="text-red-500">{errorMessage}</p>}
+        {errorMessage && <p className="text-[#FF00FF]">{errorMessage}</p>}
         <form className="flex items-center mb-3" onSubmit={handleSubmit}>
           <input
             type="password"
@@ -73,7 +71,7 @@ export default function Login() {
           </button>
         )}
         {showMessage && (
-          <span className="text-red-500">please send me a message!</span>
+          <span className="text-[#FF00FF]">please check my resume!</span>
         )}
       </div>
     </div>
