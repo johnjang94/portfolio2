@@ -53,7 +53,7 @@ export default function NotFound() {
       </h1>
       <div
         id="redirect"
-        className="transition-opacity duration-1000 opacity-100 animate-fade-in-bottom"
+        className="transition-opacity duration-1000 opacity-100 animate-fade-in-bottom h-screen overflow-y-scroll"
       >
         <h1 className="text-center md:my-20 my-20 md:text-5xl text-2xl font-bold text-white">
           Where would you like to explore?
