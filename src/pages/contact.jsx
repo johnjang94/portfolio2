@@ -2,9 +2,11 @@ import { MdOutlineSend } from "react-icons/md";
 
 export default function Contact() {
   return (
-    <div className="my-10 py-14 px-5">
-      <h1 className="text-3xl my-10 text-center">Stay in touch with me!</h1>
-      <div className="w-full max-w-md mx-auto">
+    <div className="md:my-5 my-28 md:py-4 px-10">
+      <h1 className="md:text-3xl text-lg md:my-5 my-20 text-center">
+        Stay in touch with me!
+      </h1>
+      <div className="w-full max-w-lg mx-auto">
         <form action="">
           <div className="mb-4">
             <label htmlFor="name">Name</label>
