@@ -112,7 +112,7 @@ export default function Home() {
           </button>
         </div>
       </header>
-      <section ref={workRef}>
+      <section ref={workRef} className="mt-40">
         <Work />
         <div className="text-center">
           <button onClick={scrollToDesign}>

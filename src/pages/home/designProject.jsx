@@ -6,7 +6,7 @@ import FoodDistro from "../../assets/design/foodDistro.png";
 export default function DesignHome() {
   return (
     <div className="my-64">
-      <h1 className="text-2xl md:text-4xl text-center">DESIGN AT THE LATEST</h1>
+      <h1 className="text-xl md:text-4xl text-center">DESIGN AT THE LATEST</h1>
       <h2 className="text-4xl md:text-8xl my-2 text-center">FOOD DISTRO</h2>
       <img
         src={FoodDistro}

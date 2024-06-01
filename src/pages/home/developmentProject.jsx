@@ -5,8 +5,8 @@ import Ruminate from "../../assets/development/ruminate.png";
 
 export default function DevelopmentHome() {
   return (
-    <div className="my-44">
-      <h1 className="text-lg md:text-4xl text-center">
+    <div className="my-52">
+      <h1 className="text-base md:text-4xl text-center">
         DEVELOPMENT AT THE LATEST
       </h1>
       <h2 className="text-5xl md:text-9xl my-2 text-center">RUMINATE</h2>

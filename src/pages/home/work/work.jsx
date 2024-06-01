@@ -13,7 +13,7 @@ export default function Work() {
 
   const getTextSize = (job) => {
     if (job.id === 3) {
-      return "md:text-lg";
+      return "md:text-lg text-sm";
     } else {
       return "md:text-xl";
     }
@@ -55,7 +55,7 @@ export default function Work() {
   };
 
   return (
-    <div className="my-8 md:-mx-20">
+    <div className="md:-mx-20">
       <header className="md:flex justify-between items-center">
         <h1 className="md:text-4xl text-2xl text-center md:text-start mb-3">
           PLACES I WORKED AT
