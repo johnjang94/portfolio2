@@ -37,9 +37,9 @@ export default function NotFound() {
 
   const getSize = () => {
     if (window.innerWidth < 768) {
-      return 300;
+      return 220;
     } else {
-      return 350;
+      return 250;
     }
   };
 
@@ -47,7 +47,7 @@ export default function NotFound() {
     <div>
       <h1
         id="lost"
-        className="h-screen text-center md:my-56 my-80 md:text-7xl text-5xl font-bold text-white transition-all duration-3000"
+        className="text-center md:my-56 my-80 md:text-5xl text-5xl font-bold text-white transition-all duration-3000"
       >
         Are you lost?
       </h1>
@@ -55,17 +55,17 @@ export default function NotFound() {
         id="redirect"
         className="transition-opacity duration-1000 opacity-100 animate-fade-in-bottom"
       >
-        <h1 className="text-center md:my-48 my-20 md:text-7xl text-2xl font-bold text-white">
+        <h1 className="text-center md:my-20 my-20 md:text-5xl text-2xl font-bold text-white">
           Where would you like to explore?
         </h1>
-        <div className="md:grid-cols-3 md:gap-16 md:flex my-5 mx-10 text-white md:justify-center">
+        <div className="md:grid-cols-3 md:gap-16 md:flex my-8 mx-16 md:mx-10 text-white md:justify-center">
           <Link to="/design">
             <button className="hover:bg-gray-200 hover:text-black rounded-xl hover:brightness-125">
               <img
                 src={DesignHome}
                 alt="Design Home"
-                width={300}
-                className="rounded-xl h-64 md:mx-0"
+                width={220}
+                className="rounded-xl h-48 md:mx-0"
               />
               <h3 className="mx-10 my-5">Design Home</h3>
             </button>
@@ -75,7 +75,7 @@ export default function NotFound() {
               <img
                 src={Profile}
                 alt="My profile"
-                width={300}
+                width={220}
                 className="rounded-xl md:mx-0"
               />
               <h3 className="mx-10 my-5">About me</h3>
