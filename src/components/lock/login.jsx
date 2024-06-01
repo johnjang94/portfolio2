@@ -50,7 +50,7 @@ export default function Login() {
 
   return (
     <div>
-      <div className="text-white my-28 md:w-2/6 w-full p-10 mx-auto">
+      <div className="text-white my-52 md:w-2/6 w-full p-10 mx-auto">
         <h1 className="text-center mb-20 text-4xl">Password?</h1>
         {errorMessage && <p className="text-[#FF00FF]">{errorMessage}</p>}
         <form className="flex items-center mb-3" onSubmit={handleSubmit}>
