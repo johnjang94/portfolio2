@@ -2,8 +2,8 @@
   "routes": [{ "src": "/[^.]+", "dest": "/", "status": 200 }],
   "rewrites": [
     {
-      "source": "/contact/:splat",
-      "destination": "${env.BACKEND_PROXY2}/contact/:splat"
+      "source": "/contact",
+      "destination": "${env.BACKEND_PROXY2}/contact"
     }
   ]
 }
