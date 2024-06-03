@@ -16,7 +16,7 @@ export default function Contact() {
     });
   };
 
-  const SERVER = import.meta.env.SERVER;
+  const SERVER = import.meta.env.BACKEND_PROXY;
 
   const handleSubmit = async (e) => {
     e.preventDefault();
