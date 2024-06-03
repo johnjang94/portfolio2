@@ -1,16 +1,20 @@
-import { defineConfig } from "vite";
+import { defineConfig, loadEnv } from "vite";
 import react from "@vitejs/plugin-react";
+import { process } from "process";
 
-// https://vitejs.dev/config/
-export default defineConfig({
-  plugins: [react()],
-  server: {
-    proxy: {
-      "/contact": {
-        target: "http://portfolio-contact.us-east-1.elasticbeanstalk.com",
-        changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/contact/, "/contact"),
+export default defineConfig(({ mode }) => {
+  const env = loadEnv(mode, process.cwd(), "");
+
+  return {
+    plugins: [react()],
+    server: {
+      proxy: {
+        "/contact": {
+          target: env.VITE_BACKEND_PROXY2,
+          changeOrigin: true,
+          rewrite: (path) => path.replace(/^\/contact/, "/contact"),
+        },
       },
     },
-  },
+  };
 });
