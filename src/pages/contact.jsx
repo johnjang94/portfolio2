@@ -22,7 +22,7 @@ export default function Contact() {
     e.preventDefault();
 
     try {
-      const response = await fetch(`${SERVER}/inquiry`, {
+      const response = await fetch(`${SERVER}/contact`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
