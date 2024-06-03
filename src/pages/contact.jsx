@@ -16,19 +16,23 @@ export default function Contact() {
     });
   };
 
-  const SERVER = import.meta.env.VITE_BACKEND_PROXY;
+  const SERVER = import.meta.env.SERVER;
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
-      const response = await fetch(`${SERVER}/contact`, {
+      const response = await fetch(`${SERVER}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
       });
+
+      if (!response.ok) {
+        throw new Error(`Error: ${response.statusText}`);
+      }
 
       const result = await response.text();
       alert(result);
