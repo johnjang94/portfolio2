@@ -1,9 +1,9 @@
 {
   "routes": [{ "src": "/[^.]+", "dest": "/", "status": 200 }],
-  "redirects": [
+  "rewrites": [
     {
-      "source": "/contact",
-      "destination": "http://portfolio-contact.us-east-1.elasticbeanstalk.com/contact/:splat"
+      "source": "/contact/:splat",
+      "destination": "${env.BACKEND_PROXY2}/contact/:splat"
     }
   ]
 }
