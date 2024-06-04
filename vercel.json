@@ -3,7 +3,7 @@
   "rewrites": [
     {
       "source": "/contact",
-      "destination": "${env.BACKEND_PROXY2}/contact"
+      "destination": "http://portfolio-contact.us-east-1.elasticbeanstalk.com/contact"
     }
   ]
 }
