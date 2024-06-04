@@ -20,6 +20,7 @@ export default function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log("Form submitted", formData);
 
     try {
       const response = await fetch(`${SERVER}`, {

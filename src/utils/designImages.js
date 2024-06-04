@@ -73,9 +73,9 @@ import AppExposure from "../assets/food-distro/research/pie-chart.png";
 import Experience from "../assets/food-distro/research/age&exp.png";
 import Experience2 from "../assets/food-distro/research/age&exp2.png";
 import FoodDonor from "../assets/food-distro/research/donor.png";
-import FoodDonorJourney from "../assets/food-distro/research/journey-map-donor.png";
+import FoodDonorJourney from "../assets/food-distro/research/donor2.png";
 import FoodTaker from "../assets/food-distro/research/taker.png";
-import FoodTakerJourney from "../assets/food-distro/research/journey-map-taker.png";
+import FoodTakerJourney from "../assets/food-distro/research/taker2.png";
 
 // COMPETITIVE_ANALYSIS
 import OLIO from "../assets/food-distro/competitive-analysis/olio-logo.jpeg";

@@ -665,7 +665,7 @@ export default function FoodDistro() {
             <h3 id="usability-testing" className="md:text-2xl text-lg my-5">
               USABILITY TESTING
             </h3>
-            <h1 className="md:text-4xl text-xl font-bold md:font-medium my-3">
+            <h1 className="md:text-3xl text-xl font-bold md:font-medium my-3">
               Two types of usability testing with 39 participants
             </h1>
             <p className="my-5 md:text-2xl text-xl">
