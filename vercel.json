@@ -4,6 +4,5 @@
       "source": "/contact",
       "destination": "http://portfolio-contact.us-east-1.elasticbeanstalk.com/contact"
     }
-  ],
-  "routes": [{ "src": "/[^.]+", "dest": "/", "status": 200 }]
+  ]
 }
