@@ -189,3 +189,5 @@ export const distroImages = {
 export const distroVideo = {
   DistroDemo,
 };
+
+// ==================================== TUGO TRAVEL IMAGES ======================================

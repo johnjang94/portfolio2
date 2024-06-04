@@ -56,7 +56,7 @@ export default function Login() {
         <form className="flex items-center mb-3" onSubmit={handleSubmit}>
           <input
             type="password"
-            className={`p-2 w-full rounded-l-lg ${inputBg} hover:bg-slate-100`}
+            className={`p-2 w-full rounded-l-lg ${inputBg} hover:bg-slate-100 text-black`}
             onFocus={handleFocus}
             onBlur={handleBlur}
             onChange={(e) => setPassword(e.target.value)}

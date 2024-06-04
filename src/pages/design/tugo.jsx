@@ -77,7 +77,7 @@ export default function Tugo() {
           UX/UI Design
         </h3>
         <h1 className="mt-9 md:w-8/12 md:text-center mx-9 md:mx-12 md:text-5xl text-4xl">
-          TUGO TRAVEL
+          TUGO TRAVEL Insurance
         </h1>
         <p className="mt-4 md:w-3/6 md:mx-auto mx-10 md:text-2xl text-xl">
           A food donation mobile app that connects individual donators and
