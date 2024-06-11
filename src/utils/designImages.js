@@ -204,9 +204,14 @@ import CustomerJourneyMap from "../assets/tugo/research/customer-journey-map-new
 // TuGo Iteration
 import Brainstorm from "../assets/tugo/iterate/brainstorm.png";
 import DesignGuide from "../assets/tugo/design-process/design-guide/guide.png";
+// ========== Low-Fi ==========
 import AboutUsLowFi from "../assets/tugo/design-process/low-fidelity/about-us.png";
 import InsuranceIntroLowFi from "../assets/tugo/design-process/low-fidelity/insurance-introduction.png";
 import SignUpLowFi from "../assets/tugo/design-process/low-fidelity/sign-up.png";
+// ========== Mid-Fi ==========
+import ContactMidFi from "../assets/tugo/design-process/mid-fidelity/contact.png";
+import InsuranceMidFi from "../assets/tugo/design-process/mid-fidelity/insurance.png";
+import LoginMidFi from "../assets/tugo/design-process/mid-fidelity/login.png";
 
 // TuGo Design Changes
 import OldLoginPage from "../assets/tugo/design-changes/old-login.png";
@@ -228,6 +233,9 @@ export const tugoImages = {
   AboutUsLowFi,
   InsuranceIntroLowFi,
   SignUpLowFi,
+  ContactMidFi,
+  InsuranceMidFi,
+  LoginMidFi,
   OldLoginPage,
   OldIntroduction,
   OldContact,

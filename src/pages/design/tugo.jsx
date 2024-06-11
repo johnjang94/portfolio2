@@ -1,11 +1,10 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { tugoImages } from "../../utils/designImages";
 import { TuGoNav } from "../../components/designSubNav";
 import TravelNav from "../../components/travelNav";
 
 export default function Tugo() {
   const [currentSection, setCurrentSection] = useState("background");
-  const [visibleSections, setVisibleSections] = useState({});
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -16,7 +15,7 @@ export default function Tugo() {
       "research",
       "design-process",
       "design-changes",
-      "lessons-learned",
+      "next-steps",
     ];
 
     const options = {
@@ -50,25 +49,6 @@ export default function Tugo() {
     };
   }, []);
 
-  const handleToggle = (section) => {
-    setVisibleSections((prevState) => ({
-      ...prevState,
-      [section]: !prevState[section],
-    }));
-  };
-
-  const contentRef = useRef({});
-
-  useEffect(() => {
-    Object.keys(visibleSections).forEach((section) => {
-      if (contentRef.current[section]) {
-        contentRef.current[section].style.maxHeight = visibleSections[section]
-          ? `${contentRef.current[section].scrollHeight}px`
-          : "0";
-      }
-    });
-  }, [visibleSections]);
-
   return (
     <div>
       <TuGoNav />
@@ -76,7 +56,7 @@ export default function Tugo() {
         <h3 className="mt-14 mb-4 md:w-7/12 md:text-center md:mx-5 mx-9 text-lg md:text-2xl">
           UX/UI Design
         </h3>
-        <h1 className="mt-9 md:w-8/12 md:text-center mx-9 md:mx-52 md:text-5xl text-xl">
+        <h1 className="mt-9 md:w-8/12 md:text-center mx-9 md:mx-52 md:text-5xl text-lg">
           TUGO TRAVEL INSURANCE
         </h1>
         <p className="mt-4 md:w-3/6 md:mx-auto mx-10 md:text-2xl text-xl">
@@ -210,7 +190,7 @@ export default function Tugo() {
           {/* ================ ITERATION =================== */}
           <div>
             <h3 id="design-process" className="text-2xl my-5">
-              ITERATION
+              ITERATION - Design Process
             </h3>
             <p className="md:text-2xl text-xl">
               Hearing the voices, the brainstorm was focused on how to provide
@@ -222,6 +202,44 @@ export default function Tugo() {
               alt="Brainstorm"
               className="rounded-2xl"
             />
+            <div>
+              <p className="text-center mt-10 mb-5">Low-Fidelity</p>
+              <div className="md:flex md:gap-10 md:grid-cols-3 md:w-72 md:pr-3 space-y-5 md:space-y-0">
+                <img
+                  src={tugoImages.AboutUsLowFi}
+                  alt="About Us Low-Fi"
+                  className="rounded-2xl"
+                />
+                <img
+                  src={tugoImages.InsuranceIntroLowFi}
+                  alt="Insurance Introduction Low-Fi"
+                  className="rounded-2xl"
+                />
+                <img
+                  src={tugoImages.SignUpLowFi}
+                  alt="Sign Up Low-Fi"
+                  className="rounded-2xl"
+                />
+              </div>
+              <p className="text-center mt-10 mb-5">Mid-Fidelity</p>
+              <div className="md:flex md:gap-10 md:grid-cols-3 md:w-72 md:pr-3 space-y-5 md:space-y-0">
+                <img
+                  src={tugoImages.ContactMidFi}
+                  alt="Contact Mid-Fi"
+                  className="rounded-2xl"
+                />
+                <img
+                  src={tugoImages.InsuranceMidFi}
+                  alt="Insurance Mid-Fi"
+                  className="rounded-2xl"
+                />
+                <img
+                  src={tugoImages.LoginMidFi}
+                  alt="Login Mid-fi"
+                  className="rounded-2xl"
+                />
+              </div>
+            </div>
             <div className="bg-white p-5 rounded-2xl mt-10 mb-5">
               <p className="text-center">Sample Design Guide</p>
               <img
@@ -236,43 +254,68 @@ export default function Tugo() {
             <h3 id="design-changes" className="text-2xl mt-10 mb-5">
               DESIGN CHANGES
             </h3>
-            <p className="text-center my-5">Old vs New</p>
-            <div className="gap-10 flex">
-              <div className="space-y-10">
-                <img
-                  src={tugoImages.OldLoginPage}
-                  alt="Old Login page"
-                  className="rounded-2xl"
-                />
-                <img
-                  src={tugoImages.OldIntroduction}
-                  alt="Old Introduction page"
-                  className="rounded-2xl"
-                />
-                <img
-                  src={tugoImages.OldContact}
-                  alt="Old Contact page"
-                  className="rounded-2xl"
-                />
-              </div>
-              <div className="space-y-10">
-                <img
-                  src={tugoImages.NewInsurancePage}
-                  alt="New insurance page"
-                  className="rounded-2xl"
-                />
-                <img
-                  src={tugoImages.NewContactPage}
-                  alt="New Contact Concept page"
-                  className="rounded-2xl"
-                />
-                <img
-                  src={tugoImages.NewSignUpPage}
-                  alt="New Sign Up page"
-                  className="rounded-2xl"
-                />
-              </div>
+            <p className="text-center my-5">
+              Here are sample images for you to compare how the changes were
+              made from the old design.
+            </p>
+            <p className="text-center my-5">Old Design</p>
+            <div className="md:flex md:gap-10 md:grid-cols-3 md:w-72 md:pr-3 space-y-5 md:space-y-0">
+              <img
+                src={tugoImages.OldLoginPage}
+                alt="Old Login page"
+                className="rounded-2xl"
+              />
+              <img
+                src={tugoImages.OldIntroduction}
+                alt="Old Introduction page"
+                className="rounded-2xl"
+              />
+              <img
+                src={tugoImages.OldContact}
+                alt="Old Contact page"
+                className="rounded-2xl"
+              />
             </div>
+            <p className="text-center my-5">New Design</p>
+            <div className="md:flex md:gap-10 md:grid-cols-3 md:w-72 md:pr-3 space-y-5 md:space-y-0">
+              <img
+                src={tugoImages.NewInsurancePage}
+                alt="New insurance page"
+                className="rounded-2xl"
+              />
+              <img
+                src={tugoImages.NewContactPage}
+                alt="New Contact Concept page"
+                className="rounded-2xl"
+              />
+              <img
+                src={tugoImages.NewSignUpPage}
+                alt="New Sign Up page"
+                className="rounded-2xl"
+              />
+            </div>
+          </div>
+          {/* =========================== NEXT STEPS =================== */}
+          <div>
+            <h3 id="next-steps" className="text-2xl mt-10 mb-5">
+              NEXT STEPS
+            </h3>
+            <ul className="md:text-2xl text-xl list-disc">
+              We only had time to focus on re-designing the screens for the
+              desktop use, so the next phase team needs to work on designing the
+              mobile screens.
+              <li>
+                the use of smartphones are increasingly prevalent among the
+                users, but we have been focusing refreshing the look on the
+                desktop.
+              </li>
+              <li>
+                the website needs to consider AODA-standards. We have many
+                people with disabilities in the society, but we have not had a
+                chance to respect the Accessibility for Ontarioans and
+                Disabilities Act.
+              </li>
+            </ul>
           </div>
         </div>
       </section>
