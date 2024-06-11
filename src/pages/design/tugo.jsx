@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { tugoImages } from "../../utils/designImages";
 import { TuGoNav } from "../../components/designSubNav";
 import TravelNav from "../../components/travelNav";
+import Footer from "../../components/footer";
 
 export default function Tugo() {
   const [currentSection, setCurrentSection] = useState("background");
@@ -319,6 +320,7 @@ export default function Tugo() {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }

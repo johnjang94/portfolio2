@@ -37,6 +37,7 @@ export default function Banner() {
       case "/televu":
       case "/development":
       case "/food":
+      case "/tugo":
         return {
           backgroundColor: "bg-black text-white",
           logo: LogoTransparent,
