@@ -1,5 +1,7 @@
 import { useEffect, useRef, useState } from "react";
+import { tugoImages } from "../../utils/designImages";
 import { TuGoNav } from "../../components/designSubNav";
+import TravelNav from "../../components/travelNav";
 
 export default function Tugo() {
   const [currentSection, setCurrentSection] = useState("background");
@@ -10,11 +12,9 @@ export default function Tugo() {
 
     const sectionIds = [
       "background",
+      "problem-statement",
       "research",
       "design-process",
-      "mid-fidelity",
-      "competitive-analysis",
-      "usability-testing",
       "design-changes",
       "lessons-learned",
     ];
@@ -80,9 +80,8 @@ export default function Tugo() {
           TUGO TRAVEL INSURANCE
         </h1>
         <p className="mt-4 md:w-3/6 md:mx-auto mx-10 md:text-2xl text-xl">
-          A food donation mobile app that connects individual donators and
-          takers locally to reduce the food waste and the poverty around in the
-          communities.
+          The assurance that you have a back-up wherever you go and whenever you
+          need came back with a fresh look.
         </p>
       </header>
       <section className="grid-cols-3 justify-between flex my-20 md:w-3/6 md:mx-auto mx-10">
@@ -101,7 +100,181 @@ export default function Tugo() {
         </div>
       </section>
       <section className="bg-slate-500 p-5 rounded-xl w-5/6 mx-auto">
-        {/*  */}
+        <img
+          src={tugoImages.Showcase}
+          alt="Demo showcase"
+          className="rounded-xl mx-auto"
+        />
+      </section>
+      <section className="md:flex md:flex-1">
+        <div>
+          <TravelNav currentSection={currentSection} isDemoApplicable={false} />
+        </div>
+        <div className="md:my-28 px-7 md:w-4/6">
+          {/* ================ BACKGROUND =================== */}
+          <div>
+            <h3 id="background" className="text-2xl my-5">
+              BACKGROUND
+            </h3>
+            <h1 className="md:text-4xl text-2xl font-medium my-3">
+              Relief & Comfort vs. Liability
+            </h1>
+            <p className="md:text-2xl text-xl mb-10">
+              It is quite essential that you need an insurance while exploring a
+              new place. Insurances are usually meant to give you some level of
+              relief and they should be reachable. The current website might
+              have good intentions, but travelers might question if this
+              insurance is really standing close to them.
+            </p>
+          </div>
+          {/* ================ PROBLEM STATEMENT =================== */}
+          <div>
+            <h3 id="problem-statement" className="text-2xl my-5">
+              PROBLEM STATEMENT
+            </h3>
+            <p className="md:text-2xl text-xl mb-10">
+              Some travelers who went abroad might have faced some issues such
+              as delayed flights, loss of luggage or health-related issues might
+              have seeked for help from TuGo Travel Insurance, but they get
+              frustrated once they reach TuGo website because the website
+              provides an overwhelming amount of information and the travelers
+              often feel lost on where to find the information that interests
+              them.
+            </p>
+          </div>
+          {/* ================ RESEARCH =================== */}
+          <div>
+            <h3 id="research" className="text-2xl my-5">
+              RESEARCH
+            </h3>
+            <h1 className="md:text-4xl text-2xl font-medium my-3">
+              To discover TuGo Travel&#39;s{" "}
+              <span className="italics text-red-500">weak points</span>
+            </h1>
+            <p className="md:text-2xl text-xl">
+              SWOT analysis was completed regarding TuGo Travel Insurance
+              company&#39;s main website to understand its business structure
+              and to identify possible risks. After SWOT, competitive analysis
+              on other well-known brands was completed to identify services and
+              benchmark the websites if applicable. In addition, we had voices
+              regarding the experience with TuGo Travel Insurance.
+            </p>
+            <div className="text-center mx-auto space-y-5">
+              <p className="mt-10">SWOT Analysis</p>
+              <img
+                src={tugoImages.SWOT}
+                alt="SWOT Analysis"
+                className="rounded-2xl"
+              />
+              <p className="mt-10">Competitive Analysis</p>
+              <img
+                src={tugoImages.CompetitiveAnalysis}
+                alt="Competitive Analysis"
+                className="rounded-2xl"
+              />
+              <p className="mt-10">User Personas</p>
+              <img
+                src={tugoImages.Chris}
+                alt="User Persona: Chris"
+                className="rounded-2xl"
+              />
+              <img
+                src={tugoImages.Olivier}
+                alt="User Persona: Olivier"
+                className="rounded-2xl"
+              />
+              <p className="mt-10">Customer Journey Map</p>
+              <img
+                src={tugoImages.CustomerJourneyMap}
+                alt="Customer Journey Map"
+                className="rounded-2xl"
+              />
+            </div>
+            <p className="my-5 md:text-2xl text-xl text-blue-500">
+              According to the research, TuGo Travel Insurance is usually quick
+              to respond to the customer inquiries and specifically focuses on
+              travel-related products. Users were optimistic regarding the
+              visuals as the visuals were helpful in navigating around the
+              website.
+            </p>
+            <p className="md:text-2xl text-xl text-red-500 mb-10">
+              Besides, the potential risk that they carry is that they have
+              almost zero control on the circumstances of another country
+              regardless of the political, economic or safety concerns. Having
+              said that, they need to alter the coverages depending on the
+              regions. In addition, the users felt that they needed more
+              guidance on whichever product to choose that would meet their
+              needs.
+            </p>
+          </div>
+          {/* ================ ITERATION =================== */}
+          <div>
+            <h3 id="design-process" className="text-2xl my-5">
+              ITERATION
+            </h3>
+            <p className="md:text-2xl text-xl">
+              Hearing the voices, the brainstorm was focused on how to provide
+              designs that are simple, aesthetic, catchy, and engaging.
+            </p>
+            <p className="text-center mt-10 mb-5">Brainstorm</p>
+            <img
+              src={tugoImages.Brainstorm}
+              alt="Brainstorm"
+              className="rounded-2xl"
+            />
+            <div className="bg-white p-5 rounded-2xl mt-10 mb-5">
+              <p className="text-center">Sample Design Guide</p>
+              <img
+                src={tugoImages.DesignGuide}
+                alt="Design Guide"
+                className="rounded-2xl"
+              />
+            </div>
+          </div>
+          {/* ================ DESIGN CHANGES =================== */}
+          <div>
+            <h3 id="design-changes" className="text-2xl mt-10 mb-5">
+              DESIGN CHANGES
+            </h3>
+            <p className="text-center my-5">Old vs New</p>
+            <div className="gap-10 flex">
+              <div className="space-y-10">
+                <img
+                  src={tugoImages.OldLoginPage}
+                  alt="Old Login page"
+                  className="rounded-2xl"
+                />
+                <img
+                  src={tugoImages.OldIntroduction}
+                  alt="Old Introduction page"
+                  className="rounded-2xl"
+                />
+                <img
+                  src={tugoImages.OldContact}
+                  alt="Old Contact page"
+                  className="rounded-2xl"
+                />
+              </div>
+              <div className="space-y-10">
+                <img
+                  src={tugoImages.NewInsurancePage}
+                  alt="New insurance page"
+                  className="rounded-2xl"
+                />
+                <img
+                  src={tugoImages.NewContactPage}
+                  alt="New Contact Concept page"
+                  className="rounded-2xl"
+                />
+                <img
+                  src={tugoImages.NewSignUpPage}
+                  alt="New Sign Up page"
+                  className="rounded-2xl"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   );

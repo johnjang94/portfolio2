@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import DesignNav from "../../components/designNav";
+import DistroNav from "../../components/distroNav";
 import { distroImages, distroVideo } from "../../utils/designImages";
 import { FoodDistroNav } from "../../components/designSubNav";
 import "./foodDistro.css";
@@ -116,7 +116,7 @@ export default function FoodDistro() {
       </section>
       <section className="md:flex md:flex-1">
         <div>
-          <DesignNav currentSection={currentSection} isDemoApplicable={false} />
+          <DistroNav currentSection={currentSection} isDemoApplicable={false} />
         </div>
         <div className="md:my-28 px-7 md:w-4/6">
           {/* ================ BACKGROUND =================== */}

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { TelevuNav } from "../../components/designSubNav";
-import ReDesignNav from "../../components/redesignNav";
+import TeleVUNav from "../../components/teleVUNav";
 import { CgProfile } from "react-icons/cg";
 import { televuImages } from "../../utils/designImages";
 import Footer from "../../components/footer";
@@ -104,7 +104,7 @@ export default function Televu() {
       </section>
       <section className="md:flex md:flex-1">
         <div>
-          <ReDesignNav currentSection={currentSection} />
+          <TeleVUNav currentSection={currentSection} isDemoApplicable={false} />
         </div>
         <div className="md:my-28 mb-28 px-7 md:w-4/6">
           {/* ================ BACKGROUND =================== */}

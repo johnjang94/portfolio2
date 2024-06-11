@@ -191,3 +191,47 @@ export const distroVideo = {
 };
 
 // ==================================== TUGO TRAVEL IMAGES ======================================
+// TuGo Travel Demo
+import Showcase from "../assets/tugo/demo/exampleDemo.gif";
+
+// TuGo Research
+import SWOT from "../assets/tugo/research/SWOT-TuGo.png";
+import CompetitiveAnalysis from "../assets/tugo/research/competitive-analysis.png";
+import Chris from "../assets/tugo/research/traveller-chris.png";
+import Olivier from "../assets/tugo/research/traveller-olivier.png";
+import CustomerJourneyMap from "../assets/tugo/research/customer-journey-map-new.png";
+
+// TuGo Iteration
+import Brainstorm from "../assets/tugo/iterate/brainstorm.png";
+import DesignGuide from "../assets/tugo/design-process/design-guide/guide.png";
+import AboutUsLowFi from "../assets/tugo/design-process/low-fidelity/about-us.png";
+import InsuranceIntroLowFi from "../assets/tugo/design-process/low-fidelity/insurance-introduction.png";
+import SignUpLowFi from "../assets/tugo/design-process/low-fidelity/sign-up.png";
+
+// TuGo Design Changes
+import OldLoginPage from "../assets/tugo/design-changes/old-login.png";
+import OldIntroduction from "../assets/tugo/design-changes/old-introduction.png";
+import OldContact from "../assets/tugo/design-changes/old-contact.png";
+import NewInsurancePage from "../assets/tugo/design-changes/new-insurance.png";
+import NewContactPage from "../assets/tugo/design-changes/new-contact.png";
+import NewSignUpPage from "../assets/tugo/design-changes/new-registration.png";
+
+export const tugoImages = {
+  Showcase,
+  SWOT,
+  CompetitiveAnalysis,
+  Chris,
+  Olivier,
+  CustomerJourneyMap,
+  Brainstorm,
+  DesignGuide,
+  AboutUsLowFi,
+  InsuranceIntroLowFi,
+  SignUpLowFi,
+  OldLoginPage,
+  OldIntroduction,
+  OldContact,
+  NewInsurancePage,
+  NewContactPage,
+  NewSignUpPage,
+};

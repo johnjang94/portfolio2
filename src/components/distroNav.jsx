@@ -11,7 +11,7 @@ const sections = [
   { id: "lessons-learned", label: "Lessons Learned from the Project" },
 ];
 
-export default function ReDesignNav({ currentSection }) {
+export default function DistroNav({ currentSection }) {
   const [selectedSection, setSelectedSection] = useState(currentSection);
 
   const handleScroll = (id) => {
@@ -71,6 +71,6 @@ export default function ReDesignNav({ currentSection }) {
   );
 }
 
-ReDesignNav.propTypes = {
+DistroNav.propTypes = {
   currentSection: PropTypes.string.isRequired,
 };

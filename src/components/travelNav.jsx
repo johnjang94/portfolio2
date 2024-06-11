@@ -3,17 +3,17 @@ import PropTypes from "prop-types";
 
 const sections = [
   { id: "background", label: "Background" },
+  { id: "problem-statement", label: "Problem Statement" },
   { id: "research", label: "Research" },
-  { id: "competitive-analysis", label: "Competitive Analysis" },
   { id: "design-process", label: "Design Process" },
-  { id: "usability-testing", label: "Usability Testing" },
+  { id: "design-changes", label: "Design Changes" },
   { id: "lessons-learned", label: "Lessons Learned from the Project" },
 ];
 
 const demoSection = { id: "demo", label: "Demo" };
 
-export default function DesignNav({ currentSection, isDemoApplicable }) {
-  const [selectedSection, setSelectedSection] = useState(currentSection);
+export default function TravelNav({ currentSection, isDemoApplicable }) {
+  const [selectedSection, setSelectedSection] = useState("background");
 
   const handleScroll = (id) => {
     const element = document.getElementById(id);
@@ -80,7 +80,7 @@ export default function DesignNav({ currentSection, isDemoApplicable }) {
   );
 }
 
-DesignNav.propTypes = {
+TravelNav.propTypes = {
   currentSection: PropTypes.string.isRequired,
   isDemoApplicable: PropTypes.bool.isRequired,
 };

@@ -64,7 +64,7 @@ export default function Nav({ pathname }) {
           onClick={closeMenu}
         >
           <div
-            className={`fixed inset-y-0 left-0 md:max-w-xs w-full bg-emerald-200 shadow h-full overflow-y-scroll ${
+            className={`fixed inset-y-0 left-0 md:max-w-xs w-full bg-emerald-200 shadow overflow-y-scroll md:overflow-auto ${
               isMenuOpen ? "slide-in" : "slide-out"
             }`}
           >
