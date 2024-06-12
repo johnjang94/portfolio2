@@ -1,25 +1,24 @@
 import { useEffect, useState } from "react";
-import { TelevuNav } from "../../components/designSubNav";
-import TeleVUNav from "../../components/teleVUNav";
+import { TelevuProjectNav } from "../../components/secondNav";
+import ContentNav from "../../components/contentNav";
 import { CgProfile } from "react-icons/cg";
 import { televuImages } from "../../utils/designImages";
 import Footer from "../../components/footer";
 
 export default function Televu() {
-  const [currentSection, setCurrentSection] = useState("background");
+  const [currentSection, setCurrentSection] = useState(1);
 
   useEffect(() => {
     window.scrollTo(0, 0);
 
     const sectionIds = [
-      "background",
-      "research",
-      "iteration",
-      "competitive-analysis",
-      "design-process",
-      "usability-testing",
-      "design-changes",
-      "lessons-learned",
+      { id: 1 },
+      { id: 2 },
+      { id: 3 },
+      { id: 4 },
+      { id: 5 },
+      { id: 6 },
+      { id: 7 },
     ];
 
     const options = {
@@ -31,21 +30,21 @@ export default function Televu() {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          setCurrentSection(entry.target.id);
+          setCurrentSection(parseInt(entry.target.id));
         }
       });
     }, options);
 
-    sectionIds.forEach((id) => {
-      const element = document.getElementById(id);
+    sectionIds.forEach((section) => {
+      const element = document.getElementById(section.id.toString());
       if (element) {
         observer.observe(element);
       }
     });
 
     return () => {
-      sectionIds.forEach((id) => {
-        const element = document.getElementById(id);
+      sectionIds.forEach((section) => {
+        const element = document.getElementById(section.id.toString());
         if (element) {
           observer.unobserve(element);
         }
@@ -54,7 +53,7 @@ export default function Televu() {
   }, []);
   return (
     <div>
-      <TelevuNav />
+      <TelevuProjectNav />
       <header>
         <h3 className="mt-14 mb-4 md:w-7/12 md:text-center mx-10 text-2xl">
           Product Design
@@ -104,12 +103,16 @@ export default function Televu() {
       </section>
       <section className="md:flex md:flex-1">
         <div>
-          <TeleVUNav currentSection={currentSection} isDemoApplicable={false} />
+          <ContentNav
+            currentSection={currentSection}
+            isDemoApplicable={false}
+            pathname="/televu"
+          />
         </div>
-        <div className="md:my-28 mb-28 px-7 md:w-4/6">
+        <div className="md:my-28 mb-28 px-7 md:w-5/6">
           {/* ================ BACKGROUND =================== */}
           <div>
-            <h3 id="background" className="text-2xl mt-20 md:mt-0 mb-5">
+            <h3 id={1} className="text-2xl mt-20 md:mt-0 mb-5">
               BACKGROUND
             </h3>
             <h1 className="md:text-4xl text-3xl font-medium">
@@ -136,7 +139,7 @@ export default function Televu() {
           </div>
           {/* =========================== RESEARCH =================== */}
           <div>
-            <h3 id="research" className="text-2xl mb-5">
+            <h3 id={2} className="text-2xl mb-5">
               RESEARCH
             </h3>
             <h1 className="md:text-4xl text-3xl font-medium">
@@ -221,7 +224,7 @@ export default function Televu() {
           </div>
           {/* ======================== COMPETITIVE ANALYSIS =================== */}
           <div>
-            <h3 id="competitive-analysis" className="text-2xl mt-10 mb-5">
+            <h3 id={3} className="text-2xl mt-10 mb-5">
               COMPETITIVE ANALYSIS
             </h3>
             <h1 className="md:text-4xl text-3xl font-medium mb-5">
@@ -264,7 +267,7 @@ export default function Televu() {
           </div>
           {/* ======================== DESIGN PROCESS =================== */}
           <div>
-            <h3 id="design-process" className="text-2xl mt-10 mb-5">
+            <h3 id={4} className="text-2xl mt-10 mb-5">
               DESIGN PROCESS - Brainstorm
             </h3>
             <h1 className="md:text-4xl text-3xl font-medium mb-5">
@@ -403,7 +406,7 @@ export default function Televu() {
           </div>
           {/* =========================== USABILITY TESTING =================== */}
           <div className="my-10">
-            <h3 id="usability-testing" className="text-2xl mb-5">
+            <h3 id={5} className="text-2xl mb-5">
               USABILITY TESTING
             </h3>
             <h1 className="md:text-4xl text-3xl font-medium">
@@ -434,7 +437,7 @@ export default function Televu() {
           </div>
           {/* =========================== DESIGN CHANGES =================== */}
           <div className="my-10">
-            <h3 id="design-changes" className="text-2xl mb-5">
+            <h3 id={6} className="text-2xl mb-5">
               DESIGN CHANGES
             </h3>
             <div className="md:justify-between md:items-center">
@@ -476,7 +479,7 @@ export default function Televu() {
           </div>
           {/* =========================== LESSONS LEARNED =================== */}
           <div className="my-10">
-            <h3 id="lessons-learned" className="text-2xl mb-5">
+            <h3 id={7} className="text-2xl mb-5">
               LESSONS LEARNED
             </h3>
             <h1 className="md:text-4xl text-3xl font-medium my-3">

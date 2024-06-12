@@ -1,9 +1,10 @@
 import { useEffect, useRef, useState } from "react";
-import DistroNav from "../../components/distroNav";
+// import DistroNav from "../../components/distroNav";
 import { distroImages, distroVideo } from "../../utils/designImages";
-import { FoodDistroNav } from "../../components/designSubNav";
+import { DistroProjectNav } from "../../components/secondNav";
 import "./foodDistro.css";
 import Footer from "../../components/footer";
+import ContentNav from "../../components/contentNav";
 
 export default function FoodDistro() {
   const [currentSection, setCurrentSection] = useState("background");
@@ -13,14 +14,12 @@ export default function FoodDistro() {
     window.scrollTo(0, 0);
 
     const sectionIds = [
-      "background",
-      "research",
-      "design-process",
-      "mid-fidelity",
-      "competitive-analysis",
-      "usability-testing",
-      "design-changes",
-      "lessons-learned",
+      { id: 1 },
+      { id: 2 },
+      { id: 3 },
+      { id: 4 },
+      { id: 5 },
+      { id: 6 },
     ];
 
     const options = {
@@ -75,7 +74,7 @@ export default function FoodDistro() {
 
   return (
     <div>
-      <FoodDistroNav />
+      <DistroProjectNav />
       <header>
         <h3 className="mt-14 mb-4 md:w-7/12 md:text-center mx-10 text-2xl">
           Product Design
@@ -116,12 +115,16 @@ export default function FoodDistro() {
       </section>
       <section className="md:flex md:flex-1">
         <div>
-          <DistroNav currentSection={currentSection} isDemoApplicable={false} />
+          <ContentNav
+            currentSection={currentSection}
+            isDemoApplicable={false}
+            pathname="/food"
+          />
         </div>
         <div className="md:my-28 px-7 md:w-4/6">
           {/* ================ BACKGROUND =================== */}
           <div>
-            <h3 id="background" className="text-2xl mt-5">
+            <h3 id={1} className="text-2xl mt-5">
               BACKGROUND
             </h3>
             <h1 className="md:text-4xl text-2xl font-medium my-3">
@@ -140,7 +143,7 @@ export default function FoodDistro() {
           </div>
           {/* =========================== RESEARCH =================== */}
           <div>
-            <h3 id="research" className="text-2xl my-3">
+            <h3 id={2} className="text-2xl my-3">
               RESEARCH
             </h3>
             <h1 className="md:text-4xl text-2xl font-medium my-3">
@@ -237,7 +240,7 @@ export default function FoodDistro() {
           </div>
           {/* ======================== COMPETITIVE ANALYSIS =================== */}
           <div>
-            <h3 id="competitive-analysis" className="md:text-2xl text-lg mt-10">
+            <h3 id={3} className="md:text-2xl text-lg mt-10">
               COMPETITIVE ANALYSIS
             </h3>
             <h1 className="md:text-4xl text-2xl font-medium my-3">
@@ -392,7 +395,7 @@ export default function FoodDistro() {
           </div>
           {/* ======================== DESIGN-PROCESS =================== */}
           <div>
-            <h3 id="design-process" className="md:text-2xl text-xl mt-10 mb-5">
+            <h3 id={4} className="md:text-2xl text-xl mt-10 mb-5">
               DESIGN PROCESS - brainstorm
             </h3>
             <h1 className="md:text-4xl text-2xl font-medium my-3">
@@ -662,7 +665,7 @@ export default function FoodDistro() {
           </div>
           {/* =========================== USABILITY TESTING =================== */}
           <div className="my-10">
-            <h3 id="usability-testing" className="md:text-2xl text-lg my-5">
+            <h3 id={5} className="md:text-2xl text-lg my-5">
               USABILITY TESTING
             </h3>
             <h1 className="md:text-3xl text-xl font-bold md:font-medium my-3">
@@ -739,7 +742,7 @@ export default function FoodDistro() {
           </div>
           {/* =========================== LESSONS LEARNED =================== */}
           <div className="my-10">
-            <h3 id="lessons-learned" className="text-2xl">
+            <h3 id={6} className="text-2xl">
               LESSONS LEARNED
             </h3>
             <h1 className="md:text-4xl text-2xl font-medium my-3">

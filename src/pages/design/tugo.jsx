@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { tugoImages } from "../../utils/designImages";
-import { TuGoNav } from "../../components/designSubNav";
-import TravelNav from "../../components/travelNav";
+import { TuGoProjectNav } from "../../components/secondNav";
+import ContentNav from "../../components/contentNav";
 import Footer from "../../components/footer";
 
 export default function Tugo() {
@@ -11,12 +11,12 @@ export default function Tugo() {
     window.scrollTo(0, 0);
 
     const sectionIds = [
-      "background",
-      "problem-statement",
-      "research",
-      "design-process",
-      "design-changes",
-      "next-steps",
+      { id: 1 },
+      { id: 2 },
+      { id: 3 },
+      { id: 4 },
+      { id: 5 },
+      { id: 6 },
     ];
 
     const options = {
@@ -52,7 +52,7 @@ export default function Tugo() {
 
   return (
     <div>
-      <TuGoNav />
+      <TuGoProjectNav />
       <header>
         <h3 className="mt-14 mb-4 md:w-7/12 md:text-center md:mx-5 mx-9 text-lg md:text-2xl">
           UX/UI Design
@@ -89,12 +89,16 @@ export default function Tugo() {
       </section>
       <section className="md:flex md:flex-1">
         <div>
-          <TravelNav currentSection={currentSection} isDemoApplicable={false} />
+          <ContentNav
+            currentSection={currentSection}
+            isDemoApplicable={false}
+            pathname="/tugo"
+          />
         </div>
         <div className="md:my-28 px-7 md:w-4/6">
           {/* ================ BACKGROUND =================== */}
           <div>
-            <h3 id="background" className="text-2xl my-5">
+            <h3 id={1} className="text-2xl my-5">
               BACKGROUND
             </h3>
             <h1 className="md:text-4xl text-2xl font-medium my-3">
@@ -110,7 +114,7 @@ export default function Tugo() {
           </div>
           {/* ================ PROBLEM STATEMENT =================== */}
           <div>
-            <h3 id="problem-statement" className="text-2xl my-5">
+            <h3 id={2} className="text-2xl my-5">
               PROBLEM STATEMENT
             </h3>
             <p className="md:text-2xl text-xl mb-10">
@@ -125,7 +129,7 @@ export default function Tugo() {
           </div>
           {/* ================ RESEARCH =================== */}
           <div>
-            <h3 id="research" className="text-2xl my-5">
+            <h3 id={3} className="text-2xl my-5">
               RESEARCH
             </h3>
             <h1 className="md:text-4xl text-2xl font-medium my-3">
@@ -190,7 +194,7 @@ export default function Tugo() {
           </div>
           {/* ================ ITERATION =================== */}
           <div>
-            <h3 id="design-process" className="text-2xl my-5">
+            <h3 id={4} className="text-2xl my-5">
               ITERATION - Design Process
             </h3>
             <p className="md:text-2xl text-xl">
@@ -252,7 +256,7 @@ export default function Tugo() {
           </div>
           {/* ================ DESIGN CHANGES =================== */}
           <div>
-            <h3 id="design-changes" className="text-2xl mt-10 mb-5">
+            <h3 id={5} className="text-2xl mt-10 mb-5">
               DESIGN CHANGES
             </h3>
             <p className="text-center my-5">
@@ -298,7 +302,7 @@ export default function Tugo() {
           </div>
           {/* =========================== NEXT STEPS =================== */}
           <div>
-            <h3 id="next-steps" className="text-2xl mt-10 mb-5">
+            <h3 id={6} className="text-2xl mt-10 mb-5">
               NEXT STEPS
             </h3>
             <ul className="md:text-2xl text-xl list-disc">
