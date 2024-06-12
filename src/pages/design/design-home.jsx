@@ -12,10 +12,10 @@ const data = [
     imgSrc: TuGo,
     imgAlt: "TuGo",
     imgWidth: 570,
-    icon: "🔒",
+    icon: /*"🔒"*/ "",
     title: "TuGo Travel Insurance | Assurance in your hands wherever you go",
     category: ["UX Design", "Web Redesign", "Currently in Development"],
-    link: "/lock",
+    link: "/tugo",
   },
   {
     id: 2,

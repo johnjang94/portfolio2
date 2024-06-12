@@ -38,11 +38,7 @@ export default function Root() {
 
     if (pathname === "/lock") {
       return "bg-background bg-cover";
-    } else if (
-      pathname === "/tools" ||
-      pathname === "/tugo" ||
-      pathname === "/contact"
-    ) {
+    } else if (pathname === "/tools" || pathname === "/contact") {
       return "bg-glow bg-cover";
     } else {
       return "bg-glow bg-contain";

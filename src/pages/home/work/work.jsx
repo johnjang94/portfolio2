@@ -43,7 +43,6 @@ export default function Work() {
         <h2 className="font-bold my-5 text-xl md:text-2xl">
           {selectedJob.position} @ {selectedJob.company}
         </h2>
-        <p className="text-xl my-3">{selectedJob.dates}</p>
         <p>Mission Objective: {selectedJob.missionObjective}</p>
         <ul className="space-y-3 mt-3">
           {selectedJob.responsibilities.map((responsibility, index) => (
