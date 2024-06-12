@@ -5,7 +5,7 @@ import ContentNav from "../../components/contentNav";
 import Footer from "../../components/footer";
 
 export default function Tugo() {
-  const [currentSection, setCurrentSection] = useState("background");
+  const [currentSection, setCurrentSection] = useState(1);
 
   useEffect(() => {
     window.scrollTo(0, 0);

@@ -7,7 +7,7 @@ import Footer from "../../components/footer";
 import ContentNav from "../../components/contentNav";
 
 export default function FoodDistro() {
-  const [currentSection, setCurrentSection] = useState("background");
+  const [currentSection, setCurrentSection] = useState(1);
   const [visibleSections, setVisibleSections] = useState({});
 
   useEffect(() => {
