@@ -5,11 +5,8 @@ import InitialLanding from "./pages/initial-landing/initialLanding";
 // Home page & About Me
 import Home from "./pages/home/home";
 import About from "./pages/about/about";
-import Tools from "./pages/about/tools";
-import Hobby from "./pages/about/hobby";
 
 // Design section
-import DesignHome from "./pages/design/design-home";
 import Televu from "./pages/design/televu";
 import FoodDistro from "./pages/design/foodDistro";
 import Tugo from "./pages/design/tugo";
@@ -33,10 +30,7 @@ const router = createBrowserRouter([
       { index: true, element: <InitialLanding /> },
       { path: "/home", element: <Home /> },
       { path: "/about", element: <About /> },
-      { path: "/tools", element: <Tools /> },
-      { path: "/my-hobby", element: <Hobby /> },
       // Design section
-      { path: "/design", element: <DesignHome /> },
       { path: "/televu", element: <Televu /> },
       { path: "/food", element: <FoodDistro /> },
       { path: "/tugo", element: <Tugo /> },

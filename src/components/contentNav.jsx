@@ -8,7 +8,7 @@ const initialSections = [
   { id: 4, label: "Design Process" },
   { id: 5, label: "Usability Testing" },
   { id: 6, label: "Design Changes" },
-  { id: 7, label: "Lessons Learned from the Project" },
+  { id: 7, label: "Lessons Learned" },
 ];
 
 export default function ContentNav({ currentSection, pathname }) {
@@ -28,10 +28,13 @@ export default function ContentNav({ currentSection, pathname }) {
       updatedSections = [
         { id: 1, label: "Background" },
         { id: 2, label: "Problem Statement" },
-        { id: 3, label: "Research" },
-        { id: 4, label: "Design Process" },
+        { id: 3, label: "Abstract" },
+        {
+          id: 4,
+          label: "Design Process",
+        },
         { id: 5, label: "Design Changes" },
-        { id: 6, label: "Next Steps" },
+        { id: 6, label: "Shortcoming & Next Steps" },
       ];
     } else {
       updatedSections = sections;
@@ -54,27 +57,41 @@ export default function ContentNav({ currentSection, pathname }) {
   useEffect(() => {
     const handleWindowScroll = () => {
       const scrollY = window.scrollY;
-      let closestSection = sections[0].id;
-      let closestDistance = Math.abs(
-        document.getElementById(sections[0].id).offsetTop - scrollY
-      );
+      const windowHeight = window.innerHeight;
+      let newSelectedSection = selectedSection;
 
       sections.forEach((section) => {
-        const distance = Math.abs(
-          document.getElementById(section.id).offsetTop - scrollY
-        );
-        if (distance < closestDistance) {
-          closestSection = section.id;
-          closestDistance = distance;
+        const sectionElement = document.getElementById(section.id);
+        if (sectionElement) {
+          const sectionTop = sectionElement.offsetTop;
+          const sectionHeight = sectionElement.offsetHeight;
+
+          if (
+            scrollY >= sectionTop &&
+            scrollY < sectionTop + sectionHeight &&
+            selectedSection !== section.id
+          ) {
+            newSelectedSection = section.id;
+          }
+
+          // Check if the section is fully out of view
+          if (
+            scrollY + windowHeight < sectionTop &&
+            selectedSection === section.id
+          ) {
+            newSelectedSection = section.id - 1 >= 1 ? section.id - 1 : 1;
+          }
         }
       });
 
-      setSelectedSection(closestSection);
+      if (newSelectedSection !== selectedSection) {
+        setSelectedSection(newSelectedSection);
+      }
     };
 
     window.addEventListener("scroll", handleWindowScroll);
     return () => window.removeEventListener("scroll", handleWindowScroll);
-  }, [sections]);
+  }, [sections, selectedSection]);
 
   useEffect(() => {
     setSelectedSection(currentSection);

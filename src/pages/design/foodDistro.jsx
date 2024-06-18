@@ -127,7 +127,7 @@ export default function FoodDistro() {
             <h3 id={1} className="text-2xl mt-5">
               BACKGROUND
             </h3>
-            <h1 className="md:text-4xl text-2xl font-medium my-3">
+            <h1 className="md:text-3xl text-2xl font-medium my-3">
               Hands needed to reduce the growing waste of food
             </h1>
             <p className="my-5 md:text-2xl text-xl">
@@ -143,7 +143,7 @@ export default function FoodDistro() {
           </div>
           {/* =========================== RESEARCH =================== */}
           <div>
-            <h3 id={2} className="text-2xl my-3">
+            <h3 id={2} className="text-2xl mt-20 mb-5">
               RESEARCH
             </h3>
             <h1 className="md:text-4xl text-2xl font-medium my-3">
@@ -240,11 +240,12 @@ export default function FoodDistro() {
           </div>
           {/* ======================== COMPETITIVE ANALYSIS =================== */}
           <div>
-            <h3 id={3} className="md:text-2xl text-lg mt-10">
+            <h3 id={3} className="md:text-2xl text-lg mt-20 mb-5">
               COMPETITIVE ANALYSIS
             </h3>
             <h1 className="md:text-4xl text-2xl font-medium my-3">
-              To benchmark and let Food Distro app be competitive
+              To benchmark and let Food Distro app be{" "}
+              <span className="text-violet-500">competitive</span>
             </h1>
             <p className="my-5 md:text-2xl text-xl list-disc">
               Team Food Distro compared and analyzed the following four brands
@@ -545,22 +546,14 @@ export default function FoodDistro() {
           <div>
             <div className="md:flex items-center my-3 md:space-x-2 md:justify-center">
               <p className="text-center text-lg mt-3 md:mt-0">Mid-Fidelity</p>
-              <p className="text-center text-lg mb-3 md:mb-0 hidden md:block">
-                (my version vs. team&#39;s pick)
-              </p>
             </div>
-            <div className="md:flex md:space-x-10 md:w-3/6 space-y-5 md:space-y-0 md:pr-5">
-              <p className="text-center text-lg mb-3 md:mb-0 block md:hidden">
-                my version
-              </p>
+            <p className="text-center text-lg mb-3">design sketch samples</p>
+            <div className="md:grid md:grid-cols-2 md:w-full gap-10 space-y-5 md:space-y-0">
               <img
                 src={distroImages.SearchMidFi}
                 alt="Search Mid-Fi"
                 className="rounded-xl"
               />
-              <p className="text-center text-lg mb-3 md:mb-0 block md:hidden">
-                Team&#39;s pick
-              </p>
               <img
                 src={distroImages.SearchTeamPick}
                 alt="Team's pick"
@@ -636,15 +629,10 @@ export default function FoodDistro() {
                   className="rounded-xl mr-5"
                 />
               </div>
-              <img
-                src={distroImages.Practice}
-                alt="Practice"
-                className="w-full rounded-xl"
-              />
             </div>
           </div>
           <div>
-            <p className="text-center text-lg my-3">High-Fidelity</p>
+            <p className="text-center text-lg mb-5 mt-12">High-Fidelity</p>
             <div className="md:flex md:grid-cols-3 md:space-x-5 md:w-3/6 space-y-5 md:space-y-0 md:pr-5">
               <img
                 src={distroImages.MapSearchHighFi}
@@ -664,7 +652,7 @@ export default function FoodDistro() {
             </div>
           </div>
           {/* =========================== USABILITY TESTING =================== */}
-          <div className="my-10">
+          <div className="my-20">
             <h3 id={5} className="md:text-2xl text-lg my-5">
               USABILITY TESTING
             </h3>

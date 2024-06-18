@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { FaExternalLinkAlt, FaGithub, FaFolder } from "react-icons/fa";
 import getImage from "../../utils/getImages";
-import { Link } from "react-router-dom";
 import projectsData from "./projects.json";
 import PropTypes from "prop-types";
 import Footer from "../../components/footer";
@@ -81,11 +80,6 @@ const DevelopmentHome = () => {
 
   return (
     <div>
-      <div className="flex justify-between px-10 my-3">
-        <Link to="/development">
-          <button>DEVELOPMENT</button>
-        </Link>
-      </div>
       <section className="bg-cover my-5 py-10">
         <h2 className="md:text-4xl text-2xl my-5 md:w-4/6 md:mx-auto text-center">
           Some things I have built

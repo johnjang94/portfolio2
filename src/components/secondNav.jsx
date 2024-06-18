@@ -30,45 +30,6 @@ NavLinks.propTypes = {
   ).isRequired,
 };
 
-export function AboutNav() {
-  return (
-    <NavLinks
-      primaryTo="/about"
-      primaryText="ABOUT ME"
-      secondaryLinks={[
-        { to: "/tools", text: "Tools" },
-        { to: "/my-hobby", text: "My Hobby" },
-      ]}
-    />
-  );
-}
-
-export function HobbyNav() {
-  return (
-    <NavLinks
-      primaryTo="/my-hobby"
-      primaryText="MY HOBBY"
-      secondaryLinks={[
-        { to: "/about", text: "About Me" },
-        { to: "/tools", text: "Tools" },
-      ]}
-    />
-  );
-}
-
-export function ToolsNav() {
-  return (
-    <NavLinks
-      primaryTo="/tools"
-      primaryText="MY TOOLS"
-      secondaryLinks={[
-        { to: "/about", text: "About Me" },
-        { to: "/my-hobby", text: "My Hobby" },
-      ]}
-    />
-  );
-}
-
 // ==== RELATED TO THE SECOND LAYER OF NAVIGATION IN DESIGN SECTION ====
 import { useState } from "react";
 
@@ -96,7 +57,7 @@ function DesignLinks({ primaryTo, primaryText, secondaryLinks }) {
             </button>
             {/* Check if dropdown should be displayed */}
             {activeDropdown === index && link.dropdown && (
-              <div className="absolute left-0 mt-2 w-28 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+              <div className="absolute left-0 mt-2 w-36 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
                 <div
                   className="py-1"
                   role="menu"
@@ -106,7 +67,7 @@ function DesignLinks({ primaryTo, primaryText, secondaryLinks }) {
                   {link.dropdown.map((dropdownLink, dropdownIndex) => (
                     <Link key={dropdownIndex} to={dropdownLink.to}>
                       <button
-                        className="block p-1 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:w-full"
+                        className="block p-5 py-2 text-sm text-gray-700 hover:bg-gray-100 w-full text-start"
                         role="menuitem"
                         // Close dropdown on item click
                         onClick={() => setActiveDropdown(null)}
@@ -139,14 +100,13 @@ DesignLinks.propTypes = {
 export function TelevuProjectNav() {
   return (
     <DesignLinks
-      primaryTo="/televu"
-      primaryText="TELEVU"
+      primaryTo="/home"
+      primaryText="DESIGN HOME"
       secondaryLinks={[
         {
-          to: "/design",
-          text: "Design Home",
+          to: "",
+          text: "MORE PROJECTS",
           dropdown: [
-            { to: "/design", text: "Design Home" },
             { to: "/food", text: "Food Distro" },
             { to: "/tugo", text: "TuGo Travel" },
           ],
@@ -159,14 +119,13 @@ export function TelevuProjectNav() {
 export function DistroProjectNav() {
   return (
     <DesignLinks
-      primaryTo="/food"
-      primaryText="FOOD DISTRO"
+      primaryTo="/home"
+      primaryText="DESIGN HOME"
       secondaryLinks={[
         {
-          to: "/design",
-          text: "Design Home",
+          to: "",
+          text: "MORE PROJECTS",
           dropdown: [
-            { to: "/design", text: "Design Home" },
             { to: "/televu", text: "TeleVU" },
             { to: "/tugo", text: "TuGo Travel" },
           ],
@@ -179,14 +138,13 @@ export function DistroProjectNav() {
 export function TuGoProjectNav() {
   return (
     <DesignLinks
-      primaryTo="/tugo"
-      primaryText="TUGO TRAVEL"
+      primaryTo="/home"
+      primaryText="DESIGN HOME"
       secondaryLinks={[
         {
-          to: "/design",
-          text: "Design Home",
+          to: "",
+          text: "MORE PROJECTS",
           dropdown: [
-            { to: "/design", text: "Design Home" },
             { to: "/televu", text: "TeleVU" },
             { to: "/food", text: "Food Distro" },
           ],

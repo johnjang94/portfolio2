@@ -20,8 +20,6 @@ export default function Root() {
     const registeredPaths = [
       "/home",
       "/about",
-      "/tools",
-      "/my-hobby",
       "/design",
       "/televu",
       "/food",

@@ -196,6 +196,8 @@ import Showcase from "../assets/tugo/demo/exampleDemo.gif";
 
 // TuGo Research
 import SWOT from "../assets/tugo/research/SWOT-TuGo.png";
+import Manulife from "../assets/tugo/research/manulife-logo.png";
+import SunLife from "../assets/tugo/research/sunlife-logo.png";
 import CompetitiveAnalysis from "../assets/tugo/research/competitive-analysis.png";
 import Chris from "../assets/tugo/research/traveller-chris.png";
 import Olivier from "../assets/tugo/research/traveller-olivier.png";
@@ -224,6 +226,8 @@ import NewSignUpPage from "../assets/tugo/design-changes/new-registration.png";
 export const tugoImages = {
   Showcase,
   SWOT,
+  Manulife,
+  SunLife,
   CompetitiveAnalysis,
   Chris,
   Olivier,

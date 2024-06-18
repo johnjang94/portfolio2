@@ -55,8 +55,8 @@ export default function Televu() {
     <div>
       <TelevuProjectNav />
       <header>
-        <h3 className="mt-14 mb-4 md:w-7/12 md:text-center mx-10 text-2xl">
-          Product Design
+        <h3 className="mt-14 mb-4 md:w-8/12 md:text-center md:mx-16 mx-11 md:text-2xl">
+          UX Research | Product Design
         </h3>
         <h1 className="mt-9 md:w-7/12 md:text-center mx-10 text-5xl">TELEVU</h1>
         <p className="mt-4 md:w-3/6 md:mx-auto mx-10 text-2xl">
@@ -109,7 +109,7 @@ export default function Televu() {
             pathname="/televu"
           />
         </div>
-        <div className="md:my-28 mb-28 px-7 md:w-5/6">
+        <div className="md:my-28 mb-28 px-7 md:w-4/6">
           {/* ================ BACKGROUND =================== */}
           <div>
             <h3 id={1} className="text-2xl mt-20 md:mt-0 mb-5">
@@ -482,7 +482,7 @@ export default function Televu() {
             <h3 id={7} className="text-2xl mb-5">
               LESSONS LEARNED
             </h3>
-            <h1 className="md:text-4xl text-3xl font-medium my-3">
+            <h1 className="md:text-3xl text-2xl font-medium my-3">
               It is important to learn about the business structure.
             </h1>
             <p className="text-2xl">
