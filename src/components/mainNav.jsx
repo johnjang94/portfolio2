@@ -8,7 +8,6 @@ import PropTypes from "prop-types";
 import Home from "../assets/accessory/home.png";
 import Profile from "../assets/accessory/profile.png";
 import Design from "../assets/accessory/design.png";
-import Development from "../assets/footer-pictures/development.png";
 
 import Logo from "/logo512.png";
 import Logo2 from "/logo500.png";
@@ -54,7 +53,12 @@ export default function Nav({ pathname }) {
     <div
       className={`px-10 justify-between flex py-5 border-b border-gray-300 items-center ${textColor}`}
     >
-      <button onClick={toggleMenu}>
+      <div className="hidden md:block">
+        <Link to="/home">
+          <img src={logoSrc} alt="Logo" width={30} />
+        </Link>
+      </div>
+      <button onClick={toggleMenu} className="block md:hidden">
         <RxHamburgerMenu className={`text-2xl ${textColor}`} />
       </button>
       {/* Menu */}
@@ -120,35 +124,31 @@ export default function Nav({ pathname }) {
                   <button className="p-2">UX Design</button>
                 </Link>
               </div>
-              <div
-                className={`${
-                  isMenuOpen ? "development-slide-in" : ""
-                } text-3xl text-end sm:text-base sm:text-start border-white-2 hover:bg-slate-300 sm:hover:bg-transparent sm:hover:text-blue-400 hover:cursor-pointer rounded-3xl`}
-              >
-                <Link to="/development">
-                  <img
-                    src={Development}
-                    alt="development picture"
-                    width={300}
-                    className="md:hidden mx-auto"
-                  />
-
-                  <button className="p-2 md:pr-0 text-3xl sm:text-base">
-                    Software Development
-                  </button>
-                </Link>
-              </div>
             </ul>
           </div>
         </div>
       )}
       {/* Menu */}
-      <Link to="/home">
-        <img src={logoSrc} alt="Logo" width={30} />
-      </Link>
-      <Link to="/contact">
-        <button>Contact</button>
-      </Link>
+      <div className="block md:hidden">
+        <Link to="/home">
+          <img src={logoSrc} alt="Logo" width={30} />
+        </Link>
+      </div>
+      <div className="flex space-x-5 items-center">
+        <div className="hidden md:block">
+          <Link to="/about">
+            <button>About Me</button>
+          </Link>
+        </div>
+        <div className="hidden">
+          <Link to="/contact">
+            <button>Contact</button>
+          </Link>
+        </div>
+        <a href="mailto:jscolbe9675@gmail.com">
+          <button>Contact</button>
+        </a>
+      </div>
     </div>
   );
 }

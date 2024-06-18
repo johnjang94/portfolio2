@@ -54,8 +54,8 @@ export default function Tugo() {
     <div>
       <TuGoProjectNav />
       <header>
-        <h3 className="mt-14 mb-4 md:w-7/12 md:text-center md:mx-5 mx-9 text-lg md:text-2xl">
-          UX/UI Design
+        <h3 className="mt-14 mb-4 md:w-8/12 md:text-center md:mx-12 mx-9 text-lg md:text-2xl">
+          UX/UI Design | Web Design
         </h3>
         <h1 className="mt-9 md:w-8/12 md:text-center mx-9 md:mx-52 md:text-5xl text-lg">
           TUGO TRAVEL INSURANCE
@@ -118,20 +118,54 @@ export default function Tugo() {
               PROBLEM STATEMENT
             </h3>
             <p className="md:text-2xl text-xl mb-10">
-              Some travelers who went abroad might have faced some issues such
-              as delayed flights, loss of luggage or health-related issues might
-              have seeked for help from TuGo Travel Insurance, but they get
-              frustrated once they reach TuGo website because the website
-              provides an overwhelming amount of information and the travelers
-              often feel lost on where to find the information that interests
-              them.
+              Some travelers who might have faced some issues such as delayed
+              flights, loss of luggage or health-related issues while traveling
+              abroad{" "}
+              <span className="text-orange-300">
+                might have seeked for some help
+              </span>{" "}
+              from TuGo Travel Insurance, but they rather{" "}
+              <span className="text-red-500">feel disappointed</span> because{" "}
+              <span className="text-red-500 italic">
+                the insurance they have signed up for might have limited
+                coverage in which the travelers were not aware of the exact
+                measures.
+              </span>{" "}
+              Due to the lack of awareness, they are covering the expenses out
+              of their own pocket besides keeping such insurance products that
+              did not fully cover the cost of the incidents. It is questioned on
+              how the travelers ended up not fully being aware of what products
+              exists and what are offered by TuGo.
             </p>
           </div>
-          {/* ================ RESEARCH =================== */}
+          {/* ================ ABSTRACT =================== */}
           <div>
             <h3 id={3} className="text-2xl my-5">
-              RESEARCH
+              ABSTRACT
             </h3>
+            <p className="md:text-2xl text-xl mb-10">
+              Visuals that did not respect the industry-standard UI guideline
+              caused confusion among the current and the potential travelers who
+              were interested in signing up for the service. The services that
+              TuGo Travel Insurance offers compete against some other well-known
+              brands, but the communication style which influences the branding
+              does not seem to attract the travelers in comparison to the
+              competitors. In this case study, the solution was to provide
+              different UIs that are catchy, intuitive, and straight-forward for
+              the current and potential users of TuGo Travel Insurance. In order
+              to carry out better look and to implement better communication
+              style, we have done some research, heard the voices of the
+              travelers, and iterated ideas.
+            </p>
+          </div>
+          <div>
+            <h3 id={4} className="text-2xl my-5">
+              DESIGN PROCESS
+            </h3>
+            {/* ================ RESEARCH =================== */}
+            <h4 id="" className="text-xl my-5 text-center">
+              Research
+            </h4>
             <h1 className="md:text-4xl text-2xl font-medium my-3">
               To discover TuGo Travel&#39;s{" "}
               <span className="italics text-red-500">weak points</span>
@@ -139,10 +173,7 @@ export default function Tugo() {
             <p className="md:text-2xl text-xl">
               SWOT analysis was completed regarding TuGo Travel Insurance
               company&#39;s main website to understand its business structure
-              and to identify possible risks. After SWOT, competitive analysis
-              on other well-known brands was completed to identify services and
-              benchmark the websites if applicable. In addition, we had voices
-              regarding the experience with TuGo Travel Insurance.
+              and to identify possible risks.
             </p>
             <div className="text-center mx-auto space-y-5">
               <p className="mt-10">SWOT Analysis</p>
@@ -151,12 +182,73 @@ export default function Tugo() {
                 alt="SWOT Analysis"
                 className="rounded-2xl"
               />
+              <p className="md:text-2xl text-xl text-start text-emerald-400">
+                The response ratio of TuGo Travel Insurance service ranged from
+                a couple of hours at the shortest period of time to a day for
+                the longest time of wait. Due to the short period of wait times,
+                the travelers who sign up for insurance through TuGo Travel
+                service agency tend to be relieved. In addition, TuGo offers a
+                wide range of coverage in different issues and this seemed to be
+                attractive to many potential travelers.
+              </p>
+              <p className="md:text-2xl text-xl text-start text-amber-400">
+                As no other insurance agency could control some of the external
+                causes such as weather circumstances or geo-political issues,
+                TuGo Travel Insurance also does not have any possible control
+                over the loss of luggages if any traveler faces such incident.
+                For these specific cases, most of the travelers wish that the
+                coverage was more comprehensive rather than sticking to just
+                being affordable.
+              </p>
+              <p className="md:text-2xl text-xl text-start">
+                After SWOT, competitive analysis on other well-known brands was
+                completed to identify the complementary services and the
+                competency that TuGo Travel Insurance carries. For this step, my
+                team has compared TuGo to Manulife and SunLife Financial.
+              </p>
+              <div className="md:flex md:gap-20 md:mr-10">
+                <img
+                  src={tugoImages.Manulife}
+                  alt="Manulife Logo"
+                  className="md:w-3/6 md:mx-auto"
+                />
+                <img
+                  src={tugoImages.SunLife}
+                  alt="SunLife logo"
+                  className="md:w-3/6 md:mx-auto"
+                />
+              </div>
               <p className="mt-10">Competitive Analysis</p>
               <img
                 src={tugoImages.CompetitiveAnalysis}
                 alt="Competitive Analysis"
                 className="rounded-2xl"
               />
+              <p className="md:text-2xl text-xl text-start">
+                In this comparison, the main focus was not regarding how many
+                packages they offer to the travelers or if they offer a package
+                that genuinely accommodates the needs of individual client.
+                Rather, the focus was aimed at examining if the visuals that
+                each insurance company has employed communicates with the
+                current or the potential travelers in a way that is intended.
+              </p>
+              <p className="md:text-2xl text-xl text-start">
+                The study has revealed that the travelers are{" "}
+                <span className="text-red-500">
+                  technically more familiar with the competitors
+                </span>{" "}
+                because these brands have been maintaining a good reputation
+                among the travelers for a long time. On the other hand, the
+                level of awareness or familiarity{" "}
+                <span className="text-blue-500">did not prove</span> that their
+                clients were aware of the products that were truly accommodating
+                their needs from the packages that these competitors were
+                offering. Instead, many travelers believed that the adequate
+                amount of visuals actually help in communicating what service
+                products the insurance company offers and if each product is
+                truly helpful or not. The following user personas and user
+                journey map samples are the voices that we have heard from them:
+              </p>
               <p className="mt-10">User Personas</p>
               <img
                 src={tugoImages.Chris}
@@ -175,28 +267,23 @@ export default function Tugo() {
                 className="rounded-2xl"
               />
             </div>
-            <p className="my-5 md:text-2xl text-xl text-blue-500">
-              According to the research, TuGo Travel Insurance is usually quick
-              to respond to the customer inquiries and specifically focuses on
-              travel-related products. Users were optimistic regarding the
-              visuals as the visuals were helpful in navigating around the
-              website.
-            </p>
-            <p className="md:text-2xl text-xl text-red-500 mb-10">
-              Besides, the potential risk that they carry is that they have
-              almost zero control on the circumstances of another country
-              regardless of the political, economic or safety concerns. Having
-              said that, they need to alter the coverages depending on the
-              regions. In addition, the users felt that they needed more
-              guidance on whichever product to choose that would meet their
-              needs.
+            <p className="my-5 md:text-2xl text-xl">
+              The packages that TuGo Travel Insurance offers might not be
+              exceptional to get a commentary such as &#34;too good to be
+              true&#34;, but the opinions are clearly different that more
+              visuals certainly help in communication. It is also expressed that
+              the individuals do not just want to see the visuals but the
+              visuals that help them get the service they need.
             </p>
           </div>
           {/* ================ ITERATION =================== */}
           <div>
-            <h3 id={4} className="text-2xl my-5">
-              ITERATION - Design Process
+            <h3 id={5} className="text-2xl mt-20">
+              DESIGN CHANGES
             </h3>
+            <h4 id="" className="text-xl my-5 text-center mt-5">
+              ITERATION
+            </h4>
             <p className="md:text-2xl text-xl">
               Hearing the voices, the brainstorm was focused on how to provide
               designs that are simple, aesthetic, catchy, and engaging.
@@ -208,6 +295,15 @@ export default function Tugo() {
               className="rounded-2xl"
             />
             <div>
+              <p className="my-5 md:text-2xl text-xl">
+                We focused on simplifying the designs. As an example, the
+                previous version of contact page had too much content with the
+                overlap of numbers, hours of operation, and office locations.
+                Unfortunately, it was clear that the previous design was not
+                informative to the travelers. Having said that, the idea was to
+                display simple icons to the travelers first that they just
+                understand what to expect if they clicked each button.
+              </p>
               <p className="text-center mt-10 mb-5">Low-Fidelity</p>
               <div className="md:flex md:gap-10 md:grid-cols-3 md:w-72 md:pr-3 space-y-5 md:space-y-0">
                 <img
@@ -256,10 +352,7 @@ export default function Tugo() {
           </div>
           {/* ================ DESIGN CHANGES =================== */}
           <div>
-            <h3 id={5} className="text-2xl mt-10 mb-5">
-              DESIGN CHANGES
-            </h3>
-            <p className="text-center my-5">
+            <p className="my-5 md:text-2xl text-xl">
               Here are sample images for you to compare how the changes were
               made from the old design.
             </p>
@@ -303,24 +396,32 @@ export default function Tugo() {
           {/* =========================== NEXT STEPS =================== */}
           <div>
             <h3 id={6} className="text-2xl mt-10 mb-5">
-              NEXT STEPS
+              SHORTCOMING & NEXT STEPS
             </h3>
-            <ul className="md:text-2xl text-xl list-disc">
-              We only had time to focus on re-designing the screens for the
-              desktop use, so the next phase team needs to work on designing the
-              mobile screens.
-              <li>
-                the use of smartphones are increasingly prevalent among the
-                users, but we have been focusing refreshing the look on the
-                desktop.
-              </li>
-              <li>
-                the website needs to consider AODA-standards. We have many
-                people with disabilities in the society, but we have not had a
-                chance to respect the Accessibility for Ontarioans and
-                Disabilities Act.
-              </li>
-            </ul>
+            <div className="space-y-5">
+              <p className="md:text-2xl text-xl">
+                It might be common for every design project, but the process of
+                recruiting the participants for additional design test was{" "}
+                <span className="text-red-500">especially challenging</span> to
+                complete within given amount of time.
+              </p>
+              <ul className="md:text-2xl text-xl list-disc">
+                We only had time to focus on re-designing the screens for the
+                desktop use, so the next phase team needs to work on designing
+                the mobile screens.
+                <li className="mx-10 my-3">
+                  the use of smartphones are increasingly prevalent among the
+                  users, but we have been focusing refreshing the look on the
+                  desktop.
+                </li>
+                <li className="mx-10">
+                  the website needs to consider AODA-standards. We have many
+                  people with disabilities in the society, but we have not had a
+                  chance to respect the Accessibility for Ontarioans and
+                  Disabilities Act.
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
