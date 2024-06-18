@@ -45,7 +45,7 @@ function DesignLinks({ primaryTo, primaryText, secondaryLinks }) {
   };
 
   return (
-    <div className="flex justify-between px-10 my-3">
+    <div className="flex justify-between px-10 text-sm md:text-base my-3">
       <Link to={primaryTo}>
         <button>{primaryText}</button>
       </Link>
