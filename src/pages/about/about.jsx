@@ -37,11 +37,11 @@ export default function About() {
         <p>
           I often heard that I am a creative person, but my true journey with
           design began back in 2021. It was during pandemic and I wanted to seek
-          for a new journey away from teaching. This was the moment I&#39;ve
-          encountered UX Design and since then, I have been redesigning website,
-          creating a few digital products including dashboard portal for the use
-          of medical professionals. Perhaps, I wanted to expand my journey a
-          little further.
+          for a new journey away from teaching. This was the moment that
+          I&#39;ve encountered UX Design and since then, I have been involved in
+          different types of projects from redesign of a web application to a
+          mobile design. Perhaps, I wanted to expand my journey a little
+          further.
         </p>
         <p>
           In 2022, I was exposed to the world of Web Development for the first
@@ -56,9 +56,9 @@ export default function About() {
           Since then, I have also had a few opportunities to contribute as a
           Front-End Developer in different projects in different communities. I
           was a UI Developer for a blockchain project, a Software Developer for
-          an e-commerce project, etc. Even though I am a UX Designer, I am
-          dedicated to build a good web application to the organizations that
-          need my hands.
+          an e-commerce project, and a Front-End Developer for a non-profit
+          organization. Even though I am a UX Designer, I am dedicated to build
+          a good web application to the organizations that need my hands.
         </p>
       </div>
       <div className="px-20 my-10 justify-center mx-auto w-2/6">

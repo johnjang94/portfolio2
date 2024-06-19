@@ -3,8 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 export default function Login() {
   const navigate = useNavigate();
-  const TUGO = import.meta.env.VITE_TUGO;
-  const DISTRO = import.meta.env.VITE_DISTRO;
+  const EXPERIENCE = import.meta.env.VITE_EXPERIENCE;
   const [errorMessage, setErrorMessage] = useState("");
   const [attemptCount, setAttemptCount] = useState(0);
 
@@ -33,10 +32,8 @@ export default function Login() {
       navigate("/home");
       return;
     }
-    if (password === TUGO) {
-      navigate("/tugo");
-    } else if (password === DISTRO) {
-      navigate("/food");
+    if (password === EXPERIENCE) {
+      navigate("/experience");
     } else {
       setAttemptCount(attemptCount + 1);
       const remainingAttempts = 5 - attemptCount - 1;

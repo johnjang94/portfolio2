@@ -37,6 +37,7 @@ export default function Nav({ pathname }) {
       "/televu",
       "/food",
       "/tugo",
+      "/experience",
       "/development",
       "/contact",
       "/lock",

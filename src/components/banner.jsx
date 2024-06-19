@@ -18,6 +18,7 @@ export default function Banner() {
       "/televu",
       "/food",
       "/tugo",
+      "/experience",
       "/development",
       "/contact",
       "/lock",

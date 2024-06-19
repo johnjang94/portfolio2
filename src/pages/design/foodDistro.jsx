@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 // import DistroNav from "../../components/distroNav";
 import { distroImages, distroVideo } from "../../utils/designImages";
-import { DistroProjectNav } from "../../components/secondNav";
+import { ProjectNav } from "../../components/secondNav";
 import "./foodDistro.css";
 import Footer from "../../components/footer";
 import ContentNav from "../../components/contentNav";
@@ -74,7 +74,7 @@ export default function FoodDistro() {
 
   return (
     <div>
-      <DistroProjectNav />
+      <ProjectNav />
       <header>
         <h3 className="mt-14 mb-4 md:w-7/12 md:text-center mx-10 text-2xl">
           Product Design

@@ -10,6 +10,7 @@ import "./home.css";
 import TeleVU from "../../assets/home/televu.png";
 import FoodDistro from "../../assets/home/foodDistro.png";
 import TuGo from "../../assets/home/tugo.png";
+import Xperience from "../../assets/home/xperience.png";
 
 const titles = ["UX Designer", "Product Designer", "Web Designer"];
 
@@ -21,19 +22,26 @@ export default function Home() {
   const data = [
     {
       id: 1,
+      imgSrc: Xperience,
+      imgAlt: "Xperience",
+      icon: "🔒",
+      title: "Xperience | Share your memories in a new style",
+      category: ["Product Design", "Web Design"],
+      link: "/lock",
+    },
+    {
+      id: 2,
       imgSrc: TuGo,
       imgAlt: "TuGo",
-      imgWidth: 570,
       icon: /*"🔒"*/ "",
       title: "TuGo Travel Insurance | Assurance in your hands wherever you go",
       category: ["UX Design", "Web Redesign"],
       link: "/tugo",
     },
     {
-      id: 2,
+      id: 3,
       imgSrc: FoodDistro,
       imgAlt: "Food Distro",
-      imgWidth: 265,
       icon: "",
       title:
         "Food Distro | Reducing Your Stress on Sharing Your Food with Others",
@@ -41,10 +49,9 @@ export default function Home() {
       link: "/food",
     },
     {
-      id: 3,
+      id: 4,
       imgSrc: TeleVU,
       imgAlt: "TeleVU",
-      imgWidth: 600,
       title:
         "TeleVU Innovation Incorporation | Connecting clinicians and patients remotely",
       category: ["UX Research", "Product Design", "Web App"],
@@ -69,8 +76,9 @@ export default function Home() {
         </div>
         <h4 className="mt-6 lg:text-3xl text-xl">
           I specialize in crafting digital experiences and products for the web
-          and mobile applications. Currently, I am focused on Web Redesign for
-          Glocal Foundation of Canada.
+          and mobile applications. Currently, I am designing a decentralized
+          media sharing application called{" "}
+          <span className="font-bold">Xperience</span> for Lab Academy.
         </h4>
         <div className="md:flex justify-between">
           <Link
@@ -102,7 +110,10 @@ export default function Home() {
               <img
                 src={item.imgSrc}
                 alt={item.imgAlt}
-                width={item.imgWidth}
+                style={{
+                  height: "300px",
+                  width: "auto",
+                }}
                 className="rounded-xl hover:shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,rgba(0,0,0,0.3)_0px_3px_7px_-3px] mx-auto"
               />
             </Link>

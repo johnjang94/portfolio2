@@ -97,7 +97,7 @@ DesignLinks.propTypes = {
   ).isRequired,
 };
 
-export function TelevuProjectNav() {
+export function ProjectNav() {
   return (
     <DesignLinks
       primaryTo="/home"
@@ -109,44 +109,7 @@ export function TelevuProjectNav() {
           dropdown: [
             { to: "/food", text: "Food Distro" },
             { to: "/tugo", text: "TuGo Travel" },
-          ],
-        },
-      ]}
-    />
-  );
-}
-
-export function DistroProjectNav() {
-  return (
-    <DesignLinks
-      primaryTo="/home"
-      primaryText="DESIGN HOME"
-      secondaryLinks={[
-        {
-          to: "",
-          text: "MORE PROJECTS",
-          dropdown: [
-            { to: "/televu", text: "TeleVU" },
-            { to: "/tugo", text: "TuGo Travel" },
-          ],
-        },
-      ]}
-    />
-  );
-}
-
-export function TuGoProjectNav() {
-  return (
-    <DesignLinks
-      primaryTo="/home"
-      primaryText="DESIGN HOME"
-      secondaryLinks={[
-        {
-          to: "",
-          text: "MORE PROJECTS",
-          dropdown: [
-            { to: "/televu", text: "TeleVU" },
-            { to: "/food", text: "Food Distro" },
+            { to: "/lock", text: "Xperience" },
           ],
         },
       ]}

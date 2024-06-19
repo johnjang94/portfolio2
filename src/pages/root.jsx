@@ -24,6 +24,7 @@ export default function Root() {
       "/televu",
       "/food",
       "/tugo",
+      "/experience",
       "/development",
       "/contact",
       "/lock",
@@ -36,7 +37,11 @@ export default function Root() {
 
     if (pathname === "/lock") {
       return "bg-background bg-cover";
-    } else if (pathname === "/tools" || pathname === "/contact") {
+    } else if (
+      pathname === "/tools" ||
+      pathname === "/contact" ||
+      pathname === "/experience"
+    ) {
       return "bg-glow bg-cover";
     } else {
       return "bg-glow bg-contain";

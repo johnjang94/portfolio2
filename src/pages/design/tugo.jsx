@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { tugoImages } from "../../utils/designImages";
-import { TuGoProjectNav } from "../../components/secondNav";
+import { ProjectNav } from "../../components/secondNav";
 import ContentNav from "../../components/contentNav";
 import Footer from "../../components/footer";
 
@@ -52,7 +52,7 @@ export default function Tugo() {
 
   return (
     <div>
-      <TuGoProjectNav />
+      <ProjectNav />
       <header>
         <h3 className="mt-14 mb-4 md:w-8/12 md:text-center md:mx-12 mx-9 text-lg md:text-2xl">
           UX/UI Design | Web Design

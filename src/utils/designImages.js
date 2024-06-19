@@ -247,3 +247,11 @@ export const tugoImages = {
   NewContactPage,
   NewSignUpPage,
 };
+
+// ==================================== EXPERIENCE IMAGES ======================================
+// TuGo Travel Demo
+import Xperience from "../assets/home/xperience.png";
+
+export const experienceImages = {
+  Xperience,
+};

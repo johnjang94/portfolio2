@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { TelevuProjectNav } from "../../components/secondNav";
+import { ProjectNav } from "../../components/secondNav";
 import ContentNav from "../../components/contentNav";
 import { CgProfile } from "react-icons/cg";
 import { televuImages } from "../../utils/designImages";
@@ -53,7 +53,7 @@ export default function Televu() {
   }, []);
   return (
     <div>
-      <TelevuProjectNav />
+      <ProjectNav />
       <header>
         <h3 className="mt-14 mb-4 md:w-8/12 md:text-center md:mx-16 mx-11 md:text-2xl">
           UX Research | Product Design
