@@ -182,23 +182,31 @@ export default function Tugo() {
                 alt="SWOT Analysis"
                 className="rounded-2xl"
               />
-              <p className="md:text-2xl text-xl text-start text-emerald-400">
+              <p className="md:text-2xl text-xl text-start">
                 The response ratio of TuGo Travel Insurance service ranged from
-                a couple of hours at the shortest period of time to a day for
-                the longest time of wait. Due to the short period of wait times,
-                the travelers who sign up for insurance through TuGo Travel
-                service agency tend to be relieved. In addition, TuGo offers a
-                wide range of coverage in different issues and this seemed to be
-                attractive to many potential travelers.
+                <span className="text-emerald-400"> a couple of hours</span> at
+                the shortest period of time to{" "}
+                <span className="text-emerald-400">a day</span> for the longest
+                time of wait. The travelers who sign up for insurance through
+                TuGo Travel service agency tend to be{" "}
+                <span className="text-blue-500">pleased and satisfied</span>{" "}
+                with the wait times. In addition, TuGo offers a wide range of
+                coverage in different issues and this seemed to be attractive to
+                many potential travelers.
               </p>
-              <p className="md:text-2xl text-xl text-start text-amber-400">
+              <p className="md:text-2xl text-xl text-start">
                 As no other insurance agency could control some of the external
                 causes such as weather circumstances or geo-political issues,
-                TuGo Travel Insurance also does not have any possible control
+                TuGo Travel Insurance also{" "}
+                <span className=" text-fuchsia-600">
+                  does not have any possible control
+                </span>{" "}
                 over the loss of luggages if any traveler faces such incident.
-                For these specific cases, most of the travelers wish that the
-                coverage was more comprehensive rather than sticking to just
-                being affordable.
+                For these specific cases, most of the travelers wish that{" "}
+                <span className="text-fuchsia-600">
+                  the coverage was more comprehensive
+                </span>{" "}
+                rather than sticking to just being affordable.
               </p>
               <p className="md:text-2xl text-xl text-start">
                 After SWOT, competitive analysis on other well-known brands was
@@ -239,15 +247,17 @@ export default function Tugo() {
                 </span>{" "}
                 because these brands have been maintaining a good reputation
                 among the travelers for a long time. On the other hand, the
-                level of awareness or familiarity{" "}
-                <span className="text-blue-500">did not prove</span> that their
-                clients were aware of the products that were truly accommodating
-                their needs from the packages that these competitors were
-                offering. Instead, many travelers believed that the adequate
-                amount of visuals actually help in communicating what service
-                products the insurance company offers and if each product is
-                truly helpful or not. The following user personas and user
-                journey map samples are the voices that we have heard from them:
+                level of awareness or familiarity of these brands{" "}
+                <span className="text-blue-500">did not prove</span> that the
+                clients were well-aware of the suitability of the products that
+                meet their circumstances. It is also proven that the adequate
+                amount of visuals actually tend to be{" "}
+                <span className="underline">
+                  more informative of the products
+                </span>{" "}
+                than simply outlining in words. The following user personas and
+                user journey map samples are the voices that we have heard from
+                them:
               </p>
               <p className="mt-10">User Personas</p>
               <img
@@ -354,9 +364,9 @@ export default function Tugo() {
           <div>
             <p className="my-5 md:text-2xl text-xl">
               Here are sample images for you to compare how the changes were
-              made from the old design.
+              made from the previous design.
             </p>
-            <p className="text-center my-5">Old Design</p>
+            <p className="text-center my-5">Previous Design</p>
             <div className="md:flex md:gap-10 md:grid-cols-3 md:w-72 md:pr-3 space-y-5 md:space-y-0">
               <img
                 src={tugoImages.OldLoginPage}

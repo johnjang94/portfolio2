@@ -61,7 +61,7 @@ export default function About() {
           need my hands.
         </p>
       </div>
-      <div className="w-full md:w-3/6 md:mx-auto px-10 my-10">
+      <div className="px-20 my-10 justify-center mx-auto w-2/6">
         <Link to="/development">
           <button className="text-blue-500 hover:underline p-5 hover:bg-slate-300 bg-slate-50 rounded-xl">
             Explore my development projects
