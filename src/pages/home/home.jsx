@@ -80,13 +80,15 @@ export default function Home() {
             <button>More about me</button>
             <FaArrowRight />
           </Link>
-          <a href="mailto:jscolbe9675@gmail.com" className="hidden md:block">
-            <button className="mt-5 text-blue-500 hover:underline hover:cursor-pointer">
-              Contact Me
-            </button>
+          <a
+            href="mailto:jscolbe9675@gmail.com"
+            className="hidden mt-5 text-blue-500 hover:underline hover:cursor-pointer md:flex space-x-2 items-center"
+          >
+            <button>Contact Me</button>
+            <FaArrowRight />
           </a>
         </div>
-        <div className="my-40">
+        <div className="my-40 md:hidden">
           <FaArrowDownLong className="text-3xl mx-auto" />
         </div>
       </header>
