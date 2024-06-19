@@ -52,7 +52,7 @@ export default function Nav({ pathname }) {
   return (
     <>
       <div
-        className={`px-10 flex justify-between w-full py-5 border-b border-gray-300 items-center ${textColor} hidden md:block`}
+        className={`px-10 flex md:hidden justify-between w-full py-5 border-b border-gray-300 items-center ${textColor}`}
       >
         <div>
           <button onClick={toggleMenu}>
@@ -132,21 +132,14 @@ export default function Nav({ pathname }) {
             <img src={logoSrc} alt="Logo" width={30} />
           </Link>
         </div>
-        <div className="flex space-x-5 items-center">
-          <div className="block">
-            <Link to="/about">
-              <button>About Me</button>
-            </Link>
-          </div>
-          <div>
-            <Link to="/contact">
-              <button>Contact</button>
-            </Link>
-          </div>
+        <div>
+          <a href="mailto:jscolbe9675@gmail.com">
+            <button>Contact</button>
+          </a>
         </div>
       </div>
       <div
-        className={`px-10 justify-between flex py-5 border-b border-gray-300 items-center ${textColor} block md:hidden`}
+        className={`px-10 justify-between hidden md:flex py-5 border-b border-gray-300 items-center ${textColor}`}
       >
         <div className="block">
           <Link to="/home">

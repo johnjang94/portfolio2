@@ -1,6 +1,7 @@
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import { FaArrowDownLong } from "react-icons/fa6";
 
 import "./home.css";
 
@@ -53,7 +54,7 @@ export default function Home() {
 
   return (
     <div>
-      <header className="lg:my-24 mx-auto lg:w-7/12 w-10/12 my-56 md:my-20 2xl:my-80">
+      <header className="lg:my-24 mx-auto lg:w-7/12 w-10/12 mt-20 mb-82 2xl:my-80">
         <h1 className="lg:text-9xl text-5xl">John Jang</h1>
         <div className="rotating-text-container lg:mt-5 mt-5 lg:text-3xl text-3xl">
           {titles.map((title, index) => (
@@ -84,6 +85,9 @@ export default function Home() {
               Contact Me
             </button>
           </a>
+        </div>
+        <div className="my-40">
+          <FaArrowDownLong className="text-3xl mx-auto" />
         </div>
       </header>
       <section className="my-40 md:mx-36 mx-12 grid grid-cols-1 md:grid-cols-2 md:gap-20 space-y-10 md:space-y-0">
