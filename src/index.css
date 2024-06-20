@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 body {
-  @apply max-w-[1440px] mx-auto;
+  @apply max-w-[1440px] mx-auto text-justify md:text-start;
   font-family: "Comfortaa", sans-serif;
   font-optical-sizing: auto;
 }

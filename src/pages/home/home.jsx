@@ -110,7 +110,9 @@ export default function Home() {
               <img
                 src={item.imgSrc}
                 alt={item.imgAlt}
-                className="rounded-xl hover:shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,rgba(0,0,0,0.3)_0px_3px_7px_-3px] mx-auto md:h-[300px] h-auto w-auto"
+                className={`rounded-xl hover:shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,rgba(0,0,0,0.3)_0px_3px_7px_-3px] mx-auto md:h-[300px] ${
+                  item.id === 3 ? "w-auto" : "w-full"
+                }`}
               />
             </Link>
             <p className="my-3">

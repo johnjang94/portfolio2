@@ -141,514 +141,569 @@ export default function FoodDistro() {
               looking for another solution.
             </p>
           </div>
-          {/* =========================== RESEARCH =================== */}
+          {/* ================ PROBLEM STATEMENT =================== */}
           <div>
-            <h3 id={2} className="text-2xl mt-20 mb-5">
-              RESEARCH
+            <h3 id={2} className="text-2xl mt-20">
+              PROBLEM STATEMENT
             </h3>
-            <h1 className="md:text-4xl text-2xl font-medium my-3">
-              To understand why they say that the existing services do not
-              exactly meet their needs
-            </h1>
-            <ul className="my-5 md:text-2xl text-xl list-disc">
-              After surveys, analyzing other brands, and drawing personas, my
-              colleagues and I have drawn the following hypotheses for the cause
-              of the dissatisfaction:
-              <div className="px-7">
-                <li className="text-red-500 my-3">
-                  Some locals who use the existing platforms still struggle to
-                  find the items that match their needs
-                </li>
-                <li className="text-red-500">
-                  There is not enough community support
-                </li>
-                <li className="text-red-500">
-                  It is true that not everyone has the access to the internet
-                </li>
-              </div>
-            </ul>
-            <button
-              className="text-blue-500"
-              onClick={() => handleToggle("research")}
-            >
-              More detail
-            </button>
-            {visibleSections["research"] && (
-              <div
-                ref={(el) => (contentRef.current["research"] = el)}
-                className={`content transition-max-height duration-500 ease-in-out overflow-hidden`}
-                style={{
-                  maxHeight: visibleSections["research"]
-                    ? `${contentRef.current["research"]?.scrollHeight}px`
-                    : "0",
-                }}
-              >
-                <p className="my-5 text-2xl">
-                  Team Food Distro conducted initial survey to discover the
-                  underlying issues on the food waste across the United States
-                  and received the total number of 138 responses from 17 states
-                  from coast to coast in the period of 14 days.
-                </p>
-                <img src={distroImages.Demographics} alt="Demographics" />
-                <p className="my-5 text-2xl">
-                  The respondants varied in age, from less than 18 to over 70,
-                  in terms of household income, from less than USD $ 30K to more
-                  than USD $ 200K including the ones who preferred not to
-                  answer, and in terms of the size of the households, from
-                  moved-out individuals to families more than 5.
-                </p>
-                <div className="md:grid-col-3 gap-10 space-between md:flex">
-                  <div className="space-y-5 mb-5 md:mb-0">
-                    <img
-                      src={distroImages.AppExposure}
-                      alt="Used App before yes vs no"
-                      className="h-1/2"
-                    />
-                    <img
-                      src={distroImages.Experience}
-                      alt="Age & Experience 1"
-                      className="h-1/2 w-full"
-                    />
-                  </div>
-                  <img
-                    src={distroImages.Experience2}
-                    alt="Age & Experience 2"
-                    className="w-full md:w-auto"
-                  />
-                </div>
-                <p className="my-8 text-2xl">
-                  In addition, the survey also found out that elders tend to
-                  value the tendency to reduce the food as important relatively
-                  more than the young generations.
-                </p>
-              </div>
-            )}
-            <div className="space-y-5">
-              <p className="text-center">Silvia as Food Donor and her story</p>
-              <img src={distroImages.FoodDonor} alt="Food Donor" />
-              <img
-                src={distroImages.FoodDonorJourney}
-                alt="Food Donor Journey"
-              />
-              <p className="text-center">Jack as Food Taker and his story</p>
-              <img src={distroImages.FoodTaker} alt="Food Taker" />
-              <img
-                src={distroImages.FoodTakerJourney}
-                alt="Food Taker Journey"
-              />
-            </div>
-          </div>
-          {/* ======================== COMPETITIVE ANALYSIS =================== */}
-          <div>
-            <h3 id={3} className="md:text-2xl text-lg mt-20 mb-5">
-              COMPETITIVE ANALYSIS
-            </h3>
-            <h1 className="md:text-4xl text-2xl font-medium my-3">
-              To benchmark and let Food Distro app be{" "}
-              <span className="text-violet-500">competitive</span>
-            </h1>
-            <p className="my-5 md:text-2xl text-xl list-disc">
-              Team Food Distro compared and analyzed the following four brands
-              to examine what services they offer, who they target, and what
-              blindspots they might have
-            </p>
-            <div>
-              <div className="flex">
-                <img
-                  src={distroImages.OLIO}
-                  alt="Olio logo"
-                  className="w-3/6 p-5 rounded-xl"
-                />
-                <img
-                  src={distroImages.NextDoor}
-                  alt="Next Door logo"
-                  className="w-3/6 p-5 rounded-xl"
-                />
-              </div>
-              <div className="text-center space-x-28 md:space-x-96 ml-3">
-                <span>OLIO</span>
-                <span>NextDoor</span>
-              </div>
-              <div className="flex">
-                <img
-                  src={distroImages.BuyNothing}
-                  alt="Buy Nothing logo"
-                  className="w-3/6 p-5 rounded-xl"
-                />
-                <img
-                  src={distroImages.TooGood}
-                  alt="Too Good To Go logo"
-                  className="w-3/6 p-5 rounded-xl"
-                />
-              </div>
-              <div className="text-center space-x-8 md:space-x-80 ml-3">
-                <span>BuyNothing</span>
-                <span>Too Good To Go</span>
-              </div>
-            </div>
-            <button
-              className="text-blue-500 my-5 md:my-3"
-              onClick={() => handleToggle("competitive-analysis")}
-            >
-              More detail
-            </button>
-            {visibleSections["competitive-analysis"] && (
-              <div
-                ref={(el) => (contentRef.current["competitive-analysis"] = el)}
-                className={`content transition-max-height duration-500 ease-in-out overflow-hidden`}
-                style={{
-                  maxHeight: visibleSections["competitive-analysis"]
-                    ? `${contentRef.current["competitive-analysis"]?.scrollHeight}px`
-                    : "0",
-                }}
-              >
-                <div className="grid-cols-2 space-y-3">
-                  <div className="md:flex">
-                    <div className="md:flex gap-5 space-y-3 md:space-y-0 my-3 md:my-0">
-                      <img
-                        src={distroImages.Audience}
-                        alt="customers"
-                        className="rounded-xl md:w-3/6"
-                      />
-                      <ul className="md:w-3/6 list-disc">
-                        <span className="font-semibold">Target audience</span>
-                        <li className="text-blue-500">Local</li>
-                        <li className="text-blue-500">Over 18 years old</li>
-                        <li className="text-blue-500">
-                          Socially & environmentally conscious
-                        </li>
-                      </ul>
-                    </div>
-                    <div className="md:flex gap-5 space-y-3 md:space-y-0 my-3 md:my-0">
-                      <img
-                        src={distroImages.Credibility}
-                        alt="credibility"
-                        className="rounded-xl md:w-3/6"
-                      />
-                      <ul className="md:w-3/6 list-disc">
-                        <span className="font-semibold">
-                          Credibility Management
-                        </span>
-                        <li className="text-blue-500">
-                          BuyNothing, Olio, and NextDoor utilize user identity
-                          (user profiles are mandatory)
-                        </li>
-                        <li className="text-blue-500">
-                          Too Good To Go users are anonymous, and the business
-                          assumes risk
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div className="md:flex">
-                    <div className="md:flex gap-5 space-y-3 md:space-y-0 my-3 md:my-0">
-                      <img
-                        src={distroImages.Focus}
-                        alt="focus"
-                        className="rounded-xl md:w-3/6"
-                      />
-                      <ul className="md:w-3/6 list-disc">
-                        <span className="font-semibold">Platform focus</span>
-                        <li className="text-blue-500">
-                          Mainly food (fresh produce, meals, canned goods)
-                        </li>
-                        <li className="text-blue-500">
-                          Sometimes supplies (household items and goods)
-                        </li>
-                      </ul>
-                    </div>
-                    <div className="md:flex space-y-3 md:space-y-0 my-3 md:my-0">
-                      <img
-                        src={distroImages.Security}
-                        alt="security"
-                        className="rounded-xl md:w-4/6"
-                      />
-                      <ul className="md:w-3/6 list-disc">
-                        <span className="font-semibold">
-                          Security Check and Delivery
-                        </span>
-                        <li className="text-blue-500">
-                          Terms and Conditions / Terms of Service
-                        </li>
-                        <li className="text-blue-500">Verification</li>
-                        <li className="text-blue-500">Consent</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            )}
             <p className="my-5 md:text-2xl text-xl">
-              We came to understand that, despite the fact that the existing
-              platforms aim the locals whose ages are over 18 and focuses
-              primarily on sharing groceries,{" "}
-              <span className="text-red-500">
-                a&#x29; people who can donate their leftovers do not know where
-                and how to donate
+              Despite <span className="text-red-500">safety concerns</span>{" "}
+              regarding{" "}
+              <span className="underline italic">
+                quality and hygiene of food
               </span>
-              , and{" "}
-              <span className="text-red-500">
-                b&#x29; people who wish to take the donations could not exactly
-                find the items that they need
+              , <span className="underline italic">low income</span>, and{" "}
+              <span className="underline italic">
+                lack of accessibility (and not limited to the lack of the
+                community support)
               </span>
-              .
+              , locals{" "}
+              <span className="text-blue-400">wish to be connected</span> to
+              share the food to reduce the waste and lower the environmental
+              problem. In order to resolve the issue, the mission objective of
+              this project is to design an application that addresses the
+              challenges that the locals face which ranges from food issues to
+              the societal issues and enables the users to share and donate food
+              easily, safely, and ethically.
+            </p>
+          </div>
+          {/* ================ BACKGROUND =================== */}
+          <div>
+            <h3 id={3} className="text-2xl mt-20">
+              ABSTRACT
+            </h3>
+            <p className="my-5 md:text-2xl text-xl">
+              The mission objective of building this new service application
+              that can be used whenever and wherever the users are and that
+              connects the locals is to meet the needs of individuals whom are
+              willing to share the food, while differentiating the service by
+              covering the blindspots of other competitors and providing
+              educational materials to a&#41; raise awareness of the importance
+              of reducing the food waste and how this effort to reduce
+              contributes to the environmental health of the local area as well
+              as to the financial impact on taxation, and b&#41; the breakdown
+              of stigma as well as increasing the community support among
+              locals. In order to achieve the specific criteria, the team has
+              heard the voices of the potential users from surveys, carefully
+              analyzed four other brands, and focused on emphasizing the key
+              features with simplistic designs.
             </p>
           </div>
           {/* ======================== DESIGN-PROCESS =================== */}
           <div>
-            <h3 id={4} className="md:text-2xl text-xl mt-10 mb-5">
-              DESIGN PROCESS - brainstorm
+            <h3 id={4} className="md:text-2xl text-xl mt-20 mb-5">
+              DESIGN PROCESS
             </h3>
-            <h1 className="md:text-4xl text-2xl font-medium my-3">
-              How might we meet the needs of the individuals differently?
-            </h1>
-            <ul className="md:text-2xl text-xl space-y-5">
-              Whether it is the people who donate their leftover or the people
-              who take the donations, we have taken the following questions as
-              part of our consideration:
-              <li className="text-xl pt-5">
-                Q. Will the app handle no-shows, save my time and energy in
-                general, and be able to manage messages for communication?
-              </li>
-              <li className="text-xl">
-                Q. will the app provide accurate information about the location
-                and the quality of the products?
-              </li>
-              <li className="text-xl">
-                Q. Will it be safe to meet the strangers?
-              </li>
-            </ul>
-            <p className="md:text-2xl text-xl my-3">
-              As for the solution, we thought of using the features of Google
-              Maps
-            </p>
-            <p className="md:text-2xl text-xl">
-              In addition, we were thinking about using various SNS network in
-              order to raise the awareness of the app, and at last but not
-              least...
-            </p>
-            <p className="md:text-2xl text-xl my-5">
-              How might we measure success once it launches?
-            </p>
-            <ul className="list-disc text-xl mx-5">
-              <li>
-                We could track the number of downloads from Google Play or Apple
-                Store
-              </li>
-              <li>
-                We could track the screen time among individuals and the most
-                popular page on the app
-              </li>
-              <li>Lastly, we can check the reviews</li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="md:text-2xl text-2xl mt-10 mb-5">
-              DESIGN PROCESS - iterating ideas
-            </h3>
-            <h4 className="text-xl">1. The CX Flow - 3 userflows</h4>
-            <p className="md:text-2xl text-xl font-medium my-3">
-              We imagined how each user should be able to navigate themselves
-              through different pages:
-            </p>
-            <div className="space-y-5">
-              <img
-                src={distroImages.Login}
-                alt="Login & Sign up"
-                className="rounded-xl mt-3"
-              />
-              <img
-                src={distroImages.ItemList}
-                alt="Item Listing"
-                className="rounded-xl"
-              />
-              <img
-                src={distroImages.ItemSearch}
-                alt="Item Search"
-                className="rounded-xl"
-              />
-            </div>
-          </div>
-          <div>
-            <p className="md:text-2xl text-xl my-5">
-              We also drew the site map to indicate how the sharing journey
-              begins. Whether they are the donor or taker, they both need to
-              sign up in order to use the app and need to use messenger feature
-              to communicate each other. In terms of the donors specifically,
-              they would be able to register their products and indicate
-              availability in letting the takers to notice and take the
-              products. In the meantime, the takers should be able to find the
-              items that they are interested in taking the leftover using the
-              filter.
-            </p>
-            <h4 className="text-xl my-3 text-center">The Site Map</h4>
-            <img
-              src={distroImages.Sitemap}
-              alt="Sitemap"
-              className="rounded-xl w-full"
-            />
-          </div>
-          <div>
-            <h4 className="md:text-2xl text-xl mt-10">2. Sketches</h4>
-            <p className="text-center text-lg my-3 hidden md:block">
-              Low-Fidelity - Search (left) & Profile (right)
-            </p>
-            <p className="text-center text-lg mt-3 block md:hidden">
-              Low-Fidelity
-            </p>
-            <p className="text-center text-lg mb-3 block md:hidden">Search</p>
-            <div className="md:flex md:space-x-10 md:w-3/6 space-y-5 md:space-y-0 md:pr-5">
-              <img
-                src={distroImages.SearchLowFi}
-                alt="Search Low-Fi"
-                className="rounded-xl"
-              />
-              <p className="text-center text-lg my-3 block md:hidden">
-                Profile
-              </p>
-              <img
-                src={distroImages.ProfileLowfi}
-                alt="Profile Low-Fi"
-                className="rounded-xl"
-              />
-            </div>
-          </div>
-          <button
-            className="text-blue-500 my-5 md:my-3 text-lg"
-            onClick={() => handleToggle("design-process")}
-          >
-            More examples
-          </button>
-          {visibleSections["design-process"] && (
-            <div
-              ref={(el) => (contentRef.current["design-process"] = el)}
-              className={`content transition-max-height duration-500 ease-in-out overflow-hidden`}
-              style={{
-                maxHeight: visibleSections["design-process"]
-                  ? `${contentRef.current["design-process"]?.scrollHeight}px`
-                  : "0",
-              }}
-            >
-              <p className="text-center text-lg">Product Detail & Calendar</p>
-              <img
-                src={distroImages.DisplayList}
-                alt="Display List"
-                className="rounded-xl my-3"
-              />
-              <p className="text-center text-lg">Request</p>
-              <img
-                src={distroImages.Request}
-                alt="Request"
-                className="rounded-xl my-3"
-              />
-            </div>
-          )}
-          <div>
-            <div className="md:flex items-center my-3 md:space-x-2 md:justify-center">
-              <p className="text-center text-lg mt-3 md:mt-0">Mid-Fidelity</p>
-            </div>
-            <p className="text-center text-lg mb-3">design sketch samples</p>
-            <div className="md:grid md:grid-cols-2 md:w-full gap-10 space-y-5 md:space-y-0">
-              <img
-                src={distroImages.SearchMidFi}
-                alt="Search Mid-Fi"
-                className="rounded-xl"
-              />
-              <img
-                src={distroImages.SearchTeamPick}
-                alt="Team's pick"
-                className="rounded-xl"
-              />
-            </div>
-          </div>
-          <button
-            className="text-blue-500 my-5 md:my-3 text-lg"
-            onClick={() => handleToggle("mid-fidelity")}
-          >
-            More examples
-          </button>
-          {visibleSections["mid-fidelity"] && (
-            <div
-              ref={(el) => (contentRef.current["mid-fidelity"] = el)}
-              className={`content transition-max-height duration-500 ease-in-out overflow-hidden`}
-              style={{
-                maxHeight: visibleSections["mid-fidelity"]
-                  ? `${contentRef.current["mid-fidelity"]?.scrollHeight}px`
-                  : "0",
-              }}
-            >
-              <div className="flex grid-cols-3 gap-10">
-                <div>
-                  <p className="text-center text-lg">Order detail</p>
-                  <img
-                    src={distroImages.OrderDetail}
-                    alt="Order detail"
-                    className="rounded-xl my-3"
-                  />
+            {/* =========================== RESEARCH =================== */}
+            <div>
+              <h4 className="text-xl mt-5 mb-5 text-center">RESEARCH</h4>
+              <h1 className="md:text-4xl text-2xl font-medium my-3">
+                To understand why they say that the existing services do not
+                exactly meet their needs
+              </h1>
+              <ul className="my-5 md:text-2xl text-xl list-disc">
+                After surveys, analyzing other brands, and drawing personas, my
+                colleagues and I have drawn the following hypotheses for the
+                cause of the dissatisfaction:
+                <div className="px-7">
+                  <li className="text-red-500 my-3">
+                    Some locals who use the existing platforms still struggle to
+                    find the items that match their needs
+                  </li>
+                  <li className="text-red-500">
+                    There is not enough community support
+                  </li>
+                  <li className="text-red-500">
+                    It is true that not everyone has the access to the internet
+                  </li>
                 </div>
-                <div>
-                  <p className="text-center text-lg">Map search</p>
-                  <img
-                    src={distroImages.MapSearch}
-                    alt="Map search"
-                    className="rounded-xl my-3"
-                  />
+              </ul>
+              <button
+                className="text-blue-500"
+                onClick={() => handleToggle("research")}
+              >
+                More detail
+              </button>
+              {visibleSections["research"] && (
+                <div
+                  ref={(el) => (contentRef.current["research"] = el)}
+                  className={`content transition-max-height duration-500 ease-in-out overflow-hidden`}
+                  style={{
+                    maxHeight: visibleSections["research"]
+                      ? `${contentRef.current["research"]?.scrollHeight}px`
+                      : "0",
+                  }}
+                >
+                  <p className="my-5 text-2xl">
+                    Team Food Distro conducted initial survey to discover the
+                    underlying issues on the food waste across the United States
+                    and received the total number of 138 responses from 17
+                    states from coast to coast in the period of 14 days.
+                  </p>
+                  <img src={distroImages.Demographics} alt="Demographics" />
+                  <p className="my-5 text-2xl">
+                    The respondants varied in age, from less than 18 to over 70,
+                    in terms of household income, from less than USD $ 30K to
+                    more than USD $ 200K including the ones who preferred not to
+                    answer, and in terms of the size of the households, from
+                    moved-out individuals to families more than 5.
+                  </p>
+                  <div className="md:grid-col-3 gap-10 space-between md:flex">
+                    <div className="space-y-5 mb-5 md:mb-0">
+                      <img
+                        src={distroImages.AppExposure}
+                        alt="Used App before yes vs no"
+                        className="h-1/2"
+                      />
+                      <img
+                        src={distroImages.Experience}
+                        alt="Age & Experience 1"
+                        className="h-1/2 w-full"
+                      />
+                    </div>
+                    <img
+                      src={distroImages.Experience2}
+                      alt="Age & Experience 2"
+                      className="w-full md:w-auto"
+                    />
+                  </div>
+                  <p className="my-8 text-2xl">
+                    In addition, the survey also found out that elders tend to
+                    value the tendency to reduce the food as important
+                    relatively more than the young generations.
+                  </p>
                 </div>
-                <div>
-                  <p className="text-center text-lg">Messaging</p>
-                  <img
-                    src={distroImages.MapSearch}
-                    alt="Messaging"
-                    className="rounded-xl my-3"
-                  />
-                </div>
+              )}
+              <div className="space-y-5">
+                <p className="text-center">
+                  Silvia as Food Donor and her story
+                </p>
+                <img src={distroImages.FoodDonor} alt="Food Donor" />
+                <img
+                  src={distroImages.FoodDonorJourney}
+                  alt="Food Donor Journey"
+                />
+                <p className="text-center">Jack as Food Taker and his story</p>
+                <img src={distroImages.FoodTaker} alt="Food Taker" />
+                <img
+                  src={distroImages.FoodTakerJourney}
+                  alt="Food Taker Journey"
+                />
               </div>
             </div>
-          )}
-          <div>
-            <h4 className="text-xl">3. Design System</h4>
-            <p className="text-lg my-3">
-              The following design system is what we have implemented during our
-              mid-fi:
-            </p>
-            <div className="space-y-5">
-              <img
-                src={distroImages.CSSInfo}
-                alt="CSS"
-                className="w-full rounded-xl"
-              />
-              <div className="md:flex md:space-x-3 md:w-3/6 space-y-5 md:space-y-0 md:pr-2">
+            {/* ======================== COMPETITIVE ANALYSIS =================== */}
+            <div>
+              <h4 className="text-xl mt-10 mb-5 text-center">
+                COMPETITIVE ANALYSIS
+              </h4>
+              <h1 className="md:text-4xl text-2xl font-medium my-3">
+                To benchmark and let Food Distro app be{" "}
+                <span className="text-violet-500">competitive</span>
+              </h1>
+              <p className="my-5 md:text-2xl text-xl list-disc">
+                Team Food Distro compared and analyzed the following four brands
+                to examine what services they offer, who they target, and what
+                blindspots they might have
+              </p>
+              <div>
+                <div className="flex">
+                  <img
+                    src={distroImages.OLIO}
+                    alt="Olio logo"
+                    className="w-3/6 p-5 rounded-xl"
+                  />
+                  <img
+                    src={distroImages.NextDoor}
+                    alt="Next Door logo"
+                    className="w-3/6 p-5 rounded-xl"
+                  />
+                </div>
+                <div className="text-center space-x-28 md:space-x-96 ml-3">
+                  <span>OLIO</span>
+                  <span>NextDoor</span>
+                </div>
+                <div className="flex">
+                  <img
+                    src={distroImages.BuyNothing}
+                    alt="Buy Nothing logo"
+                    className="w-3/6 p-5 rounded-xl"
+                  />
+                  <img
+                    src={distroImages.TooGood}
+                    alt="Too Good To Go logo"
+                    className="w-3/6 p-5 rounded-xl"
+                  />
+                </div>
+                <div className="text-center space-x-8 md:space-x-80 ml-3">
+                  <span>BuyNothing</span>
+                  <span>Too Good To Go</span>
+                </div>
+              </div>
+              <button
+                className="text-blue-500 my-5 md:my-3"
+                onClick={() => handleToggle("competitive-analysis")}
+              >
+                More detail
+              </button>
+              {visibleSections["competitive-analysis"] && (
+                <div
+                  ref={(el) =>
+                    (contentRef.current["competitive-analysis"] = el)
+                  }
+                  className={`content transition-max-height duration-500 ease-in-out overflow-hidden`}
+                  style={{
+                    maxHeight: visibleSections["competitive-analysis"]
+                      ? `${contentRef.current["competitive-analysis"]?.scrollHeight}px`
+                      : "0",
+                  }}
+                >
+                  <div className="grid-cols-2 space-y-3">
+                    <div className="md:flex">
+                      <div className="md:flex gap-5 space-y-3 md:space-y-0 my-3 md:my-0">
+                        <img
+                          src={distroImages.Audience}
+                          alt="customers"
+                          className="rounded-xl md:w-3/6"
+                        />
+                        <ul className="md:w-3/6 list-disc">
+                          <span className="font-semibold">Target audience</span>
+                          <li className="text-blue-500">Local</li>
+                          <li className="text-blue-500">Over 18 years old</li>
+                          <li className="text-blue-500">
+                            Socially & environmentally conscious
+                          </li>
+                        </ul>
+                      </div>
+                      <div className="md:flex gap-5 space-y-3 md:space-y-0 my-3 md:my-0">
+                        <img
+                          src={distroImages.Credibility}
+                          alt="credibility"
+                          className="rounded-xl md:w-3/6"
+                        />
+                        <ul className="md:w-3/6 list-disc">
+                          <span className="font-semibold">
+                            Credibility Management
+                          </span>
+                          <li className="text-blue-500">
+                            BuyNothing, Olio, and NextDoor utilize user identity
+                            (user profiles are mandatory)
+                          </li>
+                          <li className="text-blue-500">
+                            Too Good To Go users are anonymous, and the business
+                            assumes risk
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div className="md:flex">
+                      <div className="md:flex gap-5 space-y-3 md:space-y-0 my-3 md:my-0">
+                        <img
+                          src={distroImages.Focus}
+                          alt="focus"
+                          className="rounded-xl md:w-3/6"
+                        />
+                        <ul className="md:w-3/6 list-disc">
+                          <span className="font-semibold">Platform focus</span>
+                          <li className="text-blue-500">
+                            Mainly food (fresh produce, meals, canned goods)
+                          </li>
+                          <li className="text-blue-500">
+                            Sometimes supplies (household items and goods)
+                          </li>
+                        </ul>
+                      </div>
+                      <div className="md:flex space-y-3 md:space-y-0 my-3 md:my-0">
+                        <img
+                          src={distroImages.Security}
+                          alt="security"
+                          className="rounded-xl md:w-4/6"
+                        />
+                        <ul className="md:w-3/6 list-disc">
+                          <span className="font-semibold">
+                            Security Check and Delivery
+                          </span>
+                          <li className="text-blue-500">
+                            Terms and Conditions / Terms of Service
+                          </li>
+                          <li className="text-blue-500">Verification</li>
+                          <li className="text-blue-500">Consent</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
+              <p className="my-5 md:text-2xl text-xl">
+                We came to understand that, despite the fact that the existing
+                platforms aim the locals whose ages are over 18 and focuses
+                primarily on sharing groceries,{" "}
+                <span className="text-red-500">
+                  a&#x29; people who can donate their leftovers do not know
+                  where and how to donate
+                </span>
+                , and{" "}
+                <span className="text-red-500">
+                  b&#x29; people who wish to take the donations could not
+                  exactly find the items that they need
+                </span>
+                .
+              </p>
+            </div>
+            {/* ======================== DESIGN-PROCESS =================== */}
+            <div>
+              <h4 className="text-xl mt-10 mb-5 text-center">ITERATION</h4>
+              <h1 className="md:text-4xl text-2xl font-medium my-3">
+                How might we meet the needs of the individuals{" "}
+                <span className="text-green-500">differently</span>?
+              </h1>
+              <ul className="md:text-2xl text-xl space-y-5">
+                Whether it is the people who donate their leftover or the people
+                who take the donations, we have taken the following questions as
+                part of our consideration:
+                <li className="text-xl pt-5 px-5">
+                  Q. Will the app handle no-shows, save my time and energy in
+                  general, and be able to manage messages for communication?
+                </li>
+                <li className="text-xl px-5">
+                  Q. will the app provide accurate information about the
+                  location and the quality of the products?
+                </li>
+                <li className="text-xl px-5">
+                  Q. Will it be safe to meet the strangers?
+                </li>
+              </ul>
+              <p className="text-xl my-3 px-5">
+                As for the solution, we thought of using the features of Google
+                Maps
+              </p>
+              <p className="text-xl px-5">
+                In addition, we were thinking about using various SNS network in
+                order to raise the awareness of the app, and at last but not
+                least...
+              </p>
+              <p className="text-xl my-5 px-5">
+                How might we measure success once it launches?
+              </p>
+              <ul className="list-disc text-xl mx-5">
+                <li className="px-10">
+                  We could track the number of downloads from Google Play or
+                  Apple Store
+                </li>
+                <li className="px-10">
+                  We could track the screen time among individuals and the most
+                  popular page on the app
+                </li>
+                <li className="px-10">Lastly, we can check the reviews</li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="text-xl mt-10 mb-5 text-center">
+                ITERATION PROCESS
+              </h4>
+              <h4 className="text-xl">1. The CX Flow - 3 userflows</h4>
+              <p className="md:text-2xl text-xl font-medium my-3">
+                We imagined how each user should be able to navigate themselves
+                through different pages:
+              </p>
+              <div className="space-y-5">
                 <img
-                  src={distroImages.CornerRadius}
-                  alt="Corner Roundedness"
+                  src={distroImages.Login}
+                  alt="Login & Sign up"
+                  className="rounded-xl mt-3"
+                />
+                <img
+                  src={distroImages.ItemList}
+                  alt="Item Listing"
                   className="rounded-xl"
                 />
                 <img
-                  src={distroImages.Margins}
-                  alt="Margins"
-                  className="rounded-xl mr-5"
+                  src={distroImages.ItemSearch}
+                  alt="Item Search"
+                  className="rounded-xl"
                 />
               </div>
             </div>
-          </div>
-          <div>
-            <p className="text-center text-lg mb-5 mt-12">High-Fidelity</p>
-            <div className="md:flex md:grid-cols-3 md:space-x-5 md:w-3/6 space-y-5 md:space-y-0 md:pr-5">
+            <div>
+              <p className="md:text-2xl text-xl my-5">
+                We also drew the site map to indicate how the sharing journey
+                begins. Whether they are the donor or taker, they both need to
+                sign up in order to use the app and need to use messenger
+                feature to communicate each other. In terms of the donors
+                specifically, they would be able to register their products and
+                indicate availability in letting the takers to notice and take
+                the products. In the meantime, the takers should be able to find
+                the items that they are interested in taking the leftover using
+                the filter.
+              </p>
+              <h4 className="text-xl my-3 text-center">The Site Map</h4>
               <img
-                src={distroImages.MapSearchHighFi}
-                alt="Search Map Search"
-                className="rounded-xl md:w-4/6"
+                src={distroImages.Sitemap}
+                alt="Sitemap"
+                className="rounded-xl w-full"
               />
-              <img
-                src={distroImages.OrderConfirmationHighFi}
-                alt="Order confirmation"
-                className="rounded-xl md:w-4/6"
-              />
-              <img
-                src={distroImages.ProductDetailHighFi}
-                alt="Product detail"
-                className="rounded-xl md:w-4/6 w-full"
-              />
+            </div>
+            <div>
+              <h4 className="md:text-2xl text-xl mt-10">2. Sketches</h4>
+              <p className="text-center text-lg my-3 hidden md:block">
+                Low-Fidelity - Search (left) & Profile (right)
+              </p>
+              <p className="text-center text-lg mt-3 block md:hidden">
+                Low-Fidelity
+              </p>
+              <p className="text-center text-lg mb-3 block md:hidden">Search</p>
+              <div className="md:flex md:space-x-10 md:w-3/6 space-y-5 md:space-y-0 md:pr-5">
+                <img
+                  src={distroImages.SearchLowFi}
+                  alt="Search Low-Fi"
+                  className="rounded-xl"
+                />
+                <p className="text-center text-lg my-3 block md:hidden">
+                  Profile
+                </p>
+                <img
+                  src={distroImages.ProfileLowfi}
+                  alt="Profile Low-Fi"
+                  className="rounded-xl"
+                />
+              </div>
+            </div>
+            <button
+              className="text-blue-500 my-5 md:my-3 text-lg"
+              onClick={() => handleToggle("design-process")}
+            >
+              More examples
+            </button>
+            {visibleSections["design-process"] && (
+              <div
+                ref={(el) => (contentRef.current["design-process"] = el)}
+                className={`content transition-max-height duration-500 ease-in-out overflow-hidden`}
+                style={{
+                  maxHeight: visibleSections["design-process"]
+                    ? `${contentRef.current["design-process"]?.scrollHeight}px`
+                    : "0",
+                }}
+              >
+                <p className="text-center text-lg">Product Detail & Calendar</p>
+                <img
+                  src={distroImages.DisplayList}
+                  alt="Display List"
+                  className="rounded-xl my-3"
+                />
+                <p className="text-center text-lg">Request</p>
+                <img
+                  src={distroImages.Request}
+                  alt="Request"
+                  className="rounded-xl my-3"
+                />
+              </div>
+            )}
+            <div>
+              <div className="md:flex items-center my-3 md:space-x-2 md:justify-center">
+                <p className="text-center text-lg mt-3 md:mt-0">Mid-Fidelity</p>
+              </div>
+              <p className="text-center text-lg mb-3">design sketch samples</p>
+              <div className="md:grid md:grid-cols-2 md:w-full gap-10 space-y-5 md:space-y-0">
+                <img
+                  src={distroImages.SearchMidFi}
+                  alt="Search Mid-Fi"
+                  className="rounded-xl"
+                />
+                <img
+                  src={distroImages.SearchTeamPick}
+                  alt="Team's pick"
+                  className="rounded-xl"
+                />
+              </div>
+            </div>
+            <button
+              className="text-blue-500 my-5 md:my-3 text-lg"
+              onClick={() => handleToggle("mid-fidelity")}
+            >
+              More examples
+            </button>
+            {visibleSections["mid-fidelity"] && (
+              <div
+                ref={(el) => (contentRef.current["mid-fidelity"] = el)}
+                className={`content transition-max-height duration-500 ease-in-out overflow-hidden`}
+                style={{
+                  maxHeight: visibleSections["mid-fidelity"]
+                    ? `${contentRef.current["mid-fidelity"]?.scrollHeight}px`
+                    : "0",
+                }}
+              >
+                <div className="flex grid-cols-3 gap-10">
+                  <div>
+                    <p className="text-center text-lg">Order detail</p>
+                    <img
+                      src={distroImages.OrderDetail}
+                      alt="Order detail"
+                      className="rounded-xl my-3"
+                    />
+                  </div>
+                  <div>
+                    <p className="text-center text-lg">Map search</p>
+                    <img
+                      src={distroImages.MapSearch}
+                      alt="Map search"
+                      className="rounded-xl my-3"
+                    />
+                  </div>
+                  <div>
+                    <p className="text-center text-lg">Messaging</p>
+                    <img
+                      src={distroImages.MapSearch}
+                      alt="Messaging"
+                      className="rounded-xl my-3"
+                    />
+                  </div>
+                </div>
+              </div>
+            )}
+            <div>
+              <h4 className="text-xl">3. Design System</h4>
+              <p className="text-lg my-3">
+                The following design system is what we have implemented during
+                our mid-fi:
+              </p>
+              <div className="space-y-5">
+                <img
+                  src={distroImages.CSSInfo}
+                  alt="CSS"
+                  className="w-full rounded-xl"
+                />
+                <div className="md:flex md:space-x-3 md:w-3/6 space-y-5 md:space-y-0 md:pr-2">
+                  <img
+                    src={distroImages.CornerRadius}
+                    alt="Corner Roundedness"
+                    className="rounded-xl"
+                  />
+                  <img
+                    src={distroImages.Margins}
+                    alt="Margins"
+                    className="rounded-xl mr-5"
+                  />
+                </div>
+              </div>
+            </div>
+            <div>
+              <p className="text-center text-lg mb-5 mt-12">High-Fidelity</p>
+              <div className="md:flex md:grid-cols-3 md:space-x-5 md:w-3/6 space-y-5 md:space-y-0 md:pr-5">
+                <img
+                  src={distroImages.MapSearchHighFi}
+                  alt="Search Map Search"
+                  className="rounded-xl md:w-4/6"
+                />
+                <img
+                  src={distroImages.OrderConfirmationHighFi}
+                  alt="Order confirmation"
+                  className="rounded-xl md:w-4/6"
+                />
+                <img
+                  src={distroImages.ProductDetailHighFi}
+                  alt="Product detail"
+                  className="rounded-xl md:w-4/6 w-full"
+                />
+              </div>
             </div>
           </div>
           {/* =========================== USABILITY TESTING =================== */}

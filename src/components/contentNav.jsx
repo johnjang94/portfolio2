@@ -18,11 +18,11 @@ export default function ContentNav({ currentSection, pathname }) {
     if (pathname === "/food") {
       updatedSections = [
         { id: 1, label: "Background" },
-        { id: 2, label: "Research" },
-        { id: 3, label: "Competitive Analysis" },
+        { id: 2, label: "Problem Statement" },
+        { id: 3, label: "Abstract" },
         { id: 4, label: "Design Process" },
-        { id: 5, label: "Usability Testing" },
-        { id: 6, label: "Lessons Learned" },
+        { id: 7, label: "Usability Testing" },
+        { id: 8, label: "Lessons Learned" },
       ];
     } else if (pathname === "/tugo") {
       updatedSections = [
