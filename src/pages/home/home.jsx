@@ -26,7 +26,7 @@ export default function Home() {
       imgAlt: "Xperience",
       icon: "🔒",
       title: "Xperience | Share your memories in a new style",
-      category: ["Product Design", "Web Design"],
+      category: ["Product Design", "Web Design", "Currently in Progress"],
       link: "/lock",
     },
     {
