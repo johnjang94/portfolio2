@@ -105,11 +105,16 @@ export default function Tugo() {
               Relief & Comfort vs. Liability
             </h1>
             <p className="md:text-2xl text-xl mb-10">
-              It is quite essential that you need an insurance while exploring a
-              new place. Insurances are usually meant to give you some level of
-              relief and they should be reachable. The current website might
-              have good intentions, but travelers might question if this
-              insurance is really standing close to them.
+              An insurance is quite an essential protection when you decide to
+              visit a new place. Insurances are usually meant to give you some
+              level of relief and they should be reachable. TuGo Travel
+              Insurance is one of the insurance companies that offer the
+              protection on unexpected circumstances. They meant to stand with
+              you shoulder-to-shoulder when you need help, and they explain how
+              they are going to help on their website. On the other hand,
+              despite all the good intentions that TuGo has, some questions are
+              arising that if this insurance is really standing close to the
+              travelers.
             </p>
           </div>
           {/* ================ PROBLEM STATEMENT =================== */}
@@ -132,10 +137,9 @@ export default function Tugo() {
                 measures.
               </span>{" "}
               Due to the lack of awareness, they are covering the expenses out
-              of their own pocket besides keeping such insurance products that
-              did not fully cover the cost of the incidents. It is questioned on
-              how the travelers ended up not fully being aware of what products
-              exists and what are offered by TuGo.
+              of their own pockets. They express that TuGo Travel Insurance
+              needs to provide more concrete, specific, and clear guidelines on
+              how far and wide the coverage gets.
             </p>
           </div>
           {/* ================ ABSTRACT =================== */}
@@ -144,22 +148,43 @@ export default function Tugo() {
               ABSTRACT
             </h3>
             <p className="md:text-2xl text-xl mb-10">
-              Visuals that did not respect the industry-standard UI guideline
-              caused confusion among the current and the potential travelers who
-              were interested in signing up for the service. The services that
-              TuGo Travel Insurance offers compete against some other well-known
-              brands, but the communication style which influences the branding
-              does not seem to attract the travelers in comparison to the
-              competitors. In this case study, the solution was to provide
-              different UIs that are catchy, intuitive, and straight-forward for
-              the current and potential users of TuGo Travel Insurance. In order
-              to carry out better look and to implement better communication
-              style, we have done some research, heard the voices of the
-              travelers, and iterated ideas.
+              We analyzed the company&#39;s business structure and services to
+              find out at what point the current and the potential travelers
+              might be attracted to sign up at TuGo Travel Insurance. Using the
+              analysis, we have compared what we know to the participants who
+              have spared their evaluations on TuGo Travel Insurance products.
+              In addition, we studied other insurance companies to learn how
+              they are different (or what they are strong at) and to find out
+              what TuGo could learn from these competitors.
             </p>
+            <h3 className="text-2xl my-5">MISSION OBJECTIVE</h3>
+            <p className="md:text-2xl text-xl mb-10">
+              Providing a clear guideline to the current and the potential
+              travelers was the foremost priority for TuGo Travel Isurance;
+              therefore, the key objective was to clean up the UI that TuGo
+              Travel Insurance has and let the simplicity speak to them
+              directly.
+            </p>
+            <h3 className="text-2xl my-5">SUCCESS CRITERIA</h3>
+            <ul className="text-2xl my-5 list-disc px-10 space-y-3">
+              <li>
+                Re-design the navigation menu (where appropriate) to meet the
+                industry standard.
+              </li>
+              <li>
+                Re-design the contact page to make sure the travelers understand
+                what numbers they need to reach out depending on their
+                inquiries.
+              </li>
+              <li>
+                Re-design the user flow from the home page to the traveler
+                portal, and from the traveler dashboard to filling out their
+                inquiries to ensure smoother communication.
+              </li>
+            </ul>
           </div>
           <div>
-            <h3 id={4} className="text-2xl my-5">
+            <h3 id={4} className="text-2xl mt-10 mb-5">
               DESIGN PROCESS
             </h3>
             {/* ================ RESEARCH =================== */}

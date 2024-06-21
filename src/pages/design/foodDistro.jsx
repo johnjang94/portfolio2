@@ -173,21 +173,41 @@ export default function FoodDistro() {
               ABSTRACT
             </h3>
             <p className="my-5 md:text-2xl text-xl">
-              The mission objective of building this new service application
-              that can be used whenever and wherever the users are and that
-              connects the locals is to meet the needs of individuals whom are
-              willing to share the food, while differentiating the service by
-              covering the blindspots of other competitors and providing
-              educational materials to a&#41; raise awareness of the importance
-              of reducing the food waste and how this effort to reduce
-              contributes to the environmental health of the local area as well
-              as to the financial impact on taxation, and b&#41; the breakdown
-              of stigma as well as increasing the community support among
-              locals. In order to achieve the specific criteria, the team has
-              heard the voices of the potential users from surveys, carefully
-              analyzed four other brands, and focused on emphasizing the key
-              features with simplistic designs.
+              We had 39+ participants in the current study who expressed the
+              concerns on the needs of food-sharing and their experience on some
+              of the existing brands. Following their experience, we have
+              analyzed the existing brands to understand their business models
+              and services and to uncover the pain points.
             </p>
+            <h3 className="text-2xl mt-20">MISSION OBJECTIVE</h3>
+            <p className="my-5 md:text-2xl text-xl">
+              In order to cover the blind spots that the existing brands have,
+              and to stay competitive at the same time, we focused on designing
+              some key features that are related to a&#41; helping users stay
+              connected, b&#41; helping users to find products that they need,
+              c&#41; making sure that both the food donators and the food takers
+              are reliable and trust-worthy, and d) making sure that the quality
+              of food offered by the food donators are fine, sanitized, and
+              fresh.
+            </p>
+            <h3 className="text-2xl mt-20">SUCCESS CRITERIA</h3>
+            <ul className="my-5 md:text-2xl text-xl px-10 space-y-5 list-disc">
+              <li>
+                Design a search function that provides information on the image,
+                the food giver, the giver&#39;s location, the date and time that
+                the giver has posted the item, the giver&#39;s rating, and the
+                quantity of the product of the searched product.
+              </li>
+              <li>
+                Design a filter function that users can adjust based on the
+                quantity, the distance, and the reviews from other takers on the
+                giver.
+              </li>
+              <li>
+                Design a messaging system that allows the giver and the taker to
+                communicate each other.
+              </li>
+            </ul>
           </div>
           {/* ======================== DESIGN-PROCESS =================== */}
           <div>
@@ -201,23 +221,12 @@ export default function FoodDistro() {
                 To understand why they say that the existing services do not
                 exactly meet their needs
               </h1>
-              <ul className="my-5 md:text-2xl text-xl list-disc">
-                After surveys, analyzing other brands, and drawing personas, my
-                colleagues and I have drawn the following hypotheses for the
-                cause of the dissatisfaction:
-                <div className="px-7">
-                  <li className="text-red-500 my-3">
-                    Some locals who use the existing platforms still struggle to
-                    find the items that match their needs
-                  </li>
-                  <li className="text-red-500">
-                    There is not enough community support
-                  </li>
-                  <li className="text-red-500">
-                    It is true that not everyone has the access to the internet
-                  </li>
-                </div>
-              </ul>
+              <p className="my-5 md:text-2xl text-xl">
+                We first had a chance to get our feet wet in their shoes to find
+                out what triggers the discomfort. Those people who had more than
+                enough food supplies were facing different issues in comparison
+                to the people who needed help to feed the mouths.
+              </p>
               <button
                 className="text-blue-500"
                 onClick={() => handleToggle("research")}
@@ -290,6 +299,60 @@ export default function FoodDistro() {
                   alt="Food Taker Journey"
                 />
               </div>
+              <ul className="my-5 md:text-2xl text-xl list-disc">
+                For individuals, the following issues were their main pain
+                points:
+                <div className="px-7 space-y-3 mt-3">
+                  <li>
+                    <span className="text-red-500">Not every food giver</span>{" "}
+                    provides good items which leads to the food takers to have a
+                    second thought if they can really use the application
+                    because they think that{" "}
+                    <span className="underline">
+                      the application might not filter
+                    </span>{" "}
+                    the sources.
+                  </li>
+                  <li>
+                    <span className="text-red-500">
+                      Not every food giver or taker shows up
+                    </span>{" "}
+                    at the meeting point at the designated date and time
+                  </li>
+                  <li>
+                    Food takers find it{" "}
+                    <span className="text-red-500">
+                      challenging to look for sources
+                    </span>{" "}
+                    (but it perhaps is due to the supply vs demand problem)
+                  </li>
+                  <li>
+                    <span className="text-red-500">
+                      Not everyone has a good access to the internet.
+                    </span>{" "}
+                    Among the established brands,{" "}
+                    <span className="text-red-500">
+                      not every platform respects
+                    </span>{" "}
+                    to carry the optimal level of functionality even in{" "}
+                    <span className="underline">less-urbanized areas</span>.
+                  </li>
+                  <li>
+                    Food takers seem to be{" "}
+                    <span className="text-red-500">afraid</span> of engaging in
+                    sharing activities because they are potentially exposed to{" "}
+                    <span className="text-red-500">the social stigma</span> just
+                    like the food bank.
+                  </li>
+                  <li>
+                    The communities carry{" "}
+                    <span className="text-red-500">a lack of awareness</span> of
+                    the importance on reducing the amount of food waste and one
+                    of the ways to do is to share with others within the
+                    community.
+                  </li>
+                </div>
+              </ul>
             </div>
             {/* ======================== COMPETITIVE ANALYSIS =================== */}
             <div>
