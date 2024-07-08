@@ -76,7 +76,7 @@ export default function FoodDistro() {
     <div>
       <ProjectNav />
       <header>
-        <h3 className="mt-14 mb-4 md:w-7/12 md:text-center mx-44 text-2xl">
+        <h3 className="mt-14 mb-4 md:w-7/12 md:text-center md:mx-44 mx-10 text-xl md:text-2xl">
           Product Design for a mobile application
         </h3>
         <h1 className="mt-9 md:w-8/12 md:text-center mx-10 md:mx-14 md:text-5xl text-3xl">
