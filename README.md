@@ -1,8 +1,14 @@
-# React + Vite
+# Introduction
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my new design portfolio.
 
-Currently, two official plugins are available:
+![main picture](../portfolio2/src/assets/readme/README%20cover%20photo.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+I am continuously updating my portfolio with new cases that I am working on. Today, I have contributed in a few projects that are in the following fields:
+
+- Non-Profit Organization
+- Social Services
+- E-commerce
+- Travel
+
+Please note that some of the projects are still in-progress, and therefore, they are currently not disclosed. Should you wish to check out the progress of those projects, please check my resume or send me an inquiry via my email at jscolbe9675@gmail.com
