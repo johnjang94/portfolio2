@@ -31,7 +31,8 @@ export default function ContentNav({ currentSection, pathname }) {
         { id: 3, label: "Design Process" },
         { id: 5, label: "Design Changes" },
         { id: 6, label: "Key Changes" },
-        { id: 7, label: "Lessons Learned" },
+        { id: 7, label: "Improvements" },
+        { id: 8, label: "Lessons Learned" },
       ];
     } else if (pathname === "/experience") {
       updatedSections = [

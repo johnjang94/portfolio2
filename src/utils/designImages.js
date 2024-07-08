@@ -194,17 +194,21 @@ export const distroVideo = {
 // TuGo Travel Demo
 import Showcase from "../assets/tugo/demo/exampleDemo.gif";
 
+// TuGo Design Tools
+import Figma from "../assets/tugo/tools/figma.png";
+import Figjam from "../assets/tugo/tools/figjam.png";
+
 // TuGo Research
 import SWOT from "../assets/tugo/research/SWOT-TuGo.png";
 import Manulife from "../assets/tugo/research/manulife-logo.png";
 import SunLife from "../assets/tugo/research/sunlife-logo.png";
 import CompetitiveAnalysis from "../assets/tugo/research/competitive-analysis.png";
 import Chris from "../assets/tugo/research/traveller-chris.png";
-import Olivier from "../assets/tugo/research/traveller-olivier.png";
+import Olivier from "../assets/tugo/research/journalist-olivier.png";
 import CustomerJourneyMap from "../assets/tugo/research/customer-journey-map-new.png";
 
 // TuGo Iteration
-import Brainstorm from "../assets/tugo/iterate/brainstorm.png";
+import SiteMap from "../assets/tugo/iterate/site-map.png";
 import DesignGuide from "../assets/tugo/design-process/design-guide/guide.png";
 // ========== Low-Fi ==========
 import AboutUsLowFi from "../assets/tugo/design-process/low-fidelity/about-us.png";
@@ -224,6 +228,8 @@ import NewContactPage from "../assets/tugo/design-changes/new-contact.png";
 import NewSignUpPage from "../assets/tugo/design-changes/new-registration.png";
 
 export const tugoImages = {
+  Figma,
+  Figjam,
   Showcase,
   SWOT,
   Manulife,
@@ -232,7 +238,7 @@ export const tugoImages = {
   Chris,
   Olivier,
   CustomerJourneyMap,
-  Brainstorm,
+  SiteMap,
   DesignGuide,
   AboutUsLowFi,
   InsuranceIntroLowFi,

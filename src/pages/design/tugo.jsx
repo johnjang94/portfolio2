@@ -126,15 +126,27 @@ export default function Tugo() {
                 researchers.
               </p>
             </div>
-            <div className="grid-cols-2 justify-between flex my-20 md:w-5/6 md:mx-auto mx-10">
-              <div>
-                <h4 className="font-base text-xl">Tools</h4>
-                <p className="font-light text-base">Figma</p>
-                <p className="font-light text-base">Figjam</p>
-              </div>
-              <div>
-                <h4 className="font-base text-xl">Year</h4>
-                <p className="font-light text-base">2023 ~ 2024</p>
+            <div>
+              <h3 className="text-2xl my-5">Tools I used</h3>
+              <div className="md:flex md:items-center gap-20 md:justify-center">
+                <div className="text-center">
+                  <span>Figma</span>
+                  <img
+                    src={tugoImages.Figma}
+                    alt="Figma logo"
+                    width={200}
+                    className="rounded-xl mx-auto"
+                  />
+                </div>
+                <div className="text-center">
+                  <span>Figjam</span>
+                  <img
+                    src={tugoImages.Figjam}
+                    alt="Figjam logo"
+                    width={200}
+                    className="rounded-xl mx-auto"
+                  />
+                </div>
               </div>
             </div>
           </section>
@@ -157,22 +169,22 @@ export default function Tugo() {
               <img
                 src={tugoImages.SWOT}
                 alt="SWOT Analysis"
-                className="rounded-2xl"
+                className="rounded-2xl mx-auto"
               />
             </div>
             <div>
-              <p className="md:text-2xl text-xl text-start">
+              <p className="md:text-2xl text-xl">
                 For this phase, the team has decided to come up with a different
                 UI to keep things simple and easy-to-follow.
               </p>
               <div>
                 <p className="text-2xl mt-10 mb-5">Competitive Analysis</p>
-                <p className="md:text-2xl text-xl text-start">
+                <p className="md:text-2xl text-xl">
                   For competitive analysis, we examined 2 leading insurance
                   companies to understand how their web platforms are
                   communicating with the current and the potential clients.
                 </p>
-                <ul className="md:text-2xl text-xl text-start my-5 space-y-5 list-disc mx-5">
+                <ul className="md:text-2xl text-xl my-5 space-y-5 list-disc mx-5">
                   <p className="md:text-2xl text-xl my-2">This involved:</p>
                   <li>
                     studying the structure of their UI using the grid system.
@@ -198,7 +210,7 @@ export default function Tugo() {
               </div>
               <div>
                 <h3 className="text-2xl my-5">Customer Journey Map</h3>
-                <p className="md:text-2xl text-xl text-start">
+                <p className="md:text-2xl text-xl">
                   This helps us to understand how a potential client comes to
                   acknowledge the company, explores around the see how they
                   might cover the travel risks, and decide whether they would
@@ -212,7 +224,7 @@ export default function Tugo() {
               />
               <div className="space-y-5">
                 <h3 className="text-2xl mt-10 mb-5">Personas</h3>
-                <p className="md:text-2xl text-xl text-start mb-5">
+                <p className="md:text-2xl text-xl mb-5">
                   Creating well-defined user personas is essential for designing
                   the better experience and to meet the needs for target
                   audience.
@@ -240,13 +252,14 @@ export default function Tugo() {
             </h4>
             <p className="md:text-2xl text-xl">
               Hearing the voices, the brainstorm was focused on how to provide
-              designs that are simple, aesthetic, catchy, and engaging.
+              designs that are simple, aesthetic, catchy, and engaging. Though,
+              first, we wanted to provide a simple navigation.
             </p>
-            <p className="text-center mt-10 mb-5">Brainstorm</p>
             <img
-              src={tugoImages.Brainstorm}
-              alt="Brainstorm"
-              className="rounded-2xl"
+              src={tugoImages.SiteMap}
+              alt="Site Map"
+              width={1000}
+              className="rounded-2xl my-5"
             />
             <div>
               <p className="md:text-2xl text-xl mt-10">
@@ -328,19 +341,31 @@ export default function Tugo() {
             </h3>
             <li className="md:text-2xl text-xl mt-5">
               Enhancements on the navigation, the home page, and each menu page
-              allowed clients to effectively absorb the essential parts of the
-              information. They were making informed decisions.
+              were made.
             </li>
           </div>
-          {/* =========================== NEXT STEPS =================== */}
+          {/* =========================== SHORTCOMING =================== */}
           <div>
             <h3 id={7} className="text-2xl mt-10 mb-5">
-              Lessons Learned
+              What Could Have Been Better
             </h3>
             <ul className="md:text-2xl text-xl mt-5 space-y-5">
               <li>
-                The effectiveness of simplicity in communication is incredible.
+                We could have taken more time to conduct usability testing on
+                the design.
               </li>
+              <li>
+                We could have seeked out more help in different online
+                communities.
+              </li>
+            </ul>
+          </div>
+          {/* =========================== NEXT STEPS =================== */}
+          <div>
+            <h3 id={8} className="text-2xl mt-10 mb-5">
+              Lessons Learned
+            </h3>
+            <ul className="md:text-2xl text-xl mt-5 space-y-5">
               <li>
                 Understand there can be conflicts between what the users want
                 and the stakeholders prefer.
