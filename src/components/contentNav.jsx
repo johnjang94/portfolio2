@@ -43,6 +43,15 @@ export default function ContentNav({ currentSection, pathname }) {
         { id: 5, label: "Design Changes" },
         { id: 6, label: "Shortcoming & Next Steps" },
       ];
+    } else if (pathname === "/the-sahki") {
+      updatedSections = [
+        { id: 1, label: "Background" },
+        { id: 2, label: "Problem Statement" },
+        { id: 3, label: "Abstract" },
+        { id: 4, label: "Design Process" },
+        { id: 5, label: "Design Changes" },
+        { id: 6, label: "Shortcoming & Next Steps" },
+      ];
     } else {
       updatedSections = sections;
     }

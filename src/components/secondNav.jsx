@@ -107,9 +107,11 @@ export function ProjectNav() {
           to: "",
           text: "MORE PROJECTS",
           dropdown: [
-            { to: "/food", text: "Food Distro" },
-            { to: "/tugo", text: "TuGo Travel" },
             { to: "/lock", text: "Xperience" },
+            { to: "/lock", text: "THE SAHKI" },
+            { to: "/tugo", text: "TuGo Travel" },
+            { to: "/food", text: "Food Distro" },
+            { to: "/televu", text: "TELEVU" },
           ],
         },
       ]}

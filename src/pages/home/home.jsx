@@ -11,6 +11,7 @@ import TeleVU from "../../assets/home/televu.png";
 import FoodDistro from "../../assets/home/foodDistro.png";
 import TuGo from "../../assets/home/tugo.png";
 import Xperience from "../../assets/home/xperience.png";
+import Sahki from "../../assets/sahki/home-page-logo.jpeg";
 
 const titles = ["UX Designer", "Product Designer", "Web Designer"];
 
@@ -31,6 +32,15 @@ export default function Home() {
     },
     {
       id: 2,
+      imgSrc: Sahki,
+      imgAlt: "The Sahki",
+      icon: "🔒",
+      title: "The Sahki | Your Go-To Place for Occasional Shopping",
+      category: ["Product Design", "Web Design", "Currently in Progress"],
+      link: "/lock",
+    },
+    {
+      id: 3,
       imgSrc: TuGo,
       imgAlt: "TuGo",
       icon: /*"🔒"*/ "",
@@ -39,7 +49,7 @@ export default function Home() {
       link: "/tugo",
     },
     {
-      id: 3,
+      id: 4,
       imgSrc: FoodDistro,
       imgAlt: "Food Distro",
       icon: "",
@@ -49,7 +59,7 @@ export default function Home() {
       link: "/food",
     },
     {
-      id: 4,
+      id: 5,
       imgSrc: TeleVU,
       imgAlt: "TeleVU",
       title:
@@ -111,7 +121,7 @@ export default function Home() {
                 src={item.imgSrc}
                 alt={item.imgAlt}
                 className={`rounded-xl hover:shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,rgba(0,0,0,0.3)_0px_3px_7px_-3px] mx-auto md:h-[300px] ${
-                  item.id === 3 ? "w-auto" : "w-full"
+                  item.id === 4 ? "w-auto" : "w-full"
                 }`}
               />
             </Link>

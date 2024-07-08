@@ -11,6 +11,7 @@ import Televu from "./pages/design/televu";
 import FoodDistro from "./pages/design/foodDistro";
 import Tugo from "./pages/design/tugo";
 import Xperience from "./pages/design/experience";
+import SAHKI from "./pages/design/the-sahki";
 
 // Development section
 import DevelopmentHome from "./pages/development/development-home";
@@ -36,6 +37,7 @@ const router = createBrowserRouter([
       { path: "/food", element: <FoodDistro /> },
       { path: "/tugo", element: <Tugo /> },
       { path: "/experience", element: <Xperience /> },
+      { path: "/the-sahki", element: <SAHKI /> },
       // Development section
       { path: "/development", element: <DevelopmentHome /> },
       // Other

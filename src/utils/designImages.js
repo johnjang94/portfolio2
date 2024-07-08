@@ -255,9 +255,14 @@ export const tugoImages = {
 };
 
 // ==================================== EXPERIENCE IMAGES ======================================
-// TuGo Travel Demo
+// Xperience Demo
 import Xperience from "../assets/home/xperience.png";
 
 export const experienceImages = {
   Xperience,
 };
+
+// ==================================== SAHKI E-COMMERCE IMAGES ======================================
+// THE SAHKI Travel Demo
+
+export const sahkiImages = {};

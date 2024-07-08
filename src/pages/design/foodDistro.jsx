@@ -76,16 +76,14 @@ export default function FoodDistro() {
     <div>
       <ProjectNav />
       <header>
-        <h3 className="mt-14 mb-4 md:w-7/12 md:text-center mx-10 text-2xl">
-          Product Design
+        <h3 className="mt-14 mb-4 md:w-7/12 md:text-center mx-44 text-2xl">
+          Product Design for a mobile application
         </h3>
         <h1 className="mt-9 md:w-8/12 md:text-center mx-10 md:mx-14 md:text-5xl text-3xl">
           FOOD DISTRO
         </h1>
         <p className="mt-4 md:w-3/6 md:mx-auto mx-10 md:text-2xl text-xl">
-          A food donation mobile app that connects individual donators and
-          takers locally to reduce the food waste and the poverty around in the
-          communities.
+          I contributed in designing search functions and profile screens.
         </p>
       </header>
       <section className="grid-cols-3 justify-between flex my-20 md:w-3/6 md:mx-auto mx-10">
@@ -160,54 +158,11 @@ export default function FoodDistro() {
               , locals{" "}
               <span className="text-blue-400">wish to be connected</span> to
               share the food to reduce the waste and lower the environmental
-              problem. In order to resolve the issue, the mission objective of
-              this project is to design an application that addresses the
-              challenges that the locals face which ranges from food issues to
-              the societal issues and enables the users to share and donate food
-              easily, safely, and ethically.
+              problem.
             </p>
-          </div>
-          {/* ================ BACKGROUND =================== */}
-          <div>
-            <h3 id={3} className="text-2xl mt-20">
-              ABSTRACT
-            </h3>
-            <p className="my-5 md:text-2xl text-xl">
-              We had 39+ participants in the current study who expressed the
-              concerns on the needs of food-sharing and their experience on some
-              of the existing brands. Following their experience, we have
-              analyzed the existing brands to understand their business models
-              and services and to uncover the pain points.
+            <p className="my-5 md:text-2xl text-xl bg-slate-300 rounded-xl p-5">
+              How might we help food takers to find reliable sources locally?
             </p>
-            <h3 className="text-2xl mt-20">MISSION OBJECTIVE</h3>
-            <p className="my-5 md:text-2xl text-xl">
-              In order to cover the blind spots that the existing brands have,
-              and to stay competitive at the same time, we focused on designing
-              some key features that are related to a&#41; helping users stay
-              connected, b&#41; helping users to find products that they need,
-              c&#41; making sure that both the food donators and the food takers
-              are reliable and trust-worthy, and d) making sure that the quality
-              of food offered by the food donators are fine, sanitized, and
-              fresh.
-            </p>
-            <h3 className="text-2xl mt-20">SUCCESS CRITERIA</h3>
-            <ul className="my-5 md:text-2xl text-xl px-10 space-y-5 list-disc">
-              <li>
-                Design a search function that provides information on the image,
-                the food giver, the giver&#39;s location, the date and time that
-                the giver has posted the item, the giver&#39;s rating, and the
-                quantity of the product of the searched product.
-              </li>
-              <li>
-                Design a filter function that users can adjust based on the
-                quantity, the distance, and the reviews from other takers on the
-                giver.
-              </li>
-              <li>
-                Design a messaging system that allows the giver and the taker to
-                communicate each other.
-              </li>
-            </ul>
           </div>
           {/* ======================== DESIGN-PROCESS =================== */}
           <div>
