@@ -2,7 +2,7 @@
 
 Welcome to my new design portfolio.
 
-![main picture](../portfolio2/src/assets/readme/README%20cover%20photo.png)
+![main picture](../assets/readme/README%20cover%20photo.png)
 
 I am continuously updating my portfolio with new cases that I am working on. Today, I have contributed in a few projects that are in the following fields:
 
