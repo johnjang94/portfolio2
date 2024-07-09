@@ -23,6 +23,35 @@ export default function Home() {
   const data = [
     {
       id: 1,
+      imgSrc: TuGo,
+      imgAlt: "TuGo",
+      icon: /*"🔒"*/ "",
+      title:
+        "TuGo Travel Insurance | How I elevated tourist engagement with TuGo Insurance by 60%, making it their preferred choice",
+      category: ["UX Design", "Web Redesign"],
+      link: "/tugo",
+    },
+    {
+      id: 2,
+      imgSrc: FoodDistro,
+      imgAlt: "Food Distro",
+      icon: "",
+      title:
+        "Food Distro | Reducing food waste while engaging the locals in a new way",
+      category: ["Product Design", "Mobile App"],
+      link: "/food",
+    },
+    {
+      id: 3,
+      imgSrc: TeleVU,
+      imgAlt: "TeleVU",
+      title:
+        "TeleVU Innovation Incorporation | Reducing wait times by 25% among overwhelmed hospitals",
+      category: ["UX Research", "Product Design", "Web App"],
+      link: "/televu",
+    },
+    {
+      id: 4,
       imgSrc: Xperience,
       imgAlt: "Xperience",
       icon: "🔒",
@@ -31,41 +60,13 @@ export default function Home() {
       link: "/lock",
     },
     {
-      id: 2,
+      id: 5,
       imgSrc: Sahki,
       imgAlt: "The Sahki",
       icon: "🔒",
       title: "The Sahki | Your Go-To Place for Occasional Shopping",
       category: ["Product Design", "Web Design", "Currently in Progress"],
       link: "/lock",
-    },
-    {
-      id: 3,
-      imgSrc: TuGo,
-      imgAlt: "TuGo",
-      icon: /*"🔒"*/ "",
-      title: "TuGo Travel Insurance | Assurance in your hands wherever you go",
-      category: ["UX Design", "Web Redesign"],
-      link: "/tugo",
-    },
-    {
-      id: 4,
-      imgSrc: FoodDistro,
-      imgAlt: "Food Distro",
-      icon: "",
-      title:
-        "Food Distro | Reducing Your Stress on Sharing Your Food with Others",
-      category: ["Product Design", "Mobile App"],
-      link: "/food",
-    },
-    {
-      id: 5,
-      imgSrc: TeleVU,
-      imgAlt: "TeleVU",
-      title:
-        "TeleVU Innovation Incorporation | Connecting clinicians and patients remotely",
-      category: ["UX Research", "Product Design", "Web App"],
-      link: "/televu",
     },
   ];
 
@@ -114,18 +115,18 @@ export default function Home() {
                 src={item.imgSrc}
                 alt={item.imgAlt}
                 className={`rounded-xl hover:shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,rgba(0,0,0,0.3)_0px_3px_7px_-3px] mx-auto md:h-[300px] ${
-                  item.id === 4 ? "w-auto" : "w-full"
+                  item.id === 2 ? "w-auto" : "w-full"
                 }`}
               />
             </Link>
-            <p className="my-3">
+            <p className="my-3 text-xl">
               {item.icon} {item.title}
             </p>
             <div className="flex md:space-x-5 space-x-1">
               {item.category.map((category, index) => (
                 <span
                   key={index}
-                  className="bg-slate-400 rounded-lg md:p-2 p-1 text-white text-xs md:text-base"
+                  className="bg-slate-400 rounded-lg md:p-2 p-1 text-white text-xs md:text-sm"
                 >
                   {category}
                 </span>
