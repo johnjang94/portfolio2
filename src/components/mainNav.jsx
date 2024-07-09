@@ -29,6 +29,7 @@ export default function Nav({ pathname }) {
 
   const isNotRegistered = () => {
     const registeredPaths = [
+      "/",
       "/home",
       "/about",
       "/tools",

@@ -8,16 +8,9 @@ const queryClient = new QueryClient();
 export default function Root() {
   const { pathname } = useLocation();
 
-  const shouldHideNav = () => {
-    return pathname === "/";
-  };
-
-  const shouldHideBanner = () => {
-    return pathname === "/";
-  };
-
   const getBackgroundClass = () => {
     const registeredPaths = [
+      "/",
       "/home",
       "/about",
       "/design",
@@ -50,11 +43,11 @@ export default function Root() {
 
   return (
     <div className={getBackgroundClass()}>
-      {!shouldHideNav() && <Nav pathname={pathname} />}
+      <Nav pathname={pathname} />
       <QueryClientProvider client={queryClient}>
         <Outlet />
       </QueryClientProvider>
-      {!shouldHideBanner() && <Banner />}
+      <Banner />
     </div>
   );
 }

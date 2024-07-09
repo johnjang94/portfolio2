@@ -71,7 +71,7 @@ export default function Home() {
 
   return (
     <div>
-      <header className="lg:my-24 mx-auto lg:w-7/12 w-10/12 mt-20 mb-82 2xl:my-80">
+      <header className="lg:my-24 mx-auto lg:w-9/12 w-10/12 mt-20 mb-82 2xl:my-80">
         <h1 className="lg:text-9xl text-5xl">John Jang</h1>
         <div className="rotating-text-container lg:mt-5 mt-5 lg:text-3xl text-3xl">
           {titles.map((title, index) => (
@@ -84,12 +84,12 @@ export default function Home() {
             </h2>
           ))}
         </div>
-        <h4 className="mt-6 lg:text-3xl text-xl">
+        <p className="mt-6 lg:text-3xl text-xl leading-relaxed">
           I specialize in crafting digital experiences and products for the web
           and mobile applications. Currently, I am designing a decentralized
           media sharing application called{" "}
           <span className="font-bold">Xperience</span> for Lab Academy.
-        </h4>
+        </p>
         <div className="md:flex justify-between">
           <Link
             to="/about"
@@ -98,13 +98,6 @@ export default function Home() {
             <button>More about me</button>
             <FaArrowRight />
           </Link>
-          <a
-            href="mailto:jscolbe9675@gmail.com"
-            className="hidden mt-5 text-blue-500 hover:underline hover:cursor-pointer md:flex space-x-2 items-center"
-          >
-            <button>Contact Me</button>
-            <FaArrowRight />
-          </a>
         </div>
         <div className="my-40 md:hidden">
           <FaArrowDownLong className="text-3xl mx-auto" />

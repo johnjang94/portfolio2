@@ -1,6 +1,5 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Root from "./pages/root";
-import InitialLanding from "./pages/initial-landing/initialLanding";
 
 // Home page & About Me
 import Home from "./pages/home/home";
@@ -29,7 +28,7 @@ const router = createBrowserRouter([
     element: <Root />,
     errorElement: <NotFound />,
     children: [
-      { index: true, element: <InitialLanding /> },
+      { index: true, element: <Home /> },
       { path: "/home", element: <Home /> },
       { path: "/about", element: <About /> },
       // Design section
