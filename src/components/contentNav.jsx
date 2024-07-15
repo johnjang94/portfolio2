@@ -2,13 +2,13 @@ import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
 const initialSections = [
-  { id: 1, label: "Background" },
-  { id: 2, label: "Research" },
-  { id: 3, label: "Competitive Analysis" },
-  { id: 4, label: "Design Process" },
-  { id: 5, label: "Usability Testing" },
-  { id: 6, label: "Design Changes" },
-  { id: 7, label: "Lessons Learned" },
+  { id: 1, label: "Summary" },
+  { id: 2, label: "Overview" },
+  { id: 3, label: "Project Objectives" },
+  { id: 4, label: "Insights" },
+  { id: 5, label: "User flow Map" },
+  { id: 6, label: "Solutions" },
+  { id: 7, label: "Key Takeaways" },
 ];
 
 export default function ContentNav({ currentSection, pathname }) {
@@ -24,6 +24,17 @@ export default function ContentNav({ currentSection, pathname }) {
         { id: 7, label: "Usability Testing" },
         { id: 8, label: "Lessons Learned" },
       ];
+    } else if (pathname === "/food-distro") {
+      updatedSections = [
+        { id: 1, label: "Summary" },
+        { id: 2, label: "Overview" },
+        { id: 3, label: "Project Objectives" },
+        { id: 4, label: "Insights" },
+        { id: 5, label: "User flow Map" },
+        { id: 6, label: "Solutions" },
+        { id: 7, label: "Outcomes" },
+        { id: 8, label: "Key Takeaways" },
+      ];
     } else if (pathname === "/tugo") {
       updatedSections = [
         { id: 1, label: "Background" },
@@ -33,6 +44,17 @@ export default function ContentNav({ currentSection, pathname }) {
         { id: 6, label: "Key Changes" },
         { id: 7, label: "Improvements" },
         { id: 8, label: "Lessons Learned" },
+      ];
+    } else if (pathname === "/tugo-insurance") {
+      updatedSections = [
+        { id: 1, label: "Summary" },
+        { id: 2, label: "Overview" },
+        { id: 3, label: "Project Objectives" },
+        { id: 4, label: "Insights" },
+        { id: 5, label: "Design Principles" },
+        { id: 6, label: "Solutions" },
+        { id: 7, label: "Outcomes" },
+        { id: 8, label: "Key Takeaways" },
       ];
     } else if (pathname === "/experience") {
       updatedSections = [

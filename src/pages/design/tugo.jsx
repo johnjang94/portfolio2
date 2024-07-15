@@ -58,13 +58,9 @@ export default function Tugo() {
         <h3 className="mt-14 mb-4 md:w-8/12 md:text-center md:mx-24 mx-9 text-lg md:text-2xl">
           UX/UI Design for a Web Application
         </h3>
-        <h1 className="mt-9 md:w-8/12 md:text-center mx-9 md:mx-52 md:text-5xl text-lg">
+        <h1 className="mt-9 md:w-8/12 md:text-center mx-9 md:mx-52 my-10 md:text-5xl text-lg">
           TUGO TRAVEL INSURANCE
         </h1>
-        <p className="my-8 md:w-3/6 md:mx-auto mx-10 md:text-2xl text-xl">
-          My goal was to redesign the user interface of static web pages with
-          easier navigation and improved readability.
-        </p>
       </header>
       <section className="bg-slate-500 p-5 rounded-xl w-5/6 mx-auto">
         <img

@@ -26,36 +26,39 @@ export default function Home() {
       imgSrc: TuGo,
       imgAlt: "TuGo",
       icon: /*"🔒"*/ "",
-      title:
-        "TuGo Travel Insurance | How I elevated tourist engagement with TuGo Insurance by 60%, making it their preferred choice",
-      category: ["UX Design", "Web Redesign"],
-      link: "/tugo",
+      title: "TuGo Travel Insurance | 2024",
+      descriptionTag:
+        "How I elevated tourist engagement with TuGo Insurance by 60%, making it their preferred choice",
+      category: ["Web Redesign", "Concept Design"],
+      link: "/tugo-insurance",
     },
     {
       id: 2,
       imgSrc: FoodDistro,
       imgAlt: "Food Distro",
       icon: "",
-      title:
-        "Food Distro | Reducing food waste while engaging the locals in a new way",
+      title: "Food Distro | 2023",
+      descriptionTag:
+        "Reducing food waste while engaging the locals in a new way",
       category: ["Product Design", "Mobile App"],
-      link: "/food",
+      link: "/food-distro",
     },
     {
       id: 3,
       imgSrc: TeleVU,
       imgAlt: "TeleVU",
-      title:
-        "TeleVU Innovation Incorporation | Reducing wait times by 25% among overwhelmed hospitals",
+      title: "TeleVU Innovation Incorporation | 2022",
+      descriptionTag: "Reducing wait times by 25% among overwhelmed hospitals",
       category: ["UX Research", "Product Design", "Web App"],
-      link: "/televu",
+      link: "/televu-brief",
     },
     {
       id: 4,
       imgSrc: Xperience,
       imgAlt: "Xperience",
       icon: "🔒",
-      title: "Xperience | Share your memories in a new style",
+      title: "Xperience | 2024",
+      descriptionTag: "Share your memories in a new style",
       category: ["Product Design", "Web Design", "Currently in Progress"],
       link: "/lock",
     },
@@ -64,7 +67,8 @@ export default function Home() {
       imgSrc: Sahki,
       imgAlt: "The Sahki",
       icon: "🔒",
-      title: "The Sahki | Your Go-To Place for Occasional Shopping",
+      title: "The Sahki | 2024",
+      descriptionTag: "Your Go-To Place for Occasional Shopping",
       category: ["Product Design", "Web Design", "Currently in Progress"],
       link: "/lock",
     },
@@ -108,7 +112,7 @@ export default function Home() {
         {data.map((item) => (
           <div
             key={item.id}
-            className="w-fit transition-transform duration-300 ease-in-out hover:-translate-y-2"
+            className="w-fit transition-transform duration-300 ease-in-out hover:-translate-y-2 space-y-3"
           >
             <Link to={item.link}>
               <img
@@ -119,9 +123,10 @@ export default function Home() {
                 }`}
               />
             </Link>
-            <p className="my-3 text-xl">
+            <p className="font-bold">
               {item.icon} {item.title}
             </p>
+            <p>{item.descriptionTag}</p>
             <div className="flex md:space-x-5 space-x-1">
               {item.category.map((category, index) => (
                 <span
