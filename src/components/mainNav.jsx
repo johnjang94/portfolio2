@@ -7,7 +7,6 @@ import PropTypes from "prop-types";
 // Photos
 import Home from "../assets/accessory/home.png";
 import Profile from "../assets/accessory/profile.png";
-import Design from "../assets/accessory/design.png";
 
 import Logo from "/logo512.png";
 import Logo2 from "/logo500.png";
@@ -115,18 +114,7 @@ export default function Nav({ pathname }) {
                   className={`${
                     isMenuOpen ? "design-slide-in" : ""
                   } text-3xl text-end sm:text-base sm:text-start border-white-2 hover:bg-slate-300 sm:hover:bg-transparent sm:hover:text-blue-400 hover:cursor-pointer rounded-3xl`}
-                >
-                  <Link to="/design">
-                    <img
-                      src={Design}
-                      alt="design picture"
-                      width={300}
-                      className="md:hidden mx-auto"
-                    />
-
-                    <button className="p-2">UX Design</button>
-                  </Link>
-                </div>
+                ></div>
               </ul>
             </div>
           </div>
