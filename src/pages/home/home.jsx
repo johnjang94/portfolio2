@@ -80,7 +80,7 @@ export default function Home() {
 
   return (
     <div>
-      <header className="lg:my-24 mx-auto lg:w-9/12 w-10/12 mt-20 mb-82 2xl:my-80">
+      <header className="lg:my-24 md:mx-auto mx-8 lg:w-6/12 w-11/12 mt-20 mb-82 2xl:my-80">
         <h1 className="lg:text-9xl text-5xl">John Jang</h1>
         <div className="rotating-text-container lg:mt-5 mt-5 lg:text-3xl text-3xl">
           {titles.map((title, index) => (
@@ -105,7 +105,7 @@ export default function Home() {
             <FaArrowRight />
           </Link>
         </div>
-        <div className="my-40 md:hidden">
+        <div className="my-56 md:hidden">
           <FaArrowDownLong className="text-3xl mx-auto" />
         </div>
       </header>
