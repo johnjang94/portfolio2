@@ -13,7 +13,11 @@ import TuGo from "../../assets/home/tugo.png";
 import Xperience from "../../assets/home/xperience.png";
 import Sahki from "../../assets/sahki/home-page-logo.jpeg";
 
-const titles = ["UX Designer", "Product Designer", "Web Designer"];
+const titles = [
+  "systemic thinker",
+  "creative designer",
+  "innovative problem solver",
+];
 
 export default function Home() {
   useEffect(() => {
@@ -90,10 +94,7 @@ export default function Home() {
           ))}
         </div>
         <p className="mt-6 lg:text-3xl text-xl leading-relaxed">
-          I specialize in crafting digital experiences and products for the web
-          and mobile applications. Currently, I am designing a decentralized
-          media sharing application called{" "}
-          <span className="font-bold">Xperience</span> for Lab Academy.
+          Product Designer at <span className="font-bold">THE SAHKI</span>.
         </p>
         <div className="md:flex justify-between">
           <Link
