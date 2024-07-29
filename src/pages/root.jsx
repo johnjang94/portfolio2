@@ -36,7 +36,8 @@ export default function Root() {
     } else if (
       pathname === "/tools" ||
       pathname === "/contact" ||
-      pathname === "/experience"
+      pathname === "/experience" ||
+      pathname === "/about"
     ) {
       return "bg-glow bg-cover";
     } else {
