@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import Profile from "../../assets/accessory/profile.png";
+// import Profile from "../../assets/accessory/profile.png";
 
 export default function About() {
   useEffect(() => {
@@ -13,7 +13,7 @@ export default function About() {
           My name is John Jang
         </h1>
       </div>
-      <img src={Profile} alt="Profile" className="mx-auto my-14" />
+      {/* <img src={Profile} alt="Profile" className="mx-auto my-14" /> */}
       <div className="w-full md:w-3/6 md:mx-auto px-10 space-y-5">
         <p>
           I&#39;m a Product Designer at a start-up called The Sahki, where I am
