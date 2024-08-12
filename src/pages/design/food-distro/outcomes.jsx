@@ -9,8 +9,8 @@ export default function Outcomes() {
         </p>
         <ul className="list-disc px-5 text-gray-500 space-y-3">
           <li>
-            this system was more useful to the food takers as many of them were
-            concerned with freshness and hygiene of the food they get.
+            the food receivers found this system to be helpful in finding
+            <span className="text-blue-500">reliable food givers</span>.
           </li>
           <li>
             the food givers had a mixed view with the star system because{" "}

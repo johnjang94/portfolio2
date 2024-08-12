@@ -18,8 +18,9 @@ export default function Takeaways() {
       <div className="md:mx-20 my-3 space-y-3">
         <p className="font-semibold">The impact of stigma is real</p>
         <p className="px-5 text-gray-500">
-          The idea of sharing food was perceive as similar to what the food bank
-          does and many locals who need help were{" "}
+          Although it was not mentioned in the research outcome, the idea of
+          sharing food was perceive as similar to what the food bank does and
+          many locals who need help were{" "}
           <span className="text-red-500">hesitant to reach out</span>. More
           marketing to raise awareness on locals helping locals seemed necessary
           to reduce the food waste.

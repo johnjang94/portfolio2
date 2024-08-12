@@ -14,8 +14,7 @@ export default function Overview() {
           <div>
             <p className="font-semibold">Goal</p>
             <p className="p-5">
-              We needed to design a solution that offers easy search functions
-              and profile detail of users to indicate reliability.
+              We needed to design a solution that offers easy search functions.
             </p>
           </div>
           <div>
@@ -29,13 +28,7 @@ export default function Overview() {
           </div>
           <div>
             <p className="font-semibold">Results</p>
-            <ul className="p-5 space-y-3">
-              <li>1 in 5 test participants liked the new search</li>
-              <li>
-                Mixed views on possible ranking system to indicate the
-                reliability of individuals
-              </li>
-            </ul>
+            <p className="p-5">1 in 5 test participants liked the new search</p>
           </div>
         </div>
         <table className="text-start hidden md:block">
@@ -50,8 +43,8 @@ export default function Overview() {
             <tr>
               <th>Goal</th>
               <td className="p-5">
-                We needed to design a solution that offers easy search functions
-                and profile detail of users to indicate reliability.
+                We needed to design a solution that offers easy search
+                functions.
               </td>
             </tr>
             <tr>
@@ -65,13 +58,9 @@ export default function Overview() {
             </tr>
             <tr>
               <th>Results</th>
-              <ul className="p-5 space-y-3">
-                <li>1 in 5 test participants liked the new search</li>
-                <li>
-                  Mixed views on possible ranking system to indicate the
-                  reliability of individuals
-                </li>
-              </ul>
+              <td className="p-5">
+                1 in 5 test participants liked the new search
+              </td>
             </tr>
           </tbody>
         </table>

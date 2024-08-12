@@ -11,6 +11,8 @@ import CXmap from "./food-distro/CXmap";
 import Solutions from "./food-distro/solutions";
 import Outcomes from "./food-distro/outcomes";
 import Takeaways from "./food-distro/key-takeaways";
+import ProblemStatement from "./food-distro/problem-statement";
+import DesignComponents from "./food-distro/design-components";
 
 export default function FooddistrO() {
   const [currentSection, setCurrentSection] = useState(1);
@@ -18,15 +20,7 @@ export default function FooddistrO() {
   useEffect(() => {
     window.scrollTo(0, 0);
 
-    const sectionIds = [
-      { id: 1 },
-      { id: 2 },
-      { id: 3 },
-      { id: 4 },
-      { id: 5 },
-      { id: 6 },
-      { id: 7 },
-    ];
+    const sectionIds = [{ id: 1 }, { id: 2 }, { id: 3 }];
 
     const options = {
       root: null,
@@ -64,7 +58,7 @@ export default function FooddistrO() {
       <ProjectNav />
       <header>
         <h3 className="mt-14 mb-4 md:w-8/12 md:text-center md:mx-52 mx-9 text-lg md:text-2xl">
-          Product Design for a mobile application
+          UX/UI Design for a mobile application
         </h3>
         <h1 className="mt-9 md:w-8/12 md:text-center mx-9 md:mx-36 my-10 md:text-5xl text-lg">
           FOOD DISTRO
@@ -75,7 +69,7 @@ export default function FooddistrO() {
         <img
           src={foodDistroImages.Demo}
           alt="Demo showcase"
-          className="rounded-xl mx-auto"
+          className="rounded-xl mx-auto w-64"
         />
       </section>
       {/* Main content */}
@@ -91,25 +85,31 @@ export default function FooddistrO() {
           <div id={1}>
             <Summary />
           </div>
-          <div id={2}>
+          <div>
             <Overview />
           </div>
-          <div id={3}>
-            <Objectives />
-          </div>
-          <div id={4}>
+          <div>
             <Insights />
           </div>
-          <div id={5}>
+          <div id={2}>
+            <ProblemStatement />
+          </div>
+          <div>
+            <Objectives />
+          </div>
+          <div>
             <CXmap />
           </div>
-          <div id={6}>
+          <div>
+            <DesignComponents />
+          </div>
+          <div id={3}>
             <Solutions />
           </div>
-          <div id={7}>
+          <div>
             <Outcomes />
           </div>
-          <div id={8}>
+          <div>
             <Takeaways />
           </div>
         </section>

@@ -44,7 +44,7 @@ export default function Home() {
       title: "Food Distro | 2023",
       descriptionTag:
         "Reducing food waste while engaging the locals in a new way",
-      category: ["Product Design", "Mobile App"],
+      category: ["UX/UI Design", "Mobile App"],
       link: "/food-distro",
     },
     {
@@ -53,7 +53,7 @@ export default function Home() {
       imgAlt: "TeleVU",
       title: "TeleVU Innovation Incorporation | 2022",
       descriptionTag: "Reducing wait times by 25% among overwhelmed hospitals",
-      category: ["UX Research", "Product Design", "Web App"],
+      category: ["UX Research", "UX/UI Design", "Web App"],
       link: "/televu-brief",
     },
     {
