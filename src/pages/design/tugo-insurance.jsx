@@ -11,6 +11,7 @@ import Solutions from "./tugo-insurance/solutions";
 import Outcomes from "./tugo-insurance/outcomes";
 import Takeaways from "./tugo-insurance/key-takeaways";
 import OtherMenu from "../../components/footer2";
+import ProblemStatement from "./tugo-insurance/problem-statement";
 
 export default function TuGoInsurance() {
   const [currentSection, setCurrentSection] = useState(1);
@@ -90,25 +91,28 @@ export default function TuGoInsurance() {
           <div id={1}>
             <Summary />
           </div>
-          <div id={2}>
+          <div>
             <Overview />
           </div>
-          <div id={3}>
-            <Objectives />
-          </div>
-          <div id={4}>
+          <div>
             <Insights />
           </div>
-          <div id={5}>
+          <div id={2}>
+            <ProblemStatement />
+          </div>
+          <div>
+            <Objectives />
+          </div>
+          <div>
             <Principles />
           </div>
-          <div id={6}>
+          <div id={3}>
             <Solutions />
           </div>
-          <div id={7}>
+          <div>
             <Outcomes />
           </div>
-          <div id={8}>
+          <div>
             <Takeaways />
           </div>
         </section>

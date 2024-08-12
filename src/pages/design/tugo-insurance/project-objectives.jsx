@@ -5,17 +5,32 @@ export default function Objectives() {
       <div className="md:mx-20 space-y-5">
         <div>
           <p className="font-semibold">
-            Increase screen time and retention rate
+            Let the travelers find the information about insurance packages with
+            one-click CTA button
           </p>
-          <p className="p-5 text-gray-500">
-            The existing web application had 50% bounce-off rate
-          </p>
+          <ul className="p-5 space-y-2 text-gray-500">
+            <p>As an example, include information about...</p>
+            <div className="px-5">
+              <li>what is considered as an &#34;emergency&#34;?</li>
+              <li>
+                how much financial coverage is usually offered in this
+                situation?
+              </li>
+              <li>
+                what actions are offered by TuGo Travel Insurance company other
+                than the financial coverage, if applicable?
+              </li>
+              <li>
+                how much does a traveler need to pay if the coverage should be
+                applied for more than one person?
+              </li>
+            </div>
+          </ul>
         </div>
         <div>
-          <p className="font-semibold">Craft reliable experience</p>
-          <p className="p-5 text-gray-500">
-            Design an easy-to-use, intuitive, and informative interface with
-            clear navigation.
+          <p className="font-semibold">
+            Direct the travelers to purchase the insurance package in maximum of
+            two clicks
           </p>
         </div>
       </div>

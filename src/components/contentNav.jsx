@@ -48,13 +48,8 @@ export default function ContentNav({ currentSection, pathname }) {
     } else if (pathname === "/tugo-insurance") {
       updatedSections = [
         { id: 1, label: "Summary" },
-        { id: 2, label: "Overview" },
-        { id: 3, label: "Project Objectives" },
-        { id: 4, label: "Insights" },
-        { id: 5, label: "Design Principles" },
-        { id: 6, label: "Solutions" },
-        { id: 7, label: "Outcomes" },
-        { id: 8, label: "Key Takeaways" },
+        { id: 2, label: "Problem Statement" },
+        { id: 3, label: "Solutions" },
       ];
     } else if (pathname === "/experience") {
       updatedSections = [

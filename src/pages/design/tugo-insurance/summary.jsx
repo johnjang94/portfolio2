@@ -11,17 +11,18 @@ export default function Summary() {
         </p>
         <ul className="list-disc md:mx-10 mx-5 space-y-3">
           <li>
-            I established design quality benchmark using SWOT and competitive
-            analysis.
+            I established design quality benchmark using{" "}
+            <span className="font-bold">SWOT</span> and{" "}
+            <span className="font-bold">competitive analysis</span>.
           </li>
           <li>
-            I have taken the company reviews and user surveys into consideration
-            on the way of creating design system
+            I have taken <span className="font-bold">the company reviews</span>{" "}
+            and <span className="font-bold">user surveys</span> into
+            consideration on the way of creating design system
           </li>
           <li>
-            I led the traffic increase over{" "}
-            <span className="font-bold">60%</span> for the revenue of{" "}
-            <span className="font-bold">$50.1M</span> company (as of 2023)
+            Recorded
+            <span className="font-bold"> 85%</span> of task completion rate
           </li>
         </ul>
       </div>

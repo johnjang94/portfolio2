@@ -4,8 +4,9 @@ import Homepage from "../assets/tugo-debrief/home-page-final.png";
 import Insurance from "../assets/tugo-debrief/insurance-page-final.png";
 
 // INSIGHT
-import INSIGHT1 from "../assets/tugo-debrief/insight-1.jpeg";
+import INSIGHT1 from "../assets/tugo-debrief/insight-1.png";
 import INSIGHT2 from "../assets/tugo-debrief/insight-2.png";
+import INSIGHT3 from "../assets/tugo-debrief/insight-3.png";
 
 export const tugoInsurance = {
   Demo,
@@ -14,4 +15,5 @@ export const tugoInsurance = {
   Insurance,
   INSIGHT1,
   INSIGHT2,
+  INSIGHT3,
 };
