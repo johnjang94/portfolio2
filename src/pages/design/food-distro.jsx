@@ -5,14 +5,14 @@ import { foodDistroImages } from "../../utils/foodDistroImages";
 import ContentNav from "../../components/contentNav";
 import Summary from "./food-distro/summary";
 import Overview from "./food-distro/overview";
-import Objectives from "./food-distro/project-objectives";
 import Insights from "./food-distro/insights";
+import ProblemStatement from "./food-distro/problem-statement";
+import Objectives from "./food-distro/project-objectives";
 import CXmap from "./food-distro/CXmap";
+import DesignComponents from "./food-distro/design-components";
 import Solutions from "./food-distro/solutions";
 import Outcomes from "./food-distro/outcomes";
 import Takeaways from "./food-distro/key-takeaways";
-import ProblemStatement from "./food-distro/problem-statement";
-import DesignComponents from "./food-distro/design-components";
 
 export default function FooddistrO() {
   const [currentSection, setCurrentSection] = useState(1);

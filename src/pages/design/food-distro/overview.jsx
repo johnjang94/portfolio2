@@ -20,10 +20,9 @@ export default function Overview() {
           <div>
             <p className="font-semibold">Personal Challenge</p>
             <p className="p-5">
-              Since this was a remote project in the US, we could only rely on
-              the words from a representative of the non-profit organization
-              that runs food distro mobile application rather than us being able
-              to deep dive into the context.
+              Although I did not express to the participants, it took me a while
+              to process what it feels like to skip a meal because you could not
+              afford to eat all three meals a day.
             </p>
           </div>
           <div>
@@ -50,10 +49,9 @@ export default function Overview() {
             <tr>
               <th>Personal Challenge</th>
               <td className="p-5">
-                Since this was a remote project in the US, we could only rely on
-                the words from a representative of the non-profit organization
-                that runs food distro mobile application rather than us being
-                able to deep dive into the context.
+                Although I did not express to the participants, it took me a
+                while to process what it feels like to skip a meal because you
+                could not afford to eat all three meals a day.
               </td>
             </tr>
             <tr>
