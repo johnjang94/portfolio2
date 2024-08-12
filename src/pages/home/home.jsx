@@ -32,7 +32,7 @@ export default function Home() {
       icon: /*"🔒"*/ "",
       title: "TuGo Travel Insurance | 2024",
       descriptionTag:
-        "How I elevated tourist engagement with TuGo Insurance by 60%, making it their preferred choice",
+        "How I elevated tourist engagement with TuGo Insurance by 85%, bringing the most simplistic solution to sign up for an insurance",
       category: ["Web Redesign", "Concept Design"],
       link: "/tugo-insurance",
     },
