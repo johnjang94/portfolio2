@@ -9,7 +9,6 @@ import "./home.css";
 import TeleVU from "../../assets/home/televu.png";
 import FoodDistro from "../../assets/home/foodDistro.png";
 import TuGo from "../../assets/home/tugo.png";
-import Xperience from "../../assets/home/xperience.png";
 import Sahki from "../../assets/sahki/home-page-logo.jpeg";
 
 const titles = [
@@ -49,16 +48,6 @@ const data = [
     descriptionTag: "Reducing wait times by 25% among overwhelmed hospitals",
     category: ["UX Research", "UX/UI Design", "Web App"],
     link: "/televu-brief",
-  },
-  {
-    id: 4,
-    imgSrc: Xperience,
-    imgAlt: "Xperience",
-    icon: "🔒",
-    title: "Xperience | 2024",
-    descriptionTag: "Share your memories in a new style",
-    category: ["Product Design", "Web Design", "Currently in Progress"],
-    link: "/lock",
   },
   {
     id: 5,
