@@ -20,6 +20,7 @@ export default function Root() {
       "/food-distro",
       "/tugo",
       "/tugo-insurance",
+      "/experience",
       "/sahki",
       "/development",
       "/contact",

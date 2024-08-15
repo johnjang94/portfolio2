@@ -1,8 +1,11 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
+import PropTypes from "prop-types";
 
 export default function Login() {
   const navigate = useNavigate();
+  const location = useLocation();
+  const { fromId } = location.state || {};
   const PASSWORD = import.meta.env.VITE_PASSWORD;
   const [errorMessage, setErrorMessage] = useState("");
   const [password, setPassword] = useState("");
@@ -11,9 +14,23 @@ export default function Login() {
     e.preventDefault();
 
     if (password.trim() === PASSWORD) {
-      navigate("/sahki");
+      redirectToPage(fromId);
     } else {
       setErrorMessage("Incorrect password. Please try again.");
+    }
+  };
+
+  const redirectToPage = (id) => {
+    switch (id) {
+      case 4:
+        navigate("/experience");
+        break;
+      case 5:
+        navigate("/sahki");
+        break;
+      default:
+        navigate("/home");
+        break;
     }
   };
 
@@ -38,3 +55,11 @@ export default function Login() {
     </div>
   );
 }
+
+Login.propTypes = {
+  location: PropTypes.shape({
+    state: PropTypes.shape({
+      fromId: PropTypes.number,
+    }),
+  }),
+};

@@ -6,7 +6,6 @@ import { FaArrowDownLong } from "react-icons/fa6";
 import "./home.css";
 
 // Project Images
-// Photo
 import TeleVU from "../../assets/home/televu.png";
 import FoodDistro from "../../assets/home/foodDistro.png";
 import TuGo from "../../assets/home/tugo.png";
@@ -19,64 +18,64 @@ const titles = [
   "innovative problem solver",
 ];
 
+const data = [
+  {
+    id: 1,
+    imgSrc: TuGo,
+    imgAlt: "TuGo",
+    icon: "",
+    title: "TuGo Travel Insurance | 2024",
+    descriptionTag:
+      "How I elevated tourist engagement with TuGo Insurance by 85%, bringing the most simplistic solution to sign up for an insurance",
+    category: ["Web Redesign", "Concept Design"],
+    link: "/tugo-insurance",
+  },
+  {
+    id: 2,
+    imgSrc: FoodDistro,
+    imgAlt: "Food Distro",
+    icon: "",
+    title: "Food Distro | 2023",
+    descriptionTag:
+      "Reducing food waste while engaging the locals in a new way",
+    category: ["UX/UI Design", "Mobile App"],
+    link: "/food-distro",
+  },
+  {
+    id: 3,
+    imgSrc: TeleVU,
+    imgAlt: "TeleVU",
+    title: "TeleVU Innovation Incorporation | 2022",
+    descriptionTag: "Reducing wait times by 25% among overwhelmed hospitals",
+    category: ["UX Research", "UX/UI Design", "Web App"],
+    link: "/televu-brief",
+  },
+  {
+    id: 4,
+    imgSrc: Xperience,
+    imgAlt: "Xperience",
+    icon: "🔒",
+    title: "Xperience | 2024",
+    descriptionTag: "Share your memories in a new style",
+    category: ["Product Design", "Web Design", "Currently in Progress"],
+    link: "/lock",
+  },
+  {
+    id: 5,
+    imgSrc: Sahki,
+    imgAlt: "The Sahki",
+    icon: "🔒",
+    title: "The Sahki | 2024",
+    descriptionTag: "Your Go-To Place for Occasional Shopping",
+    category: ["Product Design", "Web Design", "Currently in Progress"],
+    link: "/lock",
+  },
+];
+
 export default function Home() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  const data = [
-    {
-      id: 1,
-      imgSrc: TuGo,
-      imgAlt: "TuGo",
-      icon: /*"🔒"*/ "",
-      title: "TuGo Travel Insurance | 2024",
-      descriptionTag:
-        "How I elevated tourist engagement with TuGo Insurance by 85%, bringing the most simplistic solution to sign up for an insurance",
-      category: ["Web Redesign", "Concept Design"],
-      link: "/tugo-insurance",
-    },
-    {
-      id: 2,
-      imgSrc: FoodDistro,
-      imgAlt: "Food Distro",
-      icon: "",
-      title: "Food Distro | 2023",
-      descriptionTag:
-        "Reducing food waste while engaging the locals in a new way",
-      category: ["UX/UI Design", "Mobile App"],
-      link: "/food-distro",
-    },
-    {
-      id: 3,
-      imgSrc: TeleVU,
-      imgAlt: "TeleVU",
-      title: "TeleVU Innovation Incorporation | 2022",
-      descriptionTag: "Reducing wait times by 25% among overwhelmed hospitals",
-      category: ["UX Research", "UX/UI Design", "Web App"],
-      link: "/televu-brief",
-    },
-    {
-      id: 4,
-      imgSrc: Xperience,
-      imgAlt: "Xperience",
-      icon: "🔒",
-      title: "Xperience | 2024",
-      descriptionTag: "Share your memories in a new style",
-      category: ["Product Design", "Web Design", "Currently in Progress"],
-      link: "/lock",
-    },
-    {
-      id: 5,
-      imgSrc: Sahki,
-      imgAlt: "The Sahki",
-      icon: "🔒",
-      title: "The Sahki | 2024",
-      descriptionTag: "Your Go-To Place for Occasional Shopping",
-      category: ["Product Design", "Web Design", "Currently in Progress"],
-      link: "/lock",
-    },
-  ];
 
   return (
     <div>
@@ -114,7 +113,7 @@ export default function Home() {
         {data.map((item) => (
           <div
             key={item.id}
-            className={`w-fit transition-transform duration-300 ease-in-out hover:-translate-y-2 space-y-3 p-2 rounded-xl`}
+            className="w-fit transition-transform duration-300 ease-in-out hover:-translate-y-2 space-y-3 p-2 rounded-xl"
           >
             <div
               className={`p-3 rounded-xl hover:shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,rgba(0,0,0,0.3)_0px_3px_7px_-3px] ${
@@ -127,7 +126,7 @@ export default function Home() {
                   : "bg-slate-400"
               }`}
             >
-              <Link to={{ pathname: "/lock", state: { fromId: item.id } }}>
+              <Link to="/lock" state={{ fromId: item.id }}>
                 <img
                   src={item.imgSrc}
                   alt={item.imgAlt}

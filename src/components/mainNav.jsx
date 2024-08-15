@@ -41,6 +41,7 @@ export default function Nav({ pathname }) {
       "/tugo",
       "/tugo-insurance",
       "/experience",
+      "/sahki",
       "/development",
       "/contact",
       "/lock",
