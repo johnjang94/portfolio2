@@ -23,6 +23,7 @@ export default function Banner() {
       "/tugo",
       "/tugo-insurance",
       "/experience",
+      "/sahki",
       "/development",
       "/contact",
       "/lock",

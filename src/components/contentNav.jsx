@@ -48,21 +48,15 @@ export default function ContentNav({ currentSection, pathname }) {
       ];
     } else if (pathname === "/experience") {
       updatedSections = [
-        { id: 1, label: "Background" },
+        { id: 1, label: "Summary" },
         { id: 2, label: "Problem Statement" },
-        { id: 3, label: "Abstract" },
-        { id: 4, label: "Design Process" },
-        { id: 5, label: "Design Changes" },
-        { id: 6, label: "Shortcoming & Next Steps" },
+        { id: 3, label: "Solutions" },
       ];
-    } else if (pathname === "/the-sahki") {
+    } else if (pathname === "/sahki") {
       updatedSections = [
-        { id: 1, label: "Background" },
+        { id: 1, label: "Summary" },
         { id: 2, label: "Problem Statement" },
-        { id: 3, label: "Abstract" },
-        { id: 4, label: "Design Process" },
-        { id: 5, label: "Design Changes" },
-        { id: 6, label: "Shortcoming & Next Steps" },
+        { id: 3, label: "Solutions" },
       ];
     } else {
       updatedSections = sections;

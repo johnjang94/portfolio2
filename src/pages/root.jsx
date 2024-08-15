@@ -20,7 +20,7 @@ export default function Root() {
       "/food-distro",
       "/tugo",
       "/tugo-insurance",
-      "/experience",
+      "/sahki",
       "/development",
       "/contact",
       "/lock",
@@ -37,7 +37,8 @@ export default function Root() {
       pathname === "/tools" ||
       pathname === "/contact" ||
       pathname === "/experience" ||
-      pathname === "/about"
+      pathname === "/about" ||
+      pathname === "/sahki"
     ) {
       return "bg-glow bg-cover";
     } else {

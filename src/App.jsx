@@ -36,7 +36,7 @@ const router = createBrowserRouter([
       { path: "/food-distro", element: <FooddistrO /> },
       { path: "/tugo-insurance", element: <TuGoInsurance /> },
       { path: "/experience", element: <Xperience /> },
-      { path: "/the-sahki", element: <SAHKI /> },
+      { path: "/sahki", element: <SAHKI /> },
       // Development section
       { path: "/development", element: <DevelopmentHome /> },
       // Other

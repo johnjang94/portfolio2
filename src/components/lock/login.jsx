@@ -3,45 +3,17 @@ import { useNavigate } from "react-router-dom";
 
 export default function Login() {
   const navigate = useNavigate();
-  const EXPERIENCE = import.meta.env.VITE_EXPERIENCE;
+  const PASSWORD = import.meta.env.VITE_PASSWORD;
   const [errorMessage, setErrorMessage] = useState("");
-  const [attemptCount, setAttemptCount] = useState(0);
-
-  const [inputBg, setInputBg] = useState("bg-gray-200");
-  const [showMessage, setShowMessage] = useState(false);
-  const [showButton, setShowButton] = useState(true);
   const [password, setPassword] = useState("");
-
-  const handleFocus = () => {
-    setInputBg("bg-white");
-  };
-
-  const handleBlur = () => {
-    setInputBg("bg-gray-200");
-  };
-
-  const handleClick = () => {
-    setShowMessage(true);
-    setShowButton(false);
-  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (attemptCount >= 5) {
-      setErrorMessage("You have reached the maximum number of attempts.");
-      navigate("/home");
-      return;
-    }
-    if (password === EXPERIENCE) {
-      navigate("/experience");
+
+    if (password.trim() === PASSWORD) {
+      navigate("/sahki");
     } else {
-      setAttemptCount(attemptCount + 1);
-      const remainingAttempts = 5 - attemptCount - 1;
-      if (remainingAttempts > 0) {
-        setErrorMessage(`Please check my resume.`);
-      } else {
-        navigate("/home");
-      }
+      setErrorMessage("Incorrect password. Please try again.");
     }
   };
 
@@ -53,23 +25,15 @@ export default function Login() {
         <form className="flex items-center mb-3" onSubmit={handleSubmit}>
           <input
             type="password"
-            className={`p-2 w-full rounded-l-lg ${inputBg} hover:bg-slate-100 text-black`}
-            onFocus={handleFocus}
-            onBlur={handleBlur}
+            className="p-2 w-full rounded-l-lg bg-gray-200 hover:bg-slate-100 text-black"
             onChange={(e) => setPassword(e.target.value)}
+            value={password}
+            aria-label="Password Input"
           />
           <button type="submit" className="p-2 rounded-r-lg bg-cyan-400">
             OK
           </button>
         </form>
-        {showButton && (
-          <button onClick={handleClick} className="text-blue-300 underline">
-            Forgot password
-          </button>
-        )}
-        {showMessage && (
-          <span className="text-[#FF00FF]">please check my resume!</span>
-        )}
       </div>
     </div>
   );

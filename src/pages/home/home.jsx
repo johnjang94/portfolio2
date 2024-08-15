@@ -127,7 +127,7 @@ export default function Home() {
                   : "bg-slate-400"
               }`}
             >
-              <Link to={item.link}>
+              <Link to={{ pathname: "/lock", state: { fromId: item.id } }}>
                 <img
                   src={item.imgSrc}
                   alt={item.imgAlt}
