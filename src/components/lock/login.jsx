@@ -6,7 +6,7 @@ export default function Login() {
   const navigate = useNavigate();
   const location = useLocation();
   const { fromId } = location.state || {};
-  const PASSWORD = import.meta.env.VITE_PASSWORD;
+  const PASSWORD = import.meta.env.VITE_PASSCODE;
   const [errorMessage, setErrorMessage] = useState("");
   const [password, setPassword] = useState("");
 
