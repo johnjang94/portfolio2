@@ -2,10 +2,8 @@ import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import { FaArrowDownLong } from "react-icons/fa6";
-
 import "./home.css";
 
-// Project Images
 import TeleVU from "../../assets/home/televu.png";
 import FoodDistro from "../../assets/home/foodDistro.png";
 import TuGo from "../../assets/home/tugo.png";
@@ -24,8 +22,7 @@ const data = [
     imgAlt: "TuGo",
     icon: "",
     title: "TuGo Travel Insurance | 2024",
-    descriptionTag:
-      "How I elevated tourist engagement with TuGo Insurance by 85%, bringing the most simplistic solution to sign up for an insurance",
+    descriptionTag: "Elevating the tourist engagement up to 85%",
     category: ["Web Redesign", "Concept Design"],
     link: "/tugo-insurance",
   },
@@ -35,8 +32,6 @@ const data = [
     imgAlt: "Food Distro",
     icon: "",
     title: "Food Distro | 2023",
-    descriptionTag:
-      "Reducing food waste while engaging the locals in a new way",
     category: ["UX/UI Design", "Mobile App"],
     link: "/food-distro",
   },
@@ -45,7 +40,6 @@ const data = [
     imgSrc: TeleVU,
     imgAlt: "TeleVU",
     title: "TeleVU Innovation Incorporation | 2022",
-    descriptionTag: "Reducing wait times by 25% among overwhelmed hospitals",
     category: ["UX Research", "UX/UI Design", "Web App"],
     link: "/televu-brief",
   },
@@ -55,7 +49,6 @@ const data = [
     imgAlt: "The Sahki",
     icon: "🔒",
     title: "The Sahki | 2024",
-    descriptionTag: "Your Go-To Place for Occasional Shopping",
     category: ["Product Design", "Web Design", "Currently in Progress"],
     link: "/lock",
   },
@@ -102,12 +95,12 @@ export default function Home() {
         {data.map((item) => (
           <div
             key={item.id}
-            className="w-fit transition-transform duration-300 ease-in-out hover:-translate-y-2 space-y-3 p-2 rounded-xl"
+            className="transition-transform duration-300 ease-in-out hover:-translate-y-2 space-y-3 p-2 rounded-xl w-full"
           >
             <div
               className={`p-3 rounded-xl hover:shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,rgba(0,0,0,0.3)_0px_3px_7px_-3px] ${
                 item.id === 1
-                  ? "bg-[radial-gradient(circle_311px_at_8.6%_27.9%,rgba(62,147,252,0.57)_12.9%,rgba(239,183,192,0.44)_91.2%)]"
+                  ? "bg-[radial-gradient(circle_311px_at_8.6%_27.9%,rgba(62,147,252,0.57)_12.9%,rgba(239,183,192,0.44)_91.2%)] relative"
                   : item.id === 2
                   ? "bg-[radial-gradient(_circle_farthest-corner_at_10%_20%,rgba(255,209,67,1)_0%,rgba(255,145,83,1)_90%_)]"
                   : item.id === 3
@@ -115,7 +108,21 @@ export default function Home() {
                   : "bg-slate-400"
               }`}
             >
-              <Link to="/lock" state={{ fromId: item.id }}>
+              {item.id === 1 && (
+                <div className="absolute top-0 right-0">
+                  <div
+                    className="inline-block min-w-34 h-12 left-5 bg-green-500 relative px-4 py-2.5 text-white text-shadow-sm"
+                    style={{ textShadow: "0 1px 2px rgba(0, 0, 0, 0.75)" }}
+                  >
+                    <h3 className="leading-5">Most recent</h3>
+                    <div className="absolute top-0 right-[-25px] w-0 h-0 border-t-[25px] border-t-solid border-t-green-500 border-r-[25px] border-r-solid border-r-transparent border-b-[25px] border-b-solid border-b-green-500"></div>
+                  </div>
+                </div>
+              )}
+              <Link
+                to={item.id === 5 ? "/lock" : item.link}
+                state={{ fromId: item.id }}
+              >
                 <img
                   src={item.imgSrc}
                   alt={item.imgAlt}
@@ -131,7 +138,7 @@ export default function Home() {
               {item.category.map((category, index) => (
                 <span
                   key={index}
-                  className="bg-slate-400 rounded-lg md:p-2 p-1 text-white text-xs md:text-sm"
+                  className="bg-slate-400 rounded-lg md:px-2 px-1 py-1 text-white text-xs md:text-sm"
                 >
                   {category}
                 </span>
