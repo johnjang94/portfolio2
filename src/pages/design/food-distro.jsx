@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { ProjectNav } from "../../components/secondNav";
 import OtherMenu from "../../components/footer2";
 import { foodDistroImages } from "../../utils/foodDistroImages";
 import ContentNav from "../../components/contentNav";
@@ -55,7 +54,6 @@ export default function FooddistrO() {
 
   return (
     <div>
-      <ProjectNav />
       <header>
         <h3 className="mt-14 mb-4 md:w-8/12 md:text-center md:mx-52 mx-9 text-lg md:text-2xl">
           UX/UI Design for a mobile application

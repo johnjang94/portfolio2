@@ -22,7 +22,6 @@ const data = [
     imgAlt: "TuGo",
     icon: "",
     title: "TuGo Travel Insurance | 2024",
-    descriptionTag: "Elevating the tourist engagement up to 85%",
     category: ["Web Redesign", "Concept Design"],
     link: "/tugo-insurance",
   },
@@ -108,17 +107,6 @@ export default function Home() {
                   : "bg-slate-400"
               }`}
             >
-              {item.id === 1 && (
-                <div className="absolute top-0 right-0">
-                  <div
-                    className="inline-block min-w-34 h-12 left-5 bg-green-500 relative px-4 py-2.5 text-white text-shadow-sm"
-                    style={{ textShadow: "0 1px 2px rgba(0, 0, 0, 0.75)" }}
-                  >
-                    <h3 className="leading-5">Most recent</h3>
-                    <div className="absolute top-0 right-[-25px] w-0 h-0 border-t-[25px] border-t-solid border-t-green-500 border-r-[25px] border-r-solid border-r-transparent border-b-[25px] border-b-solid border-b-green-500"></div>
-                  </div>
-                </div>
-              )}
               <Link
                 to={item.id === 5 ? "/lock" : item.link}
                 state={{ fromId: item.id }}
@@ -133,7 +121,6 @@ export default function Home() {
             <p className="font-bold">
               {item.icon} {item.title}
             </p>
-            <p>{item.descriptionTag}</p>
             <div className="flex md:space-x-5 space-x-1">
               {item.category.map((category, index) => (
                 <span

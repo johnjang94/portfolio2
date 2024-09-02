@@ -5,6 +5,7 @@ export default {
     extend: {
       animation: {
         "white-to-black": "white-to-black 5s ease-in-out forwards",
+        "gradient-shift": "gradient-shift 2s ease infinite",
       },
       backgroundImage: {
         glow: "url('/src/assets/accessory/background.png')",
@@ -21,6 +22,16 @@ export default {
         "0%": { backgroundColor: "white", color: "black" },
         "100%": { backgroundColor: "black", color: "white" },
       },
+      "gradient-shift": {
+        "0%": { "background-position": "0% 50%" },
+        "50%": { "background-position": "100% 50%" },
+        "100%": { "background-position": "0% 50%" },
+      },
+    },
+  },
+  variants: {
+    extend: {
+      animation: ["group-hover"],
     },
   },
   plugins: [],

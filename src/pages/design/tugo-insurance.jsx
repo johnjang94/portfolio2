@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { ProjectNav } from "../../components/secondNav";
 import { tugoInsurance } from "../../utils/tugoinsuranceImages";
 import ContentNav from "../../components/contentNav";
 import Summary from "./tugo-insurance/summary";
@@ -61,7 +60,6 @@ export default function TuGoInsurance() {
   }, []);
   return (
     <div>
-      <ProjectNav />
       <header>
         <h3 className="mt-14 mb-4 md:w-8/12 md:text-center md:mx-28 mx-9 text-lg md:text-2xl">
           Concept Design for a Web Application

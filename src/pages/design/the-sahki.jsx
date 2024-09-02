@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { ProjectNav } from "../../components/secondNav";
 import ContentNav from "../../components/contentNav";
 
 export default function SAHKI() {
@@ -50,7 +49,6 @@ export default function SAHKI() {
 
   return (
     <div>
-      <ProjectNav />
       <header>
         <h3 className="mt-14 mb-4 md:w-8/12 md:text-center md:mx-14 mx-10 text-base md:text-2xl">
           Product Design | Web Design

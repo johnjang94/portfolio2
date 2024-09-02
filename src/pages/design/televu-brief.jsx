@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { ProjectNav } from "../../components/secondNav";
 import { televuImages2 } from "../../utils/televuImages";
 import ContentNav from "../../components/contentNav";
 import OtherMenu from "../../components/footer2";
@@ -59,7 +58,6 @@ export default function TelevuBrief() {
   }, []);
   return (
     <div>
-      <ProjectNav />
       <header>
         <h3 className="mt-14 mb-4 md:w-8/12 md:text-center md:mx-36 mx-9 text-lg md:text-2xl">
           UX/UI Design for a web application
