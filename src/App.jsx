@@ -6,13 +6,10 @@ import Home from "./pages/home/home";
 import About from "./pages/about/about";
 
 // Design section
-import TelevuBrief from "./pages/design/televu-brief";
-import FooddistrO from "./pages/design/food-distro";
-import TuGoInsurance from "./pages/design/tugo-insurance";
+import TeleVU from "./pages/design/televu";
+import Food from "./pages/design/food-distro";
+import TuGo from "./pages/design/tugo";
 import SAHKI from "./pages/design/the-sahki";
-
-// Development section
-import DevelopmentHome from "./pages/development/development-home";
 
 // Contact & Extra
 import Contact from "./pages/contact";
@@ -31,12 +28,10 @@ const router = createBrowserRouter([
       { path: "/home", element: <Home /> },
       { path: "/about", element: <About /> },
       // Design section
-      { path: "/televu-brief", element: <TelevuBrief /> },
-      { path: "/food-distro", element: <FooddistrO /> },
-      { path: "/tugo-insurance", element: <TuGoInsurance /> },
+      { path: "/televu", element: <TeleVU /> },
+      { path: "/food-distro", element: <Food /> },
+      { path: "/tugo-insurance", element: <TuGo /> },
       { path: "/sahki", element: <SAHKI /> },
-      // Development section
-      { path: "/development", element: <DevelopmentHome /> },
       // Other
       { path: "/contact", element: <Contact /> },
       { path: "/lock", element: <Login /> },

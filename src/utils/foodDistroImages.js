@@ -1,25 +1,49 @@
-import Demo from "../assets/food-debrief/demo.gif";
-import userflow1 from "../assets/food-debrief/userflow1.png";
-import userflow2 from "../assets/food-debrief/userflow2.png";
-import userflow3 from "../assets/food-debrief/userflow3.png";
+import Demo from "../assets/food-distro/demo/demo.gif";
+import FoodWaste from "../assets/food-distro/problem-statement/food-waste.png";
+import Barriers from "../assets/food-distro/problem-statement/barriers.png";
 
-// DESIGN PROCESS
-import DesignComponent from "../assets/food-debrief/design_components.png";
+// USER PERSONA
+import FoodGiver from "../assets/food-distro/user-persona/food-giver.png";
+import FoodTaker from "../assets/food-distro/user-persona/food-taker.png";
+
+// COMPETITIVE_ANALYSIS
+import CompetitiveAnalysis from "../assets/food-distro/competitive-analysis/competitive-analysis.png";
+
+// SKETCHING
+import Filter from "../assets/food-distro/sketching/filter.jpeg";
+import Rating from "../assets/food-distro/sketching/rating.jpeg";
 
 // HIGH_FI DESIGNS
-import Order from "../assets/food-debrief/order.png";
-import Product from "../assets/food-debrief/product.png";
-import Search from "../assets/food-debrief/search.png";
+import Search from "../assets/food-distro/solution/search-final.png";
+import Map from "../assets/food-distro/solution/map.png";
+import Map2 from "../assets/food-distro/solution/map2.png";
+
+import Request from "../assets/food-distro/solution/request.png";
+import Request2 from "../assets/food-distro/solution/request2.png";
+import Confirmation from "../assets/food-distro/solution/confirmation.png";
+
+import Review from "../assets/food-distro/solution/review.png";
+import Review2 from "../assets/food-distro/solution/review2.png";
+import Report from "../assets/food-distro/solution/report.png";
 
 // INSIGHT
 
 export const foodDistroImages = {
   Demo,
-  userflow1,
-  userflow2,
-  userflow3,
-  DesignComponent,
-  Order,
-  Product,
+  FoodWaste,
+  Barriers,
+  FoodGiver,
+  FoodTaker,
+  CompetitiveAnalysis,
+  Filter,
+  Rating,
   Search,
+  Map,
+  Map2,
+  Request,
+  Request2,
+  Confirmation,
+  Review,
+  Review2,
+  Report,
 };

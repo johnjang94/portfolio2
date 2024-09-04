@@ -3,65 +3,38 @@ export default function Overview() {
     <div>
       <h3 className="text-xl">OVERVIEW</h3>
       <div className="md:mx-20 my-3">
-        <div className="md:hidden">
-          <div>
-            <p className="font-semibold">Societal needs</p>
-            <p className="p-5">
-              Some communities in the US wants to have another food distribution
-              solution among locals.
-            </p>
-          </div>
-          <div>
-            <p className="font-semibold">Goal</p>
-            <p className="p-5">
-              We needed to design a solution that offers easy search functions.
-            </p>
-          </div>
-          <div>
-            <p className="font-semibold">Personal Challenge</p>
-            <p className="p-5">
-              Although I did not express to the participants, it took me a while
-              to process what it feels like to skip a meal because you could not
-              afford to eat all three meals a day.
-            </p>
-          </div>
-          <div>
-            <p className="font-semibold">Results</p>
-            <p className="p-5">1 in 5 test participants liked the new search</p>
+        <div>
+          <p className="font-semibold">Problem</p>
+          <p className="p-5">
+            Research indicates that many individuals find scheduling the
+            meet-ups <span className="text-red-500">to be challenging</span> for
+            both the food-givers and the food-takers. In addition, the
+            food-takers are also concerned with {/* */}
+            <span className="text-red-500">
+              the hygiene and the freshness
+            </span>{" "}
+            of the food items as the conditions for many of them are considered
+            as <span className="text-red-500">red flag</span> despite being
+            donations.
+          </p>
+        </div>
+        <div>
+          <p className="font-semibold">Outcome</p>
+          <div className="flex items-end">
+            <p className="px-5 py-6">We have</p>
+            <ul>
+              <li>
+                a&#41; improved connecting individuals{" "}
+                <span className="text-blue-500">up to 30%</span>
+              </li>
+              <li>
+                b&#41; received{" "}
+                <span className="text-blue-500">the highest rating</span> in
+                trusteeship and reliability
+              </li>
+            </ul>
           </div>
         </div>
-        <table className="text-start hidden md:block">
-          <tbody>
-            <tr>
-              <th>Societal needs</th>
-              <td className="p-5 w-4/6">
-                Some communities in the US wants to have another food
-                distribution solution among locals.
-              </td>
-            </tr>
-            <tr>
-              <th>Goal</th>
-              <td className="p-5">
-                We needed to design a solution that offers easy search
-                functions.
-              </td>
-            </tr>
-            <tr>
-              <th>Personal Challenge</th>
-              <td className="p-5">
-                Although I did not express to the participants, it took me a
-                while to process what it feels like to skip a meal because you
-                could not afford to eat all three meals a day.
-              </td>
-            </tr>
-            <tr>
-              <th>Results</th>
-              <td className="p-5">
-                1 in 5 test participants liked the new search
-              </td>
-            </tr>
-          </tbody>
-        </table>
       </div>
     </div>
   );

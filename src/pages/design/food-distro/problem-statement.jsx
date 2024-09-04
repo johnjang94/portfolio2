@@ -1,18 +1,32 @@
+import { foodDistroImages } from "../../../utils/foodDistroImages";
+
 export default function ProblemStatement() {
   return (
     <div>
       <h3 className="text-xl">PROBLEM STATEMENT</h3>
-      <p className="md:mx-20 my-5">
-        Both the food givers and the food receivers need another solution in
-        meeting arrangement. Since everyone has different schedules, this often
-        becomes a blocker that raises{" "}
-        <span className="text-red-500">concerns</span> regarding{" "}
-        <span className="underline text-red-500">
-          the freshness of the product
-        </span>{" "}
-        as well as <span className="underline text-red-500">the diet</span> for
-        the food receivers.
-      </p>
+      <div className="md:mx-20 my-5">
+        <p>
+          Young generation tends to over-purchase food items and ends-up
+          throwing away relatively more food to the trash compared to the older
+          generations.
+        </p>
+        <img
+          src={foodDistroImages.FoodWaste}
+          alt="Food Waste"
+          width={900}
+          className="my-5 rounded-3xl"
+        />
+        <p>
+          Even though many of them share this understanding that the food waste
+          is not good, the rate of food waste remained high.
+        </p>
+        <img
+          src={foodDistroImages.Barriers}
+          alt="Food Waste"
+          width={900}
+          className="my-5 rounded-3xl"
+        />
+      </div>
     </div>
   );
 }
