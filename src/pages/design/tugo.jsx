@@ -3,14 +3,16 @@ import { tugoInsurance } from "../../utils/tugoinsuranceImages";
 import ContentNav from "../../components/contentNav";
 import Summary from "./tugo-insurance/summary";
 import Overview from "./tugo-insurance/overview";
-import Objectives from "./tugo-insurance/project-objectives";
-import Insights from "./tugo-insurance/insights";
-import Principles from "./tugo-insurance/design-principles";
+import Motive from "./tugo-insurance/problem-statement";
+import DataMetrics from "./tugo-insurance/data-metrics";
+import Project from "./tugo-insurance/project";
+import Assumption from "./tugo-insurance/assumption";
+import Opportunities from "./tugo-insurance/opportunities";
+import CompetitiveAnalysis from "./tugo-insurance/competitive-analysis";
 import Solutions from "./tugo-insurance/solutions";
 import Outcomes from "./tugo-insurance/outcomes";
 import Takeaways from "./tugo-insurance/key-takeaways";
 import OtherMenu from "../../components/footer2";
-import ProblemStatement from "./tugo-insurance/problem-statement";
 
 export default function TuGo() {
   const [currentSection, setCurrentSection] = useState(1);
@@ -18,15 +20,7 @@ export default function TuGo() {
   useEffect(() => {
     window.scrollTo(0, 0);
 
-    const sectionIds = [
-      { id: 1 },
-      { id: 2 },
-      { id: 3 },
-      { id: 4 },
-      { id: 5 },
-      { id: 6 },
-      { id: 7 },
-    ];
+    const sectionIds = [{ id: 1 }, { id: 2 }, { id: 3 }];
 
     const options = {
       root: null,
@@ -93,16 +87,22 @@ export default function TuGo() {
             <Overview />
           </div>
           <div>
-            <Insights />
+            <Project />
           </div>
           <div id={2}>
-            <ProblemStatement />
+            <Motive />
           </div>
           <div>
-            <Objectives />
+            <DataMetrics />
           </div>
           <div>
-            <Principles />
+            <Assumption />
+          </div>
+          <div>
+            <Opportunities />
+          </div>
+          <div>
+            <CompetitiveAnalysis />
           </div>
           <div id={3}>
             <Solutions />
