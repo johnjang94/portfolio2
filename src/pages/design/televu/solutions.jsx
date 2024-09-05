@@ -1,5 +1,3 @@
-import { televuImages2 } from "../../../utils/televuImages";
-
 export default function Solutions() {
   return (
     <div>
@@ -17,20 +15,15 @@ export default function Solutions() {
           </li>
         </ul>
         <div className="space-y-5 my-3">
+          <img src={""} alt="List page" width={900} className="rounded-xl" />
           <img
-            src={televuImages2.List}
-            alt="List page"
-            width={900}
-            className="rounded-xl"
-          />
-          <img
-            src={televuImages2.Report}
+            src={""}
             alt="Insurance page final design"
             width={900}
             className="rounded-xl"
           />
           <img
-            src={televuImages2.Video}
+            src={""}
             alt="Insurance page final design"
             width={900}
             className="rounded-xl"

@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-// import Profile from "../../assets/accessory/profile.png";
 
 export default function About() {
   useEffect(() => {

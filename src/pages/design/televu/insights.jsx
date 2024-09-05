@@ -1,5 +1,3 @@
-import { televuImages2 } from "../../../utils/televuImages";
-
 export default function Insights() {
   return (
     <div className="space-y-5">
@@ -12,12 +10,7 @@ export default function Insights() {
           The design needs to communicate clearly with the users rather than the
           users requesting a tutorial prior to the use.
         </p>
-        <img
-          src={televuImages2.Login}
-          alt="Login page"
-          width={900}
-          className="mx-auto"
-        />
+        <img src={""} alt="Login page" width={900} className="mx-auto" />
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 // TELEVU DEMO
-import Demo from "../assets/televu-debrief/demo.gif";
+import Demo from "../assets/televu/demo/demo.gif";
 
 // INSIGHT
 import Login from "../assets/televu-debrief/login.png";
@@ -9,7 +9,7 @@ import List from "../assets/televu-debrief/list.png";
 import Report from "../assets/televu-debrief/reportvu.png";
 import Video from "../assets/televu-debrief/video.png";
 
-export const televuImages2 = {
+export const televu = {
   Demo,
   Login,
   List,

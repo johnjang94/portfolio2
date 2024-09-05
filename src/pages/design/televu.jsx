@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { televuImages2 } from "../../utils/televuImages";
 import ContentNav from "../../components/contentNav";
 import OtherMenu from "../../components/footer2";
 import Summary from "./televu/summary";
@@ -9,6 +8,7 @@ import Insights from "./televu/insights";
 import Principles from "./televu/design-principles";
 import Solutions from "./televu/solutions";
 import Takeaways from "./televu/key-takeaways";
+import { televu } from "../../utils/televu";
 
 export default function TeleVU() {
   const [currentSection, setCurrentSection] = useState(1);
@@ -69,8 +69,8 @@ export default function TeleVU() {
       <section className="bg-slate-500 p-5 rounded-xl w-5/6 mx-auto">
         {/* Demo banner */}
         <img
-          src={televuImages2.Demo}
-          alt="List"
+          src={televu.Demo}
+          alt="Demo"
           width={1200}
           className="rounded-xl mx-auto"
         />
