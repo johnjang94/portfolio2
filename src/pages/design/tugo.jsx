@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { tugoInsurance } from "../../utils/tugoinsuranceImages";
+import { tugoInsurance } from "../../utils/tugo-insurance";
 import ContentNav from "../../components/contentNav";
 import Summary from "./tugo-insurance/summary";
 import Overview from "./tugo-insurance/overview";
@@ -9,9 +9,11 @@ import Project from "./tugo-insurance/project";
 import Assumption from "./tugo-insurance/assumption";
 import Opportunities from "./tugo-insurance/opportunities";
 import CompetitiveAnalysis from "./tugo-insurance/competitive-analysis";
+import Surveys from "./tugo-insurance/surveys";
 import Solutions from "./tugo-insurance/solutions";
-import Outcomes from "./tugo-insurance/outcomes";
-import Takeaways from "./tugo-insurance/key-takeaways";
+import Impact from "./tugo-insurance/impact";
+import NextSteps from "./tugo-insurance/next-steps";
+import Retrospective from "./tugo-insurance/retrospective";
 import OtherMenu from "../../components/footer2";
 
 export default function TuGo() {
@@ -55,8 +57,8 @@ export default function TuGo() {
   return (
     <div>
       <header>
-        <h3 className="mt-14 mb-4 md:w-8/12 md:text-center md:mx-28 mx-9 text-lg md:text-2xl">
-          Concept Design for a Web Application
+        <h3 className="mt-14 mb-4 md:w-8/12 md:text-center md:mx-24 mx-9 text-lg md:text-2xl">
+          UX/UI Design for a web application
         </h3>
         <h1 className="mt-9 md:w-8/12 md:text-center mx-9 md:mx-52 my-10 md:text-5xl text-lg">
           TUGO TRAVEL INSURANCE
@@ -104,14 +106,20 @@ export default function TuGo() {
           <div>
             <CompetitiveAnalysis />
           </div>
+          <div>
+            <Surveys />
+          </div>
           <div id={3}>
             <Solutions />
           </div>
           <div>
-            <Outcomes />
+            <Impact />
           </div>
           <div>
-            <Takeaways />
+            <NextSteps />
+          </div>
+          <div>
+            <Retrospective />
           </div>
         </section>
       </section>

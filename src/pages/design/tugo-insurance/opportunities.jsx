@@ -1,4 +1,4 @@
-import { tugoInsurance } from "../../../utils/tugoinsuranceImages";
+import { tugoInsurance } from "../../../utils/tugo-insurance";
 
 export default function Opportunities() {
   return (

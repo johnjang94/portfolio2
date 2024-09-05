@@ -1,6 +1,4 @@
-// import { foodDistroImages } from "../../../utils/foodDistroImages";
-
-import { foodDistroImages } from "../../../utils/foodDistroImages";
+import { foodDistro } from "../../../utils/food-distro";
 
 export default function Solutions() {
   return (
@@ -15,17 +13,17 @@ export default function Solutions() {
           </p>
           <div className="flex grid-cols-3 w-2/6">
             <img
-              src={foodDistroImages.Search}
+              src={foodDistro.Search}
               alt="Final design for Search function"
               className="rounded-3xl"
             />
             <img
-              src={foodDistroImages.Map}
+              src={foodDistro.Map}
               alt="Final design for Map"
               className="rounded-3xl"
             />
             <img
-              src={foodDistroImages.Map2}
+              src={foodDistro.Map2}
               alt="Final design for Map"
               className="rounded-3xl"
             />
@@ -38,17 +36,17 @@ export default function Solutions() {
           </p>
           <div className="flex grid-cols-3 w-2/6">
             <img
-              src={foodDistroImages.Request}
+              src={foodDistro.Request}
               alt="Final design for request"
               className="rounded-3xl"
             />
             <img
-              src={foodDistroImages.Request2}
+              src={foodDistro.Request2}
               alt="Final design for request"
               className="rounded-3xl"
             />
             <img
-              src={foodDistroImages.Confirmation}
+              src={foodDistro.Confirmation}
               alt="Final design for confirmation"
               className="rounded-3xl"
             />
@@ -62,17 +60,17 @@ export default function Solutions() {
           </p>
           <div className="flex grid-cols-3 w-2/6">
             <img
-              src={foodDistroImages.Review}
+              src={foodDistro.Review}
               alt="Final design for Review"
               className="rounded-3xl"
             />
             <img
-              src={foodDistroImages.Review2}
+              src={foodDistro.Review2}
               alt="Final design for Review2"
               className="rounded-3xl"
             />
             <img
-              src={foodDistroImages.Report}
+              src={foodDistro.Report}
               alt="Final design for Report"
               className="rounded-3xl"
             />
@@ -80,17 +78,17 @@ export default function Solutions() {
         </div>
         {/* <div className="my-3 space-y-3 md:grid md:grid-cols-3 md:gap-5">
           <img
-            src={foodDistroImages.Order}
+            src={foodDistro.Order}
             alt="Order page"
             className="rounded-xl md:mt-3"
           />
           <img
-            src={foodDistroImages.Product}
+            src={foodDistro.Product}
             alt="Product Detail page"
             className="rounded-xl"
           />
           <img
-            src={foodDistroImages.Search}
+            src={foodDistro.Search}
             alt="Search page"
             className="rounded-xl"
           />

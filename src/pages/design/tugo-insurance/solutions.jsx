@@ -1,29 +1,32 @@
-import { tugoInsurance } from "../../../utils/tugoinsuranceImages";
+import { tugoInsurance } from "../../../utils/tugo-insurance";
 
 export default function Solutions() {
   return (
     <div>
-      <h3 className="text-xl">SOLUTIONS</h3>
-      <div className="md:mx-20 my-3">
-        <p className="font-semibold">
-          The winner design looked like as follows, but why?
+      <h3 className="text-xl uppercase">Design Results</h3>
+      <div className="md:mx-20 my-3 space-y-5">
+        <p className="px-5 space-y-3">
+          We renovated the home page with buttons to reach out to the customer
+          service faster or be able to claim the insurance assistance with a
+          click of a button.
         </p>
-        <ul className="list-disc mx-10">
-          <li>highlighted key points yet simple</li>
-          <li>convenient to claim coverages</li>
-        </ul>
-        <div className="my-3 space-y-3">
-          <img
-            src={tugoInsurance.Homepage}
-            alt="Home page final design"
-            className="rounded-xl"
-          />
-          <img
-            src={tugoInsurance.Insurance}
-            alt="Insurance page final design"
-            className="rounded-xl"
-          />
-        </div>
+        <img
+          src={tugoInsurance.Home}
+          width={900}
+          alt="Home"
+          className="rounded-3xl"
+        />
+        <p className="px-5 space-y-3">
+          We created a dedicated insurance package page where the users can have
+          an adequate amount of information with a simple-click from the home
+          page.
+        </p>
+        <img
+          src={tugoInsurance.Insurance}
+          width={900}
+          alt="Insurance"
+          className="rounded-3xl"
+        />
       </div>
     </div>
   );

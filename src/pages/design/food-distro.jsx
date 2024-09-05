@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import OtherMenu from "../../components/footer2";
-import { foodDistroImages } from "../../utils/foodDistroImages";
+import { foodDistro } from "../../utils/food-distro";
 import ContentNav from "../../components/contentNav";
 import Summary from "./food-distro/summary";
 import Overview from "./food-distro/overview";
@@ -67,7 +67,7 @@ export default function Food() {
       <section className="bg-slate-500 p-5 rounded-xl w-5/6 mx-auto">
         {/* Demo banner */}
         <img
-          src={foodDistroImages.Demo}
+          src={foodDistro.Demo}
           alt="Demo showcase"
           className="rounded-xl mx-auto w-64"
         />

@@ -1,4 +1,4 @@
-import { foodDistroImages } from "../../../utils/foodDistroImages";
+import { foodDistro } from "../../../utils/food-distro";
 
 export default function UserPersona() {
   return (
@@ -14,13 +14,13 @@ export default function UserPersona() {
             It is challenging to reach out.
           </p>
           <img
-            src={foodDistroImages.FoodGiver}
+            src={foodDistro.FoodGiver}
             width={900}
             alt="Food Giver"
             className="text-3xl rounded-3xl"
           />
           <img
-            src={foodDistroImages.FoodTaker}
+            src={foodDistro.FoodTaker}
             width={900}
             alt="Food Taker"
             className="text-3xl rounded-3xl"

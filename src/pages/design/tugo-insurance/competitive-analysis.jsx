@@ -1,4 +1,4 @@
-// import { tugoInsurance } from "../../../utils/tugoinsuranceImages";
+import { tugoInsurance } from "../../../utils/tugo-insurance";
 
 export default function CompetitiveAnalysis() {
   return (
@@ -20,7 +20,7 @@ export default function CompetitiveAnalysis() {
           </p>
         </ul>
         <img
-          src={""}
+          src={tugoInsurance.CompetitiveAnalysis}
           alt="Competitive analysis"
           width={900}
           className="text-3xl rounded-3xl"

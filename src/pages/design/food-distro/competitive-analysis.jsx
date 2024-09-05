@@ -1,4 +1,4 @@
-import { foodDistroImages } from "../../../utils/foodDistroImages";
+import { foodDistro } from "../../../utils/food-distro";
 
 export default function CompetitiveAnalysis() {
   return (
@@ -10,7 +10,7 @@ export default function CompetitiveAnalysis() {
           gaps that other brands have.
         </p>
         <img
-          src={foodDistroImages.CompetitiveAnalysis}
+          src={foodDistro.CompetitiveAnalysis}
           alt="Competitive analysis"
           width={900}
           className="text-3xl rounded-3xl"

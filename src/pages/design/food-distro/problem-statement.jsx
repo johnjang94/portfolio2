@@ -1,4 +1,4 @@
-import { foodDistroImages } from "../../../utils/foodDistroImages";
+import { foodDistro } from "../../../utils/food-distro";
 
 export default function ProblemStatement() {
   return (
@@ -11,7 +11,7 @@ export default function ProblemStatement() {
           generations.
         </p>
         <img
-          src={foodDistroImages.FoodWaste}
+          src={foodDistro.FoodWaste}
           alt="Food Waste"
           width={900}
           className="my-5 rounded-3xl"
@@ -21,7 +21,7 @@ export default function ProblemStatement() {
           is not good, the rate of food waste remained high.
         </p>
         <img
-          src={foodDistroImages.Barriers}
+          src={foodDistro.Barriers}
           alt="Food Waste"
           width={900}
           className="my-5 rounded-3xl"

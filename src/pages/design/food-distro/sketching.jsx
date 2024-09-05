@@ -1,4 +1,4 @@
-import { foodDistroImages } from "../../../utils/foodDistroImages";
+import { foodDistro } from "../../../utils/food-distro";
 
 export default function Sketching() {
   return (
@@ -28,13 +28,13 @@ export default function Sketching() {
       </div>
       <div className="grid grid-cols-2 gap-10">
         <img
-          src={foodDistroImages.Filter}
+          src={foodDistro.Filter}
           width={900}
           alt="Filter"
           className="text-3xl rounded-3xl"
         />
         <img
-          src={foodDistroImages.Rating}
+          src={foodDistro.Rating}
           width={900}
           alt="Rating"
           className="text-3xl rounded-3xl"
