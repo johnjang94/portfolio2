@@ -40,7 +40,7 @@ const data = [
     imgAlt: "TeleVU",
     title: "TeleVU Innovation Incorporation",
     category: ["UX Research", "UX/UI Design", "Web App"],
-    link: "/televu-brief",
+    link: "/televu",
   },
   {
     id: 5,

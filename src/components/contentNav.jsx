@@ -3,50 +3,21 @@ import PropTypes from "prop-types";
 
 const initialSections = [
   { id: 1, label: "Summary" },
-  { id: 2, label: "Overview" },
-  { id: 3, label: "Project Objectives" },
-  { id: 4, label: "Insights" },
-  { id: 5, label: "User flow Map" },
-  { id: 6, label: "Solutions" },
-  { id: 7, label: "Key Takeaways" },
+  { id: 2, label: "Problem Statement" },
+  { id: 3, label: "Solutions" },
 ];
 
 export default function ContentNav({ currentSection, pathname }) {
   const updateSections = (sections, pathname) => {
     let updatedSections;
 
-    if (pathname === "/food") {
-      updatedSections = [
-        { id: 1, label: "Background" },
-        { id: 2, label: "Problem Statement" },
-        { id: 3, label: "Abstract" },
-        { id: 4, label: "Design Process" },
-        { id: 7, label: "Usability Testing" },
-        { id: 8, label: "Lessons Learned" },
-      ];
-    } else if (pathname === "/food-distro") {
+    if (pathname === "/food-distro") {
       updatedSections = [
         { id: 1, label: "Summary" },
         { id: 2, label: "Problem Statement" },
         { id: 3, label: "Solutions" },
-      ];
-    } else if (pathname === "/tugo") {
-      updatedSections = [
-        { id: 1, label: "Background" },
-        { id: 2, label: "At Issue" },
-        { id: 3, label: "Design Process" },
-        { id: 5, label: "Design Changes" },
-        { id: 6, label: "Key Changes" },
-        { id: 7, label: "Improvements" },
-        { id: 8, label: "Lessons Learned" },
       ];
     } else if (pathname === "/tugo-insurance") {
-      updatedSections = [
-        { id: 1, label: "Summary" },
-        { id: 2, label: "Problem Statement" },
-        { id: 3, label: "Solutions" },
-      ];
-    } else if (pathname === "/experience") {
       updatedSections = [
         { id: 1, label: "Summary" },
         { id: 2, label: "Problem Statement" },
@@ -96,7 +67,6 @@ export default function ContentNav({ currentSection, pathname }) {
             newSelectedSection = section.id;
           }
 
-          // Check if the section is fully out of view
           if (
             scrollY + windowHeight < sectionTop &&
             selectedSection === section.id
