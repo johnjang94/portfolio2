@@ -13,7 +13,6 @@ import SAHKI from "./pages/design/the-sahki";
 
 // Contact & Extra
 import Contact from "./pages/contact";
-import Login from "./components/lock/login";
 
 // Wrong link
 import NotFound from "./pages/notfound";
@@ -34,7 +33,6 @@ const router = createBrowserRouter([
       { path: "/sahki", element: <SAHKI /> },
       // Other
       { path: "/contact", element: <Contact /> },
-      { path: "/lock", element: <Login /> },
       // For any wrong URL, redirect to:
       { path: "*", element: <NotFound /> },
     ],
