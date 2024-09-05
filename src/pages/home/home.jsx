@@ -22,7 +22,7 @@ const data = [
     imgAlt: "TuGo",
     icon: "",
     title: "TuGo Travel Insurance | 2024",
-    category: ["Web Redesign", "Concept Design"],
+    category: ["UX/UI Design", "Website Redesign", "Web App"],
     link: "/tugo-insurance",
   },
   {
