@@ -49,7 +49,7 @@ const data = [
     icon: "🔒",
     title: "The Sahki | 2024",
     category: ["Product Design", "Web Design", "Currently in Progress"],
-    link: "/lock",
+    link: "/sahki",
   },
 ];
 
@@ -107,10 +107,7 @@ export default function Home() {
                   : "bg-slate-400"
               }`}
             >
-              <Link
-                to={item.id === 5 ? "/lock" : item.link}
-                state={{ fromId: item.id }}
-              >
+              <Link to={item.link} state={{ fromId: item.id }}>
                 <img
                   src={item.imgSrc}
                   alt={item.imgAlt}
