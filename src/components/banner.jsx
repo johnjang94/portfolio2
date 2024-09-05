@@ -13,18 +13,11 @@ export default function Banner() {
       "/",
       "/home",
       "/about",
-      "/tools",
-      "/my-hobby",
-      "/design",
       "/televu",
-      "/televu-brief",
-      "/food",
       "/food-distro",
       "/tugo",
       "/tugo-insurance",
-      "/experience",
       "/sahki",
-      "/development",
       "/contact",
       "/lock",
     ];
@@ -40,14 +33,6 @@ export default function Banner() {
     }
 
     switch (location.pathname) {
-      case "/televu":
-      case "/development":
-      case "/food":
-      case "/tugo":
-        return {
-          backgroundColor: "bg-black text-white",
-          logo: LogoTransparent,
-        };
       case "/lock":
         return { backgroundColor: "text-white", logo: LogoTransparent };
       default:

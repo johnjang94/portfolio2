@@ -1,18 +1,20 @@
 // TELEVU DEMO
 import Demo from "../assets/televu/demo/demo.gif";
 
-// INSIGHT
-import Login from "../assets/televu-debrief/login.png";
+// OPPORTUNITY
+import OriginalVideo from "../assets/televu/opportunity/original-video.jpeg";
+import TwoNavigations from "../assets/televu/opportunity/two-navigations.jpeg";
 
 // FINAL DESIGN
-import List from "../assets/televu-debrief/list.png";
-import Report from "../assets/televu-debrief/reportvu.png";
-import Video from "../assets/televu-debrief/video.png";
+import Video from "../assets/televu/solution/redesign-video.jpeg";
+import Call from "../assets/televu/solution/redesign-call.jpeg";
+import Initiated from "../assets/televu/solution/initiating.png";
 
 export const televu = {
   Demo,
-  Login,
-  List,
-  Report,
+  OriginalVideo,
+  TwoNavigations,
   Video,
+  Call,
+  Initiated,
 };

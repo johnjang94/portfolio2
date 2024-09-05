@@ -11,7 +11,13 @@ export default function ContentNav({ currentSection, pathname }) {
   const updateSections = (sections, pathname) => {
     let updatedSections;
 
-    if (pathname === "/food-distro") {
+    if (pathname === "/televu") {
+      updatedSections = [
+        { id: 1, label: "Summary" },
+        { id: 2, label: "The Client" },
+        { id: 3, label: "Solutions" },
+      ];
+    } else if (pathname === "/food-distro") {
       updatedSections = [
         { id: 1, label: "Summary" },
         { id: 2, label: "Problem Statement" },

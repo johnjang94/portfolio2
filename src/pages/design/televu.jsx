@@ -1,14 +1,16 @@
 import { useEffect, useState } from "react";
+import { televu } from "../../utils/televu";
 import ContentNav from "../../components/contentNav";
-import OtherMenu from "../../components/footer2";
 import Summary from "./televu/summary";
 import Overview from "./televu/overview";
-import Objectives from "./televu/project-objectives";
-import Insights from "./televu/insights";
-import Principles from "./televu/design-principles";
+import Project from "./televu/project";
+import AboutThat from "./televu/about-that";
+import Opportunity from "./televu/opportunities";
+import CompetitiveAnalysis from "./televu/comparative-analysis";
 import Solutions from "./televu/solutions";
-import Takeaways from "./televu/key-takeaways";
-import { televu } from "../../utils/televu";
+import NextSteps from "./televu/next-steps";
+import OtherMenu from "../../components/footer2";
+import Retrospective from "./televu/retrospective";
 
 export default function TeleVU() {
   const [currentSection, setCurrentSection] = useState(1);
@@ -16,15 +18,7 @@ export default function TeleVU() {
   useEffect(() => {
     window.scrollTo(0, 0);
 
-    const sectionIds = [
-      { id: 1 },
-      { id: 2 },
-      { id: 3 },
-      { id: 4 },
-      { id: 5 },
-      { id: 6 },
-      { id: 7 },
-    ];
+    const sectionIds = [{ id: 1 }, { id: 2 }, { id: 3 }];
 
     const options = {
       root: null,
@@ -81,30 +75,36 @@ export default function TeleVU() {
           <ContentNav
             currentSection={currentSection}
             isDemoApplicable={false}
-            pathname="/televu-brief"
+            pathname="/televu"
           />
         </div>
         <section className="md:w-4/6 mx-10 my-5 md:my-28 space-y-20">
           <div id={1}>
             <Summary />
           </div>
-          <div id={2}>
+          <div>
             <Overview />
           </div>
+          <div id={2}>
+            <Project />
+          </div>
+          <div>
+            <AboutThat />
+          </div>
+          <div>
+            <Opportunity />
+          </div>
+          <div>
+            <CompetitiveAnalysis />
+          </div>
           <div id={3}>
-            <Objectives />
-          </div>
-          <div id={4}>
-            <Insights />
-          </div>
-          <div id={5}>
-            <Principles />
-          </div>
-          <div id={6}>
             <Solutions />
           </div>
-          <div id={7}>
-            <Takeaways />
+          <div>
+            <NextSteps />
+          </div>
+          <div>
+            <Retrospective />
           </div>
         </section>
       </section>

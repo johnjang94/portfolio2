@@ -76,23 +76,6 @@ export default function Solutions() {
             />
           </div>
         </div>
-        {/* <div className="my-3 space-y-3 md:grid md:grid-cols-3 md:gap-5">
-          <img
-            src={foodDistro.Order}
-            alt="Order page"
-            className="rounded-xl md:mt-3"
-          />
-          <img
-            src={foodDistro.Product}
-            alt="Product Detail page"
-            className="rounded-xl"
-          />
-          <img
-            src={foodDistro.Search}
-            alt="Search page"
-            className="rounded-xl"
-          />
-        </div> */}
       </div>
     </div>
   );
