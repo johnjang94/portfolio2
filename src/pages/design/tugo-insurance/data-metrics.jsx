@@ -9,14 +9,18 @@ export default function DataMetrics() {
           travelers.
         </p>
         <ul className="px-14 space-y-3 list-disc">
-          <li>65% struggles to find the appropriate package for themselves</li>
           <li>
-            30% does not think that the qualify of package matches the value of
-            the price
+            <span className="text-red-500">65% struggles</span> to find the
+            appropriate package for themselves
           </li>
           <li>
-            5% thinks that the brokerage needs a better service (even for the
-            customer service)
+            <span className="text-red-500">30% does not think</span> that the
+            qualify of package matches the value of the price
+          </li>
+          <li>
+            5% thinks that the brokerage{" "}
+            <span className="text-red-500">needs a better service</span> (even
+            for the customer service)
           </li>
         </ul>
       </div>

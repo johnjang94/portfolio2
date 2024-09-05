@@ -4,7 +4,10 @@ export default function Motive() {
       <h3 className="text-xl uppercase">Motive</h3>
       <ul className="md:mx-20 my-5 space-y-3">
         <li className="font-semibold">Optimize the user flow</li>
-        <p className="px-10">Too many steps resulted in high bounce-off rate</p>
+        <p className="px-10">
+          Too many steps resulted in{" "}
+          <span className="text-red-500">high bounce-off rate</span>
+        </p>
         <p className="px-10">
           A handful of users thoroughly went through all the steps,
           understanding how to place an order. On the other hand, many users
@@ -14,7 +17,9 @@ export default function Motive() {
         </p>
         <li className="font-semibold">Improve simplicity</li>
         <p className="px-10">
-          Many users prefer to be directed to relevant information
+          Many users prefer{" "}
+          <span className="text-blue-500">to be directed</span> to relevant
+          information
         </p>
         <p className="px-10">
           The structure of the UI is heavily crammed with information, leaving

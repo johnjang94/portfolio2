@@ -7,13 +7,15 @@ export default function Impact() {
         <ul className="px-5 list-disc space-y-3">
           <li>Task success rate</li>
           <p className="px-5">
-            85% of participants have successfully navigated themselves from the
-            home page to the cart page.
+            <span className="text-blue-500">85%</span> of participants{" "}
+            <span className="text-blue-500">have successfully navigated</span>{" "}
+            themselves from the home page to the cart page.
           </p>
           <li>Screen time</li>
           <p className="px-5">
-            the average time that users stay engaged on the website increased
-            from 2 minutes to 5 minutes.
+            the average time that users stay engaged on the website increased{" "}
+            {/* */}
+            <span className="text-blue-500">from 2 minutes to 5 minutes</span>.
           </p>
         </ul>
       </div>
