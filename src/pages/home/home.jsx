@@ -11,7 +11,7 @@ import Sahki from "../../assets/sahki/home-page-logo.jpeg";
 
 const titles = [
   "systemic thinker",
-  "creative designer",
+  "strategic designer",
   "innovative problem solver",
 ];
 
