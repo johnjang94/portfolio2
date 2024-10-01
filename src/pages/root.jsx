@@ -18,7 +18,7 @@ export default function Root() {
       "/food-distro",
       "/tugo-insurance",
       "/experience",
-      "/sahki",
+      "/sakhi",
       "/contact",
       "/lock",
     ];

@@ -1,4 +1,4 @@
-import { sahki } from "../../../utils/sakhi";
+import { sakhi } from "../../../utils/sakhi";
 
 export default function CompetitiveAnalysis() {
   return (
@@ -13,7 +13,7 @@ export default function CompetitiveAnalysis() {
           <li className="px-10">web usability</li>
         </ul>
         <img
-          src={sahki.competition}
+          src={sakhi.competition}
           alt="Competitive analysis"
           width={1000}
           className="rounded-2xl mx-auto"

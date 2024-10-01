@@ -1,4 +1,4 @@
-import { sahki } from "../../../utils/sakhi";
+import { sakhi } from "../../../utils/sakhi";
 
 export default function Developers() {
   return (
@@ -10,7 +10,7 @@ export default function Developers() {
           the feasibility of the customizations we bring to the table:
         </p>
         <img
-          src={sahki.Shopify}
+          src={sakhi.Shopify}
           alt="Shopify Developers"
           width={1200}
           className="rounded-2xl"
