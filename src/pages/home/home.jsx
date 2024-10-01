@@ -48,7 +48,7 @@ const data = [
     imgAlt: "The Sahki",
     icon: "🔒",
     title: "The Sahki | 2024",
-    category: ["Product Design", "Web Design", "Currently in Progress"],
+    category: ["Product Design", "E-Commerce", "Currently in Progress"],
     link: "/sahki",
   },
 ];

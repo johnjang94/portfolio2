@@ -29,10 +29,10 @@ export default function ContentNav({ currentSection, pathname }) {
         { id: 2, label: "Problem Statement" },
         { id: 3, label: "Solutions" },
       ];
-    } else if (pathname === "/sahki") {
+    } else if (pathname === "/sakhi") {
       updatedSections = [
         { id: 1, label: "Summary" },
-        { id: 2, label: "Problem Statement" },
+        { id: 2, label: "Opportunity" },
         { id: 3, label: "Solutions" },
       ];
     } else {
