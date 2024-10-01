@@ -30,7 +30,7 @@ const router = createBrowserRouter([
       { path: "/televu", element: <TeleVU /> },
       { path: "/food-distro", element: <Food /> },
       { path: "/tugo-insurance", element: <TuGo /> },
-      { path: "/sahki", element: <SAHKI /> },
+      { path: "/sakhi", element: <SAHKI /> },
       // Other
       { path: "/contact", element: <Contact /> },
       // For any wrong URL, redirect to:

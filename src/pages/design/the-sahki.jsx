@@ -1,11 +1,16 @@
 import { useEffect, useState } from "react";
 import ContentNav from "../../components/contentNav";
-import Summary from "./sahki/summary";
-import Overview from "./sahki/overview";
-import Project from "./sahki/project";
+import Summary from "./sakhi/summary";
+import MissionObjective from "./sakhi/mission-objective";
+import Accomplishments from "./sakhi/accomplishments";
+import Client from "./sakhi/client";
 import Password from "../../components/lock/password";
-import Project2 from "./sahki/project2";
-import { sahki } from "../../utils/sahki";
+import CompetitiveAnalysis from "./sakhi/competitive-analysis";
+import Insights from "./sakhi/insights";
+import Opportunity from "./sakhi/opportunity";
+import Developers from "./sakhi/developers";
+import Solutions from "./sakhi/solution";
+import { sahki } from "../../utils/sakhi";
 
 export default function SAHKI() {
   const [currentSection, setCurrentSection] = useState(1);
@@ -65,7 +70,7 @@ export default function SAHKI() {
         <img
           src={sahki.Home}
           alt="Demo showcase"
-          width={500}
+          width={1200}
           className="rounded-3xl mx-auto"
         />
       </section>
@@ -74,7 +79,7 @@ export default function SAHKI() {
           <ContentNav
             currentSection={currentSection}
             isDemoApplicable={false}
-            pathname="/experience"
+            pathname="/sakhi"
           />
         </div>
         <section className="md:w-4/6 mx-10 my-5 md:my-28 space-y-20">
@@ -82,14 +87,31 @@ export default function SAHKI() {
             <Summary />
           </div>
           <div>
-            <Overview />
+            <MissionObjective />
           </div>
           <div>
-            <Project />
+            <Accomplishments />
+          </div>
+          <div>
+            <Client />
           </div>
           {isPasswordCorrect && (
-            <div id="4">
-              <Project2 />
+            <div className="my-5 md:my-28 space-y-20">
+              <div>
+                <CompetitiveAnalysis />
+              </div>
+              <div>
+                <Insights />
+              </div>
+              <div id={2}>
+                <Opportunity />
+              </div>
+              <div>
+                <Developers />
+              </div>
+              <div id={3}>
+                <Solutions />
+              </div>
             </div>
           )}
         </section>

@@ -35,7 +35,7 @@ export default function Root() {
       pathname === "/contact" ||
       pathname === "/experience" ||
       pathname === "/about" ||
-      pathname === "/sahki"
+      pathname === "/sakhi"
     ) {
       return "bg-glow bg-cover";
     } else {
