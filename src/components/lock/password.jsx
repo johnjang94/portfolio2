@@ -17,14 +17,10 @@ export default function Password({ onCorrectPassword }) {
   };
 
   return (
-    <div className="py-10 w-3/6 mx-auto bg-slate-300 rounded-3xl">
-      <h1 className="text-center text-3xl my-10">Work In Progress</h1>
+    <div className="py-10 md:w-3/6 w-5/6 mx-auto bg-slate-300 rounded-3xl">
+      <h1 className="text-center text-3xl my-10">NDA</h1>
       <div className="p-20 text-center">
-        <p>The project is yet in progress.</p>
-        <p>
-          Should you be interested in checking out the current status, <br />
-          please reach out to me for a valid key.
-        </p>
+        <p>Please make your inquiry for the password.</p>
       </div>
       {errorMessage && <p className="text-[#FF00FF]">{errorMessage}</p>}
       <form

@@ -17,7 +17,7 @@ export default function Banner() {
       "/food-distro",
       "/tugo",
       "/tugo-insurance",
-      "/sahki",
+      "/sakhi",
       "/contact",
       "/lock",
     ];

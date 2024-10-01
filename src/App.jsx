@@ -9,7 +9,7 @@ import About from "./pages/about/about";
 import TeleVU from "./pages/design/televu";
 import Food from "./pages/design/food-distro";
 import TuGo from "./pages/design/tugo";
-import SAHKI from "./pages/design/the-sahki";
+import SAKHI from "./pages/design/the-sakhi";
 
 // Contact & Extra
 import Contact from "./pages/contact";
@@ -30,7 +30,7 @@ const router = createBrowserRouter([
       { path: "/televu", element: <TeleVU /> },
       { path: "/food-distro", element: <Food /> },
       { path: "/tugo-insurance", element: <TuGo /> },
-      { path: "/sakhi", element: <SAHKI /> },
+      { path: "/sakhi", element: <SAKHI /> },
       // Other
       { path: "/contact", element: <Contact /> },
       // For any wrong URL, redirect to:

@@ -10,9 +10,9 @@ import Insights from "./sakhi/insights";
 import Opportunity from "./sakhi/opportunity";
 import Developers from "./sakhi/developers";
 import Solutions from "./sakhi/solution";
-import { sahki } from "../../utils/sakhi";
+import { sakhi } from "../../utils/sakhi";
 
-export default function SAHKI() {
+export default function SAKHI() {
   const [currentSection, setCurrentSection] = useState(1);
   const [isPasswordCorrect, setIsPasswordCorrect] = useState(false);
 
@@ -63,12 +63,12 @@ export default function SAHKI() {
           Product Design for E-commerce
         </h3>
         <h1 className="my-9 md:w-5/12 md:text-center mx-10 md:mx-44 md:text-5xl text-lg">
-          THE SAHKI
+          THE SAKHI
         </h1>
       </header>
       <section className="bg-slate-500 p-5 rounded-xl w-5/6 mx-auto">
         <img
-          src={sahki.Home}
+          src={sakhi.Home}
           alt="Demo showcase"
           width={1200}
           className="rounded-3xl mx-auto"

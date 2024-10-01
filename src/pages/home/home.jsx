@@ -3,11 +3,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import { FaArrowDownLong } from "react-icons/fa6";
 import "./home.css";
-
-import TeleVU from "../../assets/home/televu.png";
-import FoodDistro from "../../assets/home/foodDistro.png";
-import TuGo from "../../assets/home/tugo.png";
-import Sahki from "../../assets/sahki/home-page-logo.jpeg";
+import { home } from "../../utils/home";
 
 const titles = [
   "systemic thinker",
@@ -18,38 +14,38 @@ const titles = [
 const data = [
   {
     id: 1,
-    imgSrc: TuGo,
+    imgSrc: home.TuGo,
     imgAlt: "TuGo",
     icon: "",
     title: "TuGo Travel Insurance | 2024",
-    category: ["UX/UI Design", "Website Redesign", "Web App"],
+    category: ["UX/UI Design", "IaaS Design"],
     link: "/tugo-insurance",
   },
   {
     id: 2,
-    imgSrc: FoodDistro,
+    imgSrc: home.FoodDistro,
     imgAlt: "Food Distro",
     icon: "",
     title: "Food Distro | 2023",
-    category: ["UX/UI Design", "Mobile App"],
+    category: ["UX/UI Design", "Mobile App", "Social Service"],
     link: "/food-distro",
   },
   {
     id: 3,
-    imgSrc: TeleVU,
+    imgSrc: home.TeleVU,
     imgAlt: "TeleVU",
     title: "TeleVU Innovation Incorporation | 2022",
-    category: ["UX Research", "UX/UI Design", "Web App"],
+    category: ["UX/UI Design", "TaaS Design"],
     link: "/televu",
   },
   {
     id: 5,
-    imgSrc: Sahki,
-    imgAlt: "The Sahki",
+    imgSrc: home.Sakhi,
+    imgAlt: "The Sakhi",
     icon: "🔒",
     title: "The Sahki | 2024",
     category: ["Product Design", "E-Commerce", "Currently in Progress"],
-    link: "/sahki",
+    link: "/sakhi",
   },
 ];
 
@@ -75,7 +71,7 @@ export default function Home() {
         </div>
         <p className="mt-6 lg:text-2xl text-xl leading-relaxed">
           Currently, I&#39;m a Product Designer at{" "}
-          <span className="font-bold">THE SAHKI</span>.
+          <span className="font-bold">THE SAKHI</span>.
         </p>
         <div className="md:flex justify-between">
           <Link
