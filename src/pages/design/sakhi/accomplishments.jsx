@@ -4,7 +4,8 @@ export default function Accomplishments() {
       <h3 className="text-xl uppercase">Accomplishments</h3>
       <div className="md:mx-20 my-3">
         <ul className="space-y-5 list-disc">
-          <p>
+          <p>Please stay tuned until further update.</p>
+          {/* <p>
             We have successfully reached our target by offering the following
             differentiated services:
           </p>
@@ -17,7 +18,7 @@ export default function Accomplishments() {
             comparison different products by{" "}
             <span className="text-blue-500">60%</span> of time, which is an
             average of <span className="text-blue-500">5 minutes</span>
-          </li>
+          </li> */}
         </ul>
       </div>
     </div>
