@@ -22,7 +22,6 @@ export default function Password({ onCorrectPassword }) {
       <div className="p-20 text-center">
         <p>Please make your inquiry for the password.</p>
       </div>
-      {errorMessage && <p className="text-[#FF00FF]">{errorMessage}</p>}
       <form
         className="flex items-center mb-3 w-4/6 mx-auto"
         onSubmit={handleSubmit}
@@ -38,6 +37,9 @@ export default function Password({ onCorrectPassword }) {
           OK
         </button>
       </form>
+      {errorMessage && (
+        <p className="text-[#FF00FF] text-center">{errorMessage}</p>
+      )}
     </div>
   );
 }

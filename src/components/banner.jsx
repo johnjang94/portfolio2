@@ -18,6 +18,7 @@ export default function Banner() {
       "/tugo",
       "/tugo-insurance",
       "/sakhi",
+      "/operate",
       "/contact",
       "/lock",
     ];
