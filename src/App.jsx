@@ -10,6 +10,7 @@ import TeleVU from "./pages/design/televu";
 import Food from "./pages/design/food-distro";
 import TuGo from "./pages/design/tugo";
 import SAKHI from "./pages/design/the-sakhi";
+import OPERATE from "./pages/design/operate-ease";
 
 // Contact & Extra
 import Contact from "./pages/contact";
@@ -31,6 +32,7 @@ const router = createBrowserRouter([
       { path: "/food-distro", element: <Food /> },
       { path: "/tugo-insurance", element: <TuGo /> },
       { path: "/sakhi", element: <SAKHI /> },
+      { path: "/operate", element: <OPERATE /> },
       // Other
       { path: "/contact", element: <Contact /> },
       // For any wrong URL, redirect to:

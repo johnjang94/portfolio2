@@ -19,6 +19,7 @@ export default function Root() {
       "/tugo-insurance",
       "/experience",
       "/sakhi",
+      "/operate",
       "/contact",
       "/lock",
     ];
@@ -30,15 +31,26 @@ export default function Root() {
 
     if (pathname === "/lock") {
       return "bg-background bg-cover";
-    } else if (
+    }
+
+    if (
       pathname === "/tools" ||
       pathname === "/contact" ||
       pathname === "/experience" ||
-      pathname === "/about" ||
-      pathname === "/sakhi"
+      pathname === "/about"
     ) {
       return "bg-glow bg-cover";
-    } else {
+    }
+
+    if (
+      pathname === "/" ||
+      pathname === "/home" ||
+      pathname === "/food-distro" ||
+      pathname === "/televu" ||
+      pathname === "/operate" ||
+      pathname === "/tugo-insurance" ||
+      pathname === "/sakhi"
+    ) {
       return "bg-glow bg-contain";
     }
   };

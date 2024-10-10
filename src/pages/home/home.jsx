@@ -14,15 +14,24 @@ const titles = [
 const data = [
   {
     id: 1,
+    imgSrc: home.OperateEase,
+    imgAlt: "OperateEase",
+    icon: "🔒",
+    title: "OperateEase | 2024",
+    category: ["Product Design", "SaaS"],
+    link: "/operate",
+  },
+  {
+    id: 2,
     imgSrc: home.TuGo,
     imgAlt: "TuGo",
     icon: "",
     title: "TuGo Travel Insurance | 2024",
-    category: ["UX/UI Design", "IaaS Design"],
+    category: ["UX/UI Design", "Fintech"],
     link: "/tugo-insurance",
   },
   {
-    id: 2,
+    id: 3,
     imgSrc: home.FoodDistro,
     imgAlt: "Food Distro",
     icon: "",
@@ -31,21 +40,12 @@ const data = [
     link: "/food-distro",
   },
   {
-    id: 3,
+    id: 4,
     imgSrc: home.TeleVU,
     imgAlt: "TeleVU",
     title: "TeleVU Innovation Incorporation | 2022",
-    category: ["UX/UI Design", "TaaS Design"],
+    category: ["UX/UI Design", "Web App", "Mobile App"],
     link: "/televu",
-  },
-  {
-    id: 5,
-    imgSrc: home.Sakhi,
-    imgAlt: "The Sakhi",
-    icon: "🔒",
-    title: "The Sahki | 2024",
-    category: ["Product Design", "E-Commerce", "Currently in Progress"],
-    link: "/sakhi",
   },
 ];
 
@@ -86,7 +86,27 @@ export default function Home() {
           <FaArrowDownLong className="text-3xl mx-auto" />
         </div>
       </header>
-      <section className="my-40 md:mx-36 mx-12 grid grid-cols-1 md:grid-cols-2 md:gap-20 space-y-10 md:space-y-0">
+      <section className="md:mx-36 mx-12 space-y-3">
+        <Link to="/sakhi">
+          <div className="bg-[#d1b2a1] md:px-40 py-20 rounded-3xl">
+            <img
+              src={home.Sakhi}
+              alt="Sakhi cover"
+              className="rounded-xl md:h-[300px] mx-auto"
+            />
+          </div>
+        </Link>
+        <p className="font-bold">🔒 The Sakhi | 2024</p>
+        <div className="flex md:space-x-5 space-x-1">
+          <span className="bg-slate-400 rounded-lg md:px-2 px-1 py-1 text-white text-xs md:text-sm">
+            Product Design
+          </span>
+          <span className="bg-slate-400 rounded-lg md:px-2 px-1 py-1 text-white text-xs md:text-sm">
+            E-commerce
+          </span>
+        </div>
+      </section>
+      <section className="my-20 md:mx-36 mx-12 grid grid-cols-1 md:grid-cols-2 md:gap-20 space-y-10 md:space-y-0">
         {data.map((item) => (
           <div
             key={item.id}
@@ -94,11 +114,11 @@ export default function Home() {
           >
             <div
               className={`p-3 rounded-xl hover:shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,rgba(0,0,0,0.3)_0px_3px_7px_-3px] ${
-                item.id === 1
+                item.id === 2
                   ? "bg-[radial-gradient(circle_311px_at_8.6%_27.9%,rgba(62,147,252,0.57)_12.9%,rgba(239,183,192,0.44)_91.2%)] relative"
-                  : item.id === 2
-                  ? "bg-[radial-gradient(_circle_farthest-corner_at_10%_20%,rgba(255,209,67,1)_0%,rgba(255,145,83,1)_90%_)]"
                   : item.id === 3
+                  ? "bg-[radial-gradient(_circle_farthest-corner_at_10%_20%,rgba(255,209,67,1)_0%,rgba(255,145,83,1)_90%_)]"
+                  : item.id === 4
                   ? "bg-[radial-gradient(_circle_farthest-corner_at_48.4%_47.5%,rgba(122,183,255,1)_0%,rgba(21,83,161,1)_90%_)]"
                   : "bg-slate-400"
               }`}
