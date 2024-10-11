@@ -7,8 +7,8 @@ export default function Solutions() {
       <div className="md:mx-20 my-3 space-y-5">
         <p className="font-bold">Solution 1 | Simplification</p>
         <p className="px-10">
-          In my initial iteration, I designed a simpler dashboard where users
-          can check all the necessary information in one-click.
+          Users have a specialized, simple, and focused dashboard for different
+          types of inventory (room occupancy, Food & Beverage materials)
         </p>
         <div className="grid grid-cols-2 items-center gap-5 bg-slate-300 rounded-3xl p-5">
           <img
@@ -26,8 +26,9 @@ export default function Solutions() {
         </div>
         <p className="font-bold">Solution 2 | Convenience</p>
         <p className="px-10">
-          I have designed a system that automates checking and alerting to the
-          users
+          Users can check / modify room rates, the cost on goods sold, list of
+          suppliers, order information, etc. on a click of a button from each
+          dashboard
         </p>
         <div className="bg-slate-300 rounded-3xl p-5">
           <img

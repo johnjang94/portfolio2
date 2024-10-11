@@ -131,10 +131,10 @@ export default function OPERATE() {
                 <Impact />
               </div>
               <div>
-                <NextSteps />
+                <Retrospective />
               </div>
               <div>
-                <Retrospective />
+                <NextSteps />
               </div>
             </div>
           )}
