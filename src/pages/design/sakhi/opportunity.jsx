@@ -3,22 +3,17 @@ export default function Opportunity() {
     <div>
       <h3 className="text-xl uppercase">Opportunity</h3>
       <ul className="md:mx-20 my-5 space-y-5 list-decimal">
-        <li>Friendly description</li>
-        <p className="px-5 text-gray-400">
-          The Sakhi entails information about the occasion, the product
-          material, the meaning behind the product, and a clear instruction on
-          how to keep the clothes in good condition.
+        <li>Friendliness</li>
+        <p className="px-5">
+          Research suggests that &#39;friendliness&#39; is defined by clarity,
+          sufficient information, and effective guidance that minimizes the need
+          for support.
         </p>
-        <div className="px-40 py-40 bg-slate-300 rounded-2xl">
-          <p>This is the picture box where the description detail goes in</p>
-        </div>
-        <li>Convenience</li>
-        <p className="px-5 text-gray-400">
-          The Sakhi provides simple ways to compare, save, and place an order.
+        <li>Affordability</li>
+        <p className="px-5">
+          We aimed to balance the premium cost with broader appeal, adjusting
+          the price to feel fair to more shoppers.
         </p>
-        <div className="px-40 py-40 bg-slate-300 rounded-2xl">
-          <p>This is the picture box where the convenience goes in</p>
-        </div>
       </ul>
     </div>
   );
