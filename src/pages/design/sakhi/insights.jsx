@@ -3,22 +3,26 @@ export default function Insight() {
     <div className="space-y-5">
       <h3 className="text-xl uppercase">Insight</h3>
       <div className="md:mx-20 space-y-5">
-        <p className="font-semibold">Modernized clothes can lead the trend</p>
-        <p className="px-10 text-gray-400">
-          Many well-known brands such as Fab India, Hatkay, Indya, and Kreeva
-          offer high-end price ranges or clothes that are heavily traditional.
-          These two traits make the potential shoppers to lose their interests.
+        <p className="font-semibold">
+          The price range for the traditional clothing{" "}
+          <span className="text-red-500">is not resonating</span> with shoppers.
         </p>
-        <p className="font-semibold">Affordability drives competitiveness</p>
-        <p className="px-10 text-gray-400">
-          Despite the demands, the prices are holding back the shoppers.
-          Affordability could satisfy the desire among young generations.
+        <p className="px-10">
+          <span className="text-red-500">65% of shoppers</span> at brands like
+          Fab India, Hatkay, Indya, or Kreeva {/* */}
+          <span className="text-red-500">doubt</span> the products&#39; value,
+          especially for one-time events like weddings or festivals.
         </p>
-        <p className="font-semibold">Respect new visitors</p>
-        <p className="px-10 text-gray-400">
-          There are many shoppers who are non-Indians, but they speak up as
-          there are more rooms that these brands can do in order to accommodate
-          the new shoppers.
+        <p className="font-semibold">
+          Due to the challenges non-Indian shoppers face, they may{" "}
+          <span className="text-red-500">mistakenly perceive</span> Indian
+          products as unfriendly.
+        </p>
+        <p className="px-10">
+          <span className="text-red-500">70% of non-Indian shoppers</span> found
+          the journey of exploring Indian brands interesting but still felt{" "}
+          <span className="text-red-500">lost or overwhelmed, unsure</span> of
+          what they were getting
         </p>
       </div>
     </div>
