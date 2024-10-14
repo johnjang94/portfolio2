@@ -5,16 +5,18 @@ import MissionObjective from "./sakhi/mission-objective";
 import Accomplishments from "./sakhi/accomplishments";
 import Client from "./sakhi/client";
 import Motive from "./sakhi/motive";
+import Motive from "./sakhi/motive";
 import Password from "../../components/lock/password";
 import CompetitiveAnalysis from "./sakhi/competitive-analysis";
 import Insights from "./sakhi/insights";
 import UserPersona from "./sakhi/user-persona";
+import UserPersona from "./sakhi/user-persona";
 import Opportunity from "./sakhi/opportunity";
 import Solutions from "./sakhi/solution";
 import Impact from "./sakhi/impact";
+import Impact from "./sakhi/impact";
 import { sakhi } from "../../utils/sakhi";
 import Retrospective from "./sakhi/retrospective";
-import NextSteps from "./sakhi/next-steps";
 
 export default function SAKHI() {
   const [currentSection, setCurrentSection] = useState(1);
@@ -102,6 +104,9 @@ export default function SAKHI() {
           <div>
             <Motive />
           </div>
+          <div>
+            <Motive />
+          </div>
           {isPasswordCorrect && (
             <div className="my-5 md:my-28 space-y-20">
               <div>
@@ -124,9 +129,6 @@ export default function SAKHI() {
               </div>
               <div>
                 <Retrospective />
-              </div>
-              <div>
-                <NextSteps />
               </div>
             </div>
           )}
