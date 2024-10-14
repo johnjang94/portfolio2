@@ -113,6 +113,9 @@ export default function SAKHI() {
               <div>
                 <Insights />
               </div>
+              <div>
+                <UserPersona />
+              </div>
               <div id={2}>
                 <Opportunity />
               </div>
