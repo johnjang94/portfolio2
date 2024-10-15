@@ -14,16 +14,28 @@ export default function Overview() {
           </div>
         </div>
         <div>
-          <p className="font-semibold">Outcome</p>
+          <p className="font-semibold">Mission Objective</p>
           <div className="p-5">
             <p>
-              The task completion rate was increased to{" "}
-              <span className="text-blue-500">85%</span>
+              In this phase, the goal was to raise the click-through-rate (CTR)
+              to <span className="text-blue-500">6%</span>.
+            </p>
+          </div>
+        </div>
+        <div>
+          <p className="font-semibold">Outcome</p>
+          <div className="p-5 space-y-3">
+            <p>
+              About{" "}
+              <span className="text-blue-500">
+                3 out of 5 potential travelers
+              </span>{" "}
+              have successfully explored the insurance products and ordered
+              insurance packages.
             </p>
             <p>
-              The screen time was{" "}
-              <span className="text-blue-500">increased from 2m to 5m</span> in
-              average
+              Unfortunately, we did not have an adequate amount of time to find
+              out how many views we reached per hour at this point.
             </p>
           </div>
         </div>

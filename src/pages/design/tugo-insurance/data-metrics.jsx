@@ -3,7 +3,7 @@ export default function DataMetrics() {
     <div className="space-y-5">
       <h3 className="text-xl uppercase">Data & Metrics</h3>
       <div className="md:mx-20 space-y-5">
-        <p className="font-semibold">Understanding the Experience</p>
+        <p className="font-semibold">Understanding the User Experience</p>
         <p className="px-10">
           Finding the right insurance package is a huge relief to many
           travelers.

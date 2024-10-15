@@ -1,8 +1,12 @@
-export default function Motive() {
+export default function Insights() {
   return (
     <div>
-      <h3 className="text-xl uppercase">Motive</h3>
+      <h3 className="text-xl uppercase">Insights</h3>
       <ul className="md:mx-20 my-5 space-y-3">
+        <p>
+          After initial survey and interview, we were able to narrow down to the
+          following two biggest pain points:
+        </p>
         <li className="font-semibold">Optimize the user flow</li>
         <p className="px-10">
           Too many steps resulted in{" "}
