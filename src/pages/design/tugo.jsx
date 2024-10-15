@@ -3,7 +3,7 @@ import { tugoInsurance } from "../../utils/tugo-insurance";
 import ContentNav from "../../components/contentNav";
 import Summary from "./tugo-insurance/summary";
 import Overview from "./tugo-insurance/overview";
-import Motive from "./tugo-insurance/problem-statement";
+import Motive from "./tugo-insurance/motive";
 import DataMetrics from "./tugo-insurance/data-metrics";
 import Project from "./tugo-insurance/project";
 import Assumption from "./tugo-insurance/assumption";
@@ -97,6 +97,9 @@ export default function TuGo() {
           <div>
             <DataMetrics />
           </div>
+          {/* <div>
+            <Insights />
+          </div> */}
           <div>
             <Assumption />
           </div>

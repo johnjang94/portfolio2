@@ -4,10 +4,9 @@ export default function Retrospective() {
       <h3 className="text-xl uppercase">Looking back...</h3>
       <div className="md:mx-20 my-3 space-y-5">
         <p className="font-semibold">
-          I personally like traveling and that&#39;s what truly motivated me to
-          join this project. On the other hand, I have not realized that it
-          could be a daunting experience to sign up for an insurance (even
-          though the insurance could be helpful depending on the circumstances).
+          My love for travel motivated me to join this project, but I hadn&#39;t
+          realized how daunting signing up for insurance could be, despite its
+          potential benefits.
         </p>
         <ul className="px-5 space-y-3">
           <li className="text-blue-500">
@@ -25,6 +24,13 @@ export default function Retrospective() {
             No matter how great a design comes out, if it does not lead into
             sales, it may be difficult to say that the new design is practically
             a valuable (or useful) design.
+          </p>
+          <li className="text-red-500">
+            Best Lesson 3 | A high CTR does not guarantee more sales
+          </li>
+          <p className="px-5">
+            Many of the travelers evaluated the packages by comparing its value
+            to its price, while also considering its necessity.
           </p>
         </ul>
       </div>
