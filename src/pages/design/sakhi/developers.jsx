@@ -6,8 +6,8 @@ export default function Developers() {
       <h3 className="text-xl uppercase">Shopify Developers</h3>
       <div className="md:mx-20 my-5 space-y-5">
         <p>
-          We liaised with the shopify developers to understand and better design
-          the feasibility of the customizations we bring to the table:
+          We liaised with the shopify developers to understand and design better
+          with the feasibility of the customizations we bring to the table:
         </p>
         <img
           src={sakhi.Shopify}
