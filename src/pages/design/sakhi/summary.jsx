@@ -23,8 +23,7 @@ export default function Summary() {
         <div className="flex gap-14">
           <p className="font-semibold">Timeline</p>
           <div>
-            <p>16 weeks</p>
-            <p>(as of September 5, 2024, it has been 6 weeks)</p>
+            <p>17 weeks</p>
           </div>
         </div>
       </div>
