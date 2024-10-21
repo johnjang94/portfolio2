@@ -3,7 +3,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
 import LogoBlack from "/logo512.png";
-import LogoTransparent from "/logo500.png";
+import LogoTransparent from "/logo-white.png";
 
 export default function Banner() {
   const location = useLocation();
