@@ -5,8 +5,8 @@ export default function Accomplishments() {
       <div className="md:mx-20 my-3">
         <ul className="space-y-5 list-disc">
           <p>
-            Although it is not that we have reached the sale of $ 10,000, but we
-            have raised{" "}
+            We are currently yet in progress to reach the sale of $ 10,000, but
+            we have reached{" "}
             <span className="text-blue-500">
               the click-through rate (CTR) of 3.5%
             </span>{" "}

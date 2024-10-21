@@ -6,11 +6,11 @@ export default function Impact() {
         <p className="font-semibold">
           In this phase (Phase 1), we noticed that...
         </p>
-        <ul className="px-5 space-y-3">
+        <ul className="px-10 space-y-3">
           <p>
-            <span className="text-blue-500">85%</span> of participants{" "}
-            <span className="text-blue-500">have successfully navigated</span>{" "}
-            themselves from the home page to the cart page.
+            We reached the click-through rate (CTR) of{" "}
+            <span className="text-blue-500">3.5%</span> with new pages we
+            created.
           </p>
           <p>
             <span className="text-blue-500">50%</span> of the participants have

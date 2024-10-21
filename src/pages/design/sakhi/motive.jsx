@@ -9,8 +9,8 @@ export default function Motive() {
           into local communities.
         </p>
         <p>
-          Unlike these brands, The Sakhi wants to welcome everyone and
-          reintroduce the Indian style in a friendly way.
+          Along with them, The Sakhi wants to welcome everyone and reintroduce
+          the Indian style in a friendly way.
         </p>
       </div>
     </div>

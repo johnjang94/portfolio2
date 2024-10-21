@@ -7,14 +7,19 @@ export default function UserPersona() {
       <div className="md:mx-20 space-y-5">
         <div className="space-y-3">
           <p>
-            As mentioned earlier, The Sakhi wants to reach out to many
-            communities and the following comments seem the main challenges that
-            shoppers face from other established platforms:
+            In addition to the competitive analysis, we needed the voices on
+            what specific issues the potential shoppers were currently
+            experiencing:
           </p>
           <ul className="text-red-500 text-center py-10 space-y-3">
-            <li>&#34;There are not enough categories.&#34;</li>
-            <li>&#34;Wish there is a way to compare.&#34;</li>
-            <li>&#34;There are not enough visuals.&#34;</li>
+            <li>
+              &#34;Many Indian platforms have a complex navigation menu or
+              filter.&#34;
+            </li>
+            <li>&#34;Not many brands offer comparison among products.&#34;</li>
+            <li>
+              &#34;Visuals that they have do not speak enough messages.&#34;
+            </li>
           </ul>
           <img
             src={sakhi.Caterina}
