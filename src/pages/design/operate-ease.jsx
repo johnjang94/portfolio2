@@ -121,14 +121,14 @@ export default function OPERATE() {
               <div>
                 <Opportunity />
               </div>
-              <div>
-                <Collaboration />
-              </div>
               <div id={3}>
                 <Solutions />
               </div>
               <div>
                 <Impact />
+              </div>
+              <div>
+                <Collaboration />
               </div>
               <div>
                 <Retrospective />

@@ -3,10 +3,11 @@ import { OperateEase } from "../../../utils/operate";
 export default function Collaboration() {
   return (
     <div>
-      <h3 className="text-xl uppercase">Developers Workshop</h3>
+      <h3 className="text-xl uppercase">Development In Progress</h3>
       <p className="md:mx-20 my-5">
-        My colleagues and I have liaised with web developers and we left good
-        annotation notes for CSS and prototyping
+        As I am familiar with HTML, CSS, JavaScript, I helped the team to leave
+        a good web design annotation note and I also initiated development
+        environment setup.
       </p>
       <img
         src={OperateEase.Developers}
