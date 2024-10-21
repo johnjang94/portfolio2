@@ -14,20 +14,20 @@ const titles = [
 const data = [
   {
     id: 1,
-    imgSrc: home.OperateEase,
-    imgAlt: "OperateEase",
-    icon: "🔒",
-    title: "OperateEase | 2024",
-    category: ["Product Design", "SaaS"],
-    link: "/operate",
+    imgSrc: home.Sakhi,
+    imgAlt: "TuGo",
+    icon: "",
+    title: "🔒 Designing a Premium Indian Luxury - The Sakhi | 2024",
+    category: ["Product Design", "E-commerce"],
+    link: "/sakhi",
   },
   {
     id: 2,
     imgSrc: home.TuGo,
     imgAlt: "TuGo",
     icon: "",
-    title: "TuGo Travel Insurance | 2024",
-    category: ["UX/UI Design", "Fintech"],
+    title: "Envision Safety on your Travel - TuGo Travel Insurance | 2024",
+    category: ["UX/UI Design"],
     link: "/tugo-insurance",
   },
   {
@@ -35,7 +35,7 @@ const data = [
     imgSrc: home.FoodDistro,
     imgAlt: "Food Distro",
     icon: "",
-    title: "Food Distro | 2023",
+    title: "Reconnect the Communities - Food Distro | 2023",
     category: ["UX/UI Design", "Mobile App", "Social Service"],
     link: "/food-distro",
   },
@@ -43,7 +43,7 @@ const data = [
     id: 4,
     imgSrc: home.TeleVU,
     imgAlt: "TeleVU",
-    title: "TeleVU Innovation Incorporation | 2022",
+    title: "Remote Aids - TeleVU Innovation Incorporation | 2022",
     category: ["UX/UI Design", "Web App", "Mobile App"],
     link: "/televu",
   },
@@ -73,7 +73,7 @@ export default function Home() {
           Currently, I&#39;m a Product Designer at{" "}
           <span className="font-bold">THE SAKHI</span>.
         </p>
-        <div className="md:flex justify-between">
+        <div className="md:hidden flex justify-between">
           <Link
             to="/about"
             className="mt-5 text-blue-500 hover:underline hover:cursor-pointer flex space-x-2 items-center"
@@ -87,22 +87,24 @@ export default function Home() {
         </div>
       </header>
       <section className="md:mx-36 mx-12 space-y-3">
-        <Link to="/sakhi">
-          <div className="bg-[#d1b2a1] md:px-40 py-20 rounded-3xl">
+        <Link to="/operate">
+          <div className="bg-[#311D60] md:px-40 md:py-3 rounded-3xl">
             <img
-              src={home.Sakhi}
-              alt="Sakhi cover"
+              src={home.OperateEase}
+              alt="OperateEase cover"
               className="rounded-xl md:h-[300px] mx-auto"
             />
           </div>
         </Link>
-        <p className="font-bold">🔒 The Sakhi | 2024</p>
+        <p className="font-bold">
+          🔒 Reimagined Hospiality Management Service - OperateEase | 2024
+        </p>
         <div className="flex md:space-x-5 space-x-1">
           <span className="bg-slate-400 rounded-lg md:px-2 px-1 py-1 text-white text-xs md:text-sm">
             Product Design
           </span>
           <span className="bg-slate-400 rounded-lg md:px-2 px-1 py-1 text-white text-xs md:text-sm">
-            E-commerce
+            SaaS Product
           </span>
         </div>
       </section>
@@ -114,8 +116,10 @@ export default function Home() {
           >
             <div
               className={`p-3 rounded-xl hover:shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,rgba(0,0,0,0.3)_0px_3px_7px_-3px] ${
-                item.id === 2
-                  ? "bg-[radial-gradient(circle_311px_at_8.6%_27.9%,rgba(62,147,252,0.57)_12.9%,rgba(239,183,192,0.44)_91.2%)] relative"
+                item.id === 1
+                  ? "bg-[#d1b2a1] rounded-3xl"
+                  : item.id === 2
+                  ? "bg-[radial-gradient(circle_311px_at_8.6%_27.9%,rgba(62,147,252,0.57)_12.9%,rgba(239,183,192,0.44)_91.2%)]"
                   : item.id === 3
                   ? "bg-[radial-gradient(_circle_farthest-corner_at_10%_20%,rgba(255,209,67,1)_0%,rgba(255,145,83,1)_90%_)]"
                   : item.id === 4
