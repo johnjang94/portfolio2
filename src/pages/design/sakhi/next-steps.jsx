@@ -7,8 +7,9 @@ export default function NextSteps() {
         <p className="mx-10">
           We spent the majority of time in conducting research. After the long
           research phase, we spent time in designing both the desktop and the
-          mobile screens. As of October 2024, a few design tweaks were made on a
-          few pages and they need to be covered in colors.
+          mobile screens. As of October 2024, the current designs are at
+          mid-fidelity. The designs should be fully colored before they are
+          handed over to the developer.
         </p>
         <p className="font-semibold">Another round of Usability Testing</p>
         <p className="mx-10">
