@@ -17,6 +17,7 @@ import Impact from "./sakhi/impact";
 import { sakhi } from "../../utils/sakhi";
 import Retrospective from "./sakhi/retrospective";
 import NextSteps from "./sakhi/next-steps";
+import NextSteps from "./sakhi/next-steps";
 
 export default function SAKHI() {
   const [currentSection, setCurrentSection] = useState(1);
@@ -134,6 +135,9 @@ export default function SAKHI() {
               </div>
               <div>
                 <Retrospective />
+              </div>
+              <div>
+                <NextSteps />
               </div>
               <div>
                 <NextSteps />
