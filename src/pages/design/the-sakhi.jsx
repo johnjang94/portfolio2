@@ -16,6 +16,7 @@ import Solutions from "./sakhi/solution";
 import Impact from "./sakhi/impact";
 import { sakhi } from "../../utils/sakhi";
 import Retrospective from "./sakhi/retrospective";
+import NextSteps from "./sakhi/next-steps";
 
 export default function SAKHI() {
   const [currentSection, setCurrentSection] = useState(1);
@@ -74,7 +75,9 @@ export default function SAKHI() {
       <section className="bg-slate-500 p-5 rounded-xl w-5/6 mx-auto">
         <img
           src={sakhi.Demo}
+          src={sakhi.Demo}
           alt="Demo showcase"
+          width={200}
           width={200}
           className="rounded-3xl mx-auto"
         />
@@ -118,7 +121,7 @@ export default function SAKHI() {
                 <Insights />
               </div>
               <div>
-                <UserPersona />
+                <Insights />
               </div>
               <div id={2}>
                 <Opportunity />
@@ -131,6 +134,9 @@ export default function SAKHI() {
               </div>
               <div>
                 <Retrospective />
+              </div>
+              <div>
+                <NextSteps />
               </div>
             </div>
           )}
