@@ -6,7 +6,7 @@ export default function Summary() {
         <div className="flex gap-[5.5rem]">
           <p className="font-semibold">Role</p>
           <ul>
-            <li>Lead Product Designer</li>
+            <li>Product Designer</li>
             <li>UX Research Assistant</li>
           </ul>
         </div>
