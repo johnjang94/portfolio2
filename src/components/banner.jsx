@@ -2,8 +2,8 @@ import { Link, useLocation } from "react-router-dom";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
-import LogoBlack from "/logo512.png";
-import LogoTransparent from "/logo-white.png";
+import LogoBlack from "/logo-512.png";
+import LogoTransparent from "/logo--white.png";
 
 export default function Banner() {
   const location = useLocation();
