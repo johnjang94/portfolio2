@@ -3,16 +3,6 @@ export default function Retrospective() {
     <div>
       <h3 className="text-xl uppercase">Final Thoughts & Takeaways</h3>
       <div className="md:mx-20 my-5 space-y-5">
-        <div>
-          <p>
-            <span className="text-red-500">Lots of challenges</span> for a small
-            group of team
-          </p>
-          <p className="p-5">
-            I think that I was fortunate to be a part of an e-commerce project,
-            but the progress was notably slow due to such small group of team.
-          </p>
-        </div>
         <p>
           Clear expectation are <span className="text-blue-500">vital</span>.
         </p>

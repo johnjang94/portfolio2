@@ -27,12 +27,6 @@ export default function UserPersona() {
             alt="Caterina"
             className="text-3xl rounded-3xl"
           />
-          <img
-            src={sakhi.Vegha}
-            width={900}
-            alt="Vegha"
-            className="text-3xl rounded-3xl"
-          />
         </div>
       </div>
     </div>
