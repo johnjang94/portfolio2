@@ -12,9 +12,9 @@ import UserPersona from "./sakhi/user-persona";
 import Opportunity from "./sakhi/opportunity";
 import Solutions from "./sakhi/solution";
 import Impact from "./sakhi/impact";
-import { sakhi } from "../../utils/sakhi";
 import Retrospective from "./sakhi/retrospective";
 import NextSteps from "./sakhi/next-steps";
+import { sakhi } from "../../utils/sakhi";
 
 export default function SAKHI() {
   const [currentSection, setCurrentSection] = useState(1);
