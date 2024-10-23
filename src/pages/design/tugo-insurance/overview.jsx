@@ -33,10 +33,6 @@ export default function Overview() {
               have successfully explored the insurance products and ordered
               insurance packages.
             </p>
-            <p>
-              Unfortunately, we did not have an adequate amount of time to find
-              out how many views we reached per hour at this point.
-            </p>
           </div>
         </div>
       </div>
