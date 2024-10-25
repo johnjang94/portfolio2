@@ -9,7 +9,7 @@ export default function UserPersona() {
           <p>
             In addition to the competitive analysis, we needed the voices on
             what specific issues the potential shoppers were currently
-            experiencing:
+            experiencing from other existing brands:
           </p>
           <ul className="text-red-500 text-center py-10 space-y-3">
             <li>
@@ -21,12 +21,14 @@ export default function UserPersona() {
               &#34;Visuals that they have do not speak enough messages.&#34;
             </li>
           </ul>
-          <img
-            src={sakhi.Caterina}
-            width={900}
-            alt="Caterina"
-            className="text-3xl rounded-3xl"
-          />
+          <div className="p-5 bg-white rounded-3xl">
+            <img
+              src={sakhi.Caterina}
+              width={900}
+              alt="Caterina"
+              className="text-3xl rounded-xl"
+            />
+          </div>
         </div>
       </div>
     </div>

@@ -74,7 +74,7 @@ export default function SAKHI() {
         <img
           src={sakhi.Demo}
           alt="Demo showcase"
-          width={200}
+          width={800}
           className="rounded-3xl mx-auto"
         />
       </section>

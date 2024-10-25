@@ -19,7 +19,7 @@ export default function Solutions() {
             <img
               src={sakhi.Solution1}
               alt="Re-imagined home page"
-              width={250}
+              width={800}
             />
           </div>
         </div>

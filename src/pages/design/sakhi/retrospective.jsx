@@ -7,18 +7,13 @@ export default function Retrospective() {
           Clear expectation are <span className="text-blue-500">vital</span>.
         </p>
         <ul className="px-5 space-y-3">
-          <p>
-            <span className="text-red-500">Main reasons</span> that the
-            struggles have been stagnating are...
-          </p>
           <li className="px-5">
-            we had a bit of different perspectives on how the project flows
+            We had a bit of different perspectives on how the project flows
           </li>
           <li className="px-5">
-            we really needed a clear voice on what direction we set to go for
-            the project, and we were short on hands in research. This was a good
-            opportunity for me to pull my sleeves as a researcher and learn
-            different research techniques
+            We were short on hands in research and this was a good opportunity
+            for me to pull my sleeves as a researcher and learn different
+            research techniques
           </li>
         </ul>
         <p>
@@ -31,15 +26,6 @@ export default function Retrospective() {
             was built using Shopify. Even though I have some level of experience
             in web development, Shopify was a new tool that I was not familiar
             with. I had a good opportunity to learn more of Shopify.
-          </li>
-        </ul>
-        <p>
-          We needed to <span className="text-red-500">pivot</span> a few times.
-        </p>
-        <ul className="px-5 space-y-3">
-          <li className="px-5">
-            We needed to learn how to stretch our capacities because we wanted
-            to launch both desktop and mobile versions.
           </li>
         </ul>
       </div>
