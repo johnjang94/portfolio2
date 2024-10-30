@@ -18,6 +18,7 @@ import Impact from "./operate/impact";
 import NextSteps from "./operate/next-steps";
 import Retrospective from "./operate/retrospective";
 import StyleGuide from "./operate/style-guide";
+import OtherMenu from "../../components/footer2";
 
 export default function OPERATE() {
   const [currentSection, setCurrentSection] = useState(1);
@@ -149,6 +150,9 @@ export default function OPERATE() {
           <Password onCorrectPassword={handleCorrectPassword} />
         </section>
       )}
+      <footer className="my-5">
+        <OtherMenu />
+      </footer>
     </div>
   );
 }

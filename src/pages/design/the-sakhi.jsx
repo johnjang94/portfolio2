@@ -141,6 +141,9 @@ export default function SAKHI() {
           <Password onCorrectPassword={handleCorrectPassword} />
         </section>
       )}
+      <footer className="my-5">
+        <OtherMenu />
+      </footer>
     </div>
   );
 }
