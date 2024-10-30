@@ -19,6 +19,7 @@ import NextSteps from "./operate/next-steps";
 import Retrospective from "./operate/retrospective";
 import StyleGuide from "./operate/style-guide";
 import OtherMenu from "../../components/footer2";
+import InitialSketch from "./operate/initial-sketch";
 
 export default function OPERATE() {
   const [currentSection, setCurrentSection] = useState(1);
@@ -122,6 +123,9 @@ export default function OPERATE() {
               </div>
               <div>
                 <Opportunity />
+              </div>
+              <div>
+                <InitialSketch />
               </div>
               <div>
                 <StyleGuide />

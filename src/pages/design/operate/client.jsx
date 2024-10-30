@@ -5,9 +5,9 @@ export default function Client() {
       <div className="md:mx-20 space-y-5">
         <p className="font-semibold">OperateEase</p>
         <p className="px-8">
-          An innovative SaaS platform that automates hotel management, reducing
-          stress, and enhancing customer experiences in the areas of restaurant,
-          lodging, and finance.
+          An innovative SaaS start-up platform that automates hotel management,
+          reducing stress, and enhancing customer experiences in the areas of
+          restaurant, lodging, and finance.
         </p>
       </div>
     </div>
