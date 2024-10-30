@@ -13,6 +13,10 @@ import CompetitiveAnalysis from "../assets/food-distro/competitive-analysis/comp
 import Filter from "../assets/food-distro/sketching/filter.jpeg";
 import Rating from "../assets/food-distro/sketching/rating.jpeg";
 
+// STYLE GUIDE
+import Fonts from "../assets/food-distro/style/fonts.png";
+import Component from "../assets/food-distro/style/components.png";
+
 // HIGH_FI DESIGNS
 import Search from "../assets/food-distro/solution/search-final.png";
 import Map from "../assets/food-distro/solution/map.png";
@@ -36,6 +40,8 @@ export const foodDistro = {
   FoodTaker,
   CompetitiveAnalysis,
   Filter,
+  Fonts,
+  Component,
   Rating,
   Search,
   Map,

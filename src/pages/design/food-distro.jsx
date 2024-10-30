@@ -14,6 +14,7 @@ import Sketching from "./food-distro/sketching";
 import Solutions from "./food-distro/solutions";
 import Retrospective from "./food-distro/retrospective";
 import NextSteps from "./food-distro/next-steps";
+import StyleGuide from "./food-distro/style-guide";
 
 export default function Food() {
   const [currentSection, setCurrentSection] = useState(1);
@@ -108,6 +109,9 @@ export default function Food() {
           </div>
           <div>
             <Sketching />
+          </div>
+          <div>
+            <StyleGuide />
           </div>
           <div id={3}>
             <Solutions />
