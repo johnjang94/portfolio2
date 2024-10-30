@@ -31,7 +31,7 @@ const data = [
     link: "/sakhi",
   },
   {
-    id: 4,
+    id: 3,
     imgSrc: home.FoodDistro,
     imgAlt: "Food Distro",
     icon: "",
@@ -40,7 +40,7 @@ const data = [
     link: "/food-distro",
   },
   {
-    id: 3,
+    id: 4,
     imgSrc: home.TuGo,
     imgAlt: "TuGo",
     icon: "",
@@ -138,9 +138,9 @@ export default function Home() {
                   item.id === 2
                     ? "bg-[#d1b2a1]"
                     : item.id === 3
-                    ? "bg-[radial-gradient(circle_311px_at_8.6%_27.9%,rgba(62,147,252,0.57)_12.9%,rgba(239,183,192,0.44)_91.2%)]"
-                    : item.id === 4
                     ? "bg-[radial-gradient(_circle_farthest-corner_at_10%_20%,rgba(255,209,67,1)_0%,rgba(255,145,83,1)_90%_)]"
+                    : item.id === 4
+                    ? "bg-[radial-gradient(circle_311px_at_8.6%_27.9%,rgba(62,147,252,0.57)_12.9%,rgba(239,183,192,0.44)_91.2%)]"
                     : item.id === 5
                     ? "bg-[radial-gradient(_circle_farthest-corner_at_48.4%_47.5%,rgba(122,183,255,1)_0%,rgba(21,83,161,1)_90%_)]"
                     : "bg-slate-400"
