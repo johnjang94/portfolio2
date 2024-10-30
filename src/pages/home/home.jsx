@@ -100,7 +100,7 @@ export default function Home() {
           item.id === 1 ? (
             <div key={item.id} className="space-y-3">
               <Link to={item.link}>
-                <div className="bg-[#7586fa] md:px-40 md:py-3 rounded-3xl">
+                <div className="bg-[#9bbcf6] md:px-40 md:py-3 rounded-3xl">
                   <img
                     src={item.imgSrc}
                     alt={item.imgAlt}

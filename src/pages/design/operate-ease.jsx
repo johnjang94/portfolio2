@@ -17,6 +17,7 @@ import Collaboration from "./operate/collaboration";
 import Impact from "./operate/impact";
 import NextSteps from "./operate/next-steps";
 import Retrospective from "./operate/retrospective";
+import StyleGuide from "./operate/style-guide";
 
 export default function OPERATE() {
   const [currentSection, setCurrentSection] = useState(1);
@@ -76,7 +77,7 @@ export default function OPERATE() {
         <img
           src={OperateEase.Demo}
           alt="Demo showcase"
-          width={1200}
+          width={800}
           className="rounded-3xl mx-auto"
         />
       </section>
@@ -120,6 +121,9 @@ export default function OPERATE() {
               </div>
               <div>
                 <Opportunity />
+              </div>
+              <div>
+                <StyleGuide />
               </div>
               <div id={3}>
                 <Solutions />
