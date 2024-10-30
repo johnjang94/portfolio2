@@ -18,7 +18,7 @@ const data = [
     imgAlt: "OperateEase",
     icon: "🔒",
     title: "Reimagined Hospitality Management - OperateEase",
-    category: ["Product Design", "SaaS product"],
+    category: ["Product Design", "SaaS product", "start-up"],
     link: "/operate",
   },
   {
@@ -27,7 +27,7 @@ const data = [
     imgAlt: "Sakhi",
     icon: "🔒",
     title: "Designing a Premium Indian Luxury - The Sakhi",
-    category: ["Product Design", "E-commerce"],
+    category: ["Product Design", "E-commerce", "start-up"],
     link: "/sakhi",
   },
   {
