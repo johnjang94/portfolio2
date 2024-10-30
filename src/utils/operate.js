@@ -17,6 +17,10 @@ import Cost from "../assets/oe/iteration/cost.png";
 import Room from "../assets/oe/iteration/room.png";
 import Statistics from "../assets/oe/iteration/statistics.png";
 
+// SKETCH
+import InitialDrawing from "../assets/oe/sketch/dashboard-sketch.jpeg";
+import Pricing from "../assets/oe/sketch/pricing.jpeg";
+
 // STYLE GUIDE
 import STYLE_GUIDE from "../assets/oe/style/style_guide.png";
 
@@ -35,6 +39,8 @@ export const OperateEase = {
   Cost,
   Room,
   Statistics,
+  InitialDrawing,
+  Pricing,
   STYLE_GUIDE,
   Developers,
   Zeplin,
