@@ -14,21 +14,21 @@ const titles = [
 const data = [
   {
     id: 1,
-    imgSrc: home.Sakhi,
-    imgAlt: "Sakhi",
-    icon: "🔒",
-    title: "Designing a Premium Indian Luxury - The Sakhi",
-    category: ["Product Design", "E-commerce"],
-    link: "/sakhi",
-  },
-  {
-    id: 2,
     imgSrc: home.OperateEase,
     imgAlt: "OperateEase",
     icon: "🔒",
     title: "Reimagined Hospitality Management - OperateEase",
     category: ["Product Design", "SaaS product"],
     link: "/operate",
+  },
+  {
+    id: 2,
+    imgSrc: home.Sakhi,
+    imgAlt: "Sakhi",
+    icon: "🔒",
+    title: "Designing a Premium Indian Luxury - The Sakhi",
+    category: ["Product Design", "E-commerce"],
+    link: "/sakhi",
   },
   {
     id: 3,
@@ -80,7 +80,7 @@ export default function Home() {
         </div>
         <p className="mt-6 lg:text-2xl text-xl leading-relaxed">
           Currently, I&#39;m a Product Designer at{" "}
-          <span className="font-bold">THE SAKHI</span>.
+          <span className="font-bold">OPERATION EASE</span>.
         </p>
         <div className="md:hidden flex justify-between">
           <Link
@@ -100,7 +100,7 @@ export default function Home() {
           item.id === 1 ? (
             <div key={item.id} className="space-y-3">
               <Link to={item.link}>
-                <div className="bg-[#d1b2a1] md:px-40 md:py-3 rounded-3xl">
+                <div className="bg-[#7586fa] md:px-40 md:py-3 rounded-3xl">
                   <img
                     src={item.imgSrc}
                     alt={item.imgAlt}
@@ -135,7 +135,9 @@ export default function Home() {
             >
               <div
                 className={`p-3 rounded-xl hover:shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,rgba(0,0,0,0.3)_0px_3px_7px_-3px] ${
-                  item.id === 3
+                  item.id === 2
+                    ? "bg-[#d1b2a1]"
+                    : item.id === 3
                     ? "bg-[radial-gradient(circle_311px_at_8.6%_27.9%,rgba(62,147,252,0.57)_12.9%,rgba(239,183,192,0.44)_91.2%)]"
                     : item.id === 4
                     ? "bg-[radial-gradient(_circle_farthest-corner_at_10%_20%,rgba(255,209,67,1)_0%,rgba(255,145,83,1)_90%_)]"

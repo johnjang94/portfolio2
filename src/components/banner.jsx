@@ -13,6 +13,7 @@ export default function Banner() {
       "/",
       "/home",
       "/about",
+      "/resume",
       "/televu",
       "/food-distro",
       "/tugo",

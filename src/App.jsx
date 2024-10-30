@@ -17,6 +17,7 @@ import Contact from "./pages/contact";
 
 // Wrong link
 import NotFound from "./pages/notfound";
+import Resume from "./pages/resume/resume";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,7 @@ const router = createBrowserRouter([
       { index: true, element: <Home /> },
       { path: "/home", element: <Home /> },
       { path: "/about", element: <About /> },
+      { path: "/resume", element: <Resume /> },
       // Design section
       { path: "/televu", element: <TeleVU /> },
       { path: "/food-distro", element: <Food /> },

@@ -31,6 +31,7 @@ export default function Nav({ pathname }) {
       "/",
       "/home",
       "/about",
+      "/resume",
       "/televu",
       "/food-distro",
       "/tugo",
@@ -138,6 +139,11 @@ export default function Nav({ pathname }) {
           <div className="block">
             <Link to="/about">
               <button>About Me</button>
+            </Link>
+          </div>
+          <div className="block">
+            <Link to="/resume">
+              <button>Resume</button>
             </Link>
           </div>
           <div>

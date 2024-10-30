@@ -13,6 +13,7 @@ export default function Root() {
       "/",
       "/home",
       "/about",
+      "/resume",
       "/design",
       "/televu",
       "/food-distro",
@@ -37,7 +38,8 @@ export default function Root() {
       pathname === "/tools" ||
       pathname === "/contact" ||
       pathname === "/experience" ||
-      pathname === "/about"
+      pathname === "/about" ||
+      pathname === "/resume"
     ) {
       return "bg-glow bg-cover";
     }
