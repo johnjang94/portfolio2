@@ -31,7 +31,7 @@ const data = [
     link: "/sakhi",
   },
   {
-    id: 3,
+    id: 4,
     imgSrc: home.FoodDistro,
     imgAlt: "Food Distro",
     icon: "",
@@ -40,7 +40,7 @@ const data = [
     link: "/food-distro",
   },
   {
-    id: 4,
+    id: 3,
     imgSrc: home.TuGo,
     imgAlt: "TuGo",
     icon: "",
