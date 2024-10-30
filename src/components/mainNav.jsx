@@ -4,10 +4,6 @@ import "./mainNav.css";
 import { useState } from "react";
 import PropTypes from "prop-types";
 
-// Photos
-import Home from "../assets/accessory/home.png";
-import Profile from "../assets/accessory/profile.png";
-
 import Logo from "/logo-512.png";
 import Logo2 from "/logo--white.png";
 
@@ -80,13 +76,6 @@ export default function Nav({ pathname }) {
                   } text-3xl text-end sm:text-base sm:text-start border-white-2 hover:bg-slate-300 sm:hover:bg-transparent sm:hover:text-blue-400 hover:cursor-pointer rounded-3xl`}
                 >
                   <Link to="/home">
-                    <img
-                      src={Home}
-                      alt="Home"
-                      width={300}
-                      className="md:hidden rounded-xl mx-auto"
-                    />
-
                     <button className="p-2">Home</button>
                   </Link>
                 </div>
@@ -96,14 +85,16 @@ export default function Nav({ pathname }) {
                   } text-3xl text-end sm:text-base sm:text-start border-white-2 hover:bg-slate-300 sm:hover:bg-transparent sm:hover:text-blue-400 hover:cursor-pointer rounded-3xl`}
                 >
                   <Link to="/about">
-                    <img
-                      src={Profile}
-                      alt="Profile picture"
-                      width={300}
-                      className="md:hidden mx-auto"
-                    />
-
                     <button className="p-2">About Me</button>
+                  </Link>
+                </div>
+                <div
+                  className={`${
+                    isMenuOpen ? "resume-slide-in" : ""
+                  } text-3xl text-end sm:text-base sm:text-start border-white-2 hover:bg-slate-300 sm:hover:bg-transparent sm:hover:text-blue-400 hover:cursor-pointer rounded-3xl`}
+                >
+                  <Link to="/resume">
+                    <button className="p-2">Resume</button>
                   </Link>
                 </div>
                 <div

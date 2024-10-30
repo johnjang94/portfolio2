@@ -58,26 +58,11 @@
 
 /* =============================================== */
 
-.design-slide-in {
-  animation: design-slide 2s ease-in-out forwards;
+.resume-slide-in {
+  animation: about-slide 2s ease-in-out forwards;
 }
 
-@keyframes design-slide {
-  0% {
-    transform: translateX(-500px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-/* =============================================== */
-
-.development-slide-in {
-  animation: development-slide 3s ease-in-out forwards;
-}
-
-@keyframes development-slide {
+@keyframes about-slide {
   0% {
     transform: translateX(-500px);
   }

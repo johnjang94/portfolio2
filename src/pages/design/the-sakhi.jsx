@@ -129,9 +129,6 @@ export default function SAKHI() {
               <div>
                 <NextSteps />
               </div>
-              <footer>
-                <OtherMenu />
-              </footer>
             </div>
           )}
         </section>
