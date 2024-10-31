@@ -9,6 +9,7 @@ import TwoNavigations from "../assets/televu/opportunity/two-navigations.jpeg";
 import Sketches from "../assets/televu/sketch/sketches.png";
 import MockUp from "../assets/televu/sketch/mock-up.png";
 import VideoSketch from "../assets/televu/sketch/video-sketch.png";
+import Branding from "../assets/televu/sketch/branding.png";
 
 // FINAL DESIGN
 import Video from "../assets/televu/solution/redesign-video.jpeg";
@@ -22,6 +23,7 @@ export const televu = {
   Sketches,
   MockUp,
   VideoSketch,
+  Branding,
   Video,
   Call,
   Initiated,
