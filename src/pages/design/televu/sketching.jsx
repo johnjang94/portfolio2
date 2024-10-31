@@ -39,6 +39,12 @@ export default function Sketching() {
             alt="Rating"
             className="text-3xl rounded-3xl"
           />
+          <img
+            src={televu.Branding}
+            width={900}
+            alt="Rating"
+            className="text-3xl rounded-3xl"
+          />
         </div>
       </div>
     </div>
