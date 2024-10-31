@@ -17,6 +17,10 @@ import Rating from "../assets/food-distro/sketching/rating.jpeg";
 import Fonts from "../assets/food-distro/style/fonts.png";
 import Component from "../assets/food-distro/style/components.png";
 
+// MOCK-UP & PROTOTYPE
+import MockUp from "../assets/food-distro/mock-up/mock-up.png";
+import Prototype from "../assets/food-distro/mock-up/prototype.png";
+
 // HIGH_FI DESIGNS
 import Search from "../assets/food-distro/solution/search-final.png";
 import Map from "../assets/food-distro/solution/map.png";
@@ -42,6 +46,8 @@ export const foodDistro = {
   Filter,
   Fonts,
   Component,
+  MockUp,
+  Prototype,
   Rating,
   Search,
   Map,
