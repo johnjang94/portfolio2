@@ -18,7 +18,7 @@ export default function Summary() {
         </div>
         <div className="flex gap-14">
           <p className="font-semibold">Timeline</p>
-          <p>6 weeks</p>
+          <p>10 weeks</p>
         </div>
       </div>
     </div>
