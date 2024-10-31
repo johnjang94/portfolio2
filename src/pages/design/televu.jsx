@@ -11,6 +11,7 @@ import Solutions from "./televu/solutions";
 import NextSteps from "./televu/next-steps";
 import OtherMenu from "../../components/footer2";
 import Retrospective from "./televu/retrospective";
+import Sketching from "./televu/sketching";
 
 export default function TeleVU() {
   const [currentSection, setCurrentSection] = useState(1);
@@ -96,6 +97,9 @@ export default function TeleVU() {
           </div>
           <div>
             <CompetitiveAnalysis />
+          </div>
+          <div>
+            <Sketching />
           </div>
           <div id={3}>
             <Solutions />
