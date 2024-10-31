@@ -22,15 +22,11 @@ export default function Overview() {
         </div>
         <div>
           <p className="font-semibold">Outcome</p>
-          <p className="px-8 py-5">Please stay tuned for further update.</p>
-          {/* <p className="p-5">
-            We implemented a simplified inventory system for lodging and
-            restaurant management, reducing time spent on occupancy checks,
-            stock monitoring, and vendor orders by{" "} */}
-          {/* <span className="text-blue-500">30%</span>, which is an average of{" "} */}
-          {/* */}
-          {/* <span className="text-blue-500">20 minutes</span>.
-          </p> */}
+          <p className="px-8 py-5">
+            3 out of 5 participants were optimistic with new content displays,
+            but they also pointed out that some terminologies might need to
+            change.
+          </p>
         </div>
       </div>
     </div>
