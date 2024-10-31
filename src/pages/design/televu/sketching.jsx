@@ -32,7 +32,7 @@ export default function Sketching() {
             session or leaving the video-call.
           </p>
         </ul>
-        <div className="bg-slate-300 p-5 space-y-5 rounded-3xl">
+        <div className="space-y-5">
           <img
             src={televu.MockUp}
             width={900}
