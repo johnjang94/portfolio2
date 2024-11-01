@@ -2,7 +2,7 @@ export default function Resume() {
   return (
     <section>
       <p className="text-center mt-10 md:text-2xl">
-        The following is my sample resume.
+        The following is my resume sample.
       </p>
       <div className="my-10">
         <iframe
