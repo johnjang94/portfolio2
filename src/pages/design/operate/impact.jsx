@@ -4,7 +4,9 @@ export default function Impact() {
       <h3 className="text-xl uppercase">Lessons Learned</h3>
       <ul className="md:mx-20 my-3 space-y-5">
         <li>
-          3 out of 5 participants thought that new metric contents are fresh.
+          <span className="text-blue-500">3 out of 5 participants</span> thought
+          that new metric contents are{" "}
+          <span className="text-blue-500">fresh</span>.
         </li>
         <li>
           2 participants thought that some of the terminologies that are used in

@@ -5,7 +5,7 @@ export default function Solutions() {
     <div>
       <h3 className="text-xl uppercase">Solutions</h3>
       <div className="md:mx-20 my-3 space-y-5">
-        <p className="font-bold">Solution 1 | Simplification</p>
+        <p className="font-bold">Solution 1 | Minimalistic Design</p>
         <p className="px-10">
           Users have a specialized, simple, and focused dashboard for different
           types of inventory (room occupancy, Food & Beverage materials)
@@ -22,7 +22,9 @@ export default function Solutions() {
             className="mx-auto"
           />
         </div>
-        <p className="font-bold">Solution 2 | Convenience</p>
+        <p className="font-bold">
+          Solution 2 | Display of Essential Information
+        </p>
         <p className="px-10">
           Users can check / modify room rates, the cost on goods sold, list of
           suppliers, order information, etc. on a click of a button from each

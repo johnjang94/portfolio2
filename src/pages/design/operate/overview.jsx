@@ -24,9 +24,10 @@ export default function Overview() {
         <div>
           <p className="font-semibold">Outcome</p>
           <p className="px-8 py-5">
-            3 out of 5 participants were optimistic with new content displays,
-            but they also pointed out that some terminologies might need to
-            change.
+            <span className="underline">3 out of 5 participants</span> were{" "}
+            <span className="text-blue-500">optimistic</span> with new content
+            displays, but they also pointed out that some terminologies might
+            need to change.
           </p>
         </div>
       </div>

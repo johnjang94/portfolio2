@@ -8,7 +8,7 @@ export default function Collaboration() {
         As I am familiar with Full-Stack Development (to a certain extent), I
         helped the team to leave a good web design annotation note and I also
         initiated development environment setup. In fact, we also used Zeplin to
-        deploy the design file.
+        indicate the specifications for the development team.
       </p>
       <img
         src={OperateEase.Zeplin}
