@@ -2,16 +2,15 @@ import { sakhi } from "../../../utils/sakhi";
 
 export default function CompetitiveAnalysis() {
   return (
-    <div className="space-y-5">
-      <h3 className="text-xl uppercase">Competitive Analysis</h3>
+    <div className="space-y-5 py-5">
+      <p className="text-xl font-semibold text-center">
+        What would make them come back and shop again?
+      </p>
       <div className="md:mx-20 space-y-5">
         <ul className="list-disc space-y-5">
           <p>
-            As The Sakhi is a new start-up brand, we needed to understand what
-            existing brands offer to shoppers in-depth first. We have decided to
-            conduct a thorough investigation in terms of the following
-            categories on the following 7 of direct or indirect benchmarked
-            companies for The Sakhi:
+            We have decided to benchmark 7 brands that are currently
+            well-established for The Sakhi:
           </p>
           <div className="space-y-2">
             <li className="mx-10">Product Quality</li>
