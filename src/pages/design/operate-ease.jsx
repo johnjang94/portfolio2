@@ -12,13 +12,12 @@ import Opportunity from "./operate/opportunities";
 import Solutions from "./operate/solutions";
 import Collaboration from "./operate/collaboration";
 import Impact from "./operate/impact";
-import NextSteps from "./operate/next-steps";
 import Retrospective from "./operate/retrospective";
 import StyleGuide from "./operate/style-guide";
 import OtherMenu from "../../components/footer2";
 import InitialSketch from "./operate/initial-sketch";
-import Motive from "./operate/motive";
-import Background from "./operate/background";
+import TheStory from "./operate/the-story";
+import MidFi from "./operate/mid-fi";
 
 export default function OPERATE() {
   const [currentSection, setCurrentSection] = useState(1);
@@ -66,14 +65,6 @@ export default function OPERATE() {
 
   return (
     <div>
-      {/* <header>
-        <h3 className="mt-14 mb-4 md:w-7/12 md:text-center md:mx-14 mx-10 text-base md:text-2xl">
-          Product Design for Hospitality
-        </h3>
-        <h1 className="my-9 md:w-5/12 md:text-center mx-10 md:mx-44 md:text-5xl text-lg">
-          OPERATE-EASE
-        </h1>
-      </header> */}
       <section className="my-10 w-5/6 mx-auto">
         <div className="bg-gradient-to-b from-slate-500 to-transparent p-5 rounded-xl">
           <img
@@ -105,17 +96,14 @@ export default function OPERATE() {
           />
         </div>
         <section className="md:w-4/6 mx-10 my-5 md:my-28 space-y-20">
-          <div id="1">
-            <Overview />
+          <div id={1}>
+            <TheStory />
           </div>
           <div>
-            <Motive />
+            <Overview />
           </div>
           {isPasswordCorrect && (
             <div className="my-5 md:my-28 space-y-20">
-              <div>
-                <Background />
-              </div>
               <div>
                 <Insight />
               </div>
@@ -138,6 +126,9 @@ export default function OPERATE() {
                 <InitialSketch />
               </div>
               <div>
+                <MidFi />
+              </div>
+              <div>
                 <StyleGuide />
               </div>
               <div id={3}>
@@ -147,13 +138,10 @@ export default function OPERATE() {
                 <Impact />
               </div>
               <div>
-                <Collaboration />
-              </div>
-              <div>
                 <Retrospective />
               </div>
               <div>
-                <NextSteps />
+                <Collaboration />
               </div>
             </div>
           )}
