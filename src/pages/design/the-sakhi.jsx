@@ -1,9 +1,6 @@
 import { useEffect, useState } from "react";
 import ContentNav from "../../components/contentNav";
 import Summary from "./sakhi/summary";
-import MissionObjective from "./sakhi/mission-objective";
-import Accomplishments from "./sakhi/accomplishments";
-import Client from "./sakhi/client";
 import Motive from "./sakhi/motive";
 import Password from "../../components/lock/password";
 import CompetitiveAnalysis from "./sakhi/competitive-analysis";
@@ -63,21 +60,29 @@ export default function SAKHI() {
 
   return (
     <div>
-      <header>
-        <h3 className="mt-14 mb-4 md:w-8/12 md:text-center md:mx-14 mx-10 text-base md:text-2xl">
-          Product Design for E-commerce
-        </h3>
-        <h1 className="my-9 md:w-5/12 md:text-center mx-10 md:mx-44 md:text-5xl text-lg">
-          THE SAKHI
-        </h1>
-      </header>
-      <section className="bg-slate-500 p-5 rounded-xl w-5/6 mx-auto">
-        <img
-          src={sakhi.Demo}
-          alt="Demo showcase"
-          width={800}
-          className="rounded-3xl mx-auto"
-        />
+      <section>
+        <div className="bg-gradient-to-b from-slate-500 to-transparent my-10 p-10 rounded-xl mx-10 md:flex md:items-start md:gap-3">
+          <div className="text-white">
+            <h1 className="text-center md:text-5xl text-lg my-5">THE SAKHI</h1>
+            <div className="space-y-5">
+              <p className="px-10">
+                A specialized e-commerce platform (a start-up) that offers
+                unique and traditional products for extraordinary life events
+                such as wedding, festival, etc.
+              </p>
+            </div>
+            <div className="md:mx-10 my-10">
+              <p>My role</p>
+              <p className="font-bold">Associate Product Designer</p>
+            </div>
+          </div>
+          <img
+            src={sakhi.Demo}
+            alt="Demo showcase"
+            width={750}
+            className="rounded-3xl mx-auto"
+          />
+        </div>
       </section>
       <section className="md:flex md:flex-1">
         <div>
@@ -88,20 +93,11 @@ export default function SAKHI() {
           />
         </div>
         <section className="md:w-4/6 mx-10 my-5 md:my-28 space-y-20">
-          <div id={1}>
-            <Summary />
-          </div>
-          <div>
-            <MissionObjective />
-          </div>
-          <div>
-            <Accomplishments />
-          </div>
-          <div>
-            <Client />
-          </div>
           <div>
             <Motive />
+          </div>
+          <div>
+            <Summary />
           </div>
           {isPasswordCorrect && (
             <div className="my-5 md:my-28 space-y-20">
