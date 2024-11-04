@@ -4,9 +4,10 @@ export default function Overview() {
       <h3 className="text-xl">OVERVIEW</h3>
       <div className="md:mx-20 my-3 space-y-5">
         <div>
-          <p className="font-semibold">Problem</p>
+          <p className="font-semibold">At Issue</p>
           <p className="p-5">
-            Many hotelier managers find the inventory management{" "}
+            Many hotelier managers find the existing inventory management from
+            other brands{" "}
             <span className="text-red-500">difficult to control</span>.
           </p>
           <div className="px-8 space-y-3">

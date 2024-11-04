@@ -5,8 +5,8 @@ export default function Opportunity() {
       <ul className="md:mx-20 my-5 space-y-5 list-decimal">
         <li className="font-bold">Simplification</li>
         <p className="px-10">
-          After the tutorial from Pet Pooja, I rather ended up having some
-          doubts such as...
+          After the tutorial from Pet Pooja (gif above), I rather ended up
+          having some doubts such as...
         </p>
         <p className="px-18 py-3 text-red-500">
           If the design was straight-forward and intuitive, would the tutorial

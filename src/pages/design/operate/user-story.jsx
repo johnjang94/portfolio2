@@ -1,7 +1,7 @@
 export default function UserStory() {
   return (
     <div>
-      <h3 className="text-xl uppercase">User Story</h3>
+      <h3 className="text-xl uppercase">Sparing my hands...</h3>
       <div className="md:mx-20 my-3 space-y-3">
         <p className="font-bold">
           Out of all the project scopes (lodging, restaurant, finance, etc), I
