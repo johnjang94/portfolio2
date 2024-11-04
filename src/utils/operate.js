@@ -21,6 +21,10 @@ import Statistics from "../assets/oe/iteration/statistics.png";
 import InitialDrawing from "../assets/oe/sketch/dashboard-sketch.jpeg";
 import Pricing from "../assets/oe/sketch/pricing.jpeg";
 
+// MID-FI
+import RoomDashboard from "../assets/oe/iteration/occupancy-dashboard.png";
+import FoodDashboard from "../assets/oe/iteration/food-dashboard-explained.png";
+
 // STYLE GUIDE
 import STYLE_GUIDE from "../assets/oe/style/style_guide.png";
 
@@ -41,6 +45,8 @@ export const OperateEase = {
   Statistics,
   InitialDrawing,
   Pricing,
+  RoomDashboard,
+  FoodDashboard,
   STYLE_GUIDE,
   Developers,
   Zeplin,

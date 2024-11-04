@@ -12,14 +12,17 @@ export default function Retrospective() {
             not a business-person yet, it was a good opportunity to find out
             what a business model looks like and how it works in reality.
           </p>
-          <li className="text-blue-500">
-            Best Lesson 2 | Discovery of Unknown
-          </li>
+          <li className="text-blue-500">Best Lesson 2 | The Pivot</li>
           <p className="px-5">
-            It was a journey to understand the system and the need of market.
-            Compared to other projects which were redesign of existing products,
-            this was a design of launching a new product. We needed to iterate
-            multiple times to meet the assessment and the need.
+            We were originally planning to combine the inventory dashboard for
+            the room management and the food / beverage inventory. After the
+            initial iteration and the usability testing on the initial
+            iteration, we came to realize that we could offer two specialized
+            management dashboards for room management and the food / beverage
+            inventory. In fact, this gave us an option to offer our services in
+            the concept of bundles. Having said that, we ended up creating two
+            different dashboards that are specifically focused on each type of
+            activity.
           </p>
         </ul>
       </div>
