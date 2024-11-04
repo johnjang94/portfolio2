@@ -14,15 +14,10 @@ export default function Retrospective() {
           </p>
           <li className="text-blue-500">Best Lesson 2 | The Pivot</li>
           <p className="px-5">
-            We were originally planning to combine the inventory dashboard for
-            the room management and the food / beverage inventory. After the
-            initial iteration and the usability testing on the initial
-            iteration, we came to realize that we could offer two specialized
-            management dashboards for room management and the food / beverage
-            inventory. In fact, this gave us an option to offer our services in
-            the concept of bundles. Having said that, we ended up creating two
-            different dashboards that are specifically focused on each type of
-            activity.
+            The pivot was a good choice because we were able to keeping our own
+            statement that we will keep the product easy-to-use. If we decided
+            to combine everything in all-in-one solution, I think that we might
+            have ended up complicating activities.
           </p>
         </ul>
       </div>

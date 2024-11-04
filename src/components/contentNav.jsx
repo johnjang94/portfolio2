@@ -37,7 +37,7 @@ export default function ContentNav({ currentSection, pathname }) {
       ];
     } else if (pathname === "/operate") {
       updatedSections = [
-        { id: 1, label: "Summary" },
+        { id: 1, label: "Background" },
         { id: 2, label: "Insight" },
         { id: 3, label: "Solutions" },
       ];
