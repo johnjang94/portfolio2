@@ -10,9 +10,9 @@ export default function CompetitiveAnalysis() {
             I needed to know how other established brands are like in order to
             produce a product that can be competitive:
           </p>
-          <li className="px-10">sales and revenues</li>
-          <li className="px-10">key statistics</li>
-          <li className="px-10">operation expenses</li>
+          <li className="mx-10">sales and revenues</li>
+          <li className="mx-10">key statistics</li>
+          <li className="mx-10">operation expenses</li>
         </ul>
         <img
           src={OperateEase.Competition}
@@ -25,10 +25,10 @@ export default function CompetitiveAnalysis() {
             Still, they <span className="text-red-500">fall short</span> on the
             following points despite the benefits:
           </p>
-          <li className="px-10">
+          <li className="mx-10">
             overwhelming amount of information on the dashboard
           </li>
-          <li className="px-10">customization is limited</li>
+          <li className="mx-10">customization is limited</li>
         </ul>
       </div>
     </div>
