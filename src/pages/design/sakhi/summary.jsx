@@ -2,29 +2,29 @@ export default function Summary() {
   return (
     <div>
       <h3 className="text-xl uppercase">Summary</h3>
-      <div className="md:mx-20 my-5 space-y-5">
-        <div className="flex gap-[5.5rem]">
-          <p className="font-semibold">Role</p>
-          <ul>
-            <li>Product Designer</li>
-            <li>UX Research Assistant</li>
-          </ul>
-        </div>
-        <div className="flex gap-20">
-          <p className="font-semibold">Team</p>
-          <ul>
-            <li>1 Product Designer</li>
-            <li>1 UX/UI Designer</li>
-            <li>2 UX Researchers</li>
-            <li>1 Project Manager</li>
-            <li>1 Product Manager</li>
-          </ul>
-        </div>
-        <div className="flex gap-14">
-          <p className="font-semibold">Timeline</p>
-          <div>
-            <p>17 weeks</p>
+      <div className="md:mx-20 my-3 space-y-5">
+        <div>
+          <p className="font-semibold">At Issue</p>
+          <p className="p-5">
+            70% shoppers who visit online shopping platforms such as Zara,
+            Prada, H&M, etc. {""}
+            <span className="text-red-500">do not</span> find Indian platforms
+            as friendly.
+          </p>
+          <div className="px-8 space-y-3">
+            <p>
+              Problem 1 | Navigation is{" "}
+              <span className="text-red-500">overwhelming</span>
+            </p>
+            <p>Problem 2 | It is hard to catch up with all the holidays</p>
           </div>
+        </div>
+        <div>
+          <p className="font-semibold">Outcome</p>
+          <p className="px-8 py-5">
+            We have reached <span className="text-blue-500">3.5% CTR</span>{" "}
+            during the pilot phase.
+          </p>
         </div>
       </div>
     </div>
