@@ -102,11 +102,12 @@ export default function SAKHI() {
           {isPasswordCorrect && (
             <div className="my-5 md:my-28 space-y-20">
               <div>
-                <CompetitiveAnalysis />
-              </div>
-              <div>
                 <UserPersona />
               </div>
+              <div>
+                <CompetitiveAnalysis />
+              </div>
+
               <div>
                 <Insights />
               </div>
