@@ -104,7 +104,7 @@ export default function OPERATE() {
           </div>
           {isPasswordCorrect && (
             <div className="my-5 md:my-28 space-y-20">
-              <div>
+              <div id={2}>
                 <Insight />
               </div>
               <div>
