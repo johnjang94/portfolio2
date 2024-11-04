@@ -1,11 +1,8 @@
 import { useEffect, useState } from "react";
 import { OperateEase } from "../../utils/operate";
 import ContentNav from "../../components/contentNav";
-import Summary from "./operate/summary";
 import Password from "../../components/lock/password";
 import Overview from "./operate/overview";
-import Client from "./operate/client";
-import Assumptions from "./operate/assumptions";
 import Insight from "./operate/insights";
 import ProblemStatement from "./operate/problem-statement";
 import UserPersona from "./operate/user-persona";
@@ -20,6 +17,8 @@ import Retrospective from "./operate/retrospective";
 import StyleGuide from "./operate/style-guide";
 import OtherMenu from "../../components/footer2";
 import InitialSketch from "./operate/initial-sketch";
+import Motive from "./operate/motive";
+import Background from "./operate/background";
 
 export default function OPERATE() {
   const [currentSection, setCurrentSection] = useState(1);
@@ -67,21 +66,35 @@ export default function OPERATE() {
 
   return (
     <div>
-      <header>
+      {/* <header>
         <h3 className="mt-14 mb-4 md:w-7/12 md:text-center md:mx-14 mx-10 text-base md:text-2xl">
           Product Design for Hospitality
         </h3>
         <h1 className="my-9 md:w-5/12 md:text-center mx-10 md:mx-44 md:text-5xl text-lg">
           OPERATE-EASE
         </h1>
-      </header>
-      <section className="bg-slate-500 p-5 rounded-xl w-5/6 mx-auto">
-        <img
-          src={OperateEase.Demo}
-          alt="Demo showcase"
-          width={800}
-          className="rounded-3xl mx-auto"
-        />
+      </header> */}
+      <section className="my-10 w-5/6 mx-auto">
+        <div className="bg-gradient-to-b from-slate-500 to-transparent p-5 rounded-xl">
+          <img
+            src={OperateEase.Demo}
+            alt="Demo showcase"
+            width={800}
+            className="rounded-3xl mx-auto my-5"
+          />
+        </div>
+        <h1 className="text-center md:text-7xl text-lg my-5">OPERATE-EASE</h1>
+        <div className="md:mx-44 space-y-5">
+          <p className="px-8">
+            An innovative SaaS start-up platform that aims to automate hotel
+            management, reducing stress, and enhancing customer experiences in
+            the areas of restaurant, lodging, and finance.
+          </p>
+        </div>
+        <div className="flex items-center space-x-5 my-10 md:mx-52 mx-8">
+          <p>My role</p>
+          <p className="font-bold">Associate Product Designer</p>
+        </div>
       </section>
       <section className="md:flex md:flex-1">
         <div>
@@ -92,21 +105,18 @@ export default function OPERATE() {
           />
         </div>
         <section className="md:w-4/6 mx-10 my-5 md:my-28 space-y-20">
-          <div id={1}>
-            <Summary />
-          </div>
-          <div>
+          <div id="1">
             <Overview />
           </div>
           <div>
-            <Client />
+            <Motive />
           </div>
           {isPasswordCorrect && (
             <div className="my-5 md:my-28 space-y-20">
               <div>
-                <Assumptions />
+                <Background />
               </div>
-              <div id={2}>
+              <div>
                 <Insight />
               </div>
               <div>

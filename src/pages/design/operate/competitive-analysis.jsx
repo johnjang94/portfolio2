@@ -7,8 +7,8 @@ export default function CompetitiveAnalysis() {
       <div className="md:mx-20 space-y-5">
         <ul className="list-disc space-y-3">
           <p className="font-bold">
-            When it comes to the inventory management, the direct competitor
-            offers useful information such as
+            I needed to know how other established brands are like in order to
+            produce a product that can be competitive:
           </p>
           <li className="px-10">sales and revenues</li>
           <li className="px-10">key statistics</li>

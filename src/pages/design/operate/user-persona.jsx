@@ -3,8 +3,7 @@ import { OperateEase } from "../../../utils/operate";
 export default function UserPersona() {
   return (
     <div>
-      <h3 className="text-xl uppercase">User Persona</h3>
-      <p className="md:mx-20 mt-5">
+      <p className="md:mx-28 mt-5">
         Regardless of the hotel size and rating, many hotelier managers have the
         similar voice:
       </p>
@@ -13,8 +12,9 @@ export default function UserPersona() {
       </p>
       <img
         src={OperateEase.Persona}
+        width={800}
         alt="User Persona Example"
-        className="text-3xl rounded-3xl"
+        className="text-3xl rounded-3xl mx-auto"
       />
     </div>
   );
