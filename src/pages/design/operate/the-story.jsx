@@ -8,8 +8,8 @@ export default function TheStory() {
           technology is one of the essential tools to{" "}
           <span className="text-blue-500">the success of hotel business</span>.
           This industry{" "}
-          <span className="text-red-500">lost over 4.6 million jobs</span>
-          in 2020 due to <span className="text-red-500">pandemic</span> and the
+          <span className="text-red-500">lost over 4.6 million jobs</span> in
+          2020 due to <span className="text-red-500">pandemic</span> and the
           majority actively seeked to recover from the loss by implementing
           management software such as Hotel Management Software (HMS) and
           Property Management Software (PMS). Despite the attempts, the
