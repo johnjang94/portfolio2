@@ -12,12 +12,17 @@ import Vegha from "../assets/sakhi/user-persona/user-persona-2.png";
 import HomeVersionOne from "../assets/sakhi/sketch/home-attempt-1.png";
 import HomeVersionTwo from "../assets/sakhi/sketch/home-attempt-2.png";
 import HomeVersionThree from "../assets/sakhi/sketch/home-attempt-3.png";
+import Stakeholder from "../assets/sakhi/sketch/stakeholder.png";
+import Navigation from "../assets/sakhi/sketch/navigation-1.png";
+import Navigation2 from "../assets/sakhi/sketch/navigation-2.png";
+import Navigation3 from "../assets/sakhi/sketch/navigation-3.png";
 
 // SHOPIFY DEVELOPERS
 import Shopify from "../assets/sakhi/developers/code.png";
 
 // SOLUTION
 import Solution1 from "../assets/sakhi/solution/solution-1.png";
+import NavigationSolution from "../assets/sakhi/solution/navigation-solution.png";
 import Solution2 from "../assets/sakhi/solution/new-product-detail.gif";
 
 export const sakhi = {
@@ -28,7 +33,12 @@ export const sakhi = {
   HomeVersionOne,
   HomeVersionTwo,
   HomeVersionThree,
+  Stakeholder,
+  Navigation,
+  Navigation2,
+  Navigation3,
   Shopify,
   Solution1,
+  NavigationSolution,
   Solution2,
 };

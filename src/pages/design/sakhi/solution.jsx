@@ -9,17 +9,22 @@ export default function Solutions() {
           <p className="font-semibold">Iteration 1 | Re-imagined Elegance</p>
           <ul className="px-10 space-y-3">
             <p>
-              We created a few pages including home page, product-display page,
-              product detail, etc. that reflect the brand&#39;s colors and
-              designed a seamless shopping experience requiring no further
-              assistance.
+              We simplified navigation menu and created a few pages including
+              home page, product-display page, product detail, etc. that reflect
+              the brand&#39;s colors.
             </p>
           </ul>
-          <div className="p-3 bg-white rounded-3xl w-fit mx-auto">
+          <div className="p-3 bg-white rounded-3xl w-fit mx-auto space-y-5">
             <img
               src={sakhi.Solution1}
               alt="Re-imagined home page"
               width={800}
+            />
+            <img
+              src={sakhi.NavigationSolution}
+              alt="Navigation on home page"
+              width={800}
+              className="rounded-2xl"
             />
           </div>
         </div>
