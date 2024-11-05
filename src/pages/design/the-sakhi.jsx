@@ -13,6 +13,7 @@ import { sakhi } from "../../utils/sakhi";
 import Retrospective from "./sakhi/retrospective";
 import NextSteps from "./sakhi/next-steps";
 import OtherMenu from "../../components/footer2";
+import InitialSketch from "./sakhi/sketching";
 
 export default function SAKHI() {
   const [currentSection, setCurrentSection] = useState(1);
@@ -66,9 +67,9 @@ export default function SAKHI() {
             <h1 className="text-center md:text-5xl text-lg my-5">THE SAKHI</h1>
             <div className="space-y-5">
               <p className="px-10">
-                A specialized e-commerce platform (a start-up) that offers
-                unique and traditional products for extraordinary life events
-                such as wedding, festival, etc.
+                A specialized e-commerce platform (a start-up) that is built on
+                Shopify and offers unique and traditional products for
+                extraordinary life events such as wedding, festival, etc.
               </p>
             </div>
             <div className="md:mx-10 my-10">
@@ -96,7 +97,7 @@ export default function SAKHI() {
           <div>
             <Motive />
           </div>
-          <div>
+          <div id={1}>
             <Summary />
           </div>
           {isPasswordCorrect && (
@@ -105,16 +106,18 @@ export default function SAKHI() {
                 <UserPersona />
               </div>
               <div>
-                <CompetitiveAnalysis />
-              </div>
-
-              <div>
                 <Insights />
+              </div>
+              <div>
+                <CompetitiveAnalysis />
               </div>
               <div id={2}>
                 <Opportunity />
               </div>
-              <div id={3}>
+              <div>
+                <InitialSketch />
+              </div>
+              <div>
                 <Solutions />
               </div>
               <div>
