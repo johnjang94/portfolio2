@@ -18,7 +18,7 @@ export default function Resume() {
         >
           here
         </a>
-        <p>for more information.</p>
+        <p>for the most up-to-date information.</p>
       </div>
     </section>
   );
