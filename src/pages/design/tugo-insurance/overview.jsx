@@ -7,18 +7,8 @@ export default function Overview() {
           <p className="font-semibold">Problem</p>
           <div className="p-5">
             <p>
-              The retention and the conversion rates for TuGo Travel Insurance
-              is low.
-            </p>
-            <p>How might we increase the sales?</p>
-          </div>
-        </div>
-        <div>
-          <p className="font-semibold">Mission Objective</p>
-          <div className="p-5">
-            <p>
-              In this phase, the goal was to raise the click-through-rate (CTR)
-              to <span className="text-blue-500">6%</span>.
+              The retention and the conversion rates for TuGo Insurance have
+              been continuously dropping for the last quarter.
             </p>
           </div>
         </div>
@@ -30,8 +20,8 @@ export default function Overview() {
               <span className="text-blue-500">
                 3 out of 5 potential travelers
               </span>{" "}
-              have successfully explored the insurance products and ordered
-              insurance packages.
+              have successfully explored the insurance products and got a chance
+              to know what services TuGo Insurance offers.
             </p>
           </div>
         </div>

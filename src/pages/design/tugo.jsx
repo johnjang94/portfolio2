@@ -1,11 +1,8 @@
 import { useEffect, useState } from "react";
 import { tugoInsurance } from "../../utils/tugo-insurance";
 import ContentNav from "../../components/contentNav";
-import Summary from "./tugo-insurance/summary";
 import Overview from "./tugo-insurance/overview";
-import Motive from "./tugo-insurance/motive";
 import DataMetrics from "./tugo-insurance/data-metrics";
-import Project from "./tugo-insurance/project";
 import Assumption from "./tugo-insurance/assumption";
 import Opportunities from "./tugo-insurance/opportunities";
 import CompetitiveAnalysis from "./tugo-insurance/competitive-analysis";
@@ -56,23 +53,31 @@ export default function TuGo() {
   }, []);
   return (
     <div>
-      <header>
-        <h3 className="mt-14 mb-4 md:w-8/12 md:text-center md:mx-24 mx-9 text-lg md:text-2xl">
-          UX/UI Design for a web application
-        </h3>
-        <h1 className="mt-9 md:w-8/12 md:text-center mx-9 md:mx-52 my-10 md:text-5xl text-lg">
-          TUGO TRAVEL INSURANCE
-        </h1>
-      </header>
-      <section className="bg-slate-500 p-5 rounded-xl w-5/6 mx-auto">
-        {/* Demo banner */}
-        <img
-          src={tugoInsurance.Demo}
-          alt="Demo showcase"
-          className="rounded-xl mx-auto"
-        />
+      <section className="my-10 mx-auto">
+        <div className="bg-gradient-to-b from-slate-500 to-transparent mx-10 p-5 rounded-xl">
+          <img
+            src={tugoInsurance.Demo}
+            alt="Demo showcase"
+            width={800}
+            className="rounded-xl mx-auto m-5"
+          />
+        </div>
+        <div className="md:mx-14">
+          <h1 className="text-center md:text-7xl text-lg my-5">
+            TUGO INSURANCE
+          </h1>
+          <div className="md:mx-44 space-y-5">
+            <p className="px-8">
+              An insurance brokerage that offers the most optimized travel
+              insurance packages to travelers.
+            </p>
+          </div>
+          <div className="flex items-center space-x-5 my-10 md:mx-52 mx-8">
+            <p>My role</p>
+            <p className="font-bold">Associate UX/UI Designer</p>
+          </div>
+        </div>
       </section>
-      {/* Main content */}
       <section className="md:flex md:flex-1 gap-10">
         <div>
           <ContentNav
@@ -83,16 +88,7 @@ export default function TuGo() {
         </div>
         <section className="md:w-4/6 mx-10 my-5 md:my-28 space-y-20">
           <div id={1}>
-            <Summary />
-          </div>
-          <div>
             <Overview />
-          </div>
-          <div>
-            <Project />
-          </div>
-          <div id={2}>
-            <Motive />
           </div>
           <div>
             <DataMetrics />
@@ -103,7 +99,7 @@ export default function TuGo() {
           <div>
             <Assumption />
           </div>
-          <div>
+          <div id={2}>
             <Opportunities />
           </div>
           <div>

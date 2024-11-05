@@ -25,13 +25,6 @@ export default function Retrospective() {
             sales, it may be difficult to say that the new design is practically
             a valuable (or useful) design.
           </p>
-          <li className="text-red-500">
-            Best Lesson 3 | A high CTR does not guarantee more sales
-          </li>
-          <p className="px-5">
-            Many of the travelers evaluated the packages by comparing its value
-            to its price, while also considering its necessity.
-          </p>
         </ul>
       </div>
     </div>
