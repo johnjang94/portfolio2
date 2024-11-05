@@ -80,7 +80,7 @@ export default function Home() {
         </div>
         <p className="mt-6 lg:text-2xl text-xl leading-relaxed">
           Currently, I&#39;m a Product Designer at{" "}
-          <span className="font-bold">OPERATION EASE</span>.
+          <span className="font-bold">OPERATION-EASE</span>.
         </p>
         <p className="mt-3">open to Product Design or UX/UI Design roles!</p>
         <div className="md:hidden flex justify-between">

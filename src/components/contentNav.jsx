@@ -31,7 +31,7 @@ export default function ContentNav({ currentSection, pathname }) {
       ];
     } else if (pathname === "/sakhi") {
       updatedSections = [
-        { id: 1, label: "Summary" },
+        { id: 1, label: "The Motive" },
         { id: 2, label: "Opportunity" },
         { id: 3, label: "Solutions" },
       ];

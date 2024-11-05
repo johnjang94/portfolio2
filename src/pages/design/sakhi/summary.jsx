@@ -16,7 +16,10 @@ export default function Summary() {
               Problem 1 | Navigation is{" "}
               <span className="text-red-500">overwhelming</span>
             </p>
-            <p>Problem 2 | It is hard to catch up with all the holidays</p>
+            <p>
+              Problem 2 | It is hard to catch up with all the holidays in
+              connection to the clothes
+            </p>
           </div>
         </div>
         <div>
