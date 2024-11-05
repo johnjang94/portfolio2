@@ -66,15 +66,15 @@ export default function TuGo() {
           <h1 className="text-center md:text-7xl text-lg my-5">
             TUGO INSURANCE
           </h1>
-          <div className="md:mx-44 space-y-5">
-            <p className="px-8">
+          <div className="md:mx-44 space-y-5 md:px-5">
+            <p className="px-12">
               An insurance brokerage that offers the most optimized travel
               insurance packages to travelers.
             </p>
-          </div>
-          <div className="flex items-center space-x-5 my-10 md:mx-52 mx-8">
-            <p>My role</p>
-            <p className="font-bold">Associate UX/UI Designer</p>
+            <div className="flex items-center space-x-5 px-12">
+              <p>My role</p>
+              <p className="font-bold">Associate UX/UI Designer</p>
+            </div>
           </div>
         </div>
       </section>
