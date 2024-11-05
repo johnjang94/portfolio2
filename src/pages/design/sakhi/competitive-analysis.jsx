@@ -7,24 +7,10 @@ export default function CompetitiveAnalysis() {
         What would make them come back and shop again?
       </p>
       <div className="md:mx-20 space-y-5">
-        <ul className="list-disc space-y-5">
-          <p>
-            We have decided to benchmark 7 brands that are currently
-            well-established for The Sakhi:
-          </p>
-          <div className="space-y-2">
-            <li className="mx-10">Product Quality</li>
-          </div>
-          <div className="space-y-2">
-            <li className="mx-10">Price</li>
-          </div>
-          <div className="space-y-2">
-            <li className="mx-10">Categorization</li>
-          </div>
-          <div className="space-y-2">
-            <li className="mx-10">Web Usability</li>
-          </div>
-        </ul>
+        <p>
+          We have decided to benchmark 7 brands that are currently
+          well-established for The Sakhi:
+        </p>
         <img
           src={sakhi.competition}
           alt="Competitive analysis"

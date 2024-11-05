@@ -8,6 +8,11 @@ import competition from "../assets/sakhi/competitive-analysis/collection.png";
 import Caterina from "../assets/sakhi/user-persona/user-persona-4.png";
 import Vegha from "../assets/sakhi/user-persona/user-persona-2.png";
 
+// ITERATION
+import HomeVersionOne from "../assets/sakhi/sketch/home-attempt-1.png";
+import HomeVersionTwo from "../assets/sakhi/sketch/home-attempt-2.png";
+import HomeVersionThree from "../assets/sakhi/sketch/home-attempt-3.png";
+
 // SHOPIFY DEVELOPERS
 import Shopify from "../assets/sakhi/developers/code.png";
 
@@ -20,6 +25,9 @@ export const sakhi = {
   competition,
   Caterina,
   Vegha,
+  HomeVersionOne,
+  HomeVersionTwo,
+  HomeVersionThree,
   Shopify,
   Solution1,
   Solution2,
