@@ -9,9 +9,6 @@ export default function Retrospective() {
             This was one of the most essential features that was needed by
             users.
           </p>
-          <p className="px-10">
-            8 out of 10 participants were able to search for food items.
-          </p>
         </div>
         <div className="space-y-3">
           <p className="font-semibold">Chat feature</p>
