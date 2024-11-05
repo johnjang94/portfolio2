@@ -65,8 +65,8 @@ export default function OPERATE() {
 
   return (
     <div>
-      <section className="my-10 w-5/6 mx-auto">
-        <div className="bg-gradient-to-b from-slate-500 to-transparent p-5 rounded-xl">
+      <section className="my-10 mx-auto">
+        <div className="bg-gradient-to-b from-slate-500 to-transparent mx-10 p-5 rounded-xl">
           <img
             src={OperateEase.Demo}
             alt="Demo showcase"
