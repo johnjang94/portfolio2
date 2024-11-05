@@ -20,7 +20,7 @@ export default function ContentNav({ currentSection, pathname }) {
     } else if (pathname === "/food-distro") {
       updatedSections = [
         { id: 1, label: "Summary" },
-        { id: 2, label: "Problem Statement" },
+        { id: 2, label: "Opportunity" },
         { id: 3, label: "Solutions" },
       ];
     } else if (pathname === "/tugo-insurance") {
