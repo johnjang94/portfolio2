@@ -3,12 +3,15 @@ import { foodDistro } from "../../../utils/food-distro";
 export default function UserPersona() {
   return (
     <div className="space-y-5">
-      <h3 className="text-xl uppercase">User Persona</h3>
+      <p className="text-xl my-5 md:mx-20 text-red-500">
+        What is stopping them?
+      </p>
       <div className="md:mx-20 space-y-5">
         <div className="space-y-3">
           <p>
-            Both the users who want to donate and the user who is seeking to
-            receive the donations share the common concern:
+            To specifically find out what they need, we have decided to talk to
+            them directly and realized that they were facing the same problem
+            whether they were food-givers or donation-receivers:
           </p>
           <p className="text-red-500 text-center py-10 text-2xl">
             It is challenging to reach out.

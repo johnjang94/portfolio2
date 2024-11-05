@@ -6,7 +6,10 @@ export default function Sketching() {
       <h3 className="text-xl uppercase">Sketching</h3>
       <div className="md:mx-20 my-5 space-y-5">
         <div>
-          <p>I have stepped up to improvise search functionality.</p>
+          <p>
+            Out of all possible new solutions, I have stepped up to come up with
+            a new search functionality.
+          </p>
           <p>For this, I focused on three core features:</p>
         </div>
         <ul className="px-10 list-disc space-y-5">

@@ -8,8 +8,9 @@ export default function Solutions() {
         <div className="space-y-3">
           <p className="font-semibold">Solution 1</p>
           <p className="px-10">
-            Users can quickly look for available food givers around the area and
-            get some detail on the item listing that the food giver has.
+            Donation-receivers can quickly look for available food givers around
+            the area and get some detail on the item listing that the food giver
+            has.
           </p>
           <div className="flex grid-cols-3 w-2/6">
             <img
@@ -32,7 +33,8 @@ export default function Solutions() {
         <div className="space-y-3">
           <p className="font-semibold">Solution 2</p>
           <p className="px-10">
-            Users can easily schedule a pick-up with food givers.
+            Both food-givers and donation-receivers can easily schedule a
+            meet-up.
           </p>
           <div className="flex grid-cols-3 w-2/6">
             <img
@@ -55,8 +57,9 @@ export default function Solutions() {
         <div className="space-y-3">
           <p className="font-semibold">Solution 3</p>
           <p className="px-10">
-            Food-takers can leave a review on the food-givers to alert other
-            food-takers about the freshness and the reliability.
+            Donation-receivers can leave a review on the food-givers to alert
+            other donation-receivers about the freshness and the reliability on
+            the particular food-giver.
           </p>
           <div className="flex grid-cols-3 w-2/6">
             <img

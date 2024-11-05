@@ -1,17 +1,16 @@
 export default function UserStory() {
   return (
     <div className="space-y-5">
-      <h3 className="text-xl uppercase">User Story</h3>
       <div className="md:mx-20 space-y-5">
         <p>
-          We have decided to write user stories to be able to understand what
-          kind of information is considered as MVP.
+          In terms of specific tasks, we came up with a statement on what they
+          need to do in order to donate the food to each other. The following
+          action statement is an example:
         </p>
-        <p>The following is an example:</p>
         <p>
-          &#34;As a taker, I want the ability to search for surplus food in the
-          neighbourhood using a map so that I can decide the option that best
-          suits me based on the location.&#34;
+          &#34;As a donation-receiver, I want the ability to search for surplus
+          food in the neighbourhood using a map so that I can decide the option
+          that best suits me based on the location.&#34;
         </p>
         <ul className="px-10 space-y-3">
           <li>

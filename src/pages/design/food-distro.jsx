@@ -2,9 +2,7 @@ import { useEffect, useState } from "react";
 import OtherMenu from "../../components/footer2";
 import { foodDistro } from "../../utils/food-distro";
 import ContentNav from "../../components/contentNav";
-import Summary from "./food-distro/summary";
 import Overview from "./food-distro/overview";
-import Project from "./food-distro/project";
 import ProblemStatement from "./food-distro/problem-statement";
 import UserPersona from "./food-distro/user-persona";
 import UserStory from "./food-distro/user-story";
@@ -16,6 +14,7 @@ import Retrospective from "./food-distro/retrospective";
 import NextSteps from "./food-distro/next-steps";
 import StyleGuide from "./food-distro/style-guide";
 import MockUpPrototype from "./food-distro/mock-up-prototype";
+import Impact from "./food-distro/impact";
 
 export default function Food() {
   const [currentSection, setCurrentSection] = useState(1);
@@ -58,21 +57,30 @@ export default function Food() {
 
   return (
     <div>
-      <header>
-        <h3 className="mt-14 mb-4 md:w-8/12 md:text-center md:mx-52 mx-9 text-lg md:text-2xl">
-          UX/UI Design for a mobile application
-        </h3>
-        <h1 className="mt-9 md:w-8/12 md:text-center mx-9 md:mx-36 my-10 md:text-5xl text-lg">
-          FOOD DISTRO
-        </h1>
-      </header>
-      <section className="bg-slate-500 p-5 rounded-xl w-5/6 mx-auto">
-        {/* Demo banner */}
-        <img
-          src={foodDistro.Demo}
-          alt="Demo showcase"
-          className="rounded-xl mx-auto w-64"
-        />
+      <section className="my-10 mx-auto">
+        <div className="bg-gradient-to-b from-slate-500 to-transparent mx-10 p-5 rounded-xl text-white">
+          <div className="my-10">
+            <h1 className="text-center md:text-7xl text-lg my-5">
+              Food Distro
+            </h1>
+            <p className="w-4/6 mx-auto">
+              A mobile application that encourages food donations among
+              individuals / households in suburban / rural communities by
+              improving accessibility to social services.
+            </p>
+            <div className="flex items-center space-x-5 my-10 w-4/6 mx-auto">
+              <p>My role</p>
+              <p className="font-bold">Associate UX/UI Designer</p>
+            </div>
+          </div>
+          <div className="md:mx-44 space-y-5">
+            <img
+              src={foodDistro.Demo}
+              alt="Demo showcase"
+              className="rounded-xl mx-auto w-64"
+            />
+          </div>
+        </div>
       </section>
       {/* Main content */}
       <section className="md:flex md:flex-1 gap-10">
@@ -85,15 +93,9 @@ export default function Food() {
         </div>
         <section className="md:w-4/6 mx-10 my-5 md:my-28 space-y-20">
           <div id={1}>
-            <Summary />
-          </div>
-          <div>
             <Overview />
           </div>
           <div>
-            <Project />
-          </div>
-          <div id={2}>
             <ProblemStatement />
           </div>
           <div>
@@ -102,7 +104,7 @@ export default function Food() {
           <div>
             <UserStory />
           </div>
-          <div>
+          <div id={2}>
             <Opportunity />
           </div>
           <div>
@@ -119,6 +121,9 @@ export default function Food() {
           </div>
           <div id={3}>
             <Solutions />
+          </div>
+          <div>
+            <Impact />
           </div>
           <div>
             <Retrospective />
