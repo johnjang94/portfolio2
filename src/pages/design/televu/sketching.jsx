@@ -5,7 +5,6 @@ export default function Sketching() {
     <div>
       <h3 className="text-xl uppercase">Sketching & Mock-Ups</h3>
       <div className="md:mx-20 my-5 space-y-5">
-        <p>Our primary focus was on the following three points:</p>
         <ul className="px-10 list-disc space-y-5">
           <li>Distinguish Menus</li>
           <p className="px-5">
@@ -32,20 +31,12 @@ export default function Sketching() {
             session or leaving the video-call.
           </p>
         </ul>
-        <div className="space-y-5">
-          <img
-            src={televu.MockUp}
-            width={900}
-            alt="Rating"
-            className="text-3xl rounded-3xl"
-          />
-          <img
-            src={televu.Branding}
-            width={900}
-            alt="Rating"
-            className="text-3xl rounded-3xl"
-          />
-        </div>
+        <img
+          src={televu.MockUp}
+          width={900}
+          alt="Rating"
+          className="text-3xl rounded-3xl"
+        />
       </div>
     </div>
   );

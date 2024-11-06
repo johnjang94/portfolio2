@@ -1,10 +1,8 @@
 import { useEffect, useState } from "react";
 import { televu } from "../../utils/televu";
 import ContentNav from "../../components/contentNav";
-import Summary from "./televu/summary";
 import Overview from "./televu/overview";
-import Project from "./televu/project";
-import AboutThat from "./televu/about-that";
+import AtIssue from "./televu/at-issue";
 import Opportunity from "./televu/opportunities";
 import CompetitiveAnalysis from "./televu/comparative-analysis";
 import Solutions from "./televu/solutions";
@@ -12,6 +10,8 @@ import NextSteps from "./televu/next-steps";
 import OtherMenu from "../../components/footer2";
 import Retrospective from "./televu/retrospective";
 import Sketching from "./televu/sketching";
+import TheStory from "./televu/the-story";
+import Impact from "./televu/impact";
 
 export default function TeleVU() {
   const [currentSection, setCurrentSection] = useState(1);
@@ -53,24 +53,32 @@ export default function TeleVU() {
   }, []);
   return (
     <div>
-      <header>
-        <h3 className="mt-14 mb-4 md:w-8/12 md:text-center md:mx-36 mx-9 text-lg md:text-2xl">
-          UX/UI Design for a web application
-        </h3>
-        <h1 className="mt-9 md:w-8/12 md:text-center mx-9 md:mx-48 my-10 md:text-5xl text-lg">
-          TELEVU INNOVATION
-        </h1>
-      </header>
-      <section className="bg-slate-500 p-5 rounded-xl w-5/6 mx-auto">
-        {/* Demo banner */}
-        <img
-          src={televu.Demo}
-          alt="Demo"
-          width={1200}
-          className="rounded-xl mx-auto"
-        />
+      <section className="my-10 mx-auto">
+        <div className="bg-gradient-to-b from-slate-500 to-transparent mx-10 p-5 rounded-xl">
+          <img
+            src={televu.Demo}
+            alt="Demo"
+            width={1200}
+            className="rounded-xl mx-auto"
+          />
+        </div>
+        <div className="md:mx-12">
+          <h1 className="text-center md:text-7xl text-lg my-5">
+            TELEVU INNOVATION
+          </h1>
+          <div className="md:mx-44 space-y-5">
+            <p className="px-8">
+              A telecommunication platform that aims to ease the burden of
+              hospitals across Canada during pandemic by offering remote
+              treatment to the clinicians and the patients.
+            </p>
+          </div>
+          <div className="flex items-center space-x-5 my-10 md:mx-52 mx-8">
+            <p>My role</p>
+            <p className="font-bold">UX/UI Designer</p>
+          </div>
+        </div>
       </section>
-      {/* Main content */}
       <section className="md:flex md:flex-1 gap-10">
         <div>
           <ContentNav
@@ -81,18 +89,15 @@ export default function TeleVU() {
         </div>
         <section className="md:w-4/6 mx-10 my-5 md:my-28 space-y-20">
           <div id={1}>
-            <Summary />
+            <TheStory />
           </div>
           <div>
             <Overview />
           </div>
+          <div>
+            <AtIssue />
+          </div>
           <div id={2}>
-            <Project />
-          </div>
-          <div>
-            <AboutThat />
-          </div>
-          <div>
             <Opportunity />
           </div>
           <div>
@@ -103,6 +108,9 @@ export default function TeleVU() {
           </div>
           <div id={3}>
             <Solutions />
+          </div>
+          <div>
+            <Impact />
           </div>
           <div>
             <NextSteps />
