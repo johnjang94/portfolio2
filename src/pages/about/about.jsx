@@ -34,14 +34,15 @@ export default function About() {
           people.
         </p>
         <p>
-          I was interested in understanding how visuals influence the way we
-          interpret and decide on things ever since high school, and I have come
-          to notice that I was actually interested in getting my feet wet into
-          the field of UX Design or as a Product Designer while I was working as
-          an ESL instructor in Korea. In fact, the nature of the job that I had
-          in Korea required me to keep the students engaged while keeping up
-          their report cards with good grades (if not excellent or outstanding).
-          I needed to think hard on how the lessons can be interactive and
+          I was interested in understanding how visuals (i.e. typography, color,
+          different shapes of elements, etc.) influence the way we interpret and
+          decide on things ever since high school, and I have come to notice
+          that I was actually interested in getting my feet wet into the field
+          of UX Design or as a Product Designer while I was working as an ESL
+          instructor in Korea. In fact, the nature of the job that I had in
+          Korea required me to keep the students engaged while keeping up their
+          report cards with good grades (if not excellent or outstanding). I
+          needed to think hard on how the lessons can be interactive and
           entertaining while attaining good enough visuals, textures, and tools
           that trigger their senses.
         </p>
