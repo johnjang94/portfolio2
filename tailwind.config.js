@@ -32,6 +32,9 @@ export default {
   variants: {
     extend: {
       animation: ["group-hover"],
+      fontFamily: {
+        verdana: ["Verdana", "sans-serif"],
+      },
     },
   },
   plugins: [],
